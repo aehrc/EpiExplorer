@@ -1,6 +1,6 @@
 # Epi Explorer
 
-Visualisation of the Epistasis in Cytoscape using a Python API.  
+Visualisation of Epistasis in Cytoscape using a Python API.  
 
 ## Getting Started
 
