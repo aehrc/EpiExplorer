@@ -1,6 +1,6 @@
-# Advance Visualisation
+# Epi Explorer
 
-Visualisation of the BitEpi output in Cytoscape using a Python API.  
+Visualisation of the Epistasis in Cytoscape using a Python API.  
 
 ## Getting Started
 
