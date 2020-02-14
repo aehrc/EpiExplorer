@@ -53,6 +53,13 @@ class ReadWriteData:
 
         return valid
 
+    # Method to validate annotation file
+    def validate_annotation_file(self):
+        if self.annotation_file == '':
+            return False
+        else:
+            return True
+
     # Method to create the node DataFrame
     def create_interaction_node_df(self, df, int_order):
         # A DataFrame with the interaction node

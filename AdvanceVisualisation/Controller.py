@@ -11,19 +11,25 @@ class Controller:
 
     # Call validate_input_file of the class Readwrite to check the format of the file names
     def validate_input_files(self, input_file, annotation_file):
-        read_write_data = ReadWriteData(input_file)
-        valid = read_write_data.validate_input_file()
-        if valid:
+        read_write_data = ReadWriteData(input_file, annotation_file)
+        valid_input_file = read_write_data.validate_input_file()
+        valid_annotation_file = read_write_data.validate_annotation_file()
+        files_loaded = False
+        if valid_input_file and valid_annotation_file:
             self.input_file = input_file
             self.annotation_file = annotation_file
             print('The input file, {}, has been successfully validated.'
                   .format(self.input_file))
             print('The annotation file, {}, has been successfully validated.'
                   .format(self.annotation_file))
-            return True
-        else:
-            print('Error found in input file format.')
-            return False
+            files_loaded = True
+        elif not valid_input_file:
+            print('Error found in input file file format.')
+            files_loaded = False
+        elif not valid_annotation_file:
+            print('Error found when loading the annotation file')
+            files_loaded = False
+        return files_loaded
 
     # Method to call forth the GUI
     def perform_form_functionality(self):
@@ -39,13 +45,17 @@ class Controller:
     def perform_core_functionality(self, core_details, update, interaction_or_edge):
         # Validate input file
         read_write_data = ReadWriteData(core_details.iat[0, 0], core_details.iat[0, 1])
-        valid = read_write_data.validate_input_file()
-        if valid:
+        valid_input_file = read_write_data.validate_input_file()
+        valid_annotation_file = read_write_data.validate_annotation_file()
+        files_loaded = False
+        if valid_input_file and valid_annotation_file:
             print('The input file, {}, has been successfully validated.'
                   .format(core_details.iat[0, 0]))
 
             print('The annotation file, {}, has been successfully loaded.'
                   .format(core_details.iat[0, 1]))
+
+            files_loaded = True
 
             # Get the node_df, edge_df and if the functions were successful
             read_write_done = read_write_data.get_dataframes(interaction_or_edge)
@@ -60,7 +70,11 @@ class Controller:
                 integration = CytoscapeIntegration(read_write_done[0], read_write_done[1], core_details,
                                                    interaction_or_edge)
                 # Call function and determine if cytoscape worked
-                cytoscape_successful = integration.cytoscape_successful(update)
+                cytoscape_successful = False
+                if not update:
+                    cytoscape_successful = integration.cytoscape_successful()
+                elif update:
+                    cytoscape_successful = integration.update()
 
                 if cytoscape_successful:
                     print('Successful creation of network!')
@@ -68,7 +82,11 @@ class Controller:
                     print('Network creation unsuccessful, please make sure that Cytoscape is running in the background')
             else:
                 print('Error has occurred in Read and/or Write of the file.')
-        else:
+        elif not valid_input_file:
             print('Error found in input file format.')
+            files_loaded = False
+        elif not valid_annotation_file:
+            print('Error found when loading the annotation file')
+            files_loaded = False
 
-        return valid
+        return files_loaded

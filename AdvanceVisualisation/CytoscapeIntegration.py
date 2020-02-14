@@ -45,8 +45,19 @@ class CytoscapeIntegration:
         with open(self.json_file_path, 'w') as outfile:
             json.dump(full_dict, outfile, sort_keys=True, indent=4)
 
+    # When a style is changed in the GUI this method is called
+    # TODO write the code for other styles
+    # TODO If need to update then read the csv file with styles and tweak it as necessary
+    def update(self):
+        print('inside update')
+        # Read the network in cytoscape
+        # Get all the node details and styles
+        # Change the styles according to core_details
+        # Update the network
+        return True
+
     # Method to create the network and add styles
-    def cytoscape_successful(self, update):
+    def cytoscape_successful(self):
 
         cytoscape_successful = True
 
@@ -102,8 +113,7 @@ class CytoscapeIntegration:
 
         # If the GUI is being loaded for the first time
         # Then create network with 'default' styles
-        if not update:
-            new_styles = {
+        new_styles = {
                 'NODE_FILL_COLOR': '#363636',
                 'NODE_SIZE': 10,
                 'NODE_BORDER_WIDTH': 0,
@@ -118,30 +128,25 @@ class CytoscapeIntegration:
                 'NETWORK_BACKGROUND_PAINT': 'white'
             }
 
-            my_style.update_defaults(new_styles)
+        my_style.update_defaults(new_styles)
 
-            # Add these styles only if the network type is Interaction
-            if self.interaction_or_edge == 1:
-                my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
+        # Add these styles only if the network type is Interaction
+        if self.interaction_or_edge == 1:
+            my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
                                                  mappings=order_colour_key_value_pair)
 
-                my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SIZE',
+            my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SIZE',
                                                  mappings=order_size_key_value_pair)
 
-                my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SHAPE',
+            my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SHAPE',
                                                  mappings=order_shape_key_value_pair)
 
-            my_style.create_discrete_mapping(column='order', col_type='String',
+        my_style.create_discrete_mapping(column='order', col_type='String',
                                              vp='EDGE_STROKE_UNSELECTED_PAINT',
                                              mappings=edge_order_colour_key_value_pair)
 
-            my_style.create_discrete_mapping(column='order', col_type='String', vp='EDGE_WIDTH',
+        my_style.create_discrete_mapping(column='order', col_type='String', vp='EDGE_WIDTH',
                                              mappings=edge_order_size_key_value_pair)
-
-        # TODO write the code for other styles
-        # TODO If need to update then read the csv file with styles and tweak it as necessary
-        else:
-            print('No styles specified')
 
         cy.style.apply(my_style, node_edge_network)
 
