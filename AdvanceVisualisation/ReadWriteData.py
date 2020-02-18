@@ -22,7 +22,10 @@ class ReadWriteData:
         extension = ''
         valid = True
         # Split the file name and verify each substring
-        new_input_file = self.input_file.split('.')
+        temp_input_file = self.input_file.split('/')
+        new_input_file = temp_input_file[-1]
+        new_input_file = new_input_file.split('.')
+
         if len(new_input_file) <= 1:
             valid = False
         else:
@@ -56,9 +59,8 @@ class ReadWriteData:
     # Method to validate annotation file
     def validate_annotation_file(self):
         if self.annotation_file == '':
-            return False
-        else:
-            return True
+            print('Optional annotation file not given')
+        return True
 
     # Method to create the node DataFrame
     def create_interaction_node_df(self, df, int_order):
@@ -370,11 +372,13 @@ class ReadWriteData:
 
     # Merge node df with annotations
     def create_df_with_annotations(self, new_node_df):
-        annotation_file_path = os.path.join('../sampleData/', self.annotation_file)
-        annotation_df = pd.read_csv(annotation_file_path)
-
-        new_node_df = new_node_df.merge(annotation_df, on='id', how='left')
-        new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
+        if self.annotation_file == '':
+            print('No annotation file given')
+            new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
+        else:
+            annotation_df = pd.read_csv(self.annotation_file)
+            new_node_df = new_node_df.merge(annotation_df, on='id', how='left')
+            new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
         return new_node_df
 
     # Method to get the number of interaction nodes connected to a node
@@ -744,14 +748,11 @@ class ReadWriteData:
 
         return data_written
 
-    # TODO annotation file is optional
-    # TODO edge graph is the default
     # Method to read in data and write data from and to a csv file
     def get_dataframes(self, interaction_or_edge):
         read_write_done = True
 
-        file_path = os.path.join('../sampleData/', self.input_file)
-        df = pd.read_csv(file_path)
+        df = pd.read_csv(self.input_file)
         int_order = int(order)
 
         if df.empty:
