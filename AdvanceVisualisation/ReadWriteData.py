@@ -144,6 +144,7 @@ class ReadWriteData:
         # Determine the input type
         new_alpha = ''
         new_beta = ''
+        # TODO put actual Alpha/ Beta values
         if input_type == 'Alpha':
             new_alpha = 'Alpha'
             new_beta = 'None'

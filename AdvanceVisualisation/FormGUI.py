@@ -125,7 +125,7 @@ class FormGUI:
         # TODO ask Arash what other types of columns need styling
         node_color_list = ['Order', 'Type', 'Overlap', 'Default']
         node_colour_variable = tk.StringVar(view_frame)
-        node_colour_variable.set(node_color_list[2])
+        node_colour_variable.set(node_color_list[3])
         node_colour_options = tk.OptionMenu(view_frame, node_colour_variable, *node_color_list,
                                             command=lambda x: self.node_colour(node_colour_variable.get(),
                                                                                input_file_entry.get(),
