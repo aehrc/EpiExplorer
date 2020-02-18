@@ -86,6 +86,12 @@ class CytoscapeIntegration:
             '4': '#8d230f'
         }
 
+        overlap_colour_key_value_pair = {
+            'Protein_coding': '#c99e10',
+            'Non_coding': '#9b4f0f',
+            'Intergenic': '#1e434c'
+        }
+
         edge_order_colour_key_value_pair = {
             '2': '#9b4f0f',
             '3': '#1e434c',
@@ -158,9 +164,28 @@ class CytoscapeIntegration:
                 print('Styling node colour')
                 update_type = self.core_details.at[0, 'node_colour']
 
-                if update_type == 'order':
+                if update_type == 'Order' or update_type == 'Default':
                     my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
                                                      mappings=order_colour_key_value_pair)
+                elif update_type == 'Type':
+                    # TODO add continuous mapping for Alpha/ Beta values
+                    print('TODO')
+
+                elif update_type == 'Overlap':
+                    my_style.create_discrete_mapping(column='Overlap', col_type='String', vp='NODE_FILL_COLOR',
+                                                     mappings=overlap_colour_key_value_pair)
+
+            if 'node_size' in self.core_details.columns:
+                print('Styling node size')
+                update_type = self.core_details.at[0, 'node_size']
+
+                if update_type == 'Order' or update_type == 'Default':
+                    my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SIZE',
+                                                     mappings=order_size_key_value_pair)
+
+                elif update_type == 'Type':
+                    # TODO add continuous mapping for Alpha/ Beta values
+                    print('TODO')
 
         cy.style.apply(my_style, node_edge_network)
 

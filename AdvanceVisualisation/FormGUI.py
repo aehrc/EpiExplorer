@@ -122,7 +122,8 @@ class FormGUI:
         node_colour_title = tk.Label(view_frame, bg='#90afc5', justify='left', text='Node colour by: ')
         node_colour_title.place(relx=0.04, rely=0.2, relheight=0.1, relwidth=0.45)
 
-        node_color_list = ['order', 'Type', 'Default']
+        # TODO ask Arash what other types of columns need styling
+        node_color_list = ['Order', 'Type', 'Overlap', 'Default']
         node_colour_variable = tk.StringVar(view_frame)
         node_colour_variable.set(node_color_list[2])
         node_colour_options = tk.OptionMenu(view_frame, node_colour_variable, *node_color_list,
@@ -135,7 +136,7 @@ class FormGUI:
         node_size_title = tk.Label(view_frame, bg='#90afc5', text='Node size by: ')
         node_size_title.place(relx=0.04, rely=0.35, relheight=0.1, relwidth=0.45)
 
-        node_size_list = ['order', 'Type', 'Default']
+        node_size_list = ['Order', 'Type', 'Default']
         node_size_variable = tk.StringVar(view_frame)
         node_size_variable.set(node_size_list[2])
         node_size_options = tk.OptionMenu(view_frame, node_size_variable, *node_size_list,
@@ -148,7 +149,7 @@ class FormGUI:
         node_shape_title = tk.Label(view_frame, bg='#90afc5', text='Node shape by: ')
         node_shape_title.place(relx=0.04, rely=0.5, relheight=0.1, relwidth=0.45)
 
-        node_shape_list = ['order', 'Type', 'Default']
+        node_shape_list = ['Order', 'Type', 'Default']
         node_shape_variable = tk.StringVar(view_frame)
         node_shape_variable.set(node_shape_list[2])
         node_shape_options = tk.OptionMenu(view_frame, node_shape_variable, *node_shape_list,
@@ -161,7 +162,7 @@ class FormGUI:
         edge_colour_title = tk.Label(view_frame, bg='#90afc5', text='Edge colour by: ')
         edge_colour_title.place(relx=0.04, rely=0.65, relheight=0.1, relwidth=0.45)
 
-        edge_colour_list = ['order', 'Default']
+        edge_colour_list = ['Order', 'Default']
         edge_colour_variable = tk.StringVar(view_frame)
         edge_colour_variable.set(edge_colour_list[1])
         edge_colour_options = tk.OptionMenu(view_frame, edge_colour_variable, *edge_colour_list,
@@ -174,7 +175,7 @@ class FormGUI:
         edge_thickness_title = tk.Label(view_frame, bg='#90afc5', text='Edge thickness by: ')
         edge_thickness_title.place(relx=0.04, rely=0.8, relheight=0.1, relwidth=0.45)
 
-        edge_thickness_list = ['order', 'Type', 'Default']
+        edge_thickness_list = ['Order', 'Type', 'Default']
         edge_thickness_variable = tk.StringVar(view_frame)
         edge_thickness_variable.set(edge_thickness_list[2])
         edge_thickness_options = tk.OptionMenu(view_frame, edge_thickness_variable, *edge_thickness_list,
