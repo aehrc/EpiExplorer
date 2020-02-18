@@ -118,6 +118,21 @@ class CytoscapeIntegration:
             '4': 'Hexagon'
         }
 
+        type_colour_variation = [
+            {
+                'value': '1.0',
+                'lesser': '#9b4f0f',
+                'equal': '#9b4f0f',
+                'greater': '#9b4f0f'
+            },
+            {
+                'value': '20.0',
+                'lesser': '#8d230f',
+                'equal': '#8d230f',
+                'greater': '#8d230f'
+            }
+        ]
+
         new_styles = {
             'NODE_FILL_COLOR': '#363636',
             'NODE_SIZE': 10,
@@ -168,8 +183,8 @@ class CytoscapeIntegration:
                     my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
                                                      mappings=order_colour_key_value_pair)
                 elif update_type == 'Type':
-                    # TODO add continuous mapping for Alpha/ Beta values
-                    print('TODO')
+                    # https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/basic-fundamentals.ipynb
+                    my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='NODE_FILL_COLOR', points=type_colour_variation)
 
                 elif update_type == 'Overlap':
                     my_style.create_discrete_mapping(column='Overlap', col_type='String', vp='NODE_FILL_COLOR',
