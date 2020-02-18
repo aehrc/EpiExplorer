@@ -58,7 +58,7 @@ class CytoscapeIntegration:
         return True
 
     # Method to create the network and add styles
-    def cytoscape_successful(self):
+    def cytoscape_successful(self, update):
 
         cytoscape_successful = True
 
@@ -76,7 +76,7 @@ class CytoscapeIntegration:
         cy.layout.apply(network=node_edge_network)
 
         # Add styles to the network
-        my_style = cy.style.create('my_style')
+        my_style = cy.style.create('Epi_Explorer_style')
 
         # Discrete mappings for specific regions
         order_colour_key_value_pair = {
@@ -112,42 +112,55 @@ class CytoscapeIntegration:
             '4': 'Hexagon'
         }
 
-        # If the GUI is being loaded for the first time
-        # Then create network with 'default' styles
         new_styles = {
-                'NODE_FILL_COLOR': '#363636',
-                'NODE_SIZE': 10,
-                'NODE_BORDER_WIDTH': 0,
-                'NODE_TRANSPARENCY': 255,
-                'NODE_LABEL_COLOR': '#323334',
+            'NODE_FILL_COLOR': '#363636',
+            'NODE_SIZE': 10,
+            'NODE_BORDER_WIDTH': 0,
+            'NODE_TRANSPARENCY': 255,
+            'NODE_LABEL_COLOR': '#323334',
 
-                'EDGE_WIDTH': 3,
-                'EDGE_STROKE_UNSELECTED_PAINT': '#a9a9a9',
-                'EDGE_LINE_TYPE': 'SOLID',
-                'EDGE_TRANSPARENCY': 120,
+            'EDGE_WIDTH': 3,
+            'EDGE_STROKE_UNSELECTED_PAINT': '#a9a9a9',
+            'EDGE_LINE_TYPE': 'SOLID',
+            'EDGE_TRANSPARENCY': 120,
 
-                'NETWORK_BACKGROUND_PAINT': 'white'
-            }
+            'NETWORK_BACKGROUND_PAINT': 'white'
+        }
 
         my_style.update_defaults(new_styles)
 
-        # Add these styles only if the network type is Interaction
-        if self.interaction_or_edge == 1:
-            my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
+        # If the GUI is being loaded for the first time
+        # Then create network with 'default' styles
+        if not update:
+            # Add these styles only if the network type is Interaction
+            if self.interaction_or_edge == 1:
+                my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
                                                  mappings=order_colour_key_value_pair)
 
-            my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SIZE',
+                my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SIZE',
                                                  mappings=order_size_key_value_pair)
 
-            my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SHAPE',
+                my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SHAPE',
                                                  mappings=order_shape_key_value_pair)
 
-        my_style.create_discrete_mapping(column='order', col_type='String',
+            my_style.create_discrete_mapping(column='order', col_type='String',
                                              vp='EDGE_STROKE_UNSELECTED_PAINT',
                                              mappings=edge_order_colour_key_value_pair)
 
-        my_style.create_discrete_mapping(column='order', col_type='String', vp='EDGE_WIDTH',
+            my_style.create_discrete_mapping(column='order', col_type='String', vp='EDGE_WIDTH',
                                              mappings=edge_order_size_key_value_pair)
+
+        elif update:
+            print('Update styles')
+            print(self.core_details)
+
+            if 'node_colour' in self.core_details.columns:
+                print('Styling node colour')
+                update_type = self.core_details.at[0, 'node_colour']
+
+                if update_type == 'order':
+                    my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
+                                                     mappings=order_colour_key_value_pair)
 
         cy.style.apply(my_style, node_edge_network)
 

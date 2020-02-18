@@ -70,11 +70,7 @@ class Controller:
                 integration = CytoscapeIntegration(read_write_done[0], read_write_done[1], core_details,
                                                    interaction_or_edge)
                 # Call function and determine if cytoscape worked
-                cytoscape_successful = False
-                if not update:
-                    cytoscape_successful = integration.cytoscape_successful()
-                elif update:
-                    cytoscape_successful = integration.update()
+                cytoscape_successful = integration.cytoscape_successful(update)
 
                 if cytoscape_successful:
                     print('Successful creation of network!')
