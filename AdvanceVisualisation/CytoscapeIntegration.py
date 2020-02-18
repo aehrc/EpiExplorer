@@ -4,6 +4,7 @@ from py2cytoscape.data.cyrest_client import CyRestClient
 from IPython.display import Image
 import json
 import simplejson
+import pandas as pd
 
 
 class CytoscapeIntegration:

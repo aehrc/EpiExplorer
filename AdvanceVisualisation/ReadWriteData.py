@@ -210,6 +210,7 @@ class ReadWriteData:
         # individual SNP -> interaction node
         edge_df = pd.DataFrame(columns=['id', 'source', 'target', 'interaction', 'order'])
 
+        # TODO check if the column exists not the int_order
         # If the order is greater than 1 then there exist interactions between nodes
         if int_order >= 2:
             for index, row in df.iterrows():
@@ -743,6 +744,8 @@ class ReadWriteData:
 
         return data_written
 
+    # TODO annotation file is optional
+    # TODO edge graph is the default
     # Method to read in data and write data from and to a csv file
     def get_dataframes(self, interaction_or_edge):
         read_write_done = True

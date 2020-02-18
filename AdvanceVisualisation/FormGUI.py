@@ -1,6 +1,11 @@
 # Class containing all the GUI functionality
+import os
+from Tkinter import *
 import Tkinter as tk
 import tkMessageBox
+from Tkinter import PhotoImage
+import tkFileDialog
+from PIL import Image
 import pandas as pd
 
 
@@ -13,6 +18,29 @@ class FormGUI:
         self.highlight_bool = False
         self.gray_bool = False
         self.reset_bool = False
+        self.input_file_names = ''
+        self.annotation_file = ''
+        self.var_interaction_or_edge = 2
+
+    def check_interaction_or_edge(self, var_interaction):
+        if var_interaction == 0:
+            print('Loading network as Edge mode')
+            self.var_interaction_or_edge = 2
+        else:
+            print('Loading network as Interaction Node')
+            self.var_interaction_or_edge = 1
+
+    def select_annot_file(self, root, annot_file_entry):
+        received_files = tkFileDialog.askopenfilenames(parent=root, title='Choose a file/s')
+        received_files = root.tk.splitlist(received_files)
+        self.annotation_file = received_files
+        annot_file_entry.insert(0, self.annotation_file)
+
+    def select_input_files(self, root, input_file_entry):
+        received_files = tkFileDialog.askopenfilenames(parent=root, title='Choose a file/s')
+        received_files = root.tk.splitlist(received_files)
+        self.input_file_names = received_files
+        input_file_entry.insert(0, self.input_file_names)
 
     # Load file upon clicking submit on the GUI
     def load_files(self, input_file, annotation_file, interaction_or_edge):
@@ -28,43 +56,60 @@ class FormGUI:
     # Method to create the form
     def form(self):
         root = tk.Tk()
+        root.title('Epi Explorer')
+
+        # Add icon to the GUI
+        img_path = r'csiro.png'
+        imgicon = tk.Image('photo', file=img_path)
+        root.tk.call('wm', 'iconphoto', root._w, imgicon)
 
         # Main window
         canvas = tk.Canvas(root, bg='#763626', height=640, width=640)
         canvas.pack()
+        main_title = tk.Label(root, bg='#763626', text='Welcome to Epi Explorer! What changes would you like to see?')
+        main_title.place(relx=0.01, rely=0.035, relheight=0.05, relwidth=0.75)
 
-        main_title = tk.Label(root, bg='#763626', text='Hi, please fill out the specifics you would like to see!')
-        main_title.place(relx=0.1, rely=0.05, relheight=0.05, relwidth=0.75)
+        logo = PhotoImage(file=img_path)
+        logo_resized = logo.subsample(10, 10)
+        photo_label = tk.Label(root, bg='#763626', image=logo_resized)
+        photo_label.place(relx=0.8, rely=0.01, relheight=0.075, relwidth=0.25)
 
         # Frame to input files and load
         file_frame = tk.Frame(root, bg='#2A3132', bd=5)
         file_frame.place(relx=0.5, rely=0.1, relwidth=0.95, relheight=0.2, anchor='n')
 
-        input_file_title = tk.Label(file_frame, text='Prefix file path: ')
-        input_file_title.place(relx=0.02, rely=0.1, relheight=0.2, relwidth=0.25)
+        input_file_title = tk.Label(file_frame, text='Input file/s: ')
+        input_file_title.place(relx=0.01, rely=0.1, relheight=0.2, relwidth=0.25)
 
         input_file_entry = tk.Entry(file_frame)
-        input_file_entry.place(relx=0.3, rely=0.1, relwidth=0.675, relheight=0.2)
+        input_file_entry.place(relx=0.275, rely=0.1, relwidth=0.5, relheight=0.2)
 
-        annot_file_title = tk.Label(file_frame, text='Annotation file path: ')
-        annot_file_title.place(relx=0.02, rely=0.4, relheight=0.2, relwidth=0.25)
+        load_file_button = tk.Button(file_frame, bg='#90afc5', text="Open",
+                                     command=lambda: self.select_input_files(root, input_file_entry))
+        load_file_button.place(relx=0.8, rely=0.1, relwidth=0.15, relheight=0.2)
+
+        annot_file_title = tk.Label(file_frame, text='Annotation file: ')
+        annot_file_title.place(relx=0.01, rely=0.4, relheight=0.2, relwidth=0.25)
 
         annot_file_entry = tk.Entry(file_frame)
-        annot_file_entry.place(relx=0.3, rely=0.4, relwidth=0.675, relheight=0.2)
+        annot_file_entry.place(relx=0.275, rely=0.4, relwidth=0.5, relheight=0.2)
 
-        # Radio buttons to specify Interaction or Edge network
-        var_interaction_or_edge = tk.IntVar()
-        var_interaction_or_edge.set(1)
-        node_radio_button = tk.Radiobutton(file_frame, text='Show Interaction Nodes',
-                                           variable=var_interaction_or_edge, value=1)
-        node_radio_button.place(relx=0.02, rely=0.7, relwidth=0.35, relheight=0.2)
+        load_annot_file_button = tk.Button(file_frame, bg='#90afc5', text="Open",
+                                     command=lambda: self.select_annot_file(root, annot_file_entry))
+        load_annot_file_button.place(relx=0.8, rely=0.4, relwidth=0.15, relheight=0.2)
 
-        edge_radio_button = tk.Radiobutton(file_frame, text='Show edges', variable=var_interaction_or_edge, value=2)
-        edge_radio_button.place(relx=0.4, rely=0.7, relwidth=0.2, relheight=0.2)
+        # Check button to specify Interaction or Edge network
+        var_interaction = tk.IntVar()
+        node_check_button = tk.Checkbutton(file_frame, text='Show Interaction as Nodes',
+                                           variable=var_interaction,
+                                           command=lambda: self.check_interaction_or_edge(
+                                                                var_interaction.get()))
+
+        node_check_button.place(relx=0.01, rely=0.7, relwidth=0.35, relheight=0.2)
 
         load_button = tk.Button(file_frame, bg='#90afc5', text="Load files",
                                 command=lambda: self.load_files(input_file_entry.get(), annot_file_entry.get(),
-                                                                var_interaction_or_edge.get()))
+                                                                self.var_interaction_or_edge))
         load_button.place(relx=0.725, rely=0.7, relheight=0.2, relwidth=0.25)
 
         # Frame to specify styles for the network
@@ -84,7 +129,7 @@ class FormGUI:
                                             command=lambda x: self.node_colour(node_colour_variable.get(),
                                                                                input_file_entry.get(),
                                                                                annot_file_entry.get(),
-                                                                               var_interaction_or_edge.get()))
+                                                                               self.var_interaction_or_edge))
         node_colour_options.place(relx=0.525, rely=0.2, relheight=0.1, relwidth=0.45)
 
         node_size_title = tk.Label(view_frame, bg='#90afc5', text='Node size by: ')
@@ -97,7 +142,7 @@ class FormGUI:
                                           command=lambda x: self.node_size(node_size_variable.get(),
                                                                            input_file_entry.get(),
                                                                            annot_file_entry.get(),
-                                                                           var_interaction_or_edge.get()))
+                                                                           self.var_interaction_or_edge))
         node_size_options.place(relx=0.525, rely=0.35, relheight=0.1, relwidth=0.45)
 
         node_shape_title = tk.Label(view_frame, bg='#90afc5', text='Node shape by: ')
@@ -110,7 +155,7 @@ class FormGUI:
                                            command=lambda x: self.node_shape(node_shape_variable.get(),
                                                                              input_file_entry.get(),
                                                                              annot_file_entry.get(),
-                                                                             var_interaction_or_edge.get()))
+                                                                             self.var_interaction_or_edge))
         node_shape_options.place(relx=0.525, rely=0.5, relheight=0.1, relwidth=0.45)
 
         edge_colour_title = tk.Label(view_frame, bg='#90afc5', text='Edge colour by: ')
@@ -123,7 +168,7 @@ class FormGUI:
                                             command=lambda x: self.edge_colour(edge_colour_variable.get(),
                                                                                input_file_entry.get(),
                                                                                annot_file_entry.get(),
-                                                                               var_interaction_or_edge.get()))
+                                                                               self.var_interaction_or_edge))
         edge_colour_options.place(relx=0.525, rely=0.65, relheight=0.1, relwidth=0.45)
 
         edge_thickness_title = tk.Label(view_frame, bg='#90afc5', text='Edge thickness by: ')
@@ -136,7 +181,7 @@ class FormGUI:
                                                command=lambda x: self.edge_thickness(edge_thickness_variable.get(),
                                                                                      input_file_entry.get(),
                                                                                      annot_file_entry.get(),
-                                                                                     var_interaction_or_edge.get()))
+                                                                                     self.var_interaction_or_edge))
         edge_thickness_options.place(relx=0.525, rely=0.8, relheight=0.1, relwidth=0.45)
 
         # Frame to filter data
@@ -151,27 +196,28 @@ class FormGUI:
 
         hide_button = tk.Button(filter_frame, bg='#90afc5', text="Hide",
                                 command=lambda: self.hide(input_file_entry.get(), annot_file_entry.get(),
-                                                          var_interaction_or_edge.get()))
+                                                          self.var_interaction_or_edge))
         hide_button.place(relx=0.04, rely=0.55, relheight=0.1, relwidth=0.45)
 
         show_button = tk.Button(filter_frame, bg='#90afc5', text="Show",
                                 command=lambda: self.show(input_file_entry.get(), annot_file_entry.get(),
-                                                          var_interaction_or_edge.get()))
+                                                          self.var_interaction_or_edge))
         show_button.place(relx=0.525, rely=0.55, relheight=0.1, relwidth=0.45)
 
         hl_button = tk.Button(filter_frame, bg='#90afc5', text="Highlight",
                               command=lambda: self.highlight(input_file_entry.get(), annot_file_entry.get(),
-                                                             var_interaction_or_edge.get()))
+                                                             self.var_interaction_or_edge))
         hl_button.place(relx=0.04, rely=0.7, relheight=0.1, relwidth=0.45)
 
+        # TODO send the grayed out nodes 'to the back'
         gray_button = tk.Button(filter_frame, bg='#90afc5', text="Gray out",
                                 command=lambda: self.grayout(input_file_entry.get(),
-                                                             annot_file_entry.get(), var_interaction_or_edge.get()))
+                                                             annot_file_entry.get(), self.var_interaction_or_edge))
         gray_button.place(relx=0.525, rely=0.7, relheight=0.1, relwidth=0.45)
 
         reset_button = tk.Button(filter_frame, bg='#90afc5', text="Reset",
                                  command=lambda: self.reset(input_file_entry.get(),
-                                                            annot_file_entry.get(), var_interaction_or_edge.get()))
+                                                            annot_file_entry.get(), self.var_interaction_or_edge))
         reset_button.place(relx=0.04, rely=0.85, relheight=0.1, relwidth=0.45)
 
         help_button = tk.Button(filter_frame, bg='#90afc5', text="Help",
@@ -194,7 +240,7 @@ class FormGUI:
                                                   'node_shape'
                 , 'edge_colour', 'edge_thickness', 'query', 'hide', 'show', 'highlight', 'gray', 'reset'])
 
-        form_details = [form_details_df, True, var_interaction_or_edge.get()]
+        form_details = [form_details_df, True, self.var_interaction_or_edge]
 
         return form_details
 
