@@ -14,6 +14,7 @@ class ReadWriteData:
         self.int_id = 0
 
     # Method to validate the input file
+    # TODO change this when generalising
     def validate_input_file(self):
         global order
         global input_type
@@ -68,20 +69,21 @@ class ReadWriteData:
         # (concat of all the names of the gene) and SNPs
         node_df = pd.DataFrame(columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist'])
 
-        # Determine the input type
-        new_alpha = ''
-        new_beta = ''
-        if input_type == 'Alpha':
-            new_alpha = 'Alpha'
-            new_beta = 'None'
-        else:
-            new_alpha = 'None'
-            new_beta = 'Beta'
-
         # Loop through each row
         # Get the cell values of each column of each row and concat the values
         # Add the values to the new DataFrame
         for index, row in df.iterrows():
+
+            # Determine the input type for each row and add the association power
+            new_alpha = ''
+            new_beta = ''
+            if input_type == 'Alpha':
+                new_alpha = df.at[index, 'Alpha']
+                new_beta = 'None'
+            else:
+                new_alpha = 'None'
+                new_beta = df.at[index, 'Beta']
+
             for i in range(int_order):
                 # Get the single SNPs at the specific position
                 cell_value = df.iat[index, i + 1]
@@ -141,21 +143,23 @@ class ReadWriteData:
         # (concat of all the names of the gene) and SNPs
         node_df = pd.DataFrame(columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist'])
 
-        # Determine the input type
-        new_alpha = ''
-        new_beta = ''
-        # TODO put actual Alpha/ Beta values
-        if input_type == 'Alpha':
-            new_alpha = 'Alpha'
-            new_beta = 'None'
-        else:
-            new_alpha = 'None'
-            new_beta = 'Beta'
-
         # Loop through each row
         # Get the cell values of each column of each row and concat the values
         # Add the values to the new DataFrame
         for index, row in df.iterrows():
+
+            # Determine the input type to add the association power
+            new_alpha = ''
+            new_beta = ''
+            if input_type == 'Alpha':
+                new_alpha = df.at[index, 'Alpha']
+                new_beta = 'None'
+            else:
+                new_alpha = 'None'
+                new_beta = df.at[index, 'Beta']
+
+
+
             # Get the single SNPs at the specific position
             snp_a_cell_value = df.at[index, 'SNP_A']
             new_order = '1'
@@ -277,6 +281,7 @@ class ReadWriteData:
             new_beta = 'Beta'
 
         # If the order is greater than 1 then there exist interactions between nodes
+        # TODO check if the column exists not the int_order
         if int_order >= 2:
             for index, row in df.iterrows():
                 # If order is greater than 1
@@ -420,16 +425,17 @@ class ReadWriteData:
 
                 # Not important i.e presentation
                 if temp_node_important.empty:
-                    found_both_alpha_and_beta = temp_node_presentation.loc[(temp_node_presentation['Alpha'] == 'Alpha')
-                                                                           & (temp_node_presentation['Beta'] == 'Beta')] \
+                    # Check if an Alpha/ Beta value exist by checking if the Alpha/ Beta value is set to None
+                    found_both_alpha_and_beta = temp_node_presentation.loc[(temp_node_presentation['Alpha'] != 'None')
+                                                                           & (temp_node_presentation['Beta'] != 'None')] \
                         .reset_index(drop=True)
                     new_reason = 'Presentation'
                     # Both Alpha and Beta together aren't present
                     if found_both_alpha_and_beta.empty:
-                        found_only_alpha = temp_df.loc[(temp_df['Alpha'] == 'Alpha')
+                        found_only_alpha = temp_df.loc[(temp_df['Alpha'] != 'None')
                                                        & (temp_df['reason to exist'] == 'Presentation')].reset_index(
                             drop=True)
-                        found_only_beta = temp_df.loc[(temp_df['Beta'] == 'Beta')
+                        found_only_beta = temp_df.loc[(temp_df['Beta'] != 'None')
                                                       & (temp_df['reason to exist'] == 'Presentation')].reset_index(
                             drop=True)
 
@@ -525,17 +531,17 @@ class ReadWriteData:
 
                 # Important
                 else:
-                    found_both_alpha_and_beta = temp_node_important.loc[(temp_node_important['Alpha'] == 'Alpha')
-                                                                        & (temp_node_important['Beta'] == 'Beta')] \
+                    found_both_alpha_and_beta = temp_node_important.loc[(temp_node_important['Alpha'] != 'None')
+                                                                        & (temp_node_important['Beta'] != 'None')] \
                         .reset_index(drop=True)
                     new_reason = 'Important'
 
                     # Both Alpha and Beta together aren't present
                     if found_both_alpha_and_beta.empty:
-                        found_only_alpha = temp_df.loc[(temp_df['Alpha'] == 'Alpha')
+                        found_only_alpha = temp_df.loc[(temp_df['Alpha'] != 'None')
                                                        & (temp_df['reason to exist'] == 'Important')].reset_index(
                             drop=True).reset_index(drop=True)
-                        found_only_beta = temp_df.loc[(temp_df['Beta'] == 'Beta')
+                        found_only_beta = temp_df.loc[(temp_df['Beta'] != 'None')
                                                       & (temp_df['reason to exist'] == 'Important')].reset_index(
                             drop=True).reset_index(drop=True)
 
