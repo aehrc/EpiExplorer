@@ -169,11 +169,12 @@ class CytoscapeIntegration:
 
             my_style.create_discrete_mapping(column='order', col_type='String', vp='EDGE_WIDTH',
                                              mappings=edge_order_size_key_value_pair)
-
+        # TODO when reset/ submit
         elif update:
             print('Update styles')
             print(self.core_details)
             # TODO add code for the rest of the styles
+            # TODO check if the column exists in the annotation file
             if 'node_colour' in self.core_details.columns:
                 print('Styling node colour')
                 update_type = self.core_details.at[0, 'node_colour']
@@ -202,7 +203,6 @@ class CytoscapeIntegration:
                     print('TODO')
 
             # Code for querying out data
-
             if 'query' in self.core_details.columns:
                 if 'hide' in self.core_details.columns:
                     self.filter_data()

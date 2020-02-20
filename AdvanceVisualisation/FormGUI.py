@@ -21,6 +21,15 @@ class FormGUI:
         self.input_file_names = ''
         self.annotation_file = ''
         self.var_interaction_or_edge = 2
+        self.var_invert_or_not = 0
+
+    def invert_or_not(self, var_invert):
+        if var_invert == 0:
+            print('No inverting')
+            self.var_invert_or_not = 0
+        else:
+            print('Invert')
+            self.var_invert_or_not = 1
 
     def check_interaction_or_edge(self, var_interaction):
         if var_interaction == 0:
@@ -59,9 +68,9 @@ class FormGUI:
         root.title('Epi Explorer')
 
         # Add icon to the GUI
-        img_path = r'csiro.png'
-        imgicon = tk.Image('photo', file=img_path)
-        root.tk.call('wm', 'iconphoto', root._w, imgicon)
+        # img_path = r'csiro.png'
+        # imgicon = tk.Image('photo', file=img_path)
+        # root.tk.call('wm', 'iconphoto', root._w, imgicon)
 
         # Main window
         canvas = tk.Canvas(root, bg='#763626', height=640, width=640)
@@ -69,10 +78,10 @@ class FormGUI:
         main_title = tk.Label(root, bg='#763626', text='Welcome to Epi Explorer! What changes would you like to see?')
         main_title.place(relx=0.01, rely=0.035, relheight=0.05, relwidth=0.75)
 
-        logo = PhotoImage(file=img_path)
-        logo_resized = logo.subsample(10, 10)
-        photo_label = tk.Label(root, bg='#763626', image=logo_resized)
-        photo_label.place(relx=0.8, rely=0.01, relheight=0.075, relwidth=0.25)
+        # logo = PhotoImage(file=img_path)
+        # logo_resized = logo.subsample(10, 10)
+        # photo_label = tk.Label(root, bg='#763626', image=logo_resized)
+        # photo_label.place(relx=0.8, rely=0.01, relheight=0.075, relwidth=0.25)
 
         # Frame to input files and load
         file_frame = tk.Frame(root, bg='#2A3132', bd=5)
@@ -95,7 +104,7 @@ class FormGUI:
         annot_file_entry.place(relx=0.275, rely=0.4, relwidth=0.5, relheight=0.2)
 
         load_annot_file_button = tk.Button(file_frame, bg='#90afc5', text="Open",
-                                     command=lambda: self.select_annot_file(root, annot_file_entry))
+                                           command=lambda: self.select_annot_file(root, annot_file_entry))
         load_annot_file_button.place(relx=0.8, rely=0.4, relwidth=0.15, relheight=0.2)
 
         # Check button to specify Interaction or Edge network
@@ -103,7 +112,7 @@ class FormGUI:
         node_check_button = tk.Checkbutton(file_frame, text='Show Interaction as Nodes',
                                            variable=var_interaction,
                                            command=lambda: self.check_interaction_or_edge(
-                                                                var_interaction.get()))
+                                               var_interaction.get()))
 
         node_check_button.place(relx=0.01, rely=0.7, relwidth=0.35, relheight=0.2)
 
@@ -195,35 +204,43 @@ class FormGUI:
         filter_entry = tk.Entry(filter_frame, font=24)
         filter_entry.place(relx=0.05, rely=0.2, relwidth=0.925, relheight=0.3)
 
+        # Check button to invert query
+        var_invert = tk.IntVar()
+        invert_check_button = tk.Checkbutton(filter_frame, text='Invert',
+                                             variable=var_invert, command=lambda: self.check_interaction_or_edge(
+                                               var_invert.get()))
+
+        invert_check_button.place(relx=0.04, rely=0.85, relwidth=0.225, relheight=0.1)
+
         hide_button = tk.Button(filter_frame, bg='#90afc5', text="Hide",
                                 command=lambda: self.hide(input_file_entry.get(), annot_file_entry.get(),
-                                                          self.var_interaction_or_edge))
+                                                          self.var_interaction_or_edge, filter_entry.get(), var_invert_or_not))
         hide_button.place(relx=0.04, rely=0.55, relheight=0.1, relwidth=0.45)
 
         show_button = tk.Button(filter_frame, bg='#90afc5', text="Show",
                                 command=lambda: self.show(input_file_entry.get(), annot_file_entry.get(),
-                                                          self.var_interaction_or_edge))
+                                                          self.var_interaction_or_edge, filter_entry.get(), var_invert_or_not))
         show_button.place(relx=0.525, rely=0.55, relheight=0.1, relwidth=0.45)
 
         hl_button = tk.Button(filter_frame, bg='#90afc5', text="Highlight",
                               command=lambda: self.highlight(input_file_entry.get(), annot_file_entry.get(),
-                                                             self.var_interaction_or_edge))
+                                                             self.var_interaction_or_edge, filter_entry.get(), var_invert_or_not))
         hl_button.place(relx=0.04, rely=0.7, relheight=0.1, relwidth=0.45)
 
-        # TODO send the grayed out nodes 'to the back'
         gray_button = tk.Button(filter_frame, bg='#90afc5', text="Gray out",
                                 command=lambda: self.grayout(input_file_entry.get(),
-                                                             annot_file_entry.get(), self.var_interaction_or_edge))
+                                                             annot_file_entry.get(), self.var_interaction_or_edge,
+                                                             filter_entry.get(), var_invert_or_not))
         gray_button.place(relx=0.525, rely=0.7, relheight=0.1, relwidth=0.45)
 
         reset_button = tk.Button(filter_frame, bg='#90afc5', text="Reset",
                                  command=lambda: self.reset(input_file_entry.get(),
                                                             annot_file_entry.get(), self.var_interaction_or_edge))
-        reset_button.place(relx=0.04, rely=0.85, relheight=0.1, relwidth=0.45)
+        reset_button.place(relx=0.3, rely=0.85, relheight=0.1, relwidth=0.45)
 
         help_button = tk.Button(filter_frame, bg='#90afc5', text="Help",
                                 command=lambda: self.help())
-        help_button.place(relx=0.525, rely=0.85, relheight=0.1, relwidth=0.45)
+        help_button.place(relx=0.775, rely=0.85, relheight=0.1, relwidth=0.2)
 
         submit_button = tk.Button(root, text="Submit", command=lambda root=root: self.quit(root))
         submit_button.place(relx=0.3, rely=0.9, relheight=0.075, relwidth=0.35)
@@ -236,40 +253,41 @@ class FormGUI:
                                             , edge_colour_variable.get(), edge_thickness_variable.get(),
                                          filter_entry.get()
                                             , self.hide_bool, self.show_bool, self.highlight_bool, self.gray_bool,
-                                         self.reset_bool]]
+                                         self.reset_bool, var_invert.get()]]
                                        , columns=['input_file', 'annotation_file', 'node_colour', 'node_size',
                                                   'node_shape'
-                , 'edge_colour', 'edge_thickness', 'query', 'hide', 'show', 'highlight', 'gray', 'reset'])
+                , 'edge_colour', 'edge_thickness', 'query', 'hide', 'show', 'highlight', 'gray', 'reset', 'invert'])
 
         form_details = [form_details_df, True, self.var_interaction_or_edge]
 
         return form_details
 
     # Helper methods to update Cytoscape upon the press of buttons in the GUI
-    def hide(self, input_file, annotation_file, interaction_or_edge):
+    def hide(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.hide_bool = True
         form_details_df = pd.DataFrame([[input_file, annotation_file, self.hide_bool]],
-                                       columns=['input_file', 'annotation_file', 'hide'])
-        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
+                                       columns=['input_file', 'annotation_file', 'hide', 'query', 'invert'])
+        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge, filter_entry, var_invert_or_not)
 
-    def show(self, input_file, annotation_file, interaction_or_edge):
+    def show(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.show_bool = True
         form_details_df = pd.DataFrame([[input_file, annotation_file, self.show_bool]],
-                                       columns=['input_file', 'annotation_file', 'show'])
-        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
+                                       columns=['input_file', 'annotation_file', 'show', 'query', 'invert'])
+        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge, filter_entry, var_invert_or_not)
 
-    def highlight(self, input_file, annotation_file, interaction_or_edge):
+    def highlight(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.highlight_bool = True
         form_details_df = pd.DataFrame([[input_file, annotation_file, self.highlight_bool]],
-                                       columns=['input_file', 'annotation_file', 'highlight'])
-        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
+                                       columns=['input_file', 'annotation_file', 'highlight', 'query', 'invert'])
+        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge, filter_entry, var_invert_or_not)
 
-    def grayout(self, input_file, annotation_file, interaction_or_edge):
+    def grayout(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.gray_bool = True
         form_details_df = pd.DataFrame([[input_file, annotation_file, self.gray_bool]],
-                                       columns=['input_file', 'annotation_file', 'gray'])
-        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
+                                       columns=['input_file', 'annotation_file', 'gray', 'query', 'invert'])
+        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge, filter_entry, var_invert_or_not)
 
+    # TODO add inverse button
     def reset(self, input_file, annotation_file, interaction_or_edge):
         self.reset_bool = True
         form_details_df = pd.DataFrame([[input_file, annotation_file, self.reset_bool]],
