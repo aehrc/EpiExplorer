@@ -214,6 +214,11 @@ class CytoscapeIntegration:
                     self.filter_data()
 
                 if 'gray' in self.core_details.columns:
+                    # Link: https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/advanced-view-api.ipynb
+                    user_query = self.core_details.at[0, 'query']
+                    print(user_query)
+                    print('_________')
+
                     # Get the network from cytoscape
                     my_style_2 = node_edge_network.get_view(view_id_list[0], format='json')
 
@@ -223,12 +228,17 @@ class CytoscapeIntegration:
 
                     # Convert to pandas dataframe
                     node_view_df = pd.DataFrame.from_dict(node_views_dict, orient='index')
+                    print(node_view_df)
+                    print('_________')
 
+                    filtered_df = node_view_df.query(user_query)
 
+                    for index, row in filtered_df.iterrows():
+                        row['NODE_FILL_COLOR'] = '#d3d3d3'
 
-
-
-                    self.filter_data()
+                    my_style_2.batch_update_node_views(filtered_df)
+                    Image(node_edge_network.get_png(height=400))
+                    # self.filter_data()
 
         cy.style.apply(my_style, node_edge_network)
 
