@@ -231,12 +231,22 @@ class CytoscapeIntegration:
                     print(node_view_df)
                     print('_________')
 
+                    # filter out the user desired data
                     filtered_df = node_view_df.query(user_query)
+
+                    # Remove the filtered data and make a new df
+                    new_df = node_view_df.merge(filtered_df, on='id')
+                    print('this is the new df')
+                    print(new_df)
+                    node_view_df[(~node_view_df.id.isin(new_df.id))]
 
                     for index, row in filtered_df.iterrows():
                         row['NODE_FILL_COLOR'] = '#d3d3d3'
 
-                    my_style_2.batch_update_node_views(filtered_df)
+                    # combine the new DataFrame and the newly changed DataFrame with filters
+                    new_df = new_df.merge(filtered_df, on='id')
+
+                    my_style_2.batch_update_node_views(new_df)
                     Image(node_edge_network.get_png(height=400))
                     # self.filter_data()
 
