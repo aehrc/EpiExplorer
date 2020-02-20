@@ -169,7 +169,7 @@ class CytoscapeIntegration:
 
             my_style.create_discrete_mapping(column='order', col_type='String', vp='EDGE_WIDTH',
                                              mappings=edge_order_size_key_value_pair)
-        # TODO when reset/ submit
+        # TODO when reset/ submit same thing as what the user specified gets loaded
         elif update:
             print('Update styles')
             print(self.core_details)
@@ -215,7 +215,14 @@ class CytoscapeIntegration:
 
                 if 'gray' in self.core_details.columns:
                     # Link: https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/advanced-view-api.ipynb
+
                     user_query = self.core_details.at[0, 'query']
+
+                    if 'invert' in self.core_details.columns:
+                        if self.core_details.at[0, 'invert'] != 0:
+                            # TODO write code to modify query, basically the stuff I did below
+                            print('Query needs to be modified')
+
                     print(user_query)
                     print('_________')
 

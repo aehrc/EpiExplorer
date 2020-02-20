@@ -287,7 +287,6 @@ class FormGUI:
                                        columns=['input_file', 'annotation_file', 'gray', 'query', 'invert'])
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge, filter_entry, var_invert_or_not)
 
-    # TODO add inverse button
     def reset(self, input_file, annotation_file, interaction_or_edge):
         self.reset_bool = True
         form_details_df = pd.DataFrame([[input_file, annotation_file, self.reset_bool]],
