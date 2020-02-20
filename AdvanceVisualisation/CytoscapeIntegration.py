@@ -3,7 +3,6 @@ import os
 from py2cytoscape.data.cyrest_client import CyRestClient
 from IPython.display import Image
 import json
-import simplejson
 import pandas as pd
 
 
@@ -47,10 +46,10 @@ class CytoscapeIntegration:
             json.dump(full_dict, outfile, sort_keys=True, indent=4)
 
     # When a style is changed in the GUI this method is called
-    # TODO write the code for other styles
-    # TODO If need to update then read the csv file with styles and tweak it as necessary
-    def update(self):
-        print('inside update')
+    # TODO add code to filter data for network
+    # TODO send the grayed out nodes 'to the back'
+    def filter_data(self):
+        print('Inside filter data')
         # Read the network in cytoscape
         # Get all the node details and styles
         # Change the styles according to core_details
@@ -174,7 +173,7 @@ class CytoscapeIntegration:
         elif update:
             print('Update styles')
             print(self.core_details)
-
+            # TODO add code for the rest of the styles
             if 'node_colour' in self.core_details.columns:
                 print('Styling node colour')
                 update_type = self.core_details.at[0, 'node_colour']
@@ -201,6 +200,35 @@ class CytoscapeIntegration:
                 elif update_type == 'Type':
                     # TODO add continuous mapping for Alpha/ Beta values
                     print('TODO')
+
+            # Code for querying out data
+
+            if 'query' in self.core_details.columns:
+                if 'hide' in self.core_details.columns:
+                    self.filter_data()
+
+                if 'show' in self.core_details.columns:
+                    self.filter_data()
+
+                if 'highlight' in self.core_details.columns:
+                    self.filter_data()
+
+                if 'gray' in self.core_details.columns:
+                    # Get the network from cytoscape
+                    my_style_2 = node_edge_network.get_view(view_id_list[0], format='json')
+
+                    # Get node and edge views as a dictionary
+                    node_views_dict = my_style_2.get_node_views_as_dict()
+                    edge_views_dict = my_style_2.get_edge_views_as_dict()
+
+                    # Convert to pandas dataframe
+                    node_view_df = pd.DataFrame.from_dict(node_views_dict, orient='index')
+
+
+
+
+
+                    self.filter_data()
 
         cy.style.apply(my_style, node_edge_network)
 
