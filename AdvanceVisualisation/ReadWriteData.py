@@ -79,9 +79,9 @@ class ReadWriteData:
             new_beta = ''
             if input_type == 'Alpha':
                 new_alpha = df.at[index, 'Alpha']
-                new_beta = 'None'
+                new_beta = '0'
             else:
-                new_alpha = 'None'
+                new_alpha = '0'
                 new_beta = df.at[index, 'Beta']
 
             for i in range(int_order):
@@ -153,9 +153,9 @@ class ReadWriteData:
             new_beta = ''
             if input_type == 'Alpha':
                 new_alpha = df.at[index, 'Alpha']
-                new_beta = 'None'
+                new_beta = '0'
             else:
-                new_alpha = 'None'
+                new_alpha = '0'
                 new_beta = df.at[index, 'Beta']
 
 
@@ -426,16 +426,16 @@ class ReadWriteData:
                 # Not important i.e presentation
                 if temp_node_important.empty:
                     # Check if an Alpha/ Beta value exist by checking if the Alpha/ Beta value is set to None
-                    found_both_alpha_and_beta = temp_node_presentation.loc[(temp_node_presentation['Alpha'] != 'None')
-                                                                           & (temp_node_presentation['Beta'] != 'None')] \
+                    found_both_alpha_and_beta = temp_node_presentation.loc[(temp_node_presentation['Alpha'] != '0')
+                                                                           & (temp_node_presentation['Beta'] != '0')] \
                         .reset_index(drop=True)
                     new_reason = 'Presentation'
                     # Both Alpha and Beta together aren't present
                     if found_both_alpha_and_beta.empty:
-                        found_only_alpha = temp_df.loc[(temp_df['Alpha'] != 'None')
+                        found_only_alpha = temp_df.loc[(temp_df['Alpha'] != '0')
                                                        & (temp_df['reason to exist'] == 'Presentation')].reset_index(
                             drop=True)
-                        found_only_beta = temp_df.loc[(temp_df['Beta'] != 'None')
+                        found_only_beta = temp_df.loc[(temp_df['Beta'] != '0')
                                                       & (temp_df['reason to exist'] == 'Presentation')].reset_index(
                             drop=True)
 
@@ -471,7 +471,7 @@ class ReadWriteData:
                             # Append the new obj to the DataFrame
                             new_node_df = new_node_df.append \
                                     (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, new_alpha, 'None', new_reason]],
+                                    [[temp_node, temp_node, new_order, new_alpha, '0', new_reason]],
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
 
@@ -488,7 +488,7 @@ class ReadWriteData:
                             # Append the new cell to the DataFrame
                             new_node_df = new_node_df.append \
                                     (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, 'None', new_beta, new_reason]],
+                                    [[temp_node, temp_node, new_order, '0', new_beta, new_reason]],
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
                             i = i - len(temp_df)
@@ -503,7 +503,7 @@ class ReadWriteData:
                             # Append the new cell to the DataFrame
                             new_node_df = new_node_df.append \
                                     (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, 'None', 'None', new_reason]],
+                                    [[temp_node, temp_node, new_order, '0', '0', new_reason]],
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
 
@@ -531,17 +531,17 @@ class ReadWriteData:
 
                 # Important
                 else:
-                    found_both_alpha_and_beta = temp_node_important.loc[(temp_node_important['Alpha'] != 'None')
-                                                                        & (temp_node_important['Beta'] != 'None')] \
+                    found_both_alpha_and_beta = temp_node_important.loc[(temp_node_important['Alpha'] != '0')
+                                                                        & (temp_node_important['Beta'] != '0')] \
                         .reset_index(drop=True)
                     new_reason = 'Important'
 
                     # Both Alpha and Beta together aren't present
                     if found_both_alpha_and_beta.empty:
-                        found_only_alpha = temp_df.loc[(temp_df['Alpha'] != 'None')
+                        found_only_alpha = temp_df.loc[(temp_df['Alpha'] != '0')
                                                        & (temp_df['reason to exist'] == 'Important')].reset_index(
                             drop=True).reset_index(drop=True)
-                        found_only_beta = temp_df.loc[(temp_df['Beta'] != 'None')
+                        found_only_beta = temp_df.loc[(temp_df['Beta'] != '0')
                                                       & (temp_df['reason to exist'] == 'Important')].reset_index(
                             drop=True).reset_index(drop=True)
 
@@ -577,7 +577,7 @@ class ReadWriteData:
                             # Append the new cell to the DataFrame
                             new_node_df = new_node_df.append \
                                     (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, new_alpha, 'None', new_reason]],
+                                    [[temp_node, temp_node, new_order, new_alpha, '0', new_reason]],
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
 
@@ -594,7 +594,7 @@ class ReadWriteData:
                             # Append the new cell to the DataFrame
                             new_node_df = new_node_df.append \
                                     (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, 'None', new_beta, new_reason]],
+                                    [[temp_node, temp_node, new_order, '0', new_beta, new_reason]],
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
                             i = i - len(temp_df)
@@ -609,7 +609,7 @@ class ReadWriteData:
                             # Append the new cell to the DataFrame
                             new_node_df = new_node_df.append \
                                     (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, 'None', 'None', new_reason]],
+                                    [[temp_node, temp_node, new_order, '0', '0', new_reason]],
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
 
