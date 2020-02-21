@@ -383,11 +383,12 @@ class ReadWriteData:
             print('No annotation file given')
             new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
         else:
+            print('Annotation file/s given')
             annotation_files = self.annotation_files.split()
             for annotation_file in annotation_files:
+                print(annotation_file)
                 annotation_df = pd.read_csv(annotation_file, sep="\t")
                 if 'Variation ID' in annotation_df.columns:
-                    print('Column Variation ID found!')
                     annotation_df = annotation_df.rename(columns={'Variation ID': 'id'})
                     new_node_df = new_node_df.merge(annotation_df, on='id', how='left')
                     new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
