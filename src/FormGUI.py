@@ -152,7 +152,6 @@ class FormGUI:
         node_colour_title = tk.Label(view_frame, bg='#DADBDC', justify='left', text='Node colour by: ')
         node_colour_title.place(relx=0.04, rely=0.2, relheight=0.1, relwidth=0.45)
 
-        # TODO ask Arash what other types of columns need styling
         node_color_list = ['Order', 'Type', 'Overlap', 'Default']
         node_colour_variable = tk.StringVar(view_frame)
         node_colour_variable.set(node_color_list[3])

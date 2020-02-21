@@ -206,6 +206,7 @@ class CytoscapeIntegration:
             # Code for querying out data
             if 'query' in self.core_details.columns:
                 if 'hide' in self.core_details.columns:
+                    # TODO check if hide is set to True first omh
                     self.filter_data()
 
                 if 'show' in self.core_details.columns:
