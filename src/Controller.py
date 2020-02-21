@@ -67,6 +67,5 @@ class Controller:
                 print('Error found when loading the annotation file')
                 files_loaded = False
             print('___________________________________')
-            print()
 
         return files_loaded

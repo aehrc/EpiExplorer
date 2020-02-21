@@ -385,7 +385,6 @@ class ReadWriteData:
         else:
             annotation_files = self.annotation_files.split()
             for annotation_file in annotation_files:
-                print(annotation_file)
                 annotation_df = pd.read_csv(annotation_file, sep="\t")
                 if 'Variation ID' in annotation_df.columns:
                     print('Column Variation ID found!')

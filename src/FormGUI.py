@@ -40,7 +40,12 @@ class FormGUI:
             print('Loading network as Interaction Node')
             self.var_interaction_or_edge = 1
 
-    def select_annot_file(self, root, annot_file_entry):
+    def select_output_file(self, root, output_file_entry):
+        received_file = tkFileDialog.askdirectory(parent=root, title='Choose directory')
+        self.output_file = received_file
+        output_file_entry.insert(0, self.output_file)
+
+    def select_annot_files(self, root, annot_file_entry):
         received_files = tkFileDialog.askopenfilenames(parent=root, title='Choose a file/s')
         received_files = root.tk.splitlist(received_files)
         self.annotation_files = received_files
@@ -69,44 +74,54 @@ class FormGUI:
         root.title('Epi Explorer')
 
         # Add icon to the GUI
-        # img_path = r'csiro.png'
-        # imgicon = tk.Image('photo', file=img_path)
-        # root.tk.call('wm', 'iconphoto', root._w, imgicon)
+        img_path = r'csiro.png'
+        imgicon = tk.Image('photo', file=img_path)
+        root.tk.call('wm', 'iconphoto', root._w, imgicon)
 
         # Main window
-        canvas = tk.Canvas(root, bg='#763626', height=640, width=640)
+        canvas = tk.Canvas(root, bg='#763626', height=720, width=640)
         canvas.pack()
         main_title = tk.Label(root, bg='#763626', text='Welcome to Epi Explorer! What changes would you like to see?')
         main_title.place(relx=0.01, rely=0.035, relheight=0.05, relwidth=0.75)
 
-        # logo = PhotoImage(file=img_path)
-        # logo_resized = logo.subsample(10, 10)
-        # photo_label = tk.Label(root, bg='#763626', image=logo_resized)
-        # photo_label.place(relx=0.8, rely=0.01, relheight=0.075, relwidth=0.25)
+        logo = PhotoImage(file=img_path)
+        logo_resized = logo.subsample(10, 10)
+        photo_label = tk.Label(root, bg='#763626', image=logo_resized)
+        photo_label.place(relx=0.8, rely=0.01, relheight=0.075, relwidth=0.25)
 
         # Frame to input files and load
         file_frame = tk.Frame(root, bg='#2A3132', bd=5)
         file_frame.place(relx=0.5, rely=0.1, relwidth=0.95, relheight=0.2, anchor='n')
 
         input_file_title = tk.Label(file_frame, text='Input file/s: ')
-        input_file_title.place(relx=0.01, rely=0.1, relheight=0.2, relwidth=0.25)
+        input_file_title.place(relx=0.01, rely=0.1, relheight=0.15, relwidth=0.25)
 
         input_file_entry = tk.Entry(file_frame)
-        input_file_entry.place(relx=0.275, rely=0.1, relwidth=0.5, relheight=0.2)
+        input_file_entry.place(relx=0.275, rely=0.1, relwidth=0.5, relheight=0.15)
 
         load_file_button = tk.Button(file_frame, bg='#90afc5', text="Open",
                                      command=lambda: self.select_input_files(root, input_file_entry))
-        load_file_button.place(relx=0.8, rely=0.1, relwidth=0.15, relheight=0.2)
+        load_file_button.place(relx=0.8, rely=0.1, relwidth=0.15, relheight=0.15)
 
         annot_file_title = tk.Label(file_frame, text='Annotation file: ')
-        annot_file_title.place(relx=0.01, rely=0.4, relheight=0.2, relwidth=0.25)
+        annot_file_title.place(relx=0.01, rely=0.3, relheight=0.15, relwidth=0.25)
 
         annot_file_entry = tk.Entry(file_frame)
-        annot_file_entry.place(relx=0.275, rely=0.4, relwidth=0.5, relheight=0.2)
+        annot_file_entry.place(relx=0.275, rely=0.3, relwidth=0.5, relheight=0.15)
 
         load_annot_file_button = tk.Button(file_frame, bg='#90afc5', text="Open",
-                                           command=lambda: self.select_annot_file(root, annot_file_entry))
-        load_annot_file_button.place(relx=0.8, rely=0.4, relwidth=0.15, relheight=0.2)
+                                           command=lambda: self.select_annot_files(root, annot_file_entry))
+        load_annot_file_button.place(relx=0.8, rely=0.3, relwidth=0.15, relheight=0.15)
+
+        output_file_title = tk.Label(file_frame, text='Output path: ')
+        output_file_title.place(relx=0.01, rely=0.5, relheight=0.15, relwidth=0.25)
+
+        output_file_entry = tk.Entry(file_frame)
+        output_file_entry.place(relx=0.275, rely=0.5, relwidth=0.5, relheight=0.15)
+
+        load_output_file_button = tk.Button(file_frame, bg='#90afc5', text="Open",
+                                            command=lambda: self.select_output_file(root, output_file_entry))
+        load_output_file_button.place(relx=0.8, rely=0.5, relwidth=0.15, relheight=0.15)
 
         # Check button to specify Interaction or Edge network
         var_interaction = tk.IntVar()
@@ -115,12 +130,12 @@ class FormGUI:
                                            command=lambda: self.check_interaction_or_edge(
                                                var_interaction.get()))
 
-        node_check_button.place(relx=0.01, rely=0.7, relwidth=0.35, relheight=0.2)
+        node_check_button.place(relx=0.01, rely=0.75, relwidth=0.35, relheight=0.2)
 
-        load_button = tk.Button(file_frame, bg='#90afc5', text="Load files",
+        load_button = tk.Button(file_frame, bg='#90afc5', text="Load",
                                 command=lambda: self.load_files(input_file_entry.get(), annot_file_entry.get(),
                                                                 self.var_interaction_or_edge))
-        load_button.place(relx=0.725, rely=0.7, relheight=0.2, relwidth=0.25)
+        load_button.place(relx=0.75, rely=0.75, relheight=0.2, relwidth=0.225)
 
         # Frame to specify styles for the network
         view_frame = tk.Frame(root, bg='#336b87', bd=5)
@@ -209,23 +224,26 @@ class FormGUI:
         var_invert = tk.IntVar()
         invert_check_button = tk.Checkbutton(filter_frame, text='Invert',
                                              variable=var_invert, command=lambda: self.check_interaction_or_edge(
-                                               var_invert.get()))
+                var_invert.get()))
 
         invert_check_button.place(relx=0.04, rely=0.85, relwidth=0.225, relheight=0.1)
 
         hide_button = tk.Button(filter_frame, bg='#90afc5', text="Hide",
                                 command=lambda: self.hide(input_file_entry.get(), annot_file_entry.get(),
-                                                          self.var_interaction_or_edge, filter_entry.get(), self.var_invert_or_not))
+                                                          self.var_interaction_or_edge, filter_entry.get(),
+                                                          self.var_invert_or_not))
         hide_button.place(relx=0.04, rely=0.55, relheight=0.1, relwidth=0.45)
 
         show_button = tk.Button(filter_frame, bg='#90afc5', text="Show",
                                 command=lambda: self.show(input_file_entry.get(), annot_file_entry.get(),
-                                                          self.var_interaction_or_edge, filter_entry.get(), self.var_invert_or_not))
+                                                          self.var_interaction_or_edge, filter_entry.get(),
+                                                          self.var_invert_or_not))
         show_button.place(relx=0.525, rely=0.55, relheight=0.1, relwidth=0.45)
 
         hl_button = tk.Button(filter_frame, bg='#90afc5', text="Highlight",
                               command=lambda: self.highlight(input_file_entry.get(), annot_file_entry.get(),
-                                                             self.var_interaction_or_edge, filter_entry.get(), self.var_invert_or_not))
+                                                             self.var_interaction_or_edge, filter_entry.get(),
+                                                             self.var_invert_or_not))
         hl_button.place(relx=0.04, rely=0.7, relheight=0.1, relwidth=0.45)
 
         gray_button = tk.Button(filter_frame, bg='#90afc5', text="Gray out",
@@ -278,8 +296,9 @@ class FormGUI:
 
     def highlight(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.highlight_bool = True
-        form_details_df = pd.DataFrame([[input_file, annotation_file, self.highlight_bool, filter_entry, var_invert_or_not]],
-                                       columns=['input_file', 'annotation_file', 'highlight', 'query', 'invert'])
+        form_details_df = pd.DataFrame(
+            [[input_file, annotation_file, self.highlight_bool, filter_entry, var_invert_or_not]],
+            columns=['input_file', 'annotation_file', 'highlight', 'query', 'invert'])
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def grayout(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
