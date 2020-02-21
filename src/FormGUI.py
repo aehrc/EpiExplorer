@@ -79,18 +79,23 @@ class FormGUI:
         root.tk.call('wm', 'iconphoto', root._w, imgicon)
 
         # Main window
-        canvas = tk.Canvas(root, bg='#763626', height=720, width=640)
+        # Blue: '#00A9CE'
+        # Dark blue: '#001D34'
+        # Steel: '#757579'
+        # Mist: '#DADBDC'
+
+        canvas = tk.Canvas(root, bg='#f0f0f0', height=720, width=640)
         canvas.pack()
-        main_title = tk.Label(root, bg='#763626', text='Welcome to Epi Explorer! What changes would you like to see?')
+        main_title = tk.Label(root, bg='#f0f0f0', text='Welcome to Epi Explorer! What changes would you like to see?')
         main_title.place(relx=0.01, rely=0.035, relheight=0.05, relwidth=0.75)
 
         logo = PhotoImage(file=img_path)
         logo_resized = logo.subsample(10, 10)
-        photo_label = tk.Label(root, bg='#763626', image=logo_resized)
+        photo_label = tk.Label(root, bg='#f0f0f0', image=logo_resized)
         photo_label.place(relx=0.8, rely=0.01, relheight=0.075, relwidth=0.25)
 
         # Frame to input files and load
-        file_frame = tk.Frame(root, bg='#2A3132', bd=5)
+        file_frame = tk.Frame(root, bg='#001D34', bd=5)
         file_frame.place(relx=0.5, rely=0.1, relwidth=0.95, relheight=0.2, anchor='n')
 
         input_file_title = tk.Label(file_frame, text='Input file/s: ')
@@ -99,7 +104,7 @@ class FormGUI:
         input_file_entry = tk.Entry(file_frame)
         input_file_entry.place(relx=0.275, rely=0.1, relwidth=0.5, relheight=0.15)
 
-        load_file_button = tk.Button(file_frame, bg='#90afc5', text="Open",
+        load_file_button = tk.Button(file_frame, bg='#DADBDC', text="Open",
                                      command=lambda: self.select_input_files(root, input_file_entry))
         load_file_button.place(relx=0.8, rely=0.1, relwidth=0.15, relheight=0.15)
 
@@ -109,7 +114,7 @@ class FormGUI:
         annot_file_entry = tk.Entry(file_frame)
         annot_file_entry.place(relx=0.275, rely=0.3, relwidth=0.5, relheight=0.15)
 
-        load_annot_file_button = tk.Button(file_frame, bg='#90afc5', text="Open",
+        load_annot_file_button = tk.Button(file_frame, bg='#DADBDC', text="Open",
                                            command=lambda: self.select_annot_files(root, annot_file_entry))
         load_annot_file_button.place(relx=0.8, rely=0.3, relwidth=0.15, relheight=0.15)
 
@@ -119,7 +124,7 @@ class FormGUI:
         output_file_entry = tk.Entry(file_frame)
         output_file_entry.place(relx=0.275, rely=0.5, relwidth=0.5, relheight=0.15)
 
-        load_output_file_button = tk.Button(file_frame, bg='#90afc5', text="Open",
+        load_output_file_button = tk.Button(file_frame, bg='#DADBDC', text="Open",
                                             command=lambda: self.select_output_file(root, output_file_entry))
         load_output_file_button.place(relx=0.8, rely=0.5, relwidth=0.15, relheight=0.15)
 
@@ -132,19 +137,19 @@ class FormGUI:
 
         node_check_button.place(relx=0.01, rely=0.75, relwidth=0.35, relheight=0.2)
 
-        load_button = tk.Button(file_frame, bg='#90afc5', text="Load",
+        load_button = tk.Button(file_frame, bg='#DADBDC', text="Load",
                                 command=lambda: self.load_files(input_file_entry.get(), annot_file_entry.get(),
                                                                 self.var_interaction_or_edge))
         load_button.place(relx=0.75, rely=0.75, relheight=0.2, relwidth=0.225)
 
         # Frame to specify styles for the network
-        view_frame = tk.Frame(root, bg='#336b87', bd=5)
+        view_frame = tk.Frame(root, bg='#757579', bd=5)
         view_frame.place(relx=0.258, rely=0.31, relwidth=0.468, relheight=0.575, anchor='n')
 
-        view_frame_title = tk.Label(view_frame, bg='#336b87', text='Specify how you would like to put styles!')
+        view_frame_title = tk.Label(view_frame, bg='#757579', text='Specify how you would like to put styles!')
         view_frame_title.place(relx=0.04, rely=0.05, relheight=0.1, relwidth=0.95)
 
-        node_colour_title = tk.Label(view_frame, bg='#90afc5', justify='left', text='Node colour by: ')
+        node_colour_title = tk.Label(view_frame, bg='#DADBDC', justify='left', text='Node colour by: ')
         node_colour_title.place(relx=0.04, rely=0.2, relheight=0.1, relwidth=0.45)
 
         # TODO ask Arash what other types of columns need styling
@@ -158,7 +163,7 @@ class FormGUI:
                                                                                self.var_interaction_or_edge))
         node_colour_options.place(relx=0.525, rely=0.2, relheight=0.1, relwidth=0.45)
 
-        node_size_title = tk.Label(view_frame, bg='#90afc5', text='Node size by: ')
+        node_size_title = tk.Label(view_frame, bg='#DADBDC', text='Node size by: ')
         node_size_title.place(relx=0.04, rely=0.35, relheight=0.1, relwidth=0.45)
 
         node_size_list = ['Order', 'Type', 'Default']
@@ -171,7 +176,7 @@ class FormGUI:
                                                                            self.var_interaction_or_edge))
         node_size_options.place(relx=0.525, rely=0.35, relheight=0.1, relwidth=0.45)
 
-        node_shape_title = tk.Label(view_frame, bg='#90afc5', text='Node shape by: ')
+        node_shape_title = tk.Label(view_frame, bg='#DADBDC', text='Node shape by: ')
         node_shape_title.place(relx=0.04, rely=0.5, relheight=0.1, relwidth=0.45)
 
         node_shape_list = ['Order', 'Type', 'Default']
@@ -184,7 +189,7 @@ class FormGUI:
                                                                              self.var_interaction_or_edge))
         node_shape_options.place(relx=0.525, rely=0.5, relheight=0.1, relwidth=0.45)
 
-        edge_colour_title = tk.Label(view_frame, bg='#90afc5', text='Edge colour by: ')
+        edge_colour_title = tk.Label(view_frame, bg='#DADBDC', text='Edge colour by: ')
         edge_colour_title.place(relx=0.04, rely=0.65, relheight=0.1, relwidth=0.45)
 
         edge_colour_list = ['Order', 'Default']
@@ -197,7 +202,7 @@ class FormGUI:
                                                                                self.var_interaction_or_edge))
         edge_colour_options.place(relx=0.525, rely=0.65, relheight=0.1, relwidth=0.45)
 
-        edge_thickness_title = tk.Label(view_frame, bg='#90afc5', text='Edge thickness by: ')
+        edge_thickness_title = tk.Label(view_frame, bg='#DADBDC', text='Edge thickness by: ')
         edge_thickness_title.place(relx=0.04, rely=0.8, relheight=0.1, relwidth=0.45)
 
         edge_thickness_list = ['Order', 'Type', 'Default']
@@ -211,10 +216,10 @@ class FormGUI:
         edge_thickness_options.place(relx=0.525, rely=0.8, relheight=0.1, relwidth=0.45)
 
         # Frame to filter data
-        filter_frame = tk.Frame(root, bg='#336b87', bd=5)
+        filter_frame = tk.Frame(root, bg='#757579', bd=5)
         filter_frame.place(relx=0.74, rely=0.31, relwidth=0.468, relheight=0.575, anchor='n')
 
-        filter_frame_title = tk.Label(filter_frame, bg='#336b87', text='Specify how you would like to filter!')
+        filter_frame_title = tk.Label(filter_frame, bg='#757579', text='Specify how you would like to filter!')
         filter_frame_title.place(relx=0.04, rely=0.05, relheight=0.1, relwidth=0.95)
 
         filter_entry = tk.Entry(filter_frame, font=24)
@@ -222,46 +227,46 @@ class FormGUI:
 
         # Check button to invert query
         var_invert = tk.IntVar()
-        invert_check_button = tk.Checkbutton(filter_frame, text='Invert',
+        invert_check_button = tk.Checkbutton(filter_frame, text='Invert', bg='#DADBDC',
                                              variable=var_invert, command=lambda: self.check_interaction_or_edge(
                 var_invert.get()))
 
         invert_check_button.place(relx=0.04, rely=0.85, relwidth=0.225, relheight=0.1)
 
-        hide_button = tk.Button(filter_frame, bg='#90afc5', text="Hide",
+        hide_button = tk.Button(filter_frame, bg='#DADBDC', text="Hide",
                                 command=lambda: self.hide(input_file_entry.get(), annot_file_entry.get(),
                                                           self.var_interaction_or_edge, filter_entry.get(),
                                                           self.var_invert_or_not))
         hide_button.place(relx=0.04, rely=0.55, relheight=0.1, relwidth=0.45)
 
-        show_button = tk.Button(filter_frame, bg='#90afc5', text="Show",
+        show_button = tk.Button(filter_frame, bg='#DADBDC', text="Show",
                                 command=lambda: self.show(input_file_entry.get(), annot_file_entry.get(),
                                                           self.var_interaction_or_edge, filter_entry.get(),
                                                           self.var_invert_or_not))
         show_button.place(relx=0.525, rely=0.55, relheight=0.1, relwidth=0.45)
 
-        hl_button = tk.Button(filter_frame, bg='#90afc5', text="Highlight",
+        hl_button = tk.Button(filter_frame, bg='#DADBDC', text="Highlight",
                               command=lambda: self.highlight(input_file_entry.get(), annot_file_entry.get(),
                                                              self.var_interaction_or_edge, filter_entry.get(),
                                                              self.var_invert_or_not))
         hl_button.place(relx=0.04, rely=0.7, relheight=0.1, relwidth=0.45)
 
-        gray_button = tk.Button(filter_frame, bg='#90afc5', text="Gray out",
+        gray_button = tk.Button(filter_frame, bg='#DADBDC', text="Gray out",
                                 command=lambda: self.grayout(input_file_entry.get(),
                                                              annot_file_entry.get(), self.var_interaction_or_edge,
                                                              filter_entry.get(), self.var_invert_or_not))
         gray_button.place(relx=0.525, rely=0.7, relheight=0.1, relwidth=0.45)
 
-        reset_button = tk.Button(filter_frame, bg='#90afc5', text="Reset",
+        reset_button = tk.Button(filter_frame, bg='#DADBDC', text="Reset",
                                  command=lambda: self.reset(input_file_entry.get(),
                                                             annot_file_entry.get(), self.var_interaction_or_edge))
         reset_button.place(relx=0.3, rely=0.85, relheight=0.1, relwidth=0.45)
 
-        help_button = tk.Button(filter_frame, bg='#90afc5', text="Help",
+        help_button = tk.Button(filter_frame, bg='#DADBDC', text="Help",
                                 command=lambda: self.help())
         help_button.place(relx=0.775, rely=0.85, relheight=0.1, relwidth=0.2)
 
-        submit_button = tk.Button(root, text="Submit", command=lambda root=root: self.quit(root))
+        submit_button = tk.Button(root, text="Submit", bg='#DADBDC', command=lambda root=root: self.quit(root))
         submit_button.place(relx=0.3, rely=0.9, relheight=0.075, relwidth=0.35)
 
         root.mainloop()
