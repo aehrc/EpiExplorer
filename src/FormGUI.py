@@ -20,6 +20,7 @@ class FormGUI:
         self.reset_bool = False
         self.input_file_names = ''
         self.annotation_file = ''
+        self.output_file = ''
         self.var_interaction_or_edge = 2
         self.var_invert_or_not = 0
 
@@ -53,8 +54,8 @@ class FormGUI:
 
     # Load file upon clicking submit on the GUI
     def load_files(self, input_file, annotation_file, interaction_or_edge):
-        details_df = pd.DataFrame([[input_file, annotation_file, True]],
-                                  columns=['input_file', 'annotation_file', 'reset'])
+        details_df = pd.DataFrame([[input_file, annotation_file, self.output_file, True]],
+                                  columns=['input_file', 'annotation_file', 'output_file', 'reset'])
         # Call the validate function in Controller class
         valid = self.controller.perform_core_functionality(details_df, False, interaction_or_edge)
         if valid:
@@ -214,23 +215,23 @@ class FormGUI:
 
         hide_button = tk.Button(filter_frame, bg='#90afc5', text="Hide",
                                 command=lambda: self.hide(input_file_entry.get(), annot_file_entry.get(),
-                                                          self.var_interaction_or_edge, filter_entry.get(), var_invert_or_not))
+                                                          self.var_interaction_or_edge, filter_entry.get(), self.var_invert_or_not))
         hide_button.place(relx=0.04, rely=0.55, relheight=0.1, relwidth=0.45)
 
         show_button = tk.Button(filter_frame, bg='#90afc5', text="Show",
                                 command=lambda: self.show(input_file_entry.get(), annot_file_entry.get(),
-                                                          self.var_interaction_or_edge, filter_entry.get(), var_invert_or_not))
+                                                          self.var_interaction_or_edge, filter_entry.get(), self.var_invert_or_not))
         show_button.place(relx=0.525, rely=0.55, relheight=0.1, relwidth=0.45)
 
         hl_button = tk.Button(filter_frame, bg='#90afc5', text="Highlight",
                               command=lambda: self.highlight(input_file_entry.get(), annot_file_entry.get(),
-                                                             self.var_interaction_or_edge, filter_entry.get(), var_invert_or_not))
+                                                             self.var_interaction_or_edge, filter_entry.get(), self.var_invert_or_not))
         hl_button.place(relx=0.04, rely=0.7, relheight=0.1, relwidth=0.45)
 
         gray_button = tk.Button(filter_frame, bg='#90afc5', text="Gray out",
                                 command=lambda: self.grayout(input_file_entry.get(),
                                                              annot_file_entry.get(), self.var_interaction_or_edge,
-                                                             filter_entry.get(), var_invert_or_not))
+                                                             filter_entry.get(), self.var_invert_or_not))
         gray_button.place(relx=0.525, rely=0.7, relheight=0.1, relwidth=0.45)
 
         reset_button = tk.Button(filter_frame, bg='#90afc5', text="Reset",
@@ -265,27 +266,27 @@ class FormGUI:
     # Helper methods to update Cytoscape upon the press of buttons in the GUI
     def hide(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.hide_bool = True
-        form_details_df = pd.DataFrame([[input_file, annotation_file, self.hide_bool]],
+        form_details_df = pd.DataFrame([[input_file, annotation_file, self.hide_bool, filter_entry, var_invert_or_not]],
                                        columns=['input_file', 'annotation_file', 'hide', 'query', 'invert'])
-        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge, filter_entry, var_invert_or_not)
+        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def show(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.show_bool = True
-        form_details_df = pd.DataFrame([[input_file, annotation_file, self.show_bool]],
+        form_details_df = pd.DataFrame([[input_file, annotation_file, self.show_bool, filter_entry, var_invert_or_not]],
                                        columns=['input_file', 'annotation_file', 'show', 'query', 'invert'])
-        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge, filter_entry, var_invert_or_not)
+        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def highlight(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.highlight_bool = True
-        form_details_df = pd.DataFrame([[input_file, annotation_file, self.highlight_bool]],
+        form_details_df = pd.DataFrame([[input_file, annotation_file, self.highlight_bool, filter_entry, var_invert_or_not]],
                                        columns=['input_file', 'annotation_file', 'highlight', 'query', 'invert'])
-        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge, filter_entry, var_invert_or_not)
+        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def grayout(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.gray_bool = True
-        form_details_df = pd.DataFrame([[input_file, annotation_file, self.gray_bool]],
+        form_details_df = pd.DataFrame([[input_file, annotation_file, self.gray_bool, filter_entry, var_invert_or_not]],
                                        columns=['input_file', 'annotation_file', 'gray', 'query', 'invert'])
-        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge, filter_entry, var_invert_or_not)
+        self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def reset(self, input_file, annotation_file, interaction_or_edge):
         self.reset_bool = True

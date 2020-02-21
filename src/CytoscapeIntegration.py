@@ -1,6 +1,7 @@
 # Class to send data to Cytoscape in the form of a json file
 import os
 from py2cytoscape.data.cyrest_client import CyRestClient
+from py2cytoscape.data.cynetwork import CyNetwork
 from IPython.display import Image
 import json
 import pandas as pd
@@ -13,7 +14,7 @@ class CytoscapeIntegration:
         self.core_details = core_details
         self.interaction_or_edge = interaction_or_edge
         self.json_file_name = 'json_file.json'
-        self.json_file_path = os.path.join('OutputData/', self.json_file_name)
+        self.json_file_path = os.path.join('../SampleData/InteractionLists/', self.json_file_name)
 
     # Method to convert the DataFrames to a json object and save as a .json file
     def dataframe_to_json(self):
@@ -223,11 +224,10 @@ class CytoscapeIntegration:
                             # TODO write code to modify query, basically the stuff I did below
                             print('Query needs to be modified')
 
-                    print(user_query)
-                    print('_________')
-
                     # Get the network from cytoscape
+                    view_id_list = node_edge_network.get_views()
                     my_style_2 = node_edge_network.get_view(view_id_list[0], format='json')
+                    print(my_style_2)
 
                     # Get node and edge views as a dictionary
                     node_views_dict = my_style_2.get_node_views_as_dict()
@@ -255,7 +255,7 @@ class CytoscapeIntegration:
 
                     my_style_2.batch_update_node_views(new_df)
                     Image(node_edge_network.get_png(height=400))
-                    # self.filter_data()
+                    self.filter_data()
 
         cy.style.apply(my_style, node_edge_network)
 

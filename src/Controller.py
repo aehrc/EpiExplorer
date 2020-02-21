@@ -44,7 +44,7 @@ class Controller:
     # If the network type is Interaction or Edge
     def perform_core_functionality(self, core_details, update, interaction_or_edge):
         # Validate input file
-        read_write_data = ReadWriteData(core_details.iat[0, 0], core_details.iat[0, 1])
+        read_write_data = ReadWriteData(core_details.iat[0, 0], core_details.iat[0, 1], core_details.iat[0, 2])
         valid_input_file = read_write_data.validate_input_file()
         valid_annotation_file = read_write_data.validate_annotation_file()
         files_loaded = False

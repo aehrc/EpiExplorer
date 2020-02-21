@@ -8,9 +8,10 @@ class ReadWriteData:
     input_type = ''
     order = ''
 
-    def __init__(self, input_file, annotation_file):
+    def __init__(self, input_file, annotation_file, output_file):
         self.input_file = input_file
         self.annotation_file = annotation_file
+        self.output_file = output_file
         self.int_id = 0
 
     # Method to validate the input file
@@ -376,12 +377,13 @@ class ReadWriteData:
         # print(edge_df)
         return edge_df
 
-    # Merge node df with annotations
+    # Merge node df with AnnotationFiles
     def create_df_with_annotations(self, new_node_df):
         if self.annotation_file == '':
             print('No annotation file given')
             new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
         else:
+            # TODO check if the id column exists and merge
             annotation_df = pd.read_csv(self.annotation_file)
             new_node_df = new_node_df.merge(annotation_df, on='id', how='left')
             new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
@@ -678,7 +680,7 @@ class ReadWriteData:
         # print(new_edge_df)
         return new_edge_df.reset_index(drop=True)
 
-    # Method to merge the connnection count DataFrame and node_df
+    # Method to merge the connection count DataFrame and node_df
     def get_merged_new_node_df(self, new_node_df, connection_count_df):
         if order != '1':
             new_node_df = new_node_df.merge(connection_count_df, how='left')
@@ -693,13 +695,37 @@ class ReadWriteData:
         edge_file_name = 'edges.csv'
         trans_edge_file_name = 'trans_edges.csv'
         trans_node_file_name = 'trans_nodes.csv'
+        node_file_path = ''
+        edge_file_path = ''
 
-        if interaction_or_edge == 1:
-            node_file_path = os.path.join('OutputData/', node_file_name)
-            edge_file_path = os.path.join('OutputData/', edge_file_name)
-        elif interaction_or_edge == 2:
-            node_file_path = os.path.join('OutputData/', trans_node_file_name)
-            edge_file_path = os.path.join('OutputData/', trans_edge_file_name)
+        user_given_output_path = self.output_file
+
+        if user_given_output_path == '':
+            # Check if directory exists
+            directory = False
+            if os.path.isdir('../SampleData/InteractionLists/'):
+                directory = True
+            else:
+                os.makedirs('../SampleData/InteractionLists/')
+                directory = True
+
+            if directory:
+                if interaction_or_edge == 1:
+                    node_file_path = os.path.join('../SampleData/InteractionLists/', node_file_name)
+                    edge_file_path = os.path.join('../SampleData/InteractionLists/', edge_file_name)
+                elif interaction_or_edge == 2:
+                    node_file_path = os.path.join('../SampleData/InteractionLists/', trans_node_file_name)
+                    edge_file_path = os.path.join('../SampleData/InteractionLists/', trans_edge_file_name)
+            else:
+                print('Error: Could not find output directory')
+        else:
+            print('User given output path exists')
+            if interaction_or_edge == 1:
+                node_file_path = os.path.join(user_given_output_path, node_file_name)
+                edge_file_path = os.path.join(user_given_output_path, edge_file_name)
+            elif interaction_or_edge == 2:
+                node_file_path = os.path.join(user_given_output_path, trans_node_file_name)
+                edge_file_path = os.path.join(user_given_output_path, trans_edge_file_name)
 
         # DataFrames to send to Cytoscape
         correct_node_df = pd.DataFrame
