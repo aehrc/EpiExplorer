@@ -19,7 +19,7 @@ class FormGUI:
         self.gray_bool = False
         self.reset_bool = False
         self.input_file_names = ''
-        self.annotation_file = ''
+        self.annotation_files = ''
         self.output_file = ''
         self.var_interaction_or_edge = 2
         self.var_invert_or_not = 0
@@ -43,8 +43,8 @@ class FormGUI:
     def select_annot_file(self, root, annot_file_entry):
         received_files = tkFileDialog.askopenfilenames(parent=root, title='Choose a file/s')
         received_files = root.tk.splitlist(received_files)
-        self.annotation_file = received_files
-        annot_file_entry.insert(0, self.annotation_file)
+        self.annotation_files = received_files
+        annot_file_entry.insert(0, self.annotation_files)
 
     def select_input_files(self, root, input_file_entry):
         received_files = tkFileDialog.askopenfilenames(parent=root, title='Choose a file/s')

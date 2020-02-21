@@ -10,7 +10,7 @@ class ReadWriteData:
 
     def __init__(self, input_file, annotation_file, output_file):
         self.input_file = input_file
-        self.annotation_file = annotation_file
+        self.annotation_files = annotation_file
         self.output_file = output_file
         self.int_id = 0
 
@@ -60,7 +60,7 @@ class ReadWriteData:
 
     # Method to validate annotation file
     def validate_annotation_file(self):
-        if self.annotation_file == '':
+        if self.annotation_files == '':
             print('Optional annotation file not given')
         return True
 
@@ -379,20 +379,22 @@ class ReadWriteData:
 
     # Merge node df with AnnotationFiles
     def create_df_with_annotations(self, new_node_df):
-        if self.annotation_file == '':
+        if self.annotation_files == '':
             print('No annotation file given')
             new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
         else:
-            annotation_df = pd.read_csv(self.annotation_file, sep="\t")
-            print(list(annotation_df.columns) )
-            if 'Variation ID' in annotation_df.columns:
-                print('Column Variation ID found!')
-                annotation_df = annotation_df.rename(columns={'Variation ID': 'id'})
-                new_node_df = new_node_df.merge(annotation_df, on='id', how='left')
-                new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
-            else:
-                print('Annotation file does not have Variation ID')
-                new_node_df = new_node_df
+            annotation_files = self.annotation_files.split()
+            for annotation_file in annotation_files:
+                print(annotation_file)
+                annotation_df = pd.read_csv(annotation_file, sep="\t")
+                if 'Variation ID' in annotation_df.columns:
+                    print('Column Variation ID found!')
+                    annotation_df = annotation_df.rename(columns={'Variation ID': 'id'})
+                    new_node_df = new_node_df.merge(annotation_df, on='id', how='left')
+                    new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
+                else:
+                    print('Annotation file does not have Variation ID')
+                    new_node_df = new_node_df
         return new_node_df
 
     # Method to get the number of interaction nodes connected to a node
