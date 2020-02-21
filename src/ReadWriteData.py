@@ -383,10 +383,16 @@ class ReadWriteData:
             print('No annotation file given')
             new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
         else:
-            # TODO check if the id column exists and merge
-            annotation_df = pd.read_csv(self.annotation_file)
-            new_node_df = new_node_df.merge(annotation_df, on='id', how='left')
-            new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
+            annotation_df = pd.read_csv(self.annotation_file, sep="\t")
+            print(list(annotation_df.columns) )
+            if 'Variation ID' in annotation_df.columns:
+                print('Column Variation ID found!')
+                annotation_df = annotation_df.rename(columns={'Variation ID': 'id'})
+                new_node_df = new_node_df.merge(annotation_df, on='id', how='left')
+                new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
+            else:
+                print('Annotation file does not have Variation ID')
+                new_node_df = new_node_df
         return new_node_df
 
     # Method to get the number of interaction nodes connected to a node
