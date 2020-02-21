@@ -1,0 +1,842 @@
+Variation ID	Chromosome	Position	Variant	Strand	Gene	Transcript	Entrez Gene	Predicted Function	CDNA Position	CDS Position	AA Position	AA Change	Detail	Splice Distance	Proteins
+rs2269241	chr1	64108771	T|C	1	PGM1	NM_001172818	5236	intronic	None	None	None	None	None	4300	None
+rs2269241	chr1	64108771	T|C	1	PGM1	NM_001172819	5236	intronic	None	None	None	None	None	4300	None
+rs2269241	chr1	64108771	T|C	1	PGM1	NM_002633	5236	intronic	None	None	None	None	None	4300	None
+rs2269239	chr1	64109359	C|G	1	PGM1	NM_001172818	5236	intronic	None	None	None	None	None	4829	None
+rs2269239	chr1	64109359	C|G	1	PGM1	NM_001172819	5236	intronic	None	None	None	None	None	4829	None
+rs2269239	chr1	64109359	C|G	1	PGM1	NM_002633	5236	intronic	None	None	None	None	None	4829	None
+rs3790857	chr1	64111866	C|T	1	PGM1	NM_001172818	5236	intronic	None	None	None	None	None	2322	None
+rs3790857	chr1	64111866	C|T	1	PGM1	NM_001172819	5236	intronic	None	None	None	None	None	2322	None
+rs3790857	chr1	64111866	C|T	1	PGM1	NM_002633	5236	intronic	None	None	None	None	None	2322	None
+rs2269238	chr1	64117537	G|W	1	PGM1	NM_001172818	5236	intronic	None	None	None	None	None	14	None
+rs2269238	chr1	64117537	G|W	1	PGM1	NM_001172819	5236	intronic	None	None	None	None	None	14	None
+rs2269238	chr1	64117537	G|W	1	PGM1	NM_002633	5236	intronic	None	None	None	None	None	14	None
+rs11208264	chr1	64125072	T|C	1	PGM1	NM_001172818	5236	intronic	None	None	None	None	None	185	None
+rs11208264	chr1	64125072	T|C	1	PGM1	NM_001172819	5236	intronic	None	None	None	None	None	185	None
+rs11208264	chr1	64125072	T|C	1	PGM1	NM_002633	5236	intronic	None	None	None	None	None	185	None
+rs4643	chr1	64125439	A|C	1	PGM1	NM_001172818	5236	3utr	2081	None	None	None	None	None	None
+rs4643	chr1	64125439	A|C	1	PGM1	NM_001172819	5236	3utr	1872	None	None	None	None	None	None
+rs4643	chr1	64125439	A|C	1	PGM1	NM_002633	5236	3utr	1995	None	None	None	None	None	None
+rs41515647	chr1	77517009	C|A	1	ST6GALNAC5	NM_001320274	81849	intronic	None	None	None	None	None	11651	None
+rs41515647	chr1	77517009	C|A	1	ST6GALNAC5	NM_001320273	81849	intronic	None	None	None	None	None	959	None
+rs41515647	chr1	77517009	C|A	1	ST6GALNAC5	NM_030965	81849	intronic	None	None	None	None	None	959	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	NM_001258343	126969	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	NM_001301079	126969	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	NM_001350223	126969	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	NM_152369	126969	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	NR_146575	126969	non-coding intronic	None	None	None	None	None	2184	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	NM_001114106	126969	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	NM_001258340	126969	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	NM_001258341	126969	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	NM_001258342	126969	intronic	None	None	None	None	None	4656	None
+rs1264882	chr1	111962944	C|T	1	OVGP1	NM_002557	5016	intronic	None	None	None	None	None	596	None
+rs4456089	chr1	114084544	C|T	1	MAGI3	NM_001142782	260425	intronic	None	None	None	None	None	7593	None
+rs4456089	chr1	114084544	C|T	1	MAGI3	NM_152900	260425	intronic	None	None	None	None	None	7593	None
+rs17013326	chr1	114089316	G|A	1	MAGI3	NM_001142782	260425	intronic	None	None	None	None	None	2821	None
+rs17013326	chr1	114089316	G|A	1	MAGI3	NM_152900	260425	intronic	None	None	None	None	None	2821	None
+rs1113523	chr1	114129474	A|K	1	MAGI3	NM_001142782	260425	intronic	None	None	None	None	None	1256	None
+rs1113523	chr1	114129474	A|K	1	MAGI3	NM_152900	260425	intronic	None	None	None	None	None	1256	None
+rs1217227	chr1	114139616	C|T	1	MAGI3	NM_001142782	260425	intronic	None	None	None	None	None	2434	None
+rs1217227	chr1	114139616	C|T	1	MAGI3	NM_152900	260425	intronic	None	None	None	None	None	2434	None
+rs1217226	chr1	114139922	C|T	1	MAGI3	NM_001142782	260425	intronic	None	None	None	None	None	2740	None
+rs1217226	chr1	114139922	C|T	1	MAGI3	NM_152900	260425	intronic	None	None	None	None	None	2740	None
+rs1217200	chr1	114161116	C|D	1	MAGI3	NM_001142782	260425	intronic	None	None	None	None	None	1242	None
+rs1217200	chr1	114161116	C|D	1	MAGI3	NM_152900	260425	intronic	None	None	None	None	None	1242	None
+rs1230666	chr1	114173410	A|G	1	MAGI3	NM_001142782	260425	intronic	None	None	None	None	None	7794	None
+rs1230666	chr1	114173410	A|G	1	MAGI3	NM_152900	260425	intronic	None	None	None	None	None	7794	None
+rs1230658	chr1	114218451	C|K	1	MAGI3	NM_001142782	260425	intronic	None	None	None	None	None	2364	None
+rs1230658	chr1	114218451	C|K	1	MAGI3	NM_152900	260425	intronic	None	None	None	None	None	2364	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	NM_001323041	10745	intronic	None	None	None	None	None	606	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	NM_001323042	10745	intronic	None	None	None	None	None	606	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	NM_001323043	10745	intronic	None	None	None	None	None	606	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	NM_001323044	10745	intronic	None	None	None	None	None	606	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	NM_001323045	10745	intronic	None	None	None	None	None	606	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	NM_001323046	10745	intronic	None	None	None	None	None	606	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	NM_006608	10745	intronic	None	None	None	None	None	606	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	NR_136564	10745	non-coding intronic	None	None	None	None	None	606	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	NR_136565	10745	non-coding intronic	None	None	None	None	None	606	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	NR_136566	10745	non-coding intronic	None	None	None	None	None	606	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	NR_136567	10745	non-coding intronic	None	None	None	None	None	606	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NR_136564	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NR_136565	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NR_136566	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NR_136567	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NR_136568	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	RSBN1	NM_018364	54665	3downstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	RSBN1	NR_130896	54665	3downstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323042	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_006608	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323041	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323043	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323044	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323045	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323046	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323047	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323048	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323049	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323050	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323051	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323052	10745	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	NM_001323053	10745	5upstream	None	None	None	None	None	None	None
+rs1217396	chr1	114338236	C|W	1	RSBN1	NR_130896	54665	non-coding intronic	None	None	None	None	None	572	None
+rs1217396	chr1	114338236	C|W	1	RSBN1	NM_018364	54665	intronic	None	None	None	None	None	1749	None
+rs2488457	chr1	114415368	G|M	1	AP4B1-AS1	NR_125965	100287722	non-coding intronic	None	None	None	None	None	25122	None
+rs2488457	chr1	114415368	G|M	1	AP4B1-AS1	NR_037864	100287722	non-coding intronic	None	None	None	None	None	14730	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	NM_001193431	26191	5upstream	None	None	None	None	None	None	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	NM_001308297	26191	5upstream	None	None	None	None	None	None	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	NM_012411	26191	5upstream	None	None	None	None	None	None	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	NM_015967	26191	5upstream	None	None	None	None	None	None	None
+rs1235005	chr1	114417437	C|G	1	AP4B1-AS1	NR_125965	100287722	non-coding intronic	None	None	None	None	None	23053	None
+rs1235005	chr1	114417437	C|G	1	AP4B1-AS1	NR_037864	100287722	non-coding intronic	None	None	None	None	None	16799	None
+rs1235005	chr1	114417437	C|G	1	BCL2L15	NM_001010922	440603	3downstream	None	None	None	None	None	None	None
+rs10776775	chr1	114436482	G|A	1	AP4B1-AS1	NR_125965	100287722	non-coding intronic	None	None	None	None	None	4008	None
+rs10776775	chr1	114436482	G|A	1	AP4B1-AS1	NR_037864	100287722	non-coding intronic	None	None	None	None	None	4008	None
+rs10776775	chr1	114436482	G|A	1	AP4B1	NM_001253852	10717	3downstream	None	None	None	None	None	None	None
+rs10776775	chr1	114436482	G|A	1	AP4B1	NM_001253853	10717	3downstream	None	None	None	None	None	None	None
+rs10776775	chr1	114436482	G|A	1	AP4B1	NM_001308312	10717	3downstream	None	None	None	None	None	None	None
+rs10776775	chr1	114436482	G|A	1	AP4B1	NM_006594	10717	3downstream	None	None	None	None	None	None	None
+rs3811019	chr1	114471583	C|G	1	HIPK1	NM_152696	204851	5upstream	None	None	None	None	None	None	None
+rs3811019	chr1	114471583	C|G	1	HIPK1	NM_198268	204851	5upstream	None	None	None	None	None	None	None
+rs3811019	chr1	114471583	C|G	1	HIPK1-AS1	NR_110726	101928846	non-coding intronic	None	None	None	None	None	401	None
+rs3811019	chr1	114471583	C|G	1	HIPK1-AS1	NR_110725	101928846	non-coding	298	None	None	None	None	None	None
+rs17459837	chr1	201303631	A|T	1	PKP1	NM_000299	5317	3downstream	None	None	None	None	None	None	None
+rs17459837	chr1	201303631	A|T	1	PKP1	NM_001005337	5317	3downstream	None	None	None	None	None	None	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	NM_001042552	128387	intronic	None	None	None	None	None	659	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	NM_001042553	128387	intronic	None	None	None	None	None	659	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	NM_001146169	128387	intronic	None	None	None	None	None	659	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	NM_001146170	128387	intronic	None	None	None	None	None	659	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	NM_001146171	128387	intronic	None	None	None	None	None	659	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	NM_001363589	128387	intronic	None	None	None	None	None	659	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	NM_001363590	128387	intronic	None	None	None	None	None	659	None
+rs10926688	chr1	242500228	A|S	1	PLD5	NM_001195812	200150	intronic	None	None	None	None	None	11173	None
+rs10926688	chr1	242500228	A|S	1	PLD5	NM_001320272	200150	intronic	None	None	None	None	None	11173	None
+rs10926688	chr1	242500228	A|S	1	PLD5	NM_001195811	200150	intronic	None	None	None	None	None	11180	None
+rs10926688	chr1	242500228	A|S	1	PLD5	NM_152666	200150	intronic	None	None	None	None	None	11180	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001025076	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001025077	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001083591	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326317	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326318	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326319	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326320	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326321	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326323	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326324	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326325	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326326	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326327	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326328	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326329	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326330	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326331	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326332	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326333	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326334	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326335	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326336	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326337	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326340	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326341	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326342	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326343	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326344	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326345	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326347	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326348	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326349	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_006561	10659	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326338	10659	intronic	None	None	None	None	None	40318	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326339	10659	intronic	None	None	None	None	None	40318	None
+rs17149833	chr10	11247963	T|A	1	CELF2	NM_001326346	10659	intronic	None	None	None	None	None	40318	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	NM_000724	783	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	NM_201570	783	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	NM_201571	783	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	NM_201590	783	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	NM_201596	783	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	NM_001167945	783	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	NM_001330060	783	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	NM_201593	783	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	NM_201572	783	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	NM_201597	783	intronic	None	None	None	None	None	2727	None
+rs10764114	chr10	19937986	A|G	1	MALRD1	NM_001142308	340895	intronic	None	None	None	None	None	33134	None
+rs11817725	chr10	21368072	G|W	1	NEBL	NM_001173484	10529	intronic	None	None	None	None	None	58942	None
+rs11817725	chr10	21368072	G|W	1	NEBL	NM_213569	10529	intronic	None	None	None	None	None	58942	None
+rs11012514	chr10	21368442	A|T	1	NEBL	NM_001173484	10529	intronic	None	None	None	None	None	59312	None
+rs11012514	chr10	21368442	A|T	1	NEBL	NM_213569	10529	intronic	None	None	None	None	None	59312	None
+rs11012515	chr10	21369034	C|T	1	NEBL	NM_001173484	10529	intronic	None	None	None	None	None	59904	None
+rs11012515	chr10	21369034	C|T	1	NEBL	NM_213569	10529	intronic	None	None	None	None	None	59904	None
+rs2804672	chr10	38656887	G|A	1	HSD17B7P2	NR_003086	158160	non-coding intronic	None	None	None	None	None	1994	None
+rs2842107	chr10	52131485	C|T	1	SGMS1	NM_147156	259230	intronic	None	None	None	None	None	27380	None
+rs12262251	chr10	54431330	C|T	1	LOC105378305	NR_155748	105378305	non-coding intronic	None	None	None	None	None	83740	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	NM_001282959	55749	intronic	None	None	None	None	None	1161	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	NM_001282960	55749	intronic	None	None	None	None	None	1161	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	NM_018237	55749	intronic	None	None	None	None	None	1161	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	NR_104262	55749	non-coding intronic	None	None	None	None	None	1161	None
+rs10824347	chr10	77645229	A|T	1	LRMDA	NM_001305581	83938	intronic	None	None	None	None	None	150537	None
+rs10824347	chr10	77645229	A|T	1	LRMDA	NM_032024	83938	intronic	None	None	None	None	None	102449	None
+rs10824347	chr10	77645229	A|T	1	LRMDA	NR_131178	83938	non-coding intronic	None	None	None	None	None	1946	None
+rs1574190	chr10	80992381	C|T	1	ZMIZ1	NM_020338	57178	intronic	None	None	None	None	None	16350	None
+rs4933971	chr10	85945289	C|K	1	C10orf99	NM_207373	387695	3downstream	None	None	None	None	None	None	None
+rs2148895	chr10	129692293	C|K	1	CLRN3	NM_152311	119467	5upstream	None	None	None	None	None	None	None
+rs439667	chr11	8259358	G|Y	1	LMO1	NM_002315	4004	intronic	None	None	None	None	None	7307	None
+rs439667	chr11	8259358	G|Y	1	LMO1	NR_073006	4004	non-coding intronic	None	None	None	None	None	7307	None
+rs439667	chr11	8259358	G|Y	1	LMO1	NM_001270428	4004	intronic	None	None	None	None	None	7307	None
+rs10500712	chr11	9902797	G|A	1	LOC101928008	NR_120539	101928008	non-coding intronic	None	None	None	None	None	34356	None
+rs10500712	chr11	9902797	G|A	1	SBF2	NM_030962	81846	intronic	None	None	None	None	None	14693	None
+rs16933680	chr11	16935949	C|T	1	PLEKHA7	NM_001329630	144100	intronic	None	None	None	None	None	43220	None
+rs16933680	chr11	16935949	C|T	1	PLEKHA7	NM_001329631	144100	intronic	None	None	None	None	None	43220	None
+rs16933680	chr11	16935949	C|T	1	PLEKHA7	NM_175058	144100	intronic	None	None	None	None	None	43220	None
+rs10741734	chr11	18044648	A|G	1	TPH1	NM_004179	7166	intronic	None	None	None	None	None	170	None
+rs10834986	chr11	26521999	G|H	1	ANO3	NM_001313726	63982	intronic	None	None	None	None	None	7652	None
+rs10834986	chr11	26521999	G|H	1	ANO3	NM_031418	63982	intronic	None	None	None	None	None	7652	None
+rs10834986	chr11	26521999	G|H	1	ANO3	NM_001313727	63982	intronic	None	None	None	None	None	7652	None
+rs7945815	chr11	26539736	T|R	1	ANO3	NM_001313726	63982	intronic	None	None	None	None	None	1262	None
+rs7945815	chr11	26539736	T|R	1	ANO3	NM_001313727	63982	intronic	None	None	None	None	None	1262	None
+rs7945815	chr11	26539736	T|R	1	ANO3	NM_031418	63982	intronic	None	None	None	None	None	1262	None
+rs480617	chr11	64478320	C|T	1	NRXN2	NM_015080	9379	intronic	None	None	None	None	None	2122	None
+rs480617	chr11	64478320	C|T	1	NRXN2	NM_138732	9379	intronic	None	None	None	None	None	2122	None
+rs2115763	chr11	112051169	A|T	1	BCO2	NM_001256400	83875	intronic	None	None	None	None	None	3988	None
+rs2115763	chr11	112051169	A|T	1	BCO2	NM_001037290	83875	intronic	None	None	None	None	None	964	None
+rs2115763	chr11	112051169	A|T	1	BCO2	NM_001256397	83875	intronic	None	None	None	None	None	964	None
+rs2115763	chr11	112051169	A|T	1	BCO2	NM_001256398	83875	intronic	None	None	None	None	None	964	None
+rs2115763	chr11	112051169	A|T	1	BCO2	NM_031938	83875	intronic	None	None	None	None	None	964	None
+rs11604887	chr11	113602809	T|C	1	ZW10	NM_004724	9183	3downstream	None	None	None	None	None	None	None
+rs17541153	chr11	113615622	G|C	1	ZW10	NM_004724	9183	intronic	None	None	None	None	None	860	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001301029	57646	3utr	3753	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346252	57646	3utr	4246	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346253	57646	3utr	4168	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346254	57646	3utr	4063	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346255	57646	3utr	4423	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346257	57646	3utr	3982	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346258	57646	3utr	3964	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346259	57646	3utr	3886	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346260	57646	3utr	3852	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346261	57646	3utr	3849	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346262	57646	3utr	3831	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346263	57646	3utr	4172	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346264	57646	3utr	4095	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346265	57646	3utr	4323	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346267	57646	3utr	3909	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346268	57646	3utr	3698	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346269	57646	3utr	3926	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346270	57646	3utr	4500	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346271	57646	3utr	4137	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_001346272	57646	3utr	3833	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	NM_020886	57646	3utr	4060	None	None	None	None	None	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001301029	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346252	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346253	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346254	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346255	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346257	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346258	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346259	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346260	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346261	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346262	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346263	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346264	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346265	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346267	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346268	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346269	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346270	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346271	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_001346272	57646	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	NM_020886	57646	intronic	None	None	None	None	None	699	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001301029	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346252	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346253	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346254	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346255	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346257	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346258	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346259	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346260	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346261	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346262	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346263	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346264	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346265	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346267	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346268	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346269	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346270	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346271	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_001346272	57646	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	NM_020886	57646	intronic	None	None	None	None	None	1329	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001301029	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346252	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346253	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346254	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346255	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346257	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346258	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346259	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346260	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346261	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346262	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346263	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346264	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346265	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346267	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346268	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346269	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346270	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346271	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346272	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_001346273	57646	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	NM_020886	57646	intronic	None	None	None	None	None	132	None
+rs10789970	chr11	113773946	C|T	1	HTR3B	NM_006028	9177	5upstream	None	None	None	None	None	None	None
+rs17116117	chr11	113801591	A|G	1	HTR3B	NM_001363563	9177	intronic	None	None	None	None	None	515	None
+rs17116117	chr11	113801591	A|G	1	HTR3B	NM_006028	9177	intronic	None	None	None	None	None	515	None
+rs17116145	chr11	113804326	C|T	1	HTR3B	NM_001363563	9177	intronic	None	None	None	None	None	511	None
+rs17116145	chr11	113804326	C|T	1	HTR3B	NM_006028	9177	intronic	None	None	None	None	None	511	None
+rs1176741	chr11	113807315	C|T	1	HTR3B	NM_001363563	9177	intronic	None	None	None	None	None	3500	None
+rs1176741	chr11	113807315	C|T	1	HTR3B	NM_006028	9177	intronic	None	None	None	None	None	3500	None
+rs1176740	chr11	113807396	T|A	1	HTR3B	NM_001363563	9177	intronic	None	None	None	None	None	3581	None
+rs1176740	chr11	113807396	T|A	1	HTR3B	NM_006028	9177	intronic	None	None	None	None	None	3581	None
+rs1176739	chr11	113807817	G|H	1	HTR3B	NM_001363563	9177	intronic	None	None	None	None	None	4002	None
+rs1176739	chr11	113807817	G|H	1	HTR3B	NM_006028	9177	intronic	None	None	None	None	None	4002	None
+rs1176738	chr11	113808095	T|C	1	HTR3B	NM_001363563	9177	intronic	None	None	None	None	None	4280	None
+rs1176738	chr11	113808095	T|C	1	HTR3B	NM_006028	9177	intronic	None	None	None	None	None	4280	None
+rs511296	chr11	128869845	G|W	1	ARHGAP32	NM_014715	9743	intronic	None	None	None	None	None	1482	None
+rs511296	chr11	128869845	G|W	1	ARHGAP32	NM_001142685	9743	intronic	None	None	None	None	None	1482	None
+rs2155373	chr11	132371834	C|T	1	OPCML	NM_001319106	4978	intronic	None	None	None	None	None	27121	None
+rs2155373	chr11	132371834	C|T	1	OPCML	NM_001012393	4978	intronic	None	None	None	None	None	27121	None
+rs2155373	chr11	132371834	C|T	1	OPCML	NM_001319103	4978	intronic	None	None	None	None	None	27121	None
+rs2155373	chr11	132371834	C|T	1	OPCML	NM_001319104	4978	intronic	None	None	None	None	None	27121	None
+rs2155373	chr11	132371834	C|T	1	OPCML	NM_001319105	4978	intronic	None	None	None	None	None	27121	None
+rs2155373	chr11	132371834	C|T	1	OPCML	NM_002545	4978	intronic	None	None	None	None	None	27121	None
+rs11223425	chr11	133143976	G|W	1	OPCML	NM_001319104	4978	intronic	None	None	None	None	None	258183	None
+rs11223425	chr11	133143976	G|W	1	OPCML	NM_001012393	4978	intronic	None	None	None	None	None	258183	None
+rs10848821	chr12	3298031	G|A	1	TSPAN9	NM_001168320	10867	intronic	None	None	None	None	None	12312	None
+rs10848821	chr12	3298031	G|A	1	TSPAN9	NM_006675	10867	intronic	None	None	None	None	None	12312	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	NM_001004419	29121	intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	NM_001197318	29121	intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	NM_013269	29121	intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	NR_036693	29121	non-coding intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	NM_001197317	29121	intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	NM_001197319	29121	intronic	None	None	None	None	None	749	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	NM_001004419	29121	intronic	None	None	None	None	None	1560	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	NM_001197318	29121	intronic	None	None	None	None	None	1560	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	NM_013269	29121	intronic	None	None	None	None	None	1560	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	NR_036693	29121	non-coding intronic	None	None	None	None	None	1560	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	NM_001197317	29121	intronic	None	None	None	None	None	8539	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	NM_001197319	29121	intronic	None	None	None	None	None	8539	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	NM_001004419	29121	intronic	None	None	None	None	None	91	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	NM_001197317	29121	intronic	None	None	None	None	None	91	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	NM_013269	29121	intronic	None	None	None	None	None	91	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	NM_001197318	29121	intronic	None	None	None	None	None	91	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	NM_001197319	29121	intronic	None	None	None	None	None	91	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	NR_036693	29121	non-coding intronic	None	None	None	None	None	16	None
+rs4763879	chr12	9910164	G|A	1	CD69	NM_001781	969	intronic	None	None	None	None	None	1149	None
+rs16910627	chr12	15267486	A|T	1	RERG	NM_032918	85004	intronic	None	None	None	None	None	3135	None
+rs16910627	chr12	15267486	A|T	1	RERG	NM_001190726	85004	intronic	None	None	None	None	None	3135	None
+rs7955585	chr12	32114454	C|K	1	RESF1	NM_018169	55196	intronic	None	None	None	None	None	649	None
+rs10876266	chr12	52676403	A|G	1	KRT86	NM_001320198	3892	intronic	None	None	None	None	None	6673	None
+rs1873914	chr12	56379427	G|C	1	RAB5B	NM_001252036	5869	intronic	None	None	None	None	None	1226	None
+rs1873914	chr12	56379427	G|C	1	RAB5B	NM_001252037	5869	intronic	None	None	None	None	None	1226	None
+rs1873914	chr12	56379427	G|C	1	RAB5B	NM_002868	5869	intronic	None	None	None	None	None	1226	None
+rs705698	chr12	56384687	T|C	1	RAB5B	NM_001252037	5869	intronic	None	None	None	None	None	457	None
+rs705698	chr12	56384687	T|C	1	RAB5B	NM_001252036	5869	intronic	None	None	None	None	None	99	None
+rs705698	chr12	56384687	T|C	1	RAB5B	NM_002868	5869	intronic	None	None	None	None	None	99	None
+rs705702	chr12	56390636	A|G	1	SUOX	NM_000456	6821	5upstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	SUOX	NM_001032386	6821	5upstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	SUOX	NM_001032387	6821	5upstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	RAB5B	NM_001252036	5869	3downstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	RAB5B	NM_001252037	5869	3downstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	RAB5B	NM_002868	5869	3downstream	None	None	None	None	None	None	None
+rs2292239	chr12	56482180	T|G	1	ERBB3	NM_001982	2065	intronic	None	None	None	None	None	147	None
+rs10859739	chr12	95016969	T|A	1	TMCC3	NM_020698	57458	intronic	None	None	None	None	None	27160	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	NM_001254718	4604	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	NM_001254719	4604	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	NM_001254720	4604	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	NM_001254722	4604	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	NM_001254723	4604	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	NM_002465	4604	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	NM_206819	4604	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	NM_206820	4604	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	NM_206821	4604	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	NM_001254721	4604	intronic	None	None	None	None	None	1730	None
+rs4766517	chr12	111359712	G|C	1	MYL2	NM_000432	4633	5upstream	None	None	None	None	None	None	None
+rs2106407	chr12	111394327	T|C	1	LOC105369980	NR_135002	105369980	non-coding intronic	None	None	None	None	None	187	None
+rs2106407	chr12	111394327	T|C	1	LOC105369980	NR_135001	105369980	non-coding intronic	None	None	None	None	None	183	None
+rs7398833	chr12	111786892	T|C	1	CUX2	NM_015267	23316	3utr	5378	None	None	None	None	None	None
+rs634389	chr12	112164715	C|G	1	ACAD10	NM_001136538	80724	intronic	None	None	None	None	None	1051	None
+rs634389	chr12	112164715	C|G	1	ACAD10	NM_025247	80724	intronic	None	None	None	None	None	1051	None
+rs10744777	chr12	112233018	T|C	1	ALDH2	NM_000690	217	intronic	None	None	None	None	None	2432	None
+rs10744777	chr12	112233018	T|C	1	ALDH2	NM_001204889	217	intronic	None	None	None	None	None	2432	None
+rs3742000	chr12	112338539	T|C	1	ADAM1A	NR_036636	8759	non-coding	1673	None	None	None	None	None	None
+rs12321677	chr12	112339015	G|A	1	ADAM1A	NR_036636	8759	non-coding	2149	None	None	None	None	None	None
+rs4767293	chr12	112463296	A|G	1	NAA25	NM_024953	80018	3downstream	None	None	None	None	None	None	None
+rs17696736	chr12	112486818	A|G	1	NAA25	NM_024953	80018	intronic	None	None	None	None	None	571	None
+rs9554277	chr13	28728026	G|A	1	PAN3	NM_175854	255967	intronic	None	None	None	None	None	14802	None
+rs9554296	chr13	28833143	C|T	1	PAN3	NM_175854	255967	intronic	None	None	None	None	None	1441	None
+rs641696	chr13	32478444	A|G	1	EEF1DP3	NR_027062	196549	non-coding intronic	None	None	None	None	None	41702	None
+rs9315704	chr13	40140215	A|G	1	LHFPL6	NM_005780	10186	intronic	None	None	None	None	None	34754	None
+rs7995795	chr13	96222531	T|C	1	CLDN10	NM_001160100	9071	intronic	None	None	None	None	None	6954	None
+rs7995795	chr13	96222531	T|C	1	CLDN10	NM_006984	9071	intronic	None	None	None	None	None	6954	None
+rs7995795	chr13	96222531	T|C	1	CLDN10	NM_182848	9071	intronic	None	None	None	None	None	6954	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321939	2259	intronic	None	None	None	None	None	141969	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321932	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321936	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321944	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321931	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321943	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321933	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321938	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321940	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321941	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321934	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321935	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321946	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321949	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321942	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321937	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321945	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321947	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_001321948	2259	intronic	None	None	None	None	None	135501	None
+rs11838497	chr13	102663147	A|C	1	FGF14	NM_175929	2259	intronic	None	None	None	None	None	135501	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	NM_001283043	253959	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	NM_001283044	253959	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	NM_001330075	253959	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	NM_001346243	253959	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	NM_001346245	253959	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	NM_001346246	253959	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	NM_001346247	253959	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	NM_001346248	253959	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	NM_001346249	253959	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	NM_014990	253959	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	NM_194301	253959	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1P1	NR_104269	26134	non-coding intronic	None	None	None	None	None	3656	None
+rs7157296	chr14	50566882	G|A	1	LINC01599	NR_131171	196913	non-coding intronic	None	None	None	None	None	4833	None
+rs7141328	chr14	50567129	T|C	1	LINC01599	NR_131171	196913	non-coding intronic	None	None	None	None	None	4586	None
+rs12895242	chr14	83153368	G|A	1	LINC02301	NR_146650	101928599	non-coding intronic	None	None	None	None	None	290	None
+rs2274818	chr14	98426655	C|T	1	LINC01550	NR_015430	388011	non-coding intronic	None	None	None	None	None	8955	None
+rs2274818	chr14	98426655	C|T	1	LINC01550	NR_152749	388011	non-coding intronic	None	None	None	None	None	8955	None
+rs2274818	chr14	98426655	C|T	1	LINC01550	NR_152750	388011	non-coding intronic	None	None	None	None	None	8955	None
+rs2274818	chr14	98426655	C|T	1	LINC01550	NR_152747	388011	non-coding intronic	None	None	None	None	None	498	None
+rs2274818	chr14	98426655	C|T	1	LINC01550	NR_152748	388011	non-coding	523	None	None	None	None	None	None
+rs2274818	chr14	98426655	C|T	1	LINC01550	NR_152746	388011	non-coding	523	None	None	None	None	None	None
+rs1052912	chr14	103603653	G|A	1	TNFAIP2	NM_006291	7127	3utr	4052	None	None	None	None	None	None
+rs12907720	chr15	31897012	T|C	1	OTUD7A	NM_001329907	161725	intronic	None	None	None	None	None	34612	None
+rs12907720	chr15	31897012	T|C	1	OTUD7A	NM_130901	161725	intronic	None	None	None	None	None	34612	None
+rs7170060	chr15	31897837	T|C	1	OTUD7A	NM_001329907	161725	intronic	None	None	None	None	None	35437	None
+rs7170060	chr15	31897837	T|C	1	OTUD7A	NM_130901	161725	intronic	None	None	None	None	None	35437	None
+rs345778	chr15	33397146	T|C	1	FMN1	NM_001277313	342184	intronic	None	None	None	None	None	15971	None
+rs782916	chr15	61398155	T|C	1	RORA	NM_134261	6095	intronic	None	None	None	None	None	123097	None
+rs17237810	chr15	61508186	A|S	1	RORA	NM_134261	6095	intronic	None	None	None	None	None	13066	None
+rs11858454	chr15	71669115	A|G	1	THSD4	NM_024817	79875	intronic	None	None	None	None	None	34911	None
+rs8032794	chr15	71906850	G|A	1	THSD4	NM_024817	79875	intronic	None	None	None	None	None	46019	None
+rs8032794	chr15	71906850	G|A	1	THSD4	NM_001286429	79875	intronic	None	None	None	None	None	46019	None
+rs893379	chr15	93194688	T|C	1	FAM174B	NM_207446	400451	intronic	None	None	None	None	None	3858	None
+rs6598368	chr15	101155726	T|C	1	ASB7	NM_024708	140460	intronic	None	None	None	None	None	3094	None
+rs6598368	chr15	101155726	T|C	1	ASB7	NM_198243	140460	intronic	None	None	None	None	None	3094	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	NM_001142333	54715	intronic	None	None	None	None	None	1952	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	NM_001142334	54715	intronic	None	None	None	None	None	1952	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	NM_001308117	54715	intronic	None	None	None	None	None	1952	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	NM_001364800	54715	intronic	None	None	None	None	None	1952	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	NM_018723	54715	intronic	None	None	None	None	None	1952	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	NM_145891	54715	intronic	None	None	None	None	None	8580	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	NM_145892	54715	intronic	None	None	None	None	None	8580	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	NM_145893	54715	intronic	None	None	None	None	None	8580	None
+rs12708716	chr16	11179873	A|G	1	CLEC16A	NM_001243403	23274	intronic	None	None	None	None	None	24994	None
+rs12708716	chr16	11179873	A|G	1	CLEC16A	NM_015226	23274	intronic	None	None	None	None	None	24994	None
+rs12924729	chr16	11187783	G|A	1	CLEC16A	NM_001243403	23274	intronic	None	None	None	None	None	26689	None
+rs12924729	chr16	11187783	G|A	1	CLEC16A	NM_015226	23274	intronic	None	None	None	None	None	26689	None
+rs9746695	chr16	11207894	T|C	1	CLEC16A	NM_001243403	23274	intronic	None	None	None	None	None	6578	None
+rs9746695	chr16	11207894	T|C	1	CLEC16A	NM_015226	23274	intronic	None	None	None	None	None	6578	None
+rs2545886	chr16	21029197	A|G	1	DNAH3	NM_001347886	55567	intronic	None	None	None	None	None	1749	None
+rs2545886	chr16	21029197	A|G	1	DNAH3	NM_017539	55567	intronic	None	None	None	None	None	1749	None
+rs9930029	chr16	24772562	G|A	1	TNRC6A	NM_001330520	27327	intronic	None	None	None	None	None	2881	None
+rs9930029	chr16	24772562	G|A	1	TNRC6A	NM_001351850	27327	intronic	None	None	None	None	None	2881	None
+rs9930029	chr16	24772562	G|A	1	TNRC6A	NM_014494	27327	intronic	None	None	None	None	None	2881	None
+rs8063113	chr16	78271066	C|T	1	WWOX	NM_130791	51741	intronic	None	None	None	None	None	41434	None
+rs8063113	chr16	78271066	C|T	1	WWOX	NR_120436	51741	non-coding intronic	None	None	None	None	None	41434	None
+rs8063113	chr16	78271066	C|T	1	WWOX	NM_001291997	51741	intronic	None	None	None	None	None	72880	None
+rs8063113	chr16	78271066	C|T	1	WWOX	NM_016373	51741	intronic	None	None	None	None	None	72880	None
+rs3803676	chr16	89596106	C|T	1	SPG7	NM_001363850	6687	intronic	None	None	None	None	None	119	None
+rs3803676	chr16	89596106	C|T	1	SPG7	NM_003119	6687	intronic	None	None	None	None	None	119	None
+rs3803676	chr16	89596106	C|T	1	SPG7	NM_199367	6687	intronic	None	None	None	None	None	119	None
+rs382745	chr16	89603586	A|G	1	SPG7	NM_001363850	6687	intronic	None	None	None	None	None	4542	None
+rs382745	chr16	89603586	A|G	1	SPG7	NM_003119	6687	intronic	None	None	None	None	None	4542	None
+rs382745	chr16	89603586	A|G	1	SPG7	NM_199367	6687	3utr	1768	None	None	None	None	None	None
+rs16945811	chr17	1294614	G|A	1	YWHAE	NM_006761	7531	intronic	None	None	None	None	None	8727	None
+rs16945811	chr17	1294614	G|A	1	YWHAE	NR_024058	7531	non-coding intronic	None	None	None	None	None	8727	None
+rs9900326	chr17	10708208	T|C	1	TMEM220-AS1	NR_073458	101101775	non-coding intronic	None	None	None	None	None	1272	None
+rs9900326	chr17	10708208	T|C	1	TMEM238L	NR_036581	100289255	5upstream	None	None	None	None	None	None	None
+rs4792677	chr17	15688147	G|T	1	MEIS3P1	NR_002211	4213	5upstream	None	None	None	None	None	None	None
+rs2429542	chr17	38922456	C|R	1	KRT26	NM_181539	353288	3downstream	None	None	None	None	None	None	None
+rs1263978	chr17	49816472	G|A	1	CA10	NM_001082533	56934	intronic	None	None	None	None	None	8521	None
+rs1263978	chr17	49816472	G|A	1	CA10	NM_001082534	56934	intronic	None	None	None	None	None	8521	None
+rs1263978	chr17	49816472	G|A	1	CA10	NM_020178	56934	intronic	None	None	None	None	None	8521	None
+rs11081349	chr18	7977468	T|C	1	PTPRM	NM_001105244	5797	intronic	None	None	None	None	None	22056	None
+rs11081349	chr18	7977468	T|C	1	PTPRM	NM_002845	5797	intronic	None	None	None	None	None	22056	None
+rs355334	chr18	33075099	A|G	1	INO80C	NM_001308064	125476	intronic	None	None	None	None	None	2371	None
+rs355334	chr18	33075099	A|G	1	INO80C	NM_194281	125476	intronic	None	None	None	None	None	2584	None
+rs355334	chr18	33075099	A|G	1	INO80C	NM_001098817	125476	intronic	None	None	None	None	None	2584	None
+rs12958322	chr18	42309786	T|C	1	SETBP1	NM_001130110	26040	intronic	None	None	None	None	None	27989	None
+rs12958322	chr18	42309786	T|C	1	SETBP1	NM_015559	26040	intronic	None	None	None	None	None	27989	None
+rs17724409	chr18	42438388	C|A	1	SETBP1	NM_001130110	26040	intronic	None	None	None	None	None	10807	None
+rs17724409	chr18	42438388	C|A	1	SETBP1	NM_015559	26040	intronic	None	None	None	None	None	10807	None
+rs357906	chr18	46553265	G|A	1	LOC100129878	NR_148999	100129878	non-coding intronic	None	None	None	None	None	742	None
+rs2289609	chr18	72776891	C|T	1	ZNF407	NM_017757	55628	3utr	7271	None	None	None	None	None	None
+rs7260268	chr19	21270521	A|T	1	ZNF714	NM_182515	148206	intronic	None	None	None	None	None	3646	None
+rs7260268	chr19	21270521	A|T	1	ZNF714	NR_117086	148206	non-coding intronic	None	None	None	None	None	3646	None
+rs7260268	chr19	21270521	A|T	1	ZNF714	NR_117087	148206	non-coding intronic	None	None	None	None	None	3646	None
+rs7260268	chr19	21270521	A|T	1	ZNF714	NR_117088	148206	non-coding intronic	None	None	None	None	None	3646	None
+rs16978732	chr19	44633056	C|T	1	ZNF225	NM_001321685	7768	intronic	None	None	None	None	None	1947	None
+rs16978732	chr19	44633056	C|T	1	ZNF225	NM_013362	7768	intronic	None	None	None	None	None	1947	None
+rs41360748	chr19	44639110	A|G	1	ZNF225	NM_001321685	7768	3downstream	None	None	None	None	None	None	None
+rs41360748	chr19	44639110	A|G	1	ZNF225	NM_013362	7768	3downstream	None	None	None	None	None	None	None
+rs1542038	chr19	56984278	C|T	1	ZNF667	NM_001321355	63934	intronic	None	None	None	None	None	4363	None
+rs1542038	chr19	56984278	C|T	1	ZNF667	NM_022103	63934	intronic	None	None	None	None	None	4363	None
+rs1542038	chr19	56984278	C|T	1	ZNF667	NM_001321356	63934	intronic	None	None	None	None	None	722	None
+rs11678712	chr2	8290837	A|T	1	LINC00299	NR_034135	339789	non-coding intronic	None	None	None	None	None	90302	None
+rs6721746	chr2	44962016	G|A	1	CAMKMT	NM_024766	79823	intronic	None	None	None	None	None	8745	None
+rs6732505	chr2	58455258	G|Y	1	FANCL	NR_156742	55120	non-coding intronic	None	None	None	None	None	13095	None
+rs6732505	chr2	58455258	G|Y	1	FANCL	NM_001114636	55120	intronic	None	None	None	None	None	1339	None
+rs6732505	chr2	58455258	G|Y	1	FANCL	NM_018062	55120	intronic	None	None	None	None	None	1339	None
+rs11126425	chr2	74380989	A|G	1	BOLA3-AS1	NR_045634	100507171	3downstream	None	None	None	None	None	None	None
+rs11126425	chr2	74380989	A|G	1	BOLA3-AS1	NR_045636	100507171	3downstream	None	None	None	None	None	None	None
+rs11126425	chr2	74380989	A|G	1	MOB1A	NM_001317110	55233	3utr	3647	None	None	None	None	None	None
+rs11126425	chr2	74380989	A|G	1	MOB1A	NM_001317111	55233	3utr	3543	None	None	None	None	None	None
+rs11126425	chr2	74380989	A|G	1	MOB1A	NM_018221	55233	3utr	3650	None	None	None	None	None	None
+rs11126425	chr2	74380989	A|G	1	MOB1A	NM_001317112	55233	3utr	3486	None	None	None	None	None	None
+rs17727191	chr2	75733641	C|T	1	EVA1A	NM_001135032	84141	intronic	None	None	None	None	None	11541	None
+rs17727191	chr2	75733641	C|T	1	EVA1A	NM_032181	84141	intronic	None	None	None	None	None	11541	None
+rs7605430	chr2	100647552	C|G	1	AFF3	NM_002285	3899	intronic	None	None	None	None	None	22158	None
+rs7605430	chr2	100647552	C|G	1	AFF3	NM_001025108	3899	intronic	None	None	None	None	None	19519	None
+rs1430306	chr2	109807885	G|A	1	SH3RF3	NM_001099289	344558	intronic	None	None	None	None	None	61316	None
+rs6706577	chr2	111796833	A|K	1	ACOXL	NM_001142807	55289	intronic	None	None	None	None	None	7542	None
+rs10187034	chr2	111812617	T|S	1	ACOXL	NM_001142807	55289	intronic	None	None	None	None	None	5752	None
+rs6734603	chr2	182038729	T|C	1	LINC01934	NR_130784	101927156	non-coding intronic	None	None	None	None	None	50022	None
+rs9967792	chr2	191974435	T|C	1	STAT4	NM_001243835	6775	intronic	None	None	None	None	None	33384	None
+rs9967792	chr2	191974435	T|C	1	STAT4	NM_003151	6775	intronic	None	None	None	None	None	33384	None
+rs7570606	chr2	196791792	A|G	1	DNAH7	NM_018897	56171	intronic	None	None	None	None	None	502	None
+rs4361128	chr2	215768445	G|A	1	LOC101928103	NR_110292	101928103	non-coding intronic	None	None	None	None	None	44104	None
+rs1409612	chr2	215800710	G|A	1	LOC101928103	NR_110292	101928103	non-coding intronic	None	None	None	None	None	11839	None
+rs1409612	chr2	215800710	G|A	1	ABCA12	NM_015657	26154	intronic	None	None	None	None	None	1524	None
+rs1409612	chr2	215800710	G|A	1	ABCA12	NM_173076	26154	intronic	None	None	None	None	None	1524	None
+rs1409612	chr2	215800710	G|A	1	ABCA12	NR_103740	26154	non-coding intronic	None	None	None	None	None	1524	None
+rs4673129	chr2	225877033	C|T	1	DOCK10	NM_014689	55619	intronic	None	None	None	None	None	29936	None
+rs4673129	chr2	225877033	C|T	1	MIR4439	NR_039641	100616207	5upstream	None	None	None	None	None	None	None
+rs8117563	chr20	1346162	A|G	1	FKBP1A-SDCBP2	NR_037661	100528031	non-coding intronic	None	None	None	None	None	27316	None
+rs8117563	chr20	1346162	A|G	1	SDCBP2-AS1	NR_040048	100507495	non-coding intronic	None	None	None	None	None	7560	None
+rs8117563	chr20	1346162	A|G	1	SDCBP2-AS1	NR_040049	100507495	non-coding intronic	None	None	None	None	None	7560	None
+rs8117563	chr20	1346162	A|G	1	SDCBP2-AS1	NR_040047	100507495	non-coding intronic	None	None	None	None	None	7560	None
+rs6075643	chr20	20298392	A|G	1	CFAP61	NM_015585	26074	intronic	None	None	None	None	None	19362	None
+rs7262414	chr20	40811780	C|A	1	PTPRT	NM_007050	11122	intronic	None	None	None	None	None	16100	None
+rs7262414	chr20	40811780	C|A	1	PTPRT	NM_133170	11122	intronic	None	None	None	None	None	16100	None
+rs2868853	chr20	45742310	C|T	1	EYA2	NM_005244	2139	intronic	None	None	None	None	None	16503	None
+rs2868853	chr20	45742310	C|T	1	EYA2	NM_172110	2139	intronic	None	None	None	None	None	16503	None
+rs3787249	chr20	45744355	A|K	1	EYA2	NM_005244	2139	intronic	None	None	None	None	None	18548	None
+rs3787249	chr20	45744355	A|K	1	EYA2	NM_172110	2139	intronic	None	None	None	None	None	18548	None
+rs6019687	chr20	47831904	T|S	1	STAU1	NM_001319135	6780	intronic	None	None	None	None	None	3869	None
+rs919197	chr20	57480933	T|S	1	GNAS	NM_000516	2778	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	NM_001077488	2778	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	NM_001077489	2778	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	NM_001077490	2778	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	NM_001309840	2778	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	NM_001309861	2778	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	NM_016592	2778	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	NM_080425	2778	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	NM_080426	2778	intronic	None	None	None	None	None	398	None
+rs240462	chr21	17752828	A|T	1	MIR99AHG	NR_027791	388815	non-coding intronic	None	None	None	None	None	11106	None
+rs240462	chr21	17752828	A|T	1	MIR99AHG	NR_111004	388815	non-coding intronic	None	None	None	None	None	11106	None
+rs240462	chr21	17752828	A|T	1	MIR99AHG	NR_111005	388815	non-coding intronic	None	None	None	None	None	11106	None
+rs240462	chr21	17752828	A|T	1	MIR99AHG	NR_136541	388815	non-coding intronic	None	None	None	None	None	11106	None
+rs240462	chr21	17752828	A|T	1	MIR99AHG	NR_136542	388815	non-coding intronic	None	None	None	None	None	11106	None
+rs240462	chr21	17752828	A|T	1	MIR99AHG	NR_136543	388815	non-coding intronic	None	None	None	None	None	11106	None
+rs240462	chr21	17752828	A|T	1	MIR99AHG	NR_136551	388815	non-coding intronic	None	None	None	None	None	11106	None
+rs240462	chr21	17752828	A|T	1	MIR99AHG	NR_136552	388815	non-coding intronic	None	None	None	None	None	11106	None
+rs240462	chr21	17752828	A|T	1	MIR99AHG	NR_027790	388815	non-coding intronic	None	None	None	None	None	106982	None
+rs2824545	chr21	19288192	C|T	1	CHODL	NM_001204175	140578	5upstream	None	None	None	None	None	None	None
+rs2824545	chr21	19288192	C|T	1	CHODL	NM_001204176	140578	5upstream	None	None	None	None	None	None	None
+rs2824545	chr21	19288192	C|T	1	CHODL	NM_001204177	140578	5upstream	None	None	None	None	None	None	None
+rs2824545	chr21	19288192	C|T	1	CHODL	NM_001204178	140578	5upstream	None	None	None	None	None	None	None
+rs11700615	chr21	32908593	T|M	1	TIAM1	NM_001353693	7074	intronic	None	None	None	None	None	22308	None
+rs11700615	chr21	32908593	T|M	1	TIAM1	NM_001353688	7074	intronic	None	None	None	None	None	22647	None
+rs11700615	chr21	32908593	T|M	1	TIAM1	NM_001353689	7074	intronic	None	None	None	None	None	22647	None
+rs11700615	chr21	32908593	T|M	1	TIAM1	NM_001353691	7074	intronic	None	None	None	None	None	22647	None
+rs11700615	chr21	32908593	T|M	1	TIAM1	NM_001353692	7074	intronic	None	None	None	None	None	22647	None
+rs11700615	chr21	32908593	T|M	1	TIAM1	NM_003253	7074	intronic	None	None	None	None	None	22647	None
+rs11700615	chr21	32908593	T|M	1	TIAM1	NM_001353690	7074	intronic	None	None	None	None	None	22647	None
+rs2154420	chr21	33854206	T|C	1	EVA1C	NM_001286556	59271	intronic	None	None	None	None	None	13131	None
+rs2154420	chr21	33854206	T|C	1	EVA1C	NM_001320744	59271	intronic	None	None	None	None	None	13131	None
+rs2154420	chr21	33854206	T|C	1	EVA1C	NM_001320745	59271	intronic	None	None	None	None	None	13131	None
+rs2154420	chr21	33854206	T|C	1	EVA1C	NM_058187	59271	intronic	None	None	None	None	None	13131	None
+rs2154420	chr21	33854206	T|C	1	EVA1C	NR_104472	59271	non-coding intronic	None	None	None	None	None	13131	None
+rs2154420	chr21	33854206	T|C	1	EVA1C	NR_135467	59271	non-coding intronic	None	None	None	None	None	13131	None
+rs41513350	chr21	36818747	C|T	1	LOC100506403	NR_073512	100506403	non-coding intronic	None	None	None	None	None	15512	None
+rs12152099	chr21	41303073	G|C	1	PCP4	NM_006198	5121	3downstream	None	None	None	None	None	None	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NR_157126	9681	non-coding intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NR_110988	9681	non-coding intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NR_157128	9681	non-coding intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NM_001136029	9681	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NM_001242896	9681	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NM_001242897	9681	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NM_001363852	9681	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NM_001363854	9681	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NM_001364318	9681	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NM_001364319	9681	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NM_001364320	9681	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NM_014662	9681	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NR_146296	9681	non-coding intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	NR_157125	9681	non-coding intronic	None	None	None	None	None	158	None
+rs135475	chr22	32934659	C|G	1	SYN3	NM_001135774	8224	intronic	None	None	None	None	None	563	None
+rs135475	chr22	32934659	C|G	1	SYN3	NM_003490	8224	intronic	None	None	None	None	None	563	None
+rs135475	chr22	32934659	C|G	1	SYN3	NM_133633	8224	intronic	None	None	None	None	None	563	None
+rs738494	chr22	44370439	A|C	1	SAMM50	NM_015380	25813	intronic	None	None	None	None	None	1236	None
+rs9616913	chr22	51115526	T|C	1	SHANK3	NM_033517	85358	intronic	None	None	None	None	None	405	None
+rs9874351	chr3	21481230	A|T	1	ZNF385D	NM_024697	79750	intronic	None	None	None	None	None	2535	None
+rs17025857	chr3	30681095	A|G	1	TGFBR2	NM_003242	7048	intronic	None	None	None	None	None	5144	None
+rs17025857	chr3	30681095	A|G	1	TGFBR2	NM_001024847	7048	intronic	None	None	None	None	None	5144	None
+rs1354728	chr3	97558176	A|G	1	CRYBG3	NM_153605	131544	intronic	None	None	None	None	None	3863	None
+rs16841378	chr3	99285819	G|T	1	MIR548G	NR_031662	100313938	non-coding intronic	None	None	None	None	None	12648	None
+rs10511176	chr3	99326501	T|C	1	MIR548G	NR_031662	100313938	non-coding intronic	None	None	None	None	None	5296	None
+rs2399399	chr3	111637904	G|W	1	PHLDB2	NM_001134437	90102	intronic	None	None	None	None	None	15	None
+rs2399399	chr3	111637904	G|W	1	PHLDB2	NM_001134438	90102	intronic	None	None	None	None	None	15	None
+rs2399399	chr3	111637904	G|W	1	PHLDB2	NM_001134439	90102	intronic	None	None	None	None	None	15	None
+rs2399399	chr3	111637904	G|W	1	PHLDB2	NM_145753	90102	intronic	None	None	None	None	None	15	None
+rs1135438	chr3	143016478	A|G	1	SLC9A9	NM_173653	285195	intronic	None	None	None	None	None	28656	None
+rs9840380	chr3	150647396	T|R	1	CLRN1	NM_001195794	7401	intronic	None	None	None	None	None	1408	None
+rs9840380	chr3	150647396	T|R	1	CLRN1	NR_046380	7401	non-coding intronic	None	None	None	None	None	1408	None
+rs9840380	chr3	150647396	T|R	1	CLRN1	NM_001256819	7401	intronic	None	None	None	None	None	1408	None
+rs9840380	chr3	150647396	T|R	1	CLRN1	NM_052995	7401	intronic	None	None	None	None	None	1408	None
+rs9840380	chr3	150647396	T|R	1	CLRN1	NM_174878	7401	intronic	None	None	None	None	None	1408	None
+rs3821664	chr3	151102305	C|G	1	P2RY12	NM_022788	64805	intronic	None	None	None	None	None	175	None
+rs3821664	chr3	151102305	C|G	1	MED12L	NM_053002	116931	intronic	None	None	None	None	None	299	None
+rs1515650	chr3	154100726	T|C	1	GPR149	NM_001038705	344758	intronic	None	None	None	None	None	38102	None
+rs1542487	chr3	174956762	G|T	1	NAALADL2	NM_207015	254827	intronic	None	None	None	None	None	4768	None
+rs1542487	chr3	174956762	G|T	1	NAALADL2-AS2	NR_046713	100874244	non-coding intronic	None	None	None	None	None	3163	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	NM_001330751	10891	intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	NM_001354825	10891	intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	NM_001354827	10891	intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	NR_148982	10891	non-coding intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	NR_148985	10891	non-coding intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	NM_001330752	10891	intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	NM_001354826	10891	intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	NR_148981	10891	non-coding intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	NR_148983	10891	non-coding intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	NR_148986	10891	non-coding intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	NR_148987	10891	non-coding intronic	None	None	None	None	None	81741	None
+rs17005996	chr4	83570300	T|C	1	SCD5	NM_001037582	79966	intronic	None	None	None	None	None	12324	None
+rs17388568	chr4	123329362	G|A	1	ADAD1	NM_001159295	132612	intronic	None	None	None	None	None	176	None
+rs17388568	chr4	123329362	G|A	1	ADAD1	NM_139243	132612	intronic	None	None	None	None	None	176	None
+rs17388568	chr4	123329362	G|A	1	ADAD1	NM_001159285	132612	intronic	None	None	None	None	None	176	None
+rs2086346	chr4	123333671	A|G	1	ADAD1	NM_001159285	132612	intronic	None	None	None	None	None	64	None
+rs2086346	chr4	123333671	A|G	1	ADAD1	NM_001159295	132612	intronic	None	None	None	None	None	64	None
+rs2086346	chr4	123333671	A|G	1	ADAD1	NM_139243	132612	intronic	None	None	None	None	None	64	None
+rs4863613	chr4	139858989	T|G	1	LOC105377448	NR_133945	105377448	non-coding intronic	None	None	None	None	None	58077	None
+rs17484678	chr4	149268146	G|A	1	NR3C2	NM_000901	4306	intronic	None	None	None	None	None	86877	None
+rs17484678	chr4	149268146	G|A	1	NR3C2	NM_001166104	4306	intronic	None	None	None	None	None	86877	None
+rs17484678	chr4	149268146	G|A	1	NR3C2	NM_001354819	4306	intronic	None	None	None	None	None	86877	None
+rs17484678	chr4	149268146	G|A	1	NR3C2	NR_148974	4306	non-coding intronic	None	None	None	None	None	86877	None
+rs2128427	chr4	177154196	A|T	1	ASB5	NM_080874	140458	intronic	None	None	None	None	None	7704	None
+rs17649710	chr5	16375098	G|W	1	LINC02150	NR_104625	101929505	non-coding intronic	None	None	None	None	None	1153	None
+rs43188	chr5	52320940	G|A	1	ITGA2	NM_002203	3673	intronic	None	None	None	None	None	1638	None
+rs43188	chr5	52320940	G|A	1	ITGA2	NR_073103	3673	non-coding intronic	None	None	None	None	None	1638	None
+rs43188	chr5	52320940	G|A	1	ITGA2	NR_073104	3673	non-coding intronic	None	None	None	None	None	1638	None
+rs43188	chr5	52320940	G|A	1	ITGA2	NR_073105	3673	non-coding intronic	None	None	None	None	None	1638	None
+rs43188	chr5	52320940	G|A	1	ITGA2	NR_073106	3673	non-coding intronic	None	None	None	None	None	1638	None
+rs43188	chr5	52320940	G|A	1	ITGA2	NR_073107	3673	non-coding intronic	None	None	None	None	None	17002	None
+rs26949	chr5	59825300	T|C	1	PART1	NR_024617	25859	non-coding	781	None	None	None	None	None	None
+rs17134152	chr5	111479955	G|T	1	EPB41L4A	NM_001347887	64097	intronic	None	None	None	None	None	409	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	NR_073526	5521	non-coding intronic	None	None	None	None	None	44652	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	NR_073527	5521	non-coding intronic	None	None	None	None	None	44652	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	NM_181677	5521	intronic	None	None	None	None	None	132208	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	NM_181676	5521	intronic	None	None	None	None	None	132208	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	NM_001271899	5521	intronic	None	None	None	None	None	132208	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	NM_001271948	5521	intronic	None	None	None	None	None	23149	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	NM_181678	5521	intronic	None	None	None	None	None	23149	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	NM_001271900	5521	intronic	None	None	None	None	None	44652	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	NM_181674	5521	intronic	None	None	None	None	None	44652	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	NM_181675	5521	intronic	None	None	None	None	None	44652	None
+rs3776069	chr5	149315287	T|C	1	PDE6A	NM_000440	5145	intronic	None	None	None	None	None	1006	None
+rs11747270	chr5	150258867	A|G	1	IRGM	NM_001346557	345611	intronic	None	None	None	None	None	280	None
+rs17659728	chr5	150637133	A|G	1	GM2A	NM_000405	2760	intronic	None	None	None	None	None	2183	None
+rs17659728	chr5	150637133	A|G	1	GM2A	NM_001167607	2760	intronic	None	None	None	None	None	2183	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NM_001364165	2890	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NM_000827	2890	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NM_001114183	2890	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NM_001258019	2890	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NM_001258020	2890	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NM_001258021	2890	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NM_001258022	2890	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NM_001258023	2890	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NM_001364166	2890	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NM_001364167	2890	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NR_047578	2890	non-coding intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	NR_157093	2890	non-coding intronic	None	None	None	None	None	39	None
+rs2112594	chr5	179744009	T|A|C|G	1	GFPT2	NM_005110	9945	coding	1178	1008	336	S>S|S>S|S>S	syn|syn|syn	None	MCGIFAYMNYRVPRTRKEIFETLIKGLQRLEYRGYDSAGVAIDGNNHEVKERHIQLVKKRGKVKALDEELYKQDSMDLKVEFETHFGIAHTRWATHGVPSAVNSHPQRSDKGNEFVVIHNGIITNYKDLRKFLESKGYEFESETDTETIAKLIKYVFDNRETEDITFSTLVERVIQQLEGAFALVFKSVHYPGEAVATRRGSPLLIGVRSKYKLSTEQIPILYRTCTLENVKNICKTRMKRLDSSACLHAVGDKAVEFFFASDASAIIEHTNRVIFLEDDDIAAVADGKLSIHRVKRSASDDPSRAIQTLQMELQQIMKGNFSAFMQKEIFEQPESVFNTMRGRVNFETNTVLLGGLKDHLKEIRRCRRLIVIGCGTSYHAAVATRQVLEELTELPVMVELASDFLDRNTPVFRDDVCFFISQSGETADTLLALRYCKDRGALTVGVTNTVGSSISRETDCGVHINAGPEIGVASTKAYTSQFISLVMFGLMMSEDRISLQNRRQEIIRGLRSLPELIKEVLSLEEKIHDLALELYTQRSLLVMGRGYNYATCLEGALKIKEITYMHSEGILAGELKHGPLALIDKQMPVIMVIMKDPCFAKCQNALQQVTARQGRPIILCSKDDTESSKFAYKTIELPHTVDCLQGILSVIPLQLLSFHLAVLRGYDVDFPRNLAKSVTVE*
+rs4959824	chr6	3409112	G|A	1	SLC22A23	NM_001286455	63027	intronic	None	None	None	None	None	1310	None
+rs4959824	chr6	3409112	G|A	1	SLC22A23	NM_001286456	63027	intronic	None	None	None	None	None	1310	None
+rs4959824	chr6	3409112	G|A	1	SLC22A23	NM_015482	63027	intronic	None	None	None	None	None	1310	None
+rs4959824	chr6	3409112	G|A	1	SLC22A23	NM_021945	63027	intronic	None	None	None	None	None	1310	None
+rs4959824	chr6	3409112	G|A	1	SLC22A23	NR_104448	63027	non-coding intronic	None	None	None	None	None	1310	None
+rs523383	chr6	25869848	A|G	1	SLC17A3	NM_001098486	10786	intronic	None	None	None	None	None	1200	None
+rs523383	chr6	25869848	A|G	1	SLC17A3	NM_006632	10786	intronic	None	None	None	None	None	1200	None
+rs3734536	chr6	26365346	G|C	1	BTN3A2	NM_001197247	11118	5upstream	None	None	None	None	None	None	None
+rs3734536	chr6	26365346	G|C	1	BTN3A2	NM_001197248	11118	5upstream	None	None	None	None	None	None	None
+rs3734536	chr6	26365346	G|C	1	BTN3A2	NM_001197249	11118	5upstream	None	None	None	None	None	None	None
+rs3734536	chr6	26365346	G|C	1	BTN3A2	NM_007047	11118	5upstream	None	None	None	None	None	None	None
+rs10456045	chr6	26404958	G|A	1	BTN3A1	NM_001145008	11119	intronic	None	None	None	None	None	642	None
+rs10456045	chr6	26404958	G|A	1	BTN3A1	NM_001145009	11119	intronic	None	None	None	None	None	642	None
+rs10456045	chr6	26404958	G|A	1	BTN3A1	NM_007048	11119	intronic	None	None	None	None	None	642	None
+rs10456045	chr6	26404958	G|A	1	BTN3A1	NM_194441	11119	intronic	None	None	None	None	None	812	None
+rs2237236	chr6	26451553	A|S	1	BTN3A3	NM_001242803	10384	intronic	None	None	None	None	None	350	None
+rs2237236	chr6	26451553	A|S	1	BTN3A3	NM_006994	10384	intronic	None	None	None	None	None	350	None
+rs2237236	chr6	26451553	A|S	1	BTN3A3	NM_197974	10384	intronic	None	None	None	None	None	350	None
+rs7763910	chr6	26472655	A|G	1	BTN2A1	NM_001197234	11120	intronic	None	None	None	None	None	3695	None
+rs7763910	chr6	26472655	A|G	1	LOC285819	NR_038992	285819	non-coding intronic	None	None	None	None	None	234	None
+rs4713062	chr6	26948195	C|D	1	LINC00240	NR_026775	100133205	non-coding intronic	None	None	None	None	None	11894	None
+rs16899778	chr6	27390150	T|C	1	ZNF184	NR_144687	7738	non-coding intronic	None	None	None	None	None	12035	None
+rs16899778	chr6	27390150	T|C	1	ZNF184	NR_144688	7738	non-coding intronic	None	None	None	None	None	12035	None
+rs200481	chr6	27773832	T|A	1	HIST1H2BL	NM_003519	8340	3downstream	None	None	None	None	None	None	None
+rs201002	chr6	27808192	A|G	1	HIST1H2AK	NM_003510	8330	5upstream	None	None	None	None	None	None	None
+rs201002	chr6	27808192	A|G	1	HIST1H2BN	NM_003520	8341	3downstream	None	None	None	None	None	None	None
+rs1225709	chr6	28103648	T|C	1	ZSCAN16-AS1	NR_103456	100129195	non-coding intronic	None	None	None	None	None	875	None
+rs1225709	chr6	28103648	T|C	1	ZSCAN16-AS1	NR_103455	100129195	non-coding intronic	None	None	None	None	None	875	None
+rs1871695	chr6	28109960	A|G	1	ZKSCAN8	NM_001278121	7745	5upstream	None	None	None	None	None	None	None
+rs1871695	chr6	28109960	A|G	1	ZKSCAN8	NM_001278119	7745	intronic	None	None	None	None	None	153	None
+rs1871695	chr6	28109960	A|G	1	ZKSCAN8	NM_001278122	7745	intronic	None	None	None	None	None	153	None
+rs1871695	chr6	28109960	A|G	1	ZKSCAN8	NM_006298	7745	intronic	None	None	None	None	None	153	None
+rs17720293	chr6	28214698	C|T	1	ZKSCAN4	NM_001304506	387032	intronic	None	None	None	None	None	49	None
+rs17720293	chr6	28214698	C|T	1	ZKSCAN4	NM_019110	387032	intronic	None	None	None	None	None	49	None
+rs9272346	chr6	32604372	G|A	1	HLA-DQA1	NM_002122	3117	5upstream	None	None	None	None	None	None	None
+rs9272723	chr6	32609427	T|C	1	HLA-DQA1	NM_002122	3117	intronic	None	None	None	None	None	92	None
+rs10807124	chr6	33404064	G|A	1	SYNGAP1	NM_001130066	8831	intronic	None	None	None	None	None	674	None
+rs10807124	chr6	33404064	G|A	1	SYNGAP1	NM_006772	8831	intronic	None	None	None	None	None	674	None
+rs10807124	chr6	33404064	G|A	1	MIR5004	NR_049800	100847012	5upstream	None	None	None	None	None	None	None
+rs4713843	chr6	35203745	T|C	1	SCUBE3	NM_001303136	222663	intronic	None	None	None	None	None	1934	None
+rs4713843	chr6	35203745	T|C	1	SCUBE3	NM_152753	222663	intronic	None	None	None	None	None	1934	None
+rs4607417	chr6	41978274	C|K	1	CCND3	NM_001287434	896	intronic	None	None	None	None	None	19473	None
+rs4607417	chr6	41978274	C|K	1	CCND3	NM_001136126	896	intronic	None	None	None	None	None	37965	None
+rs4607417	chr6	41978274	C|K	1	CCND3	NM_001136017	896	intronic	None	None	None	None	None	37965	None
+rs9395726	chr6	51673301	A|G	1	PKHD1	NM_138694	5314	intronic	None	None	None	None	None	17130	None
+rs9395726	chr6	51673301	A|G	1	PKHD1	NM_170724	5314	intronic	None	None	None	None	None	17130	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	NM_001291984	5796	intronic	None	None	None	None	None	3826	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	NM_001135648	5796	intronic	None	None	None	None	None	3823	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	NM_001291981	5796	intronic	None	None	None	None	None	3823	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	NM_001291982	5796	intronic	None	None	None	None	None	3823	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	NM_001291983	5796	intronic	None	None	None	None	None	3823	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	NM_002844	5796	intronic	None	None	None	None	None	3823	None
+rs9375615	chr6	129401222	A|K	1	LAMA2	NM_000426	3908	intronic	None	None	None	None	None	18096	None
+rs9375615	chr6	129401222	A|K	1	LAMA2	NM_001079823	3908	intronic	None	None	None	None	None	18096	None
+rs9365243	chr6	158085403	A|C	1	ZDHHC14	NM_024630	79683	intronic	None	None	None	None	None	8353	None
+rs9365243	chr6	158085403	A|C	1	ZDHHC14	NM_153746	79683	intronic	None	None	None	None	None	8398	None
+rs341160	chr6	158832854	T|C	1	TULP4	NM_001007466	56995	intronic	None	None	None	None	None	1243	None
+rs341160	chr6	158832854	T|C	1	TULP4	NM_020245	56995	intronic	None	None	None	None	None	1243	None
+rs2648654	chr7	29057968	T|M	1	CPVL	NM_001348052	54504	intronic	None	None	None	None	None	12225	None
+rs2648654	chr7	29057968	T|M	1	CPVL	NM_001348054	54504	intronic	None	None	None	None	None	12225	None
+rs2648654	chr7	29057968	T|M	1	CPVL	NM_019029	54504	intronic	None	None	None	None	None	12225	None
+rs2648654	chr7	29057968	T|M	1	CPVL	NM_031311	54504	intronic	None	None	None	None	None	12225	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	NM_001191056	5137	intronic	None	None	None	None	None	76237	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	NM_001191057	5137	intronic	None	None	None	None	None	76237	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	NM_001191059	5137	intronic	None	None	None	None	None	76237	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	NM_001322055	5137	intronic	None	None	None	None	None	76237	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	NM_001322056	5137	intronic	None	None	None	None	None	76237	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	NM_001322057	5137	intronic	None	None	None	None	None	76237	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	NM_005020	5137	intronic	None	None	None	None	None	76237	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	NM_001191058	5137	intronic	None	None	None	None	None	94456	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	NM_001322058	5137	intronic	None	None	None	None	None	94456	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	NM_001322059	5137	intronic	None	None	None	None	None	94456	None
+rs323925	chr7	34730255	G|A	1	NPSR1-AS1	NR_033665	404744	non-coding intronic	None	None	None	None	None	38094	None
+rs323925	chr7	34730255	G|A	1	NPSR1-AS1	NR_033664	404744	non-coding intronic	None	None	None	None	None	38094	None
+rs323925	chr7	34730255	G|A	1	NPSR1	NM_001300935	387129	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1	NM_207172	387129	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1	NM_207173	387129	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1	NM_001300933	387129	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1	NM_001300934	387129	intronic	None	None	None	None	None	5959	None
+rs1525791	chr7	39156558	C|T	1	POU6F2	NM_001166018	11281	intronic	None	None	None	None	None	30927	None
+rs1525791	chr7	39156558	C|T	1	POU6F2	NM_007252	11281	intronic	None	None	None	None	None	30927	None
+rs3735361	chr7	42000924	C|W	1	GLI3	NM_000168	2737	3utr	7838	None	None	None	None	None	None
+rs10265492	chr7	47539322	G|M	1	TNS3	NM_022748	64759	intronic	None	None	None	None	None	7183	None
+rs1058425	chr7	80387766	C|T	1	SEMA3C	NM_001350120	10512	coding	1677	1578	526	Q>Q	syn	None	MLSKKGIFPWILTCISEEMAFRTICVLVGVFICSICVKGSSQPQARVYLTFDELRETKTSEYFSLSHHPLDYRILLMDEDQDRIYVGSKDHILSLNINNISQEALSVFWPASTIKVEECKMAGKDPTHGCGNFVRVIQTFNRTHLYVCGSGAFSPVCTYLNRGRRSEDQVFMIDSKCESGKGRCSFNPNVNTVSVMINEELFSGMYIDFMGTDAAIFRSLTKRNAVRTDQHNSKWLSEPMFVDAHVIPDGTDPNDAKVYFFFKEKLTDNNRSTKQIHSMIARICPNDTGGLRSLVNKWTTFLKARLVCSVTDEDGPETHFDELEDVFLLETDNPRTTLVYGIFTTSSSVFKGSAVCVYHLSDIQTVFNGPFAHKEGPNHQLISYQGRIPYPRPGTCPGGAFTPNMRTTKEFPDDVVTFIRNHPLMYNSIYPIHKRPLIVRIGTDYKYTKIAVDRVNAADGRYHVLFLGTDRGTVQKVVVLPTNNSVSGELILEELEVFKNHAPITTMKISSKKQQLYVSSNEGVSQVSLHRCHIYGTACADCCLARDPYCAWDGHSCSRFYPTGKRRSRRQDVRHGNPLTQCRGFNLKAYRNAAEIVQYGVKNNTTFLECAPKSPQASIKWLLQKDKDRRKEVKLNERIIATSQGLLIRSVQGSDQGLYHCIATENSFKQTIAKINFKVLDSEMVAVVTDKWSPWTWASSVRALPFHPKDIMGAFSHSEMQMINQYCKDTRQQHQQGDESQKMRGDYGKLKALINSRKSRNRRNQLPES*
+rs1058425	chr7	80387766	C|T	1	SEMA3C	NM_001350121	10512	coding	2174	1350	450	Q>Q	syn	None	MDEDQDRIYVGSKDHILSLNINNISQEALSVFWPASTIKVEECKMAGKDPTHGCGNFVRVIQTFNRTHLYVCGSGAFSPVCTYLNRGRRSEDQVFMIDSKCESGKGRCSFNPNVNTVSVMINEELFSGMYIDFMGTDAAIFRSLTKRNAVRTDQHNSKWLSEPMFVDAHVIPDGTDPNDAKVYFFFKEKLTDNNRSTKQIHSMIARICPNDTGGLRSLVNKWTTFLKARLVCSVTDEDGPETHFDELEDVFLLETDNPRTTLVYGIFTTSSSVFKGSAVCVYHLSDIQTVFNGPFAHKEGPNHQLISYQGRIPYPRPGTCPGGAFTPNMRTTKEFPDDVVTFIRNHPLMYNSIYPIHKRPLIVRIGTDYKYTKIAVDRVNAADGRYHVLFLGTDRGTVQKVVVLPTNNSVSGELILEELEVFKNHAPITTMKISSKKQQLYVSSNEGVSQVSLHRCHIYGTACADCCLARDPYCAWDGHSCSRFYPTGKRRSRRQDVRHGNPLTQCRGFNLKAYRNAAEIVQYGVKNNTTFLECAPKSPQASIKWLLQKDKDRRKEVKLNERIIATSQGLLIRSVQGSDQGLYHCIATENSFKQTIAKINFKVLDSEMVAVVTDKWSPWTWASSVRALPFHPKDIMGAFSHSEMQMINQYCKDTRQQHQQGDESQKMRGDYGKLKALINSRKSRNRRNQLPES*
+rs1058425	chr7	80387766	C|T	1	SEMA3C	NM_006379	10512	coding	2086	1524	508	Q>Q	syn	None	MAFRTICVLVGVFICSICVKGSSQPQARVYLTFDELRETKTSEYFSLSHHPLDYRILLMDEDQDRIYVGSKDHILSLNINNISQEALSVFWPASTIKVEECKMAGKDPTHGCGNFVRVIQTFNRTHLYVCGSGAFSPVCTYLNRGRRSEDQVFMIDSKCESGKGRCSFNPNVNTVSVMINEELFSGMYIDFMGTDAAIFRSLTKRNAVRTDQHNSKWLSEPMFVDAHVIPDGTDPNDAKVYFFFKEKLTDNNRSTKQIHSMIARICPNDTGGLRSLVNKWTTFLKARLVCSVTDEDGPETHFDELEDVFLLETDNPRTTLVYGIFTTSSSVFKGSAVCVYHLSDIQTVFNGPFAHKEGPNHQLISYQGRIPYPRPGTCPGGAFTPNMRTTKEFPDDVVTFIRNHPLMYNSIYPIHKRPLIVRIGTDYKYTKIAVDRVNAADGRYHVLFLGTDRGTVQKVVVLPTNNSVSGELILEELEVFKNHAPITTMKISSKKQQLYVSSNEGVSQVSLHRCHIYGTACADCCLARDPYCAWDGHSCSRFYPTGKRRSRRQDVRHGNPLTQCRGFNLKAYRNAAEIVQYGVKNNTTFLECAPKSPQASIKWLLQKDKDRRKEVKLNERIIATSQGLLIRSVQGSDQGLYHCIATENSFKQTIAKINFKVLDSEMVAVVTDKWSPWTWASSVRALPFHPKDIMGAFSHSEMQMINQYCKDTRQQHQQGDESQKMRGDYGKLKALINSRKSRNRRNQLPES*
+rs1880959	chr7	80427495	C|A	1	SEMA3C	NM_001350120	10512	coding	1197	1098	366	V>V	syn	None	MLSKKGIFPWILTCISEEMAFRTICVLVGVFICSICVKGSSQPQARVYLTFDELRETKTSEYFSLSHHPLDYRILLMDEDQDRIYVGSKDHILSLNINNISQEALSVFWPASTIKVEECKMAGKDPTHGCGNFVRVIQTFNRTHLYVCGSGAFSPVCTYLNRGRRSEDQVFMIDSKCESGKGRCSFNPNVNTVSVMINEELFSGMYIDFMGTDAAIFRSLTKRNAVRTDQHNSKWLSEPMFVDAHVIPDGTDPNDAKVYFFFKEKLTDNNRSTKQIHSMIARICPNDTGGLRSLVNKWTTFLKARLVCSVTDEDGPETHFDELEDVFLLETDNPRTTLVYGIFTTSSSVFKGSAVCVYHLSDIQTVFNGPFAHKEGPNHQLISYQGRIPYPRPGTCPGGAFTPNMRTTKEFPDDVVTFIRNHPLMYNSIYPIHKRPLIVRIGTDYKYTKIAVDRVNAADGRYHVLFLGTDRGTVQKVVVLPTNNSVSGELILEELEVFKNHAPITTMKISSKKQQLYVSSNEGVSQVSLHRCHIYGTACADCCLARDPYCAWDGHSCSRFYPTGKRRSRRQDVRHGNPLTQCRGFNLKAYRNAAEIVQYGVKNNTTFLECAPKSPQASIKWLLQKDKDRRKEVKLNERIIATSQGLLIRSVQGSDQGLYHCIATENSFKQTIAKINFKVLDSEMVAVVTDKWSPWTWASSVRALPFHPKDIMGAFSHSEMQMINQYCKDTRQQHQQGDESQKMRGDYGKLKALINSRKSRNRRNQLPES*
+rs1880959	chr7	80427495	C|A	1	SEMA3C	NM_001350121	10512	coding	1694	870	290	V>V	syn	None	MDEDQDRIYVGSKDHILSLNINNISQEALSVFWPASTIKVEECKMAGKDPTHGCGNFVRVIQTFNRTHLYVCGSGAFSPVCTYLNRGRRSEDQVFMIDSKCESGKGRCSFNPNVNTVSVMINEELFSGMYIDFMGTDAAIFRSLTKRNAVRTDQHNSKWLSEPMFVDAHVIPDGTDPNDAKVYFFFKEKLTDNNRSTKQIHSMIARICPNDTGGLRSLVNKWTTFLKARLVCSVTDEDGPETHFDELEDVFLLETDNPRTTLVYGIFTTSSSVFKGSAVCVYHLSDIQTVFNGPFAHKEGPNHQLISYQGRIPYPRPGTCPGGAFTPNMRTTKEFPDDVVTFIRNHPLMYNSIYPIHKRPLIVRIGTDYKYTKIAVDRVNAADGRYHVLFLGTDRGTVQKVVVLPTNNSVSGELILEELEVFKNHAPITTMKISSKKQQLYVSSNEGVSQVSLHRCHIYGTACADCCLARDPYCAWDGHSCSRFYPTGKRRSRRQDVRHGNPLTQCRGFNLKAYRNAAEIVQYGVKNNTTFLECAPKSPQASIKWLLQKDKDRRKEVKLNERIIATSQGLLIRSVQGSDQGLYHCIATENSFKQTIAKINFKVLDSEMVAVVTDKWSPWTWASSVRALPFHPKDIMGAFSHSEMQMINQYCKDTRQQHQQGDESQKMRGDYGKLKALINSRKSRNRRNQLPES*
+rs1880959	chr7	80427495	C|A	1	SEMA3C	NM_006379	10512	coding	1606	1044	348	V>V	syn	None	MAFRTICVLVGVFICSICVKGSSQPQARVYLTFDELRETKTSEYFSLSHHPLDYRILLMDEDQDRIYVGSKDHILSLNINNISQEALSVFWPASTIKVEECKMAGKDPTHGCGNFVRVIQTFNRTHLYVCGSGAFSPVCTYLNRGRRSEDQVFMIDSKCESGKGRCSFNPNVNTVSVMINEELFSGMYIDFMGTDAAIFRSLTKRNAVRTDQHNSKWLSEPMFVDAHVIPDGTDPNDAKVYFFFKEKLTDNNRSTKQIHSMIARICPNDTGGLRSLVNKWTTFLKARLVCSVTDEDGPETHFDELEDVFLLETDNPRTTLVYGIFTTSSSVFKGSAVCVYHLSDIQTVFNGPFAHKEGPNHQLISYQGRIPYPRPGTCPGGAFTPNMRTTKEFPDDVVTFIRNHPLMYNSIYPIHKRPLIVRIGTDYKYTKIAVDRVNAADGRYHVLFLGTDRGTVQKVVVLPTNNSVSGELILEELEVFKNHAPITTMKISSKKQQLYVSSNEGVSQVSLHRCHIYGTACADCCLARDPYCAWDGHSCSRFYPTGKRRSRRQDVRHGNPLTQCRGFNLKAYRNAAEIVQYGVKNNTTFLECAPKSPQASIKWLLQKDKDRRKEVKLNERIIATSQGLLIRSVQGSDQGLYHCIATENSFKQTIAKINFKVLDSEMVAVVTDKWSPWTWASSVRALPFHPKDIMGAFSHSEMQMINQYCKDTRQQHQQGDESQKMRGDYGKLKALINSRKSRNRRNQLPES*
+rs17136882	chr7	103983576	C|G	1	LHFPL3	NM_199000	375612	intronic	None	None	None	None	None	13904	None
+rs10487463	chr7	126619872	G|A	1	GRM8	NM_000845	2918	intronic	None	None	None	None	None	75135	None
+rs10487463	chr7	126619872	G|A	1	GRM8	NM_001127323	2918	intronic	None	None	None	None	None	75135	None
+rs10487463	chr7	126619872	G|A	1	GRM8	NR_028041	2918	non-coding intronic	None	None	None	None	None	75135	None
+rs2566878	chr7	128902590	G|A	1	AHCYL2	NM_015328	23382	intronic	None	None	None	None	None	37310	None
+rs2566878	chr7	128902590	G|A	1	AHCYL2	NM_001130720	23382	intronic	None	None	None	None	None	37310	None
+rs7780008	chr7	151462537	C|T	1	PRKAG2	NM_001040633	51422	intronic	None	None	None	None	None	15701	None
+rs7780008	chr7	151462537	C|T	1	PRKAG2	NM_016203	51422	intronic	None	None	None	None	None	15701	None
+rs10958514	chr8	57881921	C|K	1	IMPAD1	NM_017813	54928	intronic	None	None	None	None	None	3010	None
+rs7829537	chr8	68302527	A|G	1	LOC102724708	NR_136224	102724708	non-coding intronic	None	None	None	None	None	45990	None
+rs2383894	chr8	74348656	T|C	1	STAU2-AS1	NR_038406	100128126	non-coding intronic	None	None	None	None	None	2511	None
+rs2383894	chr8	74348656	T|C	1	STAU2	NM_001164382	27067	intronic	None	None	None	None	None	13719	None
+rs2383894	chr8	74348656	T|C	1	STAU2	NM_001164380	27067	intronic	None	None	None	None	None	13719	None
+rs2383894	chr8	74348656	T|C	1	STAU2	NM_001164381	27067	intronic	None	None	None	None	None	13719	None
+rs2383894	chr8	74348656	T|C	1	STAU2	NM_001164383	27067	intronic	None	None	None	None	None	13719	None
+rs12548378	chr8	77344816	C|K	1	LINC01111	NR_105006	101926978	non-coding intronic	None	None	None	None	None	1060	None
+rs7016814	chr8	99200570	T|C	1	NIPAL2	NM_001321635	79815	3downstream	None	None	None	None	None	None	None
+rs7016814	chr8	99200570	T|C	1	NIPAL2	NM_001321636	79815	3downstream	None	None	None	None	None	None	None
+rs7016814	chr8	99200570	T|C	1	NIPAL2	NM_024759	79815	3downstream	None	None	None	None	None	None	None
+rs7016814	chr8	99200570	T|C	1	NIPAL2	NR_135745	79815	3downstream	None	None	None	None	None	None	None
+rs7016814	chr8	99200570	T|C	1	NIPAL2	NR_135746	79815	3downstream	None	None	None	None	None	None	None
+rs7016814	chr8	99200570	T|C	1	NIPAL2	NR_135747	79815	3downstream	None	None	None	None	None	None	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_001363156	93594	intronic	None	None	None	None	None	4778	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_001145088	93594	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_001330606	93594	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_001363148	93594	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_001363149	93594	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_001363150	93594	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_001363151	93594	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_001363152	93594	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_001363153	93594	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_001363154	93594	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_001363155	93594	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	TBC1D31	NM_145647	93594	intronic	None	None	None	None	None	1090	None
+rs1435447	chr8	131878994	A|G	1	ADCY8	NM_001115	114	intronic	None	None	None	None	None	1098	None
+rs1398293	chr8	139309169	G|W	1	FAM135B	NM_001362965	51059	intronic	None	None	None	None	None	13915	None
+rs1398293	chr8	139309169	G|W	1	FAM135B	NM_015912	51059	intronic	None	None	None	None	None	13915	None
+rs10970529	chr9	3189170	C|T	1	LINC01231	NR_121585	101929247	non-coding intronic	None	None	None	None	None	2135	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047533	100048912	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047534	100048912	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047535	100048912	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047536	100048912	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047537	100048912	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047538	100048912	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047540	100048912	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047541	100048912	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047542	100048912	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047543	100048912	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_120536	100048912	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_003529	100048912	non-coding intronic	None	None	None	None	None	1412	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047539	100048912	non-coding intronic	None	None	None	None	None	1412	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	NR_047532	100048912	non-coding intronic	None	None	None	None	None	1412	None
+rs11138830	chr9	72085456	C|T	1	APBA1	NM_001163	320	intronic	None	None	None	None	None	1116	None
+rs11145084	chr9	79435471	C|A	1	PRUNE2	NM_001308047	158471	intronic	None	None	None	None	None	3077	None
+rs11145084	chr9	79435471	C|A	1	PRUNE2	NM_001308048	158471	intronic	None	None	None	None	None	3077	None
+rs11145084	chr9	79435471	C|A	1	PRUNE2	NM_015225	158471	intronic	None	None	None	None	None	3077	None
+rs11145084	chr9	79435471	C|A	1	PRUNE2	NR_131751	158471	non-coding intronic	None	None	None	None	None	3077	None
+rs7027501	chr9	89612224	T|C	1	GAS1RR	NR_049794	100506834	non-coding intronic	None	None	None	None	None	5	None
+rs41382949	chr9	103281780	G|A	1	MSANTD3-TMEFF1	NM_001198812	100526694	intronic	None	None	None	None	None	2727	None
+rs41382949	chr9	103281780	G|A	1	TMEFF1	NM_003692	8577	intronic	None	None	None	None	None	2727	None
+rs10989147	chr9	103300396	G|T	1	MSANTD3-TMEFF1	NM_001198812	100526694	intronic	None	None	None	None	None	9630	None
+rs10989147	chr9	103300396	G|T	1	TMEFF1	NM_003692	8577	intronic	None	None	None	None	None	9630	None
+rs10989154	chr9	103324394	C|K	1	MSANTD3-TMEFF1	NM_001198812	100526694	intronic	None	None	None	None	None	592	None
+rs10989154	chr9	103324394	C|K	1	TMEFF1	NM_003692	8577	intronic	None	None	None	None	None	592	None
+rs10989523	chr9	104230977	T|C	1	TMEM246-AS1	NR_121574	101928470	5upstream	None	None	None	None	None	None	None
+rs10989523	chr9	104230977	T|C	1	TMEM246-AS1	NR_121575	101928470	5upstream	None	None	None	None	None	None	None
+rs10989523	chr9	104230977	T|C	1	TMEM246-AS1	NR_121573	101928470	non-coding intronic	None	None	None	None	None	87	None
+rs10989523	chr9	104230977	T|C	1	TMEM246-AS1	NR_121576	101928470	non-coding intronic	None	None	None	None	None	87	None
+rs445722	chr9	106082463	C|T	1	LINC01492	NR_121578	101928496	non-coding	49	None	None	None	None	None	None
+rs411567	chr9	106082968	T|C	1	LINC01492	NR_121578	101928496	non-coding intronic	None	None	None	None	None	500	None
+rs2622932	chr9	106086711	T|A	1	LINC01492	NR_121578	101928496	non-coding intronic	None	None	None	None	None	562	None
+rs12686004	chr9	107653426	G|A	1	ABCA1	NM_005502	19	intronic	None	None	None	None	None	1950	None
+rs1772033	chr9	111769543	G|A	1	CTNNAL1	NM_001286974	8727	intronic	None	None	None	None	None	6039	None
+rs1772033	chr9	111769543	G|A	1	CTNNAL1	NM_003798	8727	intronic	None	None	None	None	None	6039	None
+rs4979354	chr9	116973755	G|A	1	MIR455	NR_030255	619556	3downstream	None	None	None	None	None	None	None
+rs4979354	chr9	116973755	G|A	1	COL27A1	NM_032888	85301	intronic	None	None	None	None	None	449	None
+rs16927327	chr9	127047450	G|A	1	NEK6	NM_001166167	10783	intronic	None	None	None	None	None	16765	None
+rs16927327	chr9	127047450	G|A	1	NEK6	NM_001145001	10783	intronic	None	None	None	None	None	7678	None
+rs16927327	chr9	127047450	G|A	1	NEK6	NM_014397	10783	intronic	None	None	None	None	None	16765	None
+rs16927327	chr9	127047450	G|A	1	NEK6	NM_001166168	10783	intronic	None	None	None	None	None	16765	None

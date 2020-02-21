@@ -1,0 +1,7 @@
+Variation ID	Chromosome	Position	Variation	Type	Clinical Significance	Phenotypes
+rs2269238	chr1	64117537	G/A	single nucleotide variant	Likely benign	not specified
+rs2269238	chr1	64117537	G/T	single nucleotide variant	Benign	Congenital disorder of glycosylation,Congenital disorder of glycosylation type 1t,not specified,not provided
+rs4643	chr1	64125439	A/C	single nucleotide variant	Likely benign	Congenital disorder of glycosylation,Congenital disorder of glycosylation type 1t
+rs2488457	chr1	114415368	G/C	single nucleotide variant	risk factor	Diabetes mellitus, insulin-dependent, susceptibility to
+rs382745	chr16	89603586	A/G	single nucleotide variant	Benign	not provided
+rs3735361	chr7	42000924	C/T	single nucleotide variant	Benign	Polydactyly,Pallister-Hall syndrome,Greig cephalopolysyndactyly syndrome

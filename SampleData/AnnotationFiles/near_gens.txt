@@ -1,0 +1,521 @@
+Variation ID	Chromosome	Position	Overlapped Gene	Type	Annotation	Nearest Upstream Gene	Type of Nearest Upstream Gene	Distance to Nearest Upstream Gene	Nearest Downstream Gene	Type of Nearest Downstream Gene	Distance to Nearest Downstream Gene
+rs7539261	chr1	40050503	None	None	None	PABPC4	protein_coding	8041	HEYL	protein_coding	39322
+rs17113557	chr1	56719210	RP11-504A18.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs2269241	chr1	64108771	PGM1	protein_coding	intronic	None	None	None	None	None	None
+rs2269239	chr1	64109359	PGM1	protein_coding	intronic	None	None	None	None	None	None
+rs3790857	chr1	64111866	PGM1	protein_coding	intronic	None	None	None	None	None	None
+rs2269238	chr1	64117537	PGM1	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs11208264	chr1	64125072	PGM1	protein_coding	intronic	None	None	None	None	None	None
+rs4643	chr1	64125439	PGM1	protein_coding	3utr	None	None	None	None	None	None
+rs2013012	chr1	64128209	None	None	None	PGM1	protein_coding	2293	ROR1	protein_coding	111484
+rs41515647	chr1	77517009	ST6GALNAC5	protein_coding	intronic,3downstream	None	None	None	None	None	None
+rs859065	chr1	95352030	SLC44A3	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs927512	chr1	96932939	None	None	None	EEF1A1P11	pseudogene	19065	RN7SL831P	misc_RNA	115826
+rs1264882	chr1	111962944	OVGP1	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs4456089	chr1	114084544	MAGI3	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs17013326	chr1	114089316	MAGI3	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs1113523	chr1	114129474	MAGI3	protein_coding	intronic	None	None	None	None	None	None
+rs1217227	chr1	114139616	MAGI3	protein_coding	intronic	None	None	None	None	None	None
+rs1217226	chr1	114139922	MAGI3	protein_coding	intronic	None	None	None	None	None	None
+rs1217200	chr1	114161116	MAGI3	protein_coding	intronic	None	None	None	None	None	None
+rs1230666	chr1	114173410	MAGI3	protein_coding	intronic	None	None	None	None	None	None
+rs1230658	chr1	114218451	MAGI3	protein_coding	intronic	None	None	None	None	None	None
+rs1230649	chr1	114244177	PHTF1	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs6679677	chr1	114303808	None	None	None	PHTF1	protein_coding	1697	RSBN1	protein_coding	646
+rs1217396	chr1	114338236	RSBN1	protein_coding	intronic	None	None	None	None	None	None
+rs2488457	chr1	114415368	AP4B1-AS1	antisense	non-coding intronic	None	None	None	None	None	None
+rs1235005	chr1	114417437	AP4B1-AS1	antisense	non-coding intronic	None	None	None	None	None	None
+rs10776775	chr1	114436482	AP4B1-AS1	antisense	non-coding intronic	None	None	None	None	None	None
+rs3811019	chr1	114471583	RP5-1073O3.7	antisense	non-coding intronic,non-coding	None	None	None	None	None	None
+rs742872	chr1	115726190	None	None	None	RP4-666F24.3	lincRNA	80911	RP4-663N10.1	antisense	99465
+rs742871	chr1	115726316	None	None	None	RP4-666F24.3	lincRNA	81037	RP4-663N10.1	antisense	99339
+rs10489532	chr1	115735049	None	None	None	RP4-666F24.3	lincRNA	89770	RP4-663N10.1	antisense	90606
+rs973836	chr1	115735898	None	None	None	RP4-666F24.3	lincRNA	90619	RP4-663N10.1	antisense	89757
+rs17547358	chr1	115779088	None	None	None	RP4-666F24.3	lincRNA	133809	RP4-663N10.1	antisense	46567
+rs7556598	chr1	119970136	None	None	None	HSD3B2	protein_coding	4478	RP5-871G17.5	pseudogene	6943
+rs17459837	chr1	201303631	None	None	None	PKP1	protein_coding	1510	TNNT2	protein_coding	24505
+rs1538285	chr1	211372104	None	None	None	RP11-543B16.3	lincRNA	15658	RP11-543B16.2	pseudogene	8285
+rs17019726	chr1	212969128	TATDN3	protein_coding	non-coding intronic,intronic,5upstream	None	None	None	None	None	None
+rs41464744	chr1	221479721	None	None	None	RP11-453O22.1	pseudogene	172158	RP11-421L10.1	lincRNA	23701
+rs640333	chr1	229913100	None	None	None	HMGB1P26	pseudogene	71492	RP11-286M16.1	lincRNA	98197
+rs10926688	chr1	242500228	PLD5	protein_coding	intronic	None	None	None	None	None	None
+rs17149833	chr10	11247963	CELF2	protein_coding	intronic	None	None	None	None	None	None
+rs4237348	chr10	18798203	CACNB2	protein_coding	intronic	None	None	None	None	None	None
+rs10764114	chr10	19937986	MALRD1	protein_coding	intronic	None	None	None	None	None	None
+rs11817725	chr10	21368072	NEBL	protein_coding	intronic	None	None	None	None	None	None
+rs11012514	chr10	21368442	NEBL	protein_coding	intronic	None	None	None	None	None	None
+rs11012515	chr10	21369034	NEBL	protein_coding	intronic	None	None	None	None	None	None
+rs17296387	chr10	33384007	None	None	None	RP11-462L8.1	lincRNA	12977	RP11-342D11.3	lincRNA	1178
+rs11009231	chr10	33402524	RP11-342D11.3	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs2245720	chr10	36726471	None	None	None	MTND4P18	pseudogene	2369	SNORA40	snoRNA	1073
+rs2804672	chr10	38656887	HSD17B7P2	pseudogene	non-coding intronic	None	None	None	None	None	None
+rs2842107	chr10	52131485	SGMS1	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs12262251	chr10	54431330	RP11-556E13.1	antisense	non-coding intronic	None	None	None	None	None	None
+rs1906460	chr10	62896910	None	None	None	LINC00845	lincRNA	110732	TMEM26	protein_coding	269491
+rs1566222	chr10	70519603	CCAR1	protein_coding	intronic,5upstream	None	None	None	None	None	None
+rs10824347	chr10	77645229	C10orf11	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs1574190	chr10	80992381	ZMIZ1	protein_coding	intronic	None	None	None	None	None	None
+rs4933971	chr10	85945289	None	None	None	C10orf99	protein_coding	239	CDHR1	protein_coding	9121
+rs11201271	chr10	86633596	None	None	None	AC091487.1	miRNA	10478	RP11-181F12.1	lincRNA	319581
+rs572474	chr10	89791654	None	None	None	SNORD74	snoRNA	37202	MED6P1	pseudogene	16238
+rs1409298	chr10	92098023	None	None	None	RN7SKP143	misc_RNA	174306	RP11-15K3.1	lincRNA	64255
+rs2148895	chr10	129692293	None	None	None	CLRN3	protein_coding	1082	PTPRE	protein_coding	13032
+rs6578252	chr11	2270241	None	None	None	MIR4686	miRNA	75873	ASCL2	protein_coding	19484
+rs9919651	chr11	4176502	None	None	None	OR55B1P	pseudogene	7977	RP11-23F23.2	lincRNA	31868
+rs10734407	chr11	4229031	None	None	None	RP11-23F23.2	lincRNA	5146	RP11-23F23.3	pseudogene	2553
+rs10500664	chr11	6685558	None	None	None	DCHS1	protein_coding	8473	MRPL17	protein_coding	16455
+rs439667	chr11	8259358	LMO1	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs10500712	chr11	9902797	SBF2	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs10500712	chr11	9902797	RP11-1H15.2	antisense	non-coding intronic	None	None	None	None	None	None
+rs16933680	chr11	16935949	PLEKHA7	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs10741734	chr11	18044648	TPH1	protein_coding	intronic,non-coding	None	None	None	None	None	None
+rs11024835	chr11	18870110	None	None	None	AC103974.1	miRNA	44077	RP11-583F24.7	pseudogene	14995
+rs10834986	chr11	26521999	ANO3	protein_coding	intronic	None	None	None	None	None	None
+rs7945815	chr11	26539736	ANO3	protein_coding	intronic	None	None	None	None	None	None
+rs11030132	chr11	27782291	RP11-587D21.4	sense_overlapping	non-coding intronic	None	None	None	None	None	None
+rs11231787	chr11	64179813	None	None	None	AP003774.6	lincRNA	16510	AP003774.5	lincRNA	8050
+rs480617	chr11	64478320	NRXN2	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs1456243	chr11	93184074	None	None	None	CCDC67	protein_coding	12421	SMCO4	protein_coding	27564
+rs1908241	chr11	97075075	None	None	None	RP11-693I21.1	pseudogene	117393	RP11-882G5.1	lincRNA	18569
+rs11226253	chr11	104127707	None	None	None	RNA5SP348	rRNA	4364	RP11-886D15.1	lincRNA	188889
+rs2115763	chr11	112051169	SDHD	protein_coding	intronic,3downstream,non-coding intronic	None	None	None	None	None	None
+rs2115763	chr11	112051169	AP002884.3	protein_coding	intronic	None	None	None	None	None	None
+rs2115763	chr11	112051169	BCO2	protein_coding	intronic,3downstream,non-coding intronic	None	None	None	None	None	None
+rs17610557	chr11	113513499	None	None	None	DRD2	protein_coding	167086	TMPRSS5	protein_coding	44773
+rs17532157	chr11	113516770	None	None	None	DRD2	protein_coding	170357	TMPRSS5	protein_coding	41502
+rs17532479	chr11	113522981	None	None	None	DRD2	protein_coding	176568	TMPRSS5	protein_coding	35291
+rs11606746	chr11	113537310	None	None	None	DRD2	protein_coding	190897	TMPRSS5	protein_coding	20962
+rs17611093	chr11	113548309	None	None	None	DRD2	protein_coding	201896	TMPRSS5	protein_coding	9963
+rs11604887	chr11	113602809	None	None	None	RP11-627G1.1	pseudogene	19689	ZW10	protein_coding	1100
+rs17541153	chr11	113615622	ZW10	protein_coding	intronic	None	None	None	None	None	None
+rs1633550	chr11	113669205	USP28	protein_coding	3downstream,3utr	None	None	None	None	None	None
+rs1633548	chr11	113671506	USP28	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs2513574	chr11	113681305	USP28	protein_coding	intronic,5upstream,3downstream	None	None	None	None	None	None
+rs2519200	chr11	113684809	USP28	protein_coding	intronic,3downstream	None	None	None	None	None	None
+rs10789970	chr11	113773946	None	None	None	USP28	protein_coding	27654	HTR3B	protein_coding	1453
+rs17116117	chr11	113801591	HTR3B	protein_coding	intronic,5upstream	None	None	None	None	None	None
+rs17116145	chr11	113804326	HTR3B	protein_coding	intronic	None	None	None	None	None	None
+rs1176741	chr11	113807315	HTR3B	protein_coding	intronic	None	None	None	None	None	None
+rs1176740	chr11	113807396	HTR3B	protein_coding	intronic	None	None	None	None	None	None
+rs1176739	chr11	113807817	HTR3B	protein_coding	intronic	None	None	None	None	None	None
+rs1176738	chr11	113808095	HTR3B	protein_coding	intronic	None	None	None	None	None	None
+rs2714049	chr11	123345520	None	None	None	LINC01059	lincRNA	14402	GRAMD1B	protein_coding	50824
+rs511296	chr11	128869845	ARHGAP32	protein_coding	intronic,non-coding intronic,5upstream	None	None	None	None	None	None
+rs10894554	chr11	132277720	None	None	None	NTM	protein_coding	71004	OPCML	protein_coding	7151
+rs2155373	chr11	132371834	OPCML	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs11223425	chr11	133143976	OPCML	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs10848821	chr12	3298031	TSPAN9	protein_coding	intronic	None	None	None	None	None	None
+rs10849439	chr12	6415331	None	None	None	RP1-96H9.5	pseudogene	35740	PLEKHG6	protein_coding	4271
+rs2114870	chr12	9823140	CLEC2D	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs11052372	chr12	9831959	CLEC2D	protein_coding	intronic,5upstream,non-coding intronic	None	None	None	None	None	None
+rs7310460	chr12	9840773	CLEC2D	protein_coding	intronic	None	None	None	None	None	None
+rs11052552	chr12	9855958	None	None	None	RP11-75L1.2	pseudogene	7135	RP11-75L1.1	lincRNA	715
+rs4763879	chr12	9910164	CD69	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs16910627	chr12	15267486	RERG	protein_coding	intronic	None	None	None	None	None	None
+rs16910627	chr12	15267486	RERG-IT1	sense_intronic	non-coding	None	None	None	None	None	None
+rs2347227	chr12	27983388	None	None	None	RN7SKP15	misc_RNA	24065	RP11-993B23.1	pseudogene	105068
+rs7955585	chr12	32114454	KIAA1551	protein_coding	non-coding intronic,intronic,5upstream	None	None	None	None	None	None
+rs17598279	chr12	45322915	None	None	None	NELL2	protein_coding	7284	DBX2	protein_coding	85540
+rs10876266	chr12	52676403	KRT86	protein_coding	intronic	None	None	None	None	None	None
+rs1873914	chr12	56379427	RAB5B	protein_coding	non-coding intronic,intronic,5utr	None	None	None	None	None	None
+rs705698	chr12	56384687	RAB5B	protein_coding	non-coding intronic,3downstream,intronic,non-coding	None	None	None	None	None	None
+rs705702	chr12	56390636	None	None	None	RAB5B	protein_coding	2146	SUOX	protein_coding	328
+rs11171739	chr12	56470625	None	None	None	RPS26	protein_coding	32509	ERBB3	protein_coding	3016
+rs2292239	chr12	56482180	ERBB3	protein_coding	3downstream,non-coding intronic,intronic,5upstream	None	None	None	None	None	None
+rs2703061	chr12	58733347	None	None	None	RPL21P103	pseudogene	94699	RP11-340M11.1	pseudogene	55032
+rs12296139	chr12	61131421	None	None	None	RP11-154D9.1	pseudogene	318347	RP11-471N19.1	pseudogene	493519
+rs17259942	chr12	77072077	None	None	None	RP11-613M5.2	pseudogene	17413	RPL7P43	pseudogene	43237
+rs10859739	chr12	95016969	TMCC3	protein_coding	intronic	None	None	None	None	None	None
+rs11110901	chr12	102030113	MYBPC1	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs4766517	chr12	111359712	None	None	None	MYL2	protein_coding	1186	RP1-46F2.2	lincRNA	14677
+rs886125	chr12	111365324	None	None	None	MYL2	protein_coding	6798	RP1-46F2.2	lincRNA	9065
+rs2106407	chr12	111394327	RP1-46F2.2	lincRNA	non-coding,non-coding intronic	None	None	None	None	None	None
+rs2106407	chr12	111394327	RP1-46F2.3	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs12815195	chr12	111402363	None	None	None	RP1-46F2.2	lincRNA	6351	CUX2	protein_coding	69465
+rs7398833	chr12	111786892	CUX2	protein_coding	3utr	None	None	None	None	None	None
+rs10849946	chr12	111830485	RP3-473L9.4	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs634389	chr12	112164715	ACAD10	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs10744777	chr12	112233018	ALDH2	protein_coding	intronic	None	None	None	None	None	None
+rs3742000	chr12	112338539	ADAM1A	pseudogene	non-coding	None	None	None	None	None	None
+rs12321677	chr12	112339015	ADAM1A	pseudogene	non-coding	None	None	None	None	None	None
+rs4767293	chr12	112463296	None	None	None	ERP29	protein_coding	2041	NAA25	protein_coding	1204
+rs17696736	chr12	112486818	NAA25	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs725146	chr12	126552921	None	None	None	RP5-916L7.2	lincRNA	82141	RP3-446N13.1	lincRNA	27617
+rs10507331	chr13	24065812	None	None	None	LINC00327	lincRNA	4209	LINC00352	lincRNA	7123
+rs4769283	chr13	24301943	None	None	None	TNFRSF19	protein_coding	51711	MIPEP	protein_coding	2385
+rs9554277	chr13	28728026	PAN3	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs9554296	chr13	28833143	PAN3	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs641696	chr13	32478444	EEF1DP3	pseudogene	non-coding intronic	None	None	None	None	None	None
+rs9315704	chr13	40140215	LHFP	protein_coding	intronic	None	None	None	None	None	None
+rs17060356	chr13	40208975	None	None	None	LHFP	protein_coding	31310	AL512505.1	miRNA	17740
+rs1686806	chr13	64424251	None	None	None	RP11-394A14.2	lincRNA	5993	NFYAP1	pseudogene	125333
+rs7995795	chr13	96222531	CLDN10	protein_coding	intronic	None	None	None	None	None	None
+rs17699419	chr13	97515455	None	None	None	HS6ST3	protein_coding	29784	HSP90AB6P	pseudogene	20641
+rs11838497	chr13	102663147	FGF14	protein_coding	intronic	None	None	None	None	None	None
+rs1884058	chr14	26667426	None	None	None	AL049831.1	miRNA	25962	CYB5AP5	pseudogene	9816
+rs202961	chr14	27721036	None	None	None	RP11-384J4.2	lincRNA	91410	CTD-3006G17.2	pseudogene	6887
+rs10483456	chr14	36036167	RALGAPA1	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs2415436	chr14	38571182	CTD-2058B24.2	antisense	non-coding intronic	None	None	None	None	None	None
+rs8008865	chr14	43430528	None	None	None	RP11-97N10.1	pseudogene	153213	RP11-16O13.1	pseudogene	27876
+rs7157296	chr14	50566882	None	None	None	C14orf183	protein_coding	7521	VCPKMT	protein_coding	8468
+rs7141328	chr14	50567129	None	None	None	C14orf183	protein_coding	7768	VCPKMT	protein_coding	8221
+rs12882996	chr14	56382729	RP11-1012E15.1	lincRNA	non-coding	None	None	None	None	None	None
+rs1583945	chr14	62306872	CTD-2277K2.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs1583947	chr14	62307224	CTD-2277K2.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs12895242	chr14	83153368	RP11-406A9.2	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs2274818	chr14	98426655	C14orf64	protein_coding	3utr,intronic	None	None	None	None	None	None
+rs1052912	chr14	103603653	TNFAIP2	protein_coding	non-coding,3downstream,3utr	None	None	None	None	None	None
+rs12907720	chr15	31897012	OTUD7A	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs7170060	chr15	31897837	OTUD7A	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs345778	chr15	33397146	FMN1	protein_coding	intronic	None	None	None	None	None	None
+rs8032900	chr15	39767878	RP11-624L4.2	lincRNA	non-coding intronic,3downstream	None	None	None	None	None	None
+rs782916	chr15	61398155	RORA	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs17237810	chr15	61508186	RORA	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs2018967	chr15	70593576	None	None	None	AC011648.1	lincRNA	102728	RP11-543G18.1	lincRNA	20339
+rs11858454	chr15	71669115	THSD4	protein_coding	intronic	None	None	None	None	None	None
+rs8032794	chr15	71906850	THSD4	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs893379	chr15	93194688	FAM174B	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs401072	chr15	93211991	FAM174B	protein_coding	intronic,5upstream	None	None	None	None	None	None
+rs285753	chr15	93218077	FAM174B	protein_coding	intronic	None	None	None	None	None	None
+rs9920491	chr15	98599761	CTD-2544M6.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs6598368	chr15	101155726	ASB7	protein_coding	intronic	None	None	None	None	None	None
+rs1019142	chr16	7712979	RBFOX1	protein_coding	5upstream,intronic	None	None	None	None	None	None
+rs2099106	chr16	9380708	None	None	None	RPL21P119	pseudogene	129947	AC092122.1	miRNA	26984
+rs17681592	chr16	9417495	None	None	None	AC092122.2	miRNA	9664	RP11-243A14.1	lincRNA	31950
+rs1362323	chr16	9781375	None	None	None	RP11-297M9.1	protein_coding	10675	RP11-297M9.2	lincRNA	65897
+rs12708716	chr16	11179873	CLEC16A	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs12924729	chr16	11187783	CLEC16A	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs9746695	chr16	11207894	CLEC16A	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs4129934	chr16	11528773	CTD-3088G3.8	protein_coding	intronic	None	None	None	None	None	None
+rs6498657	chr16	17092870	None	None	None	RP11-419L9.1	pseudogene	45545	CTD-2576D5.3	pseudogene	95338
+rs2545886	chr16	21029197	DNAH3	protein_coding	intronic,3downstream,non-coding intronic	None	None	None	None	None	None
+rs9930029	chr16	24772562	TNRC6A	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs8063113	chr16	78271066	WWOX	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs433900	chr16	84295086	None	None	None	RP11-558A11.1	lincRNA	431	RNA5SP433	rRNA	1335
+rs12444385	chr16	86000463	None	None	None	RP11-542M13.3	lincRNA	30634	RP11-542M13.2	lincRNA	14893
+rs3803676	chr16	89596106	SPG7	protein_coding	intronic,non-coding,non-coding intronic	None	None	None	None	None	None
+rs382745	chr16	89603586	SPG7	protein_coding	intronic,3utr,non-coding intronic	None	None	None	None	None	None
+rs16945811	chr17	1294614	YWHAE	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs9900326	chr17	10708208	CTC-297N7.5	antisense	non-coding intronic	None	None	None	None	None	None
+rs4792677	chr17	15688147	None	None	None	IL6STP1	pseudogene	526	MEIS3P1	pseudogene	1785
+rs770497	chr17	29973322	None	None	None	RP1-41C23.1	lincRNA	8760	RP11-805L22.1	pseudogene	63265
+rs2429542	chr17	38922456	None	None	None	KRT25	protein_coding	10872	KRT26	protein_coding	34
+rs2316667	chr17	45151549	RP11-156P1.3	processed_transcript	non-coding intronic	None	None	None	None	None	None
+rs1263978	chr17	49816472	CA10	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs8066419	chr17	54120957	None	None	None	RP11-763E3.1	lincRNA	170657	AC011073.1	miRNA	11191
+rs9901454	chr17	55287871	None	None	None	AKAP1	protein_coding	89161	MSI2	protein_coding	45341
+rs2190759	chr17	55794699	None	None	None	RNU7-134P	snRNA	31746	CCDC182	protein_coding	27143
+rs8075641	chr17	55865288	RP11-60A24.3	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs6505974	chr18	1956863	RP11-161I6.2	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs10502353	chr18	7147079	None	None	None	SLC25A51P2	pseudogene	11261	LRRC30	protein_coding	84044
+rs11081333	chr18	7434182	None	None	None	SNORA48	snoRNA	133031	PTPRM	protein_coding	132598
+rs11081349	chr18	7977468	PTPRM	protein_coding	intronic	None	None	None	None	None	None
+rs2041718	chr18	10112756	None	None	None	AP005271.1	miRNA	107562	RP11-419J16.1	lincRNA	12581
+rs10853223	chr18	12283759	None	None	None	CIDEA	protein_coding	6165	RP11-64C12.8	lincRNA	4548
+rs355334	chr18	33075099	RP11-322E11.6	protein_coding	intronic	None	None	None	None	None	None
+rs355334	chr18	33075099	INO80C	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs12958322	chr18	42309786	SETBP1	protein_coding	intronic	None	None	None	None	None	None
+rs17724409	chr18	42438388	SETBP1	protein_coding	intronic	None	None	None	None	None	None
+rs357906	chr18	46553265	RP11-15F12.1	antisense	non-coding intronic	None	None	None	None	None	None
+rs1025450	chr18	49109894	None	None	None	RP11-267C16.1	lincRNA	20955	RSL24D1P9	pseudogene	29115
+rs8095920	chr18	68426681	None	None	None	GTSCR1	protein_coding	108701	RP11-384E22.1	lincRNA	241032
+rs2289609	chr18	72776891	ZNF407	protein_coding	non-coding,3utr,3downstream	None	None	None	None	None	None
+rs1879610	chr18	75340762	None	None	None	RP11-63N3.1	lincRNA	4291	RP11-63N3.2	pseudogene	4122
+rs7258789	chr19	20789504	CTC-513N18.7	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs7260268	chr19	21270521	ZNF714	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs10500267	chr19	34355502	None	None	None	KCTD15	protein_coding	48834	RN7SL150P	misc_RNA	62766
+rs16978732	chr19	44633056	ZNF225	protein_coding	intronic,non-coding	None	None	None	None	None	None
+rs41360748	chr19	44639110	None	None	None	ZNF225	protein_coding	2083	ZNF234	protein_coding	6600
+rs1542038	chr19	56984278	ZNF667	protein_coding	intronic,5utr,non-coding intronic	None	None	None	None	None	None
+rs4669048	chr2	6388090	None	None	None	LINC01105	processed_transcript	246683	AC017053.1	lincRNA	64996
+rs11678712	chr2	8290837	LINC00298	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs11678712	chr2	8290837	LINC00299	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs2246050	chr2	30878949	None	None	None	LCLAT1	protein_coding	11858	CAPN13	protein_coding	66688
+rs6738339	chr2	36238320	None	None	None	MRPL50P1	pseudogene	288112	AC009414.1	pseudogene	288211
+rs6721746	chr2	44962016	CAMKMT	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs903228	chr2	53692049	None	None	None	AC010967.2	lincRNA	554891	SCARNA16	snoRNA	5536
+rs6732505	chr2	58455258	FANCL	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs11126425	chr2	74380989	MOB1A	protein_coding	3utr	None	None	None	None	None	None
+rs17727191	chr2	75733641	EVA1A	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs10187227	chr2	76560448	None	None	None	RP11-335E8.1	pseudogene	71661	RN7SKP203	misc_RNA	111757
+rs13390216	chr2	79541531	CTNNA2	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs7605430	chr2	100647552	AFF3	protein_coding	intronic	None	None	None	None	None	None
+rs1430306	chr2	109807885	SH3RF3	protein_coding	intronic	None	None	None	None	None	None
+rs6706577	chr2	111796833	ACOXL	protein_coding	intronic	None	None	None	None	None	None
+rs10187034	chr2	111812617	ACOXL	protein_coding	intronic	None	None	None	None	None	None
+rs4664951	chr2	151962991	None	None	None	AC023469.1	protein_coding	57703	AC018731.3	lincRNA	11478
+rs2881691	chr2	154031682	AC011901.2	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs843229	chr2	156444948	None	None	None	RNU6-546P	snRNA	257909	AC093375.1	lincRNA	423181
+rs843219	chr2	156449639	None	None	None	RNU6-546P	snRNA	262600	AC093375.1	lincRNA	418490
+rs843220	chr2	156449681	None	None	None	RNU6-546P	snRNA	262642	AC093375.1	lincRNA	418448
+rs2691787	chr2	156466403	None	None	None	RNU6-546P	snRNA	279364	AC093375.1	lincRNA	401726
+rs17226595	chr2	156524806	None	None	None	RNU6-546P	snRNA	337767	AC093375.1	lincRNA	343323
+rs7557611	chr2	161440199	None	None	None	RBMS1	protein_coding	89894	RN7SL423P	misc_RNA	293859
+rs6734603	chr2	182038729	AC104820.2	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs9967792	chr2	191974435	STAT4	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs7570606	chr2	196791792	DNAH7	protein_coding	intronic	None	None	None	None	None	None
+rs231726	chr2	204740866	None	None	None	CTLA4	protein_coding	2183	ICOS	protein_coding	60605
+rs1427676	chr2	204741166	None	None	None	CTLA4	protein_coding	2483	ICOS	protein_coding	60305
+rs4361128	chr2	215768445	AC072062.1	antisense	non-coding intronic	None	None	None	None	None	None
+rs1409612	chr2	215800710	AC072062.1	antisense	non-coding intronic	None	None	None	None	None	None
+rs1409612	chr2	215800710	ABCA12	protein_coding	intronic	None	None	None	None	None	None
+rs17824343	chr2	217579874	AC007563.5	antisense	non-coding intronic	None	None	None	None	None	None
+rs10498055	chr2	218026864	None	None	None	RP11-574O16.1	lincRNA	165651	AC010887.1	miRNA	14357
+rs4673129	chr2	225877033	DOCK10	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs1879944	chr2	226954356	None	None	None	AC080002.1	pseudogene	96443	AC068138.1	lincRNA	90404
+rs4663404	chr2	235312149	None	None	None	AC097713.5	pseudogene	73667	AC097713.3	lincRNA	34823
+rs11124231	chr2	240731440	None	None	None	AC093802.1	protein_coding	6863	NDUFA10	protein_coding	100427
+rs8117563	chr20	1346162	SDCBP2-AS1	antisense	non-coding intronic	None	None	None	None	None	None
+rs6075643	chr20	20298392	C20orf26	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs13042906	chr20	40498908	None	None	None	SNORA26	snoRNA	157669	RP5-1121H13.4	antisense	120872
+rs7262414	chr20	40811780	PTPRT	protein_coding	intronic	None	None	None	None	None	None
+rs2868853	chr20	45742310	EYA2	protein_coding	intronic	None	None	None	None	None	None
+rs3787249	chr20	45744355	EYA2	protein_coding	intronic	None	None	None	None	None	None
+rs6019687	chr20	47831904	None	None	None	STAU1	protein_coding	27000	DDX27	protein_coding	3980
+rs2426414	chr20	50664706	None	None	None	RN7SL603P	misc_RNA	107334	ZFP64	protein_coding	3496
+rs919197	chr20	57480933	GNAS	protein_coding	intronic,3downstream,non-coding intronic	None	None	None	None	None	None
+rs7264923	chr20	58923936	RP5-1043L13.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs2823543	chr21	17375633	None	None	None	USP25	protein_coding	123256	RNU6-426P	snRNA	32100
+rs240462	chr21	17752828	LINC00478	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs2824545	chr21	19288192	CHODL	protein_coding	5upstream,intronic	None	None	None	None	None	None
+rs2128345	chr21	22085847	None	None	None	RPS3AP1	pseudogene	282773	LINC00320	lincRNA	29061
+rs465353	chr21	27553309	AP000230.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs13049227	chr21	28097013	None	None	None	CYYR1	protein_coding	151410	ADAMTS1	protein_coding	111053
+rs11700615	chr21	32908593	TIAM1	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs2154420	chr21	33854206	EVA1C	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs41513350	chr21	36818747	RUNX1	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs12152099	chr21	41303073	None	None	None	PCP4	protein_coding	1751	DSCAM	protein_coding	79853
+rs5994443	chr22	32275353	DEPDC5	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs1109364	chr22	32856594	BPIFC	protein_coding	intronic	None	None	None	None	None	None
+rs135475	chr22	32934659	SYN3	protein_coding	intronic	None	None	None	None	None	None
+rs4821197	chr22	34325300	None	None	None	LARGE	protein_coding	6471	LL22NC03-86D4.1	lincRNA	88162
+rs738494	chr22	44370439	SAMM50	protein_coding	intronic,3downstream,5upstream	None	None	None	None	None	None
+rs17245482	chr22	49681255	None	None	None	RPL35P8	pseudogene	71082	C22orf34	protein_coding	126921
+rs2012378	chr22	50072755	None	None	None	C22orf34	protein_coding	21565	RP5-983L19.2	lincRNA	38946
+rs9616913	chr22	51115526	SHANK3	protein_coding	intronic	None	None	None	None	None	None
+rs6799147	chr3	1510822	None	None	None	CNTN6	protein_coding	64921	AC090043.1	pseudogene	126639
+rs6798623	chr3	8247957	LMCD1-AS1	antisense	non-coding intronic	None	None	None	None	None	None
+rs9874351	chr3	21481230	ZNF385D	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs17025857	chr3	30681095	TGFBR2	protein_coding	intronic	None	None	None	None	None	None
+rs6810010	chr3	31091438	None	None	None	GADL1	protein_coding	155181	hsa-mir-466	miRNA	111758
+rs6441961	chr3	46352384	UQCRC2P1	pseudogene	non-coding	None	None	None	None	None	None
+rs9808969	chr3	76165179	ROBO2	protein_coding	intronic	None	None	None	None	None	None
+rs10934261	chr3	95557085	None	None	None	MTHFD2P1	pseudogene	155048	AC108739.1	miRNA	328576
+rs1354728	chr3	97558176	CRYBG3	protein_coding	intronic	None	None	None	None	None	None
+rs16841378	chr3	99285819	None	None	None	RP11-779P15.2	lincRNA	39862	RP11-201E8.1	lincRNA	31089
+rs10511176	chr3	99326501	RP11-201E8.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs2399399	chr3	111637904	PHLDB2	protein_coding	intronic,3downstream	None	None	None	None	None	None
+rs4678205	chr3	122393829	None	None	None	EIF4BP8	pseudogene	12544	PARP14	protein_coding	5636
+rs7633316	chr3	141971434	None	None	None	GK5	protein_coding	26985	XRN1	protein_coding	54015
+rs1135438	chr3	143016478	SLC9A9	protein_coding	intronic	None	None	None	None	None	None
+rs9840380	chr3	150647396	CLRN1-AS1	antisense	non-coding intronic	None	None	None	None	None	None
+rs9840380	chr3	150647396	RP11-166N6.3	protein_coding	intronic	None	None	None	None	None	None
+rs9840380	chr3	150647396	RP11-166N6.2	antisense	non-coding intronic	None	None	None	None	None	None
+rs9840380	chr3	150647396	CLRN1	protein_coding	intronic	None	None	None	None	None	None
+rs3821664	chr3	151102305	MED12L	protein_coding	intronic	None	None	None	None	None	None
+rs3821664	chr3	151102305	P2RY12	protein_coding	intronic	None	None	None	None	None	None
+rs1515650	chr3	154100726	GPR149	protein_coding	intronic	None	None	None	None	None	None
+rs1542487	chr3	174956762	NAALADL2	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs1542487	chr3	174956762	NAALADL2-AS2	antisense	non-coding intronic	None	None	None	None	None	None
+rs11733005	chr4	13292734	None	None	None	RNU6-962P	snRNA	239699	HSP90AB2P	pseudogene	42304
+rs10517031	chr4	23968295	None	None	None	PPARGC1A	protein_coding	62583	AC092846.1	miRNA	454504
+rs1918317	chr4	28158128	None	None	None	AC007106.1	lincRNA	171443	RP11-180C1.1	protein_coding	205773
+rs12512973	chr4	63382249	None	None	None	HMGN1P11	pseudogene	5760	AC110810.1	miRNA	78846
+rs2367291	chr4	74730380	None	None	None	PF4V1	protein_coding	10508	CXCL1	protein_coding	4730
+rs11097684	chr4	78045685	None	None	None	RP11-1E1.2	pseudogene	11074	RNU6-1187P	snRNA	25796
+rs17005996	chr4	83570300	SCD5	protein_coding	intronic	None	None	None	None	None	None
+rs11937825	chr4	104792271	None	None	None	TACR3	protein_coding	151298	RNU6-635P	snRNA	53426
+rs17388568	chr4	123329362	ADAD1	protein_coding	3downstream,intronic	None	None	None	None	None	None
+rs2086346	chr4	123333671	ADAD1	protein_coding	intronic	None	None	None	None	None	None
+rs17005850	chr4	123497833	None	None	None	IL2	protein_coding	119953	IL21	protein_coding	35950
+rs4863613	chr4	139858989	RP11-371F15.3	antisense	non-coding intronic,non-coding	None	None	None	None	None	None
+rs10028496	chr4	145706708	None	None	None	HHIP	protein_coding	40285	HSPD1P5	pseudogene	60069
+rs17484678	chr4	149268146	NR3C2	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs6825299	chr4	163492374	None	None	None	TOMM22P4	pseudogene	49181	AC005150.1	lincRNA	169446
+rs6552214	chr4	168635953	None	None	None	RN7SKP188	misc_RNA	51500	RP11-521F1.1	pseudogene	27077
+rs330483	chr4	176052494	None	None	None	RP11-391J13.1	pseudogene	112129	RP11-287F9.1	pseudogene	155262
+rs2128427	chr4	177154196	ASB5	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs17807093	chr4	181637698	None	None	None	RP11-751A18.1	pseudogene	142518	RP11-460H9.1	lincRNA	14619
+rs17074703	chr4	184300125	None	None	None	snoU13	snoRNA	49571	RP11-451F20.1	pseudogene	1373
+rs10012103	chr4	184531409	None	None	None	snoU13	snoRNA	27955	RWDD4	protein_coding	29379
+rs12640177	chr4	185906873	None	None	None	MIR4455	miRNA	47279	RP11-386B13.4	lincRNA	3278
+rs6855006	chr4	190103064	None	None	None	RP11-818C3.1	lincRNA	179835	RP11-706F1.1	lincRNA	11190
+rs11134165	chr5	6549378	None	None	None	CTD-2195M18.2	pseudogene	16065	LINC01018	lincRNA	32871
+rs6865359	chr5	13239602	None	None	None	CTC-305H11.1	lincRNA	59918	RPS23P5	pseudogene	10745
+rs17649710	chr5	16375098	RP1-167G20.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs2127392	chr5	25582936	None	None	None	CTD-2306M5.1	lincRNA	136902	RNU6-374P	snRNA	118390
+rs43188	chr5	52320940	ITGA2	protein_coding	intronic	None	None	None	None	None	None
+rs26949	chr5	59825300	PART1	lincRNA	non-coding	None	None	None	None	None	None
+rs347671	chr5	62526928	None	None	None	RP11-586E1.1	pseudogene	207612	CTD-2049O17.1	pseudogene	70422
+rs6894569	chr5	71368999	None	None	None	CARTPT	protein_coding	352124	MAP1B	protein_coding	34062
+rs2115454	chr5	84832202	None	None	None	AC026700.1	miRNA	8250	CTC-534B23.1	pseudogene	13025
+rs4244387	chr5	86250613	None	None	None	CTD-2161E19.1	pseudogene	69915	RP11-72L22.1	lincRNA	12525
+rs4869324	chr5	96567390	RP11-155G15.2	processed_transcript	non-coding intronic	None	None	None	None	None	None
+rs7730122	chr5	97557817	None	None	None	RP11-274E7.2	pseudogene	7992	CH17-12M21.1	pseudogene	116631
+rs2924611	chr5	99251096	None	None	None	CTD-2151A2.3	pseudogene	320095	CTD-2160D9.1	pseudogene	32903
+rs1421972	chr5	107785007	None	None	None	FBXL17	protein_coding	67208	RP11-120B7.1	pseudogene	144303
+rs17134152	chr5	111479955	EPB41L4A	protein_coding	non-coding intronic	None	None	None	None	None	None
+rs630247	chr5	118110992	CTC-448D22.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs6893115	chr5	120665168	CTC-546K23.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs249900	chr5	146212913	PPP2R2B	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs3776069	chr5	149315287	PDE6A	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs11747270	chr5	150258867	IRGM	protein_coding	intronic	None	None	None	None	None	None
+rs17659728	chr5	150637133	GM2A	protein_coding	intronic	None	None	None	None	None	None
+rs10035262	chr5	153065746	GRIA1	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs9313891	chr5	161020788	GABRA6	protein_coding	non-coding intronic	None	None	None	None	None	None
+rs33874	chr5	171105669	None	None	None	FGF18	protein_coding	221042	AC011410.1	miRNA	91865
+rs2112594	chr5	179744009	GFPT2	protein_coding	non-coding,3downstream,coding syn|syn|syn	None	None	None	None	None	None
+rs9405484	chr6	1498457	None	None	None	FOXF2	protein_coding	102625	RN7SL352P	misc_RNA	9100
+rs4959824	chr6	3409112	SLC22A23	protein_coding	intronic	None	None	None	None	None	None
+rs13218657	chr6	5822436	None	None	None	RP1-182O16.2	pseudogene	3837	RP3-380B8.4	lincRNA	29303
+rs2472764	chr6	20090000	None	None	None	RP1-130G2.1	pseudogene	46829	MBOAT1	protein_coding	10935
+rs6900557	chr6	21514238	None	None	None	RP1-135L22.1	lincRNA	158711	RP11-204E9.1	lincRNA	8469
+rs523383	chr6	25869848	SLC17A3	protein_coding	5upstream,non-coding intronic,intronic	None	None	None	None	None	None
+rs806971	chr6	26144791	None	None	None	HIST1H2AC	protein_coding	5447	HIST1H1E	protein_coding	11768
+rs16891417	chr6	26211395	None	None	None	HIST1H4E	protein_coding	5129	HIST1H2BG	protein_coding	5033
+rs9467704	chr6	26319486	None	None	None	HIST1H4H	protein_coding	33724	HIST1H3PS1	pseudogene	2618
+rs9379851	chr6	26354780	None	None	None	RNU6-1259P	snRNA	1516	BTN3A2	protein_coding	10607
+rs9393708	chr6	26362643	None	None	None	RNU6-1259P	snRNA	9379	BTN3A2	protein_coding	2744
+rs3734536	chr6	26365346	None	None	None	RNU6-1259P	snRNA	12082	BTN3A2	protein_coding	41
+rs3757148	chr6	26381206	None	None	None	BTN3A2	protein_coding	2660	BTN2A2	protein_coding	2118
+rs10456045	chr6	26404958	BTN3A1	protein_coding	3downstream,intronic,non-coding intronic	None	None	None	None	None	None
+rs2237236	chr6	26451553	BTN3A3	protein_coding	intronic,non-coding intronic,3downstream	None	None	None	None	None	None
+rs7763910	chr6	26472655	BTN2A1	protein_coding	intronic	None	None	None	None	None	None
+rs4713062	chr6	26948195	LINC00240	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs4358615	chr6	26998567	None	None	None	LINC00240	lincRNA	6864	VN1R12P	pseudogene	2647
+rs11756275	chr6	27007113	None	None	None	VN1R12P	pseudogene	5024	VN1R13P	pseudogene	21031
+rs12190473	chr6	27024687	None	None	None	VN1R12P	pseudogene	22598	VN1R13P	pseudogene	3457
+rs7451149	chr6	27057518	None	None	None	VN1R11P	pseudogene	5592	RNU2-62P	snRNA	20051
+rs7745603	chr6	27090404	None	None	None	RNU2-62P	snRNA	12645	RP1-86C11.7	lincRNA	32
+rs16899778	chr6	27390150	None	None	None	MCFD2P1	pseudogene	14375	ZNF184	protein_coding	28372
+rs10484399	chr6	27534528	None	None	None	XXbac-BPG34I8.3	pseudogene	5005	RNU6-471P	snRNA	29663
+rs200481	chr6	27773832	None	None	None	RSL24D1P1	pseudogene	24942	HIST1H4PS1	pseudogene	1021
+rs201002	chr6	27808192	HIST1H2BN	protein_coding	3downstream,intronic	None	None	None	None	None	None
+rs200995	chr6	27813694	HIST1H2BN	protein_coding	intronic	None	None	None	None	None	None
+rs200991	chr6	27815494	HIST1H2BN	protein_coding	intronic	None	None	None	None	None	None
+rs149946	chr6	27970031	None	None	None	OR2W4P	pseudogene	24178	IQCB2P	pseudogene	8470
+rs149969	chr6	27977737	None	None	None	OR2W4P	pseudogene	31884	IQCB2P	pseudogene	764
+rs149970	chr6	27980220	None	None	None	IQCB2P	pseudogene	87	U3	snoRNA	3126
+rs202906	chr6	28011652	None	None	None	OR2W2P	pseudogene	9019	OR2B7P	pseudogene	2560
+rs203887	chr6	28021269	OR2B8P	pseudogene	non-coding	None	None	None	None	None	None
+rs203888	chr6	28021589	OR2B8P	pseudogene	non-coding	None	None	None	None	None	None
+rs203885	chr6	28076886	None	None	None	ZSCAN12P1	pseudogene	15444	RP1-265C24.5	pseudogene	6520
+rs203884	chr6	28077374	None	None	None	ZSCAN12P1	pseudogene	15932	RP1-265C24.5	pseudogene	6032
+rs1225709	chr6	28103648	ZSCAN16-AS1	antisense	non-coding intronic	None	None	None	None	None	None
+rs1871695	chr6	28109960	ZKSCAN8	protein_coding	intronic,5upstream	None	None	None	None	None	None
+rs1150683	chr6	28155314	None	None	None	AL022393.7	pseudogene	10862	ZNF192P2	pseudogene	514
+rs1233708	chr6	28173219	None	None	None	ZNF192P2	pseudogene	16009	TOB2P1	pseudogene	12202
+rs17720293	chr6	28214698	ZKSCAN4	protein_coding	intronic	None	None	None	None	None	None
+rs2523691	chr6	31420687	HCP5	sense_overlapping	non-coding intronic	None	None	None	None	None	None
+rs9271850	chr6	32595060	None	None	None	HLA-DRB1	protein_coding	37435	HLA-DQA1	protein_coding	896
+rs3129768	chr6	32595083	None	None	None	HLA-DRB1	protein_coding	37458	HLA-DQA1	protein_coding	873
+rs9272346	chr6	32604372	HLA-DQA1	protein_coding	intronic,5upstream	None	None	None	None	None	None
+rs9272723	chr6	32609427	HLA-DQA1	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs10807124	chr6	33404064	SYNGAP1	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs4713843	chr6	35203745	SCUBE3	protein_coding	intronic	None	None	None	None	None	None
+rs9367072	chr6	40664388	None	None	None	LRFN2	protein_coding	109184	RP11-570K4.1	lincRNA	16762
+rs4607417	chr6	41978274	CCND3	protein_coding	non-coding intronic,3downstream,intronic	None	None	None	None	None	None
+rs9395726	chr6	51673301	PKHD1	protein_coding	intronic	None	None	None	None	None	None
+rs9500256	chr6	58308955	None	None	None	XXbac-BPG55C20.7	lincRNA	10459	RP11-278J20.2	pseudogene	89043
+rs494562	chr6	86117129	None	None	None	RP11-30P6.6	lincRNA	17225	DUTP5	pseudogene	19246
+rs1468752	chr6	94968718	None	None	None	RP3-463P15.1	lincRNA	64342	RP3-399J4.2	pseudogene	85737
+rs3013713	chr6	120694559	None	None	None	MIR3144	miRNA	358156	RNU6-214P	snRNA	152881
+rs6905596	chr6	120751447	None	None	None	MIR3144	miRNA	415044	RNU6-214P	snRNA	95993
+rs2326671	chr6	128334236	PTPRK	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs9375615	chr6	129401222	LAMA2	protein_coding	intronic	None	None	None	None	None	None
+rs2491203	chr6	131795929	None	None	None	RPL21P67	pseudogene	5253	ARG1	protein_coding	98355
+rs9375850	chr6	132243536	None	None	None	RP11-69I8.2	lincRNA	1831	CTGF	protein_coding	25780
+rs13207033	chr6	137965418	None	None	None	BTF3L4P3	pseudogene	99909	RP11-95M15.1	lincRNA	29179
+rs2876625	chr6	145739172	None	None	None	AL356739.1	miRNA	69187	RNU1-33P	snRNA	45202
+rs2153219	chr6	149755695	None	None	None	TAB2	protein_coding	22946	ZC3H12D	protein_coding	13099
+rs9365243	chr6	158085403	ZDHHC14	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs1832871	chr6	158722034	RP11-732M18.3	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs341160	chr6	158832854	TULP4	protein_coding	intronic	None	None	None	None	None	None
+rs13231142	chr7	11356286	AC004538.3	processed_transcript	non-coding intronic	None	None	None	None	None	None
+rs10258077	chr7	15026753	None	None	None	AC006045.3	pseudogene	1054	AC006458.3	lincRNA	79079
+rs875930	chr7	21183880	None	None	None	LINC01162	lincRNA	121113	RN7SL542P	misc_RNA	71279
+rs17149361	chr7	24406959	None	None	None	NPY	protein_coding	75475	RNU6-1103P	snRNA	169992
+rs2648654	chr7	29057968	CPVL	protein_coding	intronic	None	None	None	None	None	None
+rs17160736	chr7	32014929	PDE1C	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs323925	chr7	34730255	NPSR1-AS1	processed_transcript	non-coding intronic	None	None	None	None	None	None
+rs323925	chr7	34730255	NPSR1	protein_coding	intronic	None	None	None	None	None	None
+rs1525791	chr7	39156558	POU6F2	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs3735361	chr7	42000924	GLI3	protein_coding	3utr	None	None	None	None	None	None
+rs10265492	chr7	47539322	TNS3	protein_coding	intronic	None	None	None	None	None	None
+rs7783847	chr7	47759340	HUS1	protein_coding	intronic	None	None	None	None	None	None
+rs6583353	chr7	49250421	None	None	None	AC006024.4	pseudogene	284809	AC010971.1	lincRNA	19312
+rs10486748	chr7	51025937	RP4-724E13.2	antisense	non-coding intronic	None	None	None	None	None	None
+rs6592988	chr7	52281433	None	None	None	RP11-153N17.1	lincRNA	20824	SNORA31	snoRNA	55700
+rs12673016	chr7	52286230	None	None	None	RP11-153N17.1	lincRNA	25621	SNORA31	snoRNA	50903
+rs12698637	chr7	67420743	None	None	None	RP11-421N10.1	pseudogene	185288	RP11-358M3.1	lincRNA	64497
+rs17361077	chr7	75438763	None	None	None	CCL26	protein_coding	19549	CCL24	protein_coding	2220
+rs1058425	chr7	80387766	SEMA3C	protein_coding	coding syn	None	None	None	None	None	None
+rs1880959	chr7	80427495	SEMA3C	protein_coding	non-coding,coding syn,3utr	None	None	None	None	None	None
+rs3903230	chr7	100527711	None	None	None	RP13-650G11.1	pseudogene	1551	MUC3A	protein_coding	19476
+rs17136882	chr7	103983576	LHFPL3	protein_coding	intronic	None	None	None	None	None	None
+rs38760	chr7	109953923	None	None	None	RPL3P8	pseudogene	314242	AC003088.1	lincRNA	118373
+rs7797620	chr7	112862269	None	None	None	RP11-736E3.1	antisense	75884	RP11-703P11.1	pseudogene	193475
+rs10500023	chr7	112864760	None	None	None	RP11-736E3.1	antisense	78375	RP11-703P11.1	pseudogene	190984
+rs10953730	chr7	112911410	None	None	None	RP11-736E3.1	antisense	125025	RP11-703P11.1	pseudogene	144334
+rs12706005	chr7	114672181	None	None	None	MDFIC	protein_coding	12925	AC068610.5	lincRNA	29410
+rs4512315	chr7	118659183	None	None	None	RP11-533K11.1	pseudogene	67870	RP11-500M10.1	pseudogene	159048
+rs10487463	chr7	126619872	GRM8	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs2566878	chr7	128902590	AHCYL2	protein_coding	intronic	None	None	None	None	None	None
+rs2348914	chr7	135531524	None	None	None	AC091736.1	miRNA	48667	AC015987.1	antisense	79679
+rs7793221	chr7	135699857	None	None	None	MTPN	protein_coding	37756	AC024084.1	lincRNA	10652
+rs17169926	chr7	145726712	None	None	None	AC006007.1	lincRNA	348250	RN7SL207P	misc_RNA	66468
+rs7780008	chr7	151462537	PRKAG2	protein_coding	non-coding intronic,intronic	None	None	None	None	None	None
+rs10104304	chr8	5158800	None	None	None	RN7SL318P	misc_RNA	158571	RP11-745K9.2	pseudogene	153940
+rs2736029	chr8	15690414	None	None	None	PPM1AP1	pseudogene	25622	RP11-77B22.1	pseudogene	110220
+rs11992320	chr8	23590047	RP11-175E9.1	antisense	non-coding intronic	None	None	None	None	None	None
+rs11992320	chr8	23590047	RP11-213G6.2	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs1593403	chr8	25646700	None	None	None	RP11-219J21.2	lincRNA	11728	RP11-299D14.2	lincRNA	44945
+rs2889135	chr8	55245138	None	None	None	RNU105C	snoRNA	1683	RN7SL250P	misc_RNA	87890
+rs1354512	chr8	55252228	None	None	None	RNU105C	snoRNA	8773	RN7SL250P	misc_RNA	80800
+rs10504164	chr8	55257452	None	None	None	RNU105C	snoRNA	13997	RN7SL250P	misc_RNA	75576
+rs10958514	chr8	57881921	IMPAD1	protein_coding	intronic	None	None	None	None	None	None
+rs4237016	chr8	58652115	RP11-388G22.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs7829537	chr8	68302527	None	None	None	RP11-7F18.2	lincRNA	45205	RP11-7F18.1	pseudogene	16223
+rs2383894	chr8	74348656	STAU2-AS1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs2383894	chr8	74348656	STAU2	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs12548378	chr8	77344816	LINC01111	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs7016814	chr8	99200570	None	None	None	POP1	protein_coding	28508	NIPAL2	protein_coding	1491
+rs13258552	chr8	114885413	None	None	None	RP11-67H2.1	protein_coding	256226	Y_RNA	misc_RNA	77702
+rs16888486	chr8	117535199	None	None	None	RP11-536K17.1	lincRNA	119204	EIF3H	protein_coding	119170
+rs959454	chr8	119778259	None	None	None	RPS26P35	pseudogene	3819	TNFRSF11B	protein_coding	157537
+rs13252935	chr8	124133518	TBC1D31	protein_coding	intronic	None	None	None	None	None	None
+rs1435447	chr8	131878994	ADCY8	protein_coding	intronic	None	None	None	None	None	None
+rs1398293	chr8	139309169	FAM135B	protein_coding	intronic,non-coding intronic	None	None	None	None	None	None
+rs7823184	chr8	143219485	None	None	None	RP11-953B20.1	lincRNA	46505	MIR4472-1	miRNA	38215
+rs10970529	chr9	3189170	RP11-32F11.2	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs4467992	chr9	7547216	None	None	None	RPL4P5	pseudogene	68896	RP11-366I21.1	pseudogene	50607
+rs1154842	chr9	10737004	None	None	None	RP11-87N24.3	lincRNA	104801	RP11-421B23.2	pseudogene	40353
+rs4741389	chr9	14517555	None	None	None	NFIB	protein_coding	118573	RP11-408A13.2	pseudogene	14359
+rs7860467	chr9	18914729	None	None	None	ADAMTSL1	protein_coding	3781	FAM154A	protein_coding	12927
+rs7865618	chr9	22031005	RP11-145E5.5	protein_coding	intronic	None	None	None	None	None	None
+rs7865618	chr9	22031005	CDKN2B-AS1	antisense	non-coding intronic	None	None	None	None	None	None
+rs1333051	chr9	22136489	None	None	None	CDKN2B-AS1	antisense	15393	RP11-408N14.1	lincRNA	67500
+rs12340663	chr9	25587832	None	None	None	RN7SKP120	misc_RNA	498683	TUSC1	protein_coding	88564
+rs11138830	chr9	72085456	APBA1	protein_coding	intronic	None	None	None	None	None	None
+rs11145084	chr9	79435471	PRUNE2	protein_coding	intronic	None	None	None	None	None	None
+rs7049149	chr9	82666465	None	None	None	RP11-394O9.1	lincRNA	16995	NPAP1P4	pseudogene	305479
+rs7027501	chr9	89612224	RP11-276H19.1	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs893494	chr9	90875879	None	None	None	RP11-1E11.2	pseudogene	70762	RP11-350G13.1	pseudogene	63490
+rs7042668	chr9	102176700	None	None	None	NAMA	lincRNA	37178	RP11-547C13.1	lincRNA	117278
+rs649057	chr9	102234323	None	None	None	NAMA	lincRNA	94801	RP11-547C13.1	lincRNA	59655
+rs41382949	chr9	103281780	MSANTD3-TMEFF1	protein_coding	intronic	None	None	None	None	None	None
+rs41382949	chr9	103281780	TMEFF1	protein_coding	intronic	None	None	None	None	None	None
+rs10989147	chr9	103300396	MSANTD3-TMEFF1	protein_coding	intronic	None	None	None	None	None	None
+rs10989147	chr9	103300396	TMEFF1	protein_coding	intronic	None	None	None	None	None	None
+rs10989154	chr9	103324394	MSANTD3-TMEFF1	protein_coding	intronic	None	None	None	None	None	None
+rs10989154	chr9	103324394	TMEFF1	protein_coding	intronic	None	None	None	None	None	None
+rs10989523	chr9	104230977	RP11-490D19.6	antisense	5upstream,non-coding intronic	None	None	None	None	None	None
+rs445722	chr9	106082463	RP11-341A22.2	lincRNA	non-coding intronic,non-coding	None	None	None	None	None	None
+rs411567	chr9	106082968	RP11-341A22.2	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs2622932	chr9	106086711	RP11-341A22.2	lincRNA	non-coding intronic	None	None	None	None	None	None
+rs12686004	chr9	107653426	ABCA1	protein_coding	intronic	None	None	None	None	None	None
+rs6477673	chr9	111489039	None	None	None	RP11-339N8.1	lincRNA	23667	RPL36AP35	pseudogene	94938
+rs1772033	chr9	111769543	CTNNAL1	protein_coding	intronic	None	None	None	None	None	None
+rs4979354	chr9	116973755	COL27A1	protein_coding	intronic	None	None	None	None	None	None
+rs16927327	chr9	127047450	NEK6	protein_coding	intronic,5upstream	None	None	None	None	None	None
+rs12339163	chr9	137205188	None	None	None	RP11-145E17.2	lincRNA	17945	RXRA	protein_coding	3756

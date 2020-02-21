@@ -1,0 +1,1 @@
+Variation ID	Chromosome	Position	dbSNP	Variant	Transcript	Gene	AA Position	Wild AA	Mutant AA	Score	Prediction

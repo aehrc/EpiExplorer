@@ -1,0 +1,3 @@
+Variation ID	Chromosome	Region Start	Region End	Strand	miRNA	Accession	Gene
+rs4643	chr1	64125431	64125452	1	hsa-miR-501-5p	MIMAT0002872	PGM1
+rs4643	chr1	64125433	64125452	1	hsa-miR-362-5p	MIMAT0000705	PGM1

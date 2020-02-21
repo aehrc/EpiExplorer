@@ -1,0 +1,828 @@
+Variation ID	Chromosome	Position	Variant	Strand	Symbol	Gene	Predicted Function	CDNA Position	CDS Position	AA Position	AA Change	Detail	Splice Distance	Proteins
+rs2269241	chr1	64108771	T|C	1	PGM1	uc001dbh.3	intronic	None	None	None	None	None	4300	None
+rs2269241	chr1	64108771	T|C	1	PGM1	uc010ooy.2	intronic	None	None	None	None	None	4300	None
+rs2269241	chr1	64108771	T|C	1	PGM1	uc010ooz.2	intronic	None	None	None	None	None	4300	None
+rs2269239	chr1	64109359	C|G	1	PGM1	uc001dbh.3	intronic	None	None	None	None	None	4829	None
+rs2269239	chr1	64109359	C|G	1	PGM1	uc010ooy.2	intronic	None	None	None	None	None	4829	None
+rs2269239	chr1	64109359	C|G	1	PGM1	uc010ooz.2	intronic	None	None	None	None	None	4829	None
+rs3790857	chr1	64111866	C|T	1	PGM1	uc001dbh.3	intronic	None	None	None	None	None	2322	None
+rs3790857	chr1	64111866	C|T	1	PGM1	uc010ooy.2	intronic	None	None	None	None	None	2322	None
+rs3790857	chr1	64111866	C|T	1	PGM1	uc010ooz.2	intronic	None	None	None	None	None	2322	None
+rs2269238	chr1	64117537	G|W	1	PGM1	uc001dbh.3	intronic	None	None	None	None	None	14	None
+rs2269238	chr1	64117537	G|W	1	PGM1	uc010ooy.2	intronic	None	None	None	None	None	14	None
+rs2269238	chr1	64117537	G|W	1	PGM1	uc010ooz.2	intronic	None	None	None	None	None	14	None
+rs11208264	chr1	64125072	T|C	1	PGM1	uc001dbh.3	intronic	None	None	None	None	None	185	None
+rs11208264	chr1	64125072	T|C	1	PGM1	uc010ooy.2	intronic	None	None	None	None	None	185	None
+rs11208264	chr1	64125072	T|C	1	PGM1	uc010ooz.2	intronic	None	None	None	None	None	185	None
+rs4643	chr1	64125439	A|C	1	PGM1	uc001dbh.3	3utr	1995	None	None	None	None	None	None
+rs4643	chr1	64125439	A|C	1	PGM1	uc010ooy.2	3utr	1872	None	None	None	None	None	None
+rs4643	chr1	64125439	A|C	1	PGM1	uc010ooz.2	3utr	2081	None	None	None	None	None	None
+rs41515647	chr1	77517009	C|A	1	ST6GALNAC5	uc001dhi.3	intronic	None	None	None	None	None	959	None
+rs41515647	chr1	77517009	C|A	1	ST6GALNAC5	uc009wbw.3	non-coding intronic	None	None	None	None	None	959	None
+rs41515647	chr1	77517009	C|A	1	ST6GALNAC5	uc010ori.2	intronic	None	None	None	None	None	959	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	uc010otu.1	non-coding intronic	None	None	None	None	None	2184	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	uc001dqv.5	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	uc001dqw.5	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	uc001dqx.5	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	uc009wds.4	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	uc010otq.3	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	uc010otr.3	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	uc010ots.3	intronic	None	None	None	None	None	4656	None
+rs859065	chr1	95352030	T|C	1	SLC44A3	uc010ott.3	intronic	None	None	None	None	None	4656	None
+rs1264882	chr1	111962944	C|T	1	OVGP1	uc001eaz.3	intronic	None	None	None	None	None	596	None
+rs1264882	chr1	111962944	C|T	1	OVGP1	uc001eba.3	intronic	None	None	None	None	None	596	None
+rs1264882	chr1	111962944	C|T	1	OVGP1	uc010owb.2	intronic	None	None	None	None	None	596	None
+rs4456089	chr1	114084544	C|T	1	MAGI3	uc001edh.3	intronic	None	None	None	None	None	7593	None
+rs4456089	chr1	114084544	C|T	1	MAGI3	uc001edi.4	intronic	None	None	None	None	None	7593	None
+rs4456089	chr1	114084544	C|T	1	MAGI3	uc001edk.3	intronic	None	None	None	None	None	7593	None
+rs4456089	chr1	114084544	C|T	1	MAGI3	uc010owm.2	intronic	None	None	None	None	None	7593	None
+rs17013326	chr1	114089316	G|A	1	MAGI3	uc001edh.3	intronic	None	None	None	None	None	2821	None
+rs17013326	chr1	114089316	G|A	1	MAGI3	uc001edi.4	intronic	None	None	None	None	None	2821	None
+rs17013326	chr1	114089316	G|A	1	MAGI3	uc001edk.3	intronic	None	None	None	None	None	2821	None
+rs17013326	chr1	114089316	G|A	1	MAGI3	uc010owm.2	intronic	None	None	None	None	None	2821	None
+rs1113523	chr1	114129474	A|K	1	MAGI3	uc001edh.3	intronic	None	None	None	None	None	1256	None
+rs1113523	chr1	114129474	A|K	1	MAGI3	uc001edi.4	intronic	None	None	None	None	None	1256	None
+rs1113523	chr1	114129474	A|K	1	MAGI3	uc001edk.3	intronic	None	None	None	None	None	1256	None
+rs1113523	chr1	114129474	A|K	1	MAGI3	uc010owm.2	intronic	None	None	None	None	None	1256	None
+rs1217227	chr1	114139616	C|T	1	MAGI3	uc001edh.3	intronic	None	None	None	None	None	2434	None
+rs1217227	chr1	114139616	C|T	1	MAGI3	uc001edi.4	intronic	None	None	None	None	None	2434	None
+rs1217227	chr1	114139616	C|T	1	MAGI3	uc001edj.3	intronic	None	None	None	None	None	2434	None
+rs1217227	chr1	114139616	C|T	1	MAGI3	uc001edk.3	intronic	None	None	None	None	None	2434	None
+rs1217227	chr1	114139616	C|T	1	MAGI3	uc010owm.2	intronic	None	None	None	None	None	2434	None
+rs1217226	chr1	114139922	C|T	1	MAGI3	uc001edh.3	intronic	None	None	None	None	None	2740	None
+rs1217226	chr1	114139922	C|T	1	MAGI3	uc001edi.4	intronic	None	None	None	None	None	2740	None
+rs1217226	chr1	114139922	C|T	1	MAGI3	uc001edj.3	intronic	None	None	None	None	None	2740	None
+rs1217226	chr1	114139922	C|T	1	MAGI3	uc001edk.3	intronic	None	None	None	None	None	2740	None
+rs1217226	chr1	114139922	C|T	1	MAGI3	uc010owm.2	intronic	None	None	None	None	None	2740	None
+rs1217200	chr1	114161116	C|D	1	MAGI3	uc001edh.3	intronic	None	None	None	None	None	38	None
+rs1217200	chr1	114161116	C|D	1	MAGI3	uc010owm.2	intronic	None	None	None	None	None	38	None
+rs1217200	chr1	114161116	C|D	1	MAGI3	uc001edi.4	intronic	None	None	None	None	None	1242	None
+rs1217200	chr1	114161116	C|D	1	MAGI3	uc001edj.3	intronic	None	None	None	None	None	1242	None
+rs1217200	chr1	114161116	C|D	1	MAGI3	uc001edk.3	intronic	None	None	None	None	None	1242	None
+rs1230666	chr1	114173410	A|G	1	MAGI3	uc001edh.3	intronic	None	None	None	None	None	7794	None
+rs1230666	chr1	114173410	A|G	1	MAGI3	uc001edi.4	intronic	None	None	None	None	None	7794	None
+rs1230666	chr1	114173410	A|G	1	MAGI3	uc001edj.3	intronic	None	None	None	None	None	7794	None
+rs1230666	chr1	114173410	A|G	1	MAGI3	uc001edk.3	intronic	None	None	None	None	None	7794	None
+rs1230666	chr1	114173410	A|G	1	MAGI3	uc010owm.2	intronic	None	None	None	None	None	7794	None
+rs1230658	chr1	114218451	C|K	1	MAGI3	uc001edh.3	intronic	None	None	None	None	None	2364	None
+rs1230658	chr1	114218451	C|K	1	MAGI3	uc001edi.4	intronic	None	None	None	None	None	2364	None
+rs1230658	chr1	114218451	C|K	1	MAGI3	uc001edj.3	intronic	None	None	None	None	None	2364	None
+rs1230658	chr1	114218451	C|K	1	MAGI3	uc001edk.3	intronic	None	None	None	None	None	2364	None
+rs1230658	chr1	114218451	C|K	1	MAGI3	uc010owm.2	intronic	None	None	None	None	None	2364	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	uc001edm.2	intronic	None	None	None	None	None	606	None
+rs1230649	chr1	114244177	G|T	1	PHTF1	uc009wgp.1	intronic	None	None	None	None	None	606	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	uc009wgp.1	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	PHTF1	uc001edn.3	5upstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	RSBN1	uc001edq.3	3downstream	None	None	None	None	None	None	None
+rs6679677	chr1	114303808	C|A	1	RSBN1	uc001edr.3	3downstream	None	None	None	None	None	None	None
+rs1217396	chr1	114338236	C|W	1	RSBN1	uc001edr.3	non-coding intronic	None	None	None	None	None	572	None
+rs1217396	chr1	114338236	C|W	1	RSBN1	uc001edq.3	intronic	None	None	None	None	None	1749	None
+rs2488457	chr1	114415368	G|M	1	AP4B1-AS1	uc001edv.2	intronic	None	None	None	None	None	14730	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	uc001eds.3	5upstream	None	None	None	None	None	None	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	uc001edt.3	5upstream	None	None	None	None	None	None	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	uc001edu.2	5upstream	None	None	None	None	None	None	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	uc009wgq.3	5upstream	None	None	None	None	None	None	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	uc009wgr.2	5upstream	None	None	None	None	None	None	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	uc009wgs.2	5upstream	None	None	None	None	None	None	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	uc010owo.2	5upstream	None	None	None	None	None	None	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	uc021orx.1	5upstream	None	None	None	None	None	None	None
+rs2488457	chr1	114415368	G|M	1	PTPN22	uc021ory.1	5upstream	None	None	None	None	None	None	None
+rs1235005	chr1	114417437	C|G	1	AP4B1-AS1	uc001edv.2	intronic	None	None	None	None	None	16799	None
+rs1235005	chr1	114417437	C|G	1	BCL2L15	uc001edw.3	3downstream	None	None	None	None	None	None	None
+rs1235005	chr1	114417437	C|G	1	BCL2L15	uc001edx.3	3downstream	None	None	None	None	None	None	None
+rs1235005	chr1	114417437	C|G	1	BCL2L15	uc001edy.3	3downstream	None	None	None	None	None	None	None
+rs10776775	chr1	114436482	G|A	1	AP4B1-AS1	uc001edv.2	intronic	None	None	None	None	None	4008	None
+rs10776775	chr1	114436482	G|A	1	AP4B1	uc001eeb.3	3downstream	None	None	None	None	None	None	None
+rs10776775	chr1	114436482	G|A	1	AP4B1	uc001eec.3	3downstream	None	None	None	None	None	None	None
+rs10776775	chr1	114436482	G|A	1	AP4B1	uc001eed.3	3downstream	None	None	None	None	None	None	None
+rs10776775	chr1	114436482	G|A	1	AP4B1	uc010owp.2	3downstream	None	None	None	None	None	None	None
+rs10776775	chr1	114436482	G|A	1	AP4B1	uc001eea.1	3downstream	None	None	None	None	None	None	None
+rs10776775	chr1	114436482	G|A	1	AP4B1	uc001eee.1	3downstream	None	None	None	None	None	None	None
+rs3811019	chr1	114471583	C|G	1	HIPK1	uc001eel.3	5upstream	None	None	None	None	None	None	None
+rs3811019	chr1	114471583	C|G	1	HIPK1	uc001eem.3	5upstream	None	None	None	None	None	None	None
+rs3811019	chr1	114471583	C|G	1	HIPK1	uc001een.3	5upstream	None	None	None	None	None	None	None
+rs3811019	chr1	114471583	C|G	1	BC048113	uc001eej.3	non-coding	272	None	None	None	None	None	None
+rs3811019	chr1	114471583	C|G	1	BC036361	uc001eek.3	non-coding	298	None	None	None	None	None	None
+rs7556598	chr1	119970136	G|M	1	HSD3B2	uc001ehu.3	intronic	None	None	None	None	None	7931	None
+rs17459837	chr1	201303631	A|T	1	PKP1	uc001gwd.3	3downstream	None	None	None	None	None	None	None
+rs17459837	chr1	201303631	A|T	1	PKP1	uc001gwe.3	3downstream	None	None	None	None	None	None	None
+rs17459837	chr1	201303631	A|T	1	PKP1	uc009wzm.3	3downstream	None	None	None	None	None	None	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	uc001hjo.2	intronic	None	None	None	None	None	659	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	uc001hjp.2	intronic	None	None	None	None	None	659	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	uc010ptj.1	intronic	None	None	None	None	None	659	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	uc010ptk.1	intronic	None	None	None	None	None	659	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	uc010ptl.1	intronic	None	None	None	None	None	659	None
+rs17019726	chr1	212969128	A|G	1	TATDN3	uc010ptm.1	intronic	None	None	None	None	None	659	None
+rs10926688	chr1	242500228	A|S	1	PLD5	uc001hzm.4	intronic	None	None	None	None	None	11173	None
+rs10926688	chr1	242500228	A|S	1	PLD5	uc001hzo.2	intronic	None	None	None	None	None	11173	None
+rs10926688	chr1	242500228	A|S	1	PLD5	uc001hzl.4	intronic	None	None	None	None	None	11180	None
+rs10926688	chr1	242500228	A|S	1	PLD5	uc001hzn.2	intronic	None	None	None	None	None	11180	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc001iki.4	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc001ikk.2	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc001ikl.4	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc001iko.4	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc001ikp.4	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc010qbj.1	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc010qbk.1	non-coding intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc010qbl.1	intronic	None	None	None	None	None	11425	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc009xiw.1	intronic	None	None	None	None	None	40318	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc010qbi.2	intronic	None	None	None	None	None	40318	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc010qbm.1	intronic	None	None	None	None	None	40318	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc010qbo.1	intronic	None	None	None	None	None	40318	None
+rs17149833	chr10	11247963	T|A	1	CELF2	uc010qbp.1	intronic	None	None	None	None	None	40318	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc009xjz.1	intronic	None	None	None	None	None	10797	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc001ipr.2	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc001ipu.3	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc001ipx.2	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc001ipy.2	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc001iqa.2	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc010qcm.2	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc001ipt.2	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc001ipw.2	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc009xka.2	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc010qcl.2	non-coding intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc010qcn.2	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc010qco.1	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc001ips.2	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc001ipv.3	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc001ipz.2	intronic	None	None	None	None	None	2727	None
+rs4237348	chr10	18798203	T|C	1	CACNB2	uc009xkb.1	intronic	None	None	None	None	None	2727	None
+rs10764114	chr10	19937986	A|G	1	AK297683	uc010qcr.1	intronic	None	None	None	None	None	33134	None
+rs11817725	chr10	21368072	G|W	1	NEBL	uc001iqk.3	intronic	None	None	None	None	None	58942	None
+rs11817725	chr10	21368072	G|W	1	NEBL	uc021pnu.1	intronic	None	None	None	None	None	58942	None
+rs11012514	chr10	21368442	A|T	1	NEBL	uc001iqk.3	intronic	None	None	None	None	None	59312	None
+rs11012514	chr10	21368442	A|T	1	NEBL	uc021pnu.1	intronic	None	None	None	None	None	59312	None
+rs11012515	chr10	21369034	C|T	1	NEBL	uc001iqk.3	intronic	None	None	None	None	None	59904	None
+rs11012515	chr10	21369034	C|T	1	NEBL	uc021pnu.1	intronic	None	None	None	None	None	59904	None
+rs2804672	chr10	38656887	G|A	1	HSD17B7P2	uc001izq.3	non-coding intronic	None	None	None	None	None	1994	None
+rs2804672	chr10	38656887	G|A	1	HSD17B7P2	uc001izo.1	3downstream	None	None	None	None	None	None	None
+rs2804672	chr10	38656887	G|A	1	HSD17B7P2	uc001izp.1	3downstream	None	None	None	None	None	None	None
+rs2804672	chr10	38656887	G|A	1	HSD17B7P2	uc010qex.1	3downstream	None	None	None	None	None	None	None
+rs2842107	chr10	52131485	C|T	1	SGMS1	uc009xot.1	non-coding intronic	None	None	None	None	None	44403	None
+rs2842107	chr10	52131485	C|T	1	SGMS1	uc010qhk.2	intronic	None	None	None	None	None	44403	None
+rs2842107	chr10	52131485	C|T	1	SGMS1	uc021pqq.1	intronic	None	None	None	None	None	27380	None
+rs2842107	chr10	52131485	C|T	1	SGMS1	uc001jje.3	intronic	None	None	None	None	None	27380	None
+rs2842107	chr10	52131485	C|T	1	SGMS1	uc009xou.1	intronic	None	None	None	None	None	27380	None
+rs2842107	chr10	52131485	C|T	1	SGMS1	uc021pqr.1	non-coding intronic	None	None	None	None	None	44403	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	uc001jol.1	non-coding intronic	None	None	None	None	None	1161	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	uc001jom.1	intronic	None	None	None	None	None	1161	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	uc001jon.1	intronic	None	None	None	None	None	1161	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	uc001joo.3	intronic	None	None	None	None	None	1161	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	uc009xpx.1	intronic	None	None	None	None	None	1161	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	uc010qiz.1	intronic	None	None	None	None	None	1161	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	uc010qja.1	intronic	None	None	None	None	None	1161	None
+rs1566222	chr10	70519603	A|Y	1	CCAR1	uc010qjb.2	non-coding intronic	None	None	None	None	None	1161	None
+rs10824347	chr10	77645229	A|T	1	C10orf11	uc001jxi.3	intronic	None	None	None	None	None	102449	None
+rs1574190	chr10	80992381	C|T	1	ZMIZ1	uc001kaf.2	intronic	None	None	None	None	None	16350	None
+rs4933971	chr10	85945289	C|K	1	C10orf99	uc001kcu.3	3downstream	None	None	None	None	None	None	None
+rs2148895	chr10	129692293	C|K	1	CLRN3	uc001lka.1	5upstream	None	None	None	None	None	None	None
+rs9919651	chr11	4176502	A|C	1	RRM1	uc009yej.3	non-coding intronic	None	None	None	None	None	16827	None
+rs439667	chr11	8259358	G|Y	1	LMO1	uc001mgg.2	intronic	None	None	None	None	None	7307	None
+rs439667	chr11	8259358	G|Y	1	LMO1	uc009yfo.2	non-coding intronic	None	None	None	None	None	7307	None
+rs439667	chr11	8259358	G|Y	1	LMO1	uc001mgh.2	intronic	None	None	None	None	None	7307	None
+rs10500712	chr11	9902797	G|A	1	U80769	uc001mig.3	non-coding intronic	None	None	None	None	None	34356	None
+rs10500712	chr11	9902797	G|A	1	SBF2	uc001mib.2	intronic	None	None	None	None	None	14693	None
+rs10500712	chr11	9902797	G|A	1	SBF2	uc001mif.3	intronic	None	None	None	None	None	14693	None
+rs16933680	chr11	16935949	C|T	1	PLEKHA7	uc001mmo.3	intronic	None	None	None	None	None	43220	None
+rs16933680	chr11	16935949	C|T	1	PLEKHA7	uc010rcu.1	intronic	None	None	None	None	None	43220	None
+rs10741734	chr11	18044648	A|G	1	TPH1	uc001mnp.2	intronic	None	None	None	None	None	170	None
+rs10741734	chr11	18044648	A|G	1	TPH1	uc009yhe.2	non-coding intronic	None	None	None	None	None	170	None
+rs10834986	chr11	26521999	G|H	1	ANO3	uc001mqt.4	intronic	None	None	None	None	None	7652	None
+rs10834986	chr11	26521999	G|H	1	ANO3	uc010rdr.2	intronic	None	None	None	None	None	7652	None
+rs10834986	chr11	26521999	G|H	1	ANO3	uc010rds.2	intronic	None	None	None	None	None	7652	None
+rs10834986	chr11	26521999	G|H	1	ANO3	uc010rdt.2	intronic	None	None	None	None	None	7652	None
+rs7945815	chr11	26539736	T|R	1	ANO3	uc001mqt.4	intronic	None	None	None	None	None	1262	None
+rs7945815	chr11	26539736	T|R	1	ANO3	uc010rdr.2	intronic	None	None	None	None	None	1262	None
+rs7945815	chr11	26539736	T|R	1	ANO3	uc010rdt.2	intronic	None	None	None	None	None	1262	None
+rs7945815	chr11	26539736	T|R	1	ANO3	uc010rds.2	intronic	None	None	None	None	None	1262	None
+rs480617	chr11	64478320	C|T	1	NRXN2	uc001oas.3	intronic	None	None	None	None	None	2122	None
+rs480617	chr11	64478320	C|T	1	NRXN2	uc021qkw.1	intronic	None	None	None	None	None	2122	None
+rs480617	chr11	64478320	C|T	1	NRXN2	uc021qkx.1	intronic	None	None	None	None	None	2122	None
+rs2115763	chr11	112051169	A|T	1	BCO2	uc001pne.1	intronic	None	None	None	None	None	4757	None
+rs2115763	chr11	112051169	A|T	1	BCO2	uc010rwt.2	intronic	None	None	None	None	None	3988	None
+rs2115763	chr11	112051169	A|T	1	BCO2	uc001pnf.3	intronic	None	None	None	None	None	964	None
+rs2115763	chr11	112051169	A|T	1	BCO2	uc001png.3	intronic	None	None	None	None	None	964	None
+rs2115763	chr11	112051169	A|T	1	BCO2	uc001pnh.3	intronic	None	None	None	None	None	964	None
+rs2115763	chr11	112051169	A|T	1	BCO2	uc001pni.3	intronic	None	None	None	None	None	964	None
+rs2115763	chr11	112051169	A|T	1	BCO2	uc009yyn.3	intronic	None	None	None	None	None	964	None
+rs11604887	chr11	113602809	T|C	1	ZW10	uc001poe.3	3downstream	None	None	None	None	None	None	None
+rs11604887	chr11	113602809	T|C	1	ZW10	uc009yyv.3	3downstream	None	None	None	None	None	None	None
+rs17541153	chr11	113615622	G|C	1	ZW10	uc001poe.3	intronic	None	None	None	None	None	860	None
+rs17541153	chr11	113615622	G|C	1	ZW10	uc009yyv.3	non-coding intronic	None	None	None	None	None	860	None
+rs1633550	chr11	113669205	C|G	1	USP28	uc001pog.3	3utr	3107	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	uc001poh.3	3utr	4024	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	uc001poi.3	3utr	3562	None	None	None	None	None	None
+rs1633550	chr11	113669205	C|G	1	USP28	uc010rwy.2	3utr	3717	None	None	None	None	None	None
+rs1633548	chr11	113671506	C|T	1	USP28	uc001pog.3	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	uc001poh.3	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	uc001poi.3	intronic	None	None	None	None	None	699	None
+rs1633548	chr11	113671506	C|T	1	USP28	uc010rwy.2	intronic	None	None	None	None	None	699	None
+rs2513574	chr11	113681305	T|C	1	USP28	uc001pog.3	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	uc001poh.3	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	uc001poi.3	intronic	None	None	None	None	None	1329	None
+rs2513574	chr11	113681305	T|C	1	USP28	uc010rwy.2	intronic	None	None	None	None	None	1329	None
+rs2519200	chr11	113684809	A|G	1	USP28	uc001poi.3	intronic	None	None	None	None	None	1673	None
+rs2519200	chr11	113684809	A|G	1	USP28	uc001pog.3	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	uc001poh.3	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	uc001poj.3	intronic	None	None	None	None	None	132	None
+rs2519200	chr11	113684809	A|G	1	USP28	uc010rwy.2	intronic	None	None	None	None	None	132	None
+rs10789970	chr11	113773946	C|T	1	HTR3B	uc001pok.3	5upstream	None	None	None	None	None	None	None
+rs17116117	chr11	113801591	A|G	1	HTR3B	uc001pok.3	intronic	None	None	None	None	None	515	None
+rs17116117	chr11	113801591	A|G	1	HTR3B	uc001pol.3	intronic	None	None	None	None	None	515	None
+rs17116145	chr11	113804326	C|T	1	HTR3B	uc001pok.3	intronic	None	None	None	None	None	511	None
+rs17116145	chr11	113804326	C|T	1	HTR3B	uc001pol.3	intronic	None	None	None	None	None	511	None
+rs1176741	chr11	113807315	C|T	1	HTR3B	uc001pok.3	intronic	None	None	None	None	None	3500	None
+rs1176741	chr11	113807315	C|T	1	HTR3B	uc001pol.3	intronic	None	None	None	None	None	3500	None
+rs1176740	chr11	113807396	T|A	1	HTR3B	uc001pok.3	intronic	None	None	None	None	None	3581	None
+rs1176740	chr11	113807396	T|A	1	HTR3B	uc001pol.3	intronic	None	None	None	None	None	3581	None
+rs1176739	chr11	113807817	G|H	1	HTR3B	uc001pok.3	intronic	None	None	None	None	None	4002	None
+rs1176739	chr11	113807817	G|H	1	HTR3B	uc001pol.3	intronic	None	None	None	None	None	4002	None
+rs1176738	chr11	113808095	T|C	1	HTR3B	uc001pok.3	intronic	None	None	None	None	None	4280	None
+rs1176738	chr11	113808095	T|C	1	HTR3B	uc001pol.3	intronic	None	None	None	None	None	4280	None
+rs511296	chr11	128869845	G|W	1	ARHGAP32	uc009zco.3	5upstream	None	None	None	None	None	None	None
+rs511296	chr11	128869845	G|W	1	ARHGAP32	uc001qez.3	intronic	None	None	None	None	None	1482	None
+rs511296	chr11	128869845	G|W	1	ARHGAP32	uc001qfb.3	intronic	None	None	None	None	None	1482	None
+rs511296	chr11	128869845	G|W	1	ARHGAP32	uc009zcp.3	intronic	None	None	None	None	None	1482	None
+rs511296	chr11	128869845	G|W	1	ARHGAP32	uc009zcq.2	intronic	None	None	None	None	None	1482	None
+rs2155373	chr11	132371834	C|T	1	OPCML	uc001qgt.3	intronic	None	None	None	None	None	27121	None
+rs2155373	chr11	132371834	C|T	1	OPCML	uc001qgs.3	intronic	None	None	None	None	None	27121	None
+rs2155373	chr11	132371834	C|T	1	OPCML	uc001qgu.3	intronic	None	None	None	None	None	27121	None
+rs2155373	chr11	132371834	C|T	1	OPCML	uc010sck.2	intronic	None	None	None	None	None	27121	None
+rs2155373	chr11	132371834	C|T	1	OPCML	uc010scl.2	intronic	None	None	None	None	None	27121	None
+rs11223425	chr11	133143976	G|W	1	OPCML	uc001qgu.3	intronic	None	None	None	None	None	258183	None
+rs10848821	chr12	3298031	G|A	1	TSPAN9	uc021qtd.1	intronic	None	None	None	None	None	12312	None
+rs10848821	chr12	3298031	G|A	1	TSPAN9	uc001qlp.3	intronic	None	None	None	None	None	12312	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	uc001qwf.3	intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	uc001qwg.3	intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	uc001qwh.3	non-coding intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	uc009zgs.3	non-coding intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	uc009zgt.3	non-coding intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	uc009zgu.3	intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	uc021quv.2	intronic	None	None	None	None	None	749	None
+rs2114870	chr12	9823140	G|A	1	CLEC2D	uc021quw.2	intronic	None	None	None	None	None	749	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	uc001qwf.3	intronic	None	None	None	None	None	1560	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	uc001qwg.3	intronic	None	None	None	None	None	1560	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	uc001qwh.3	non-coding intronic	None	None	None	None	None	1560	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	uc009zgs.3	non-coding intronic	None	None	None	None	None	1560	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	uc009zgt.3	non-coding intronic	None	None	None	None	None	1560	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	uc009zgu.3	intronic	None	None	None	None	None	1560	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	uc021quv.2	intronic	None	None	None	None	None	8539	None
+rs11052372	chr12	9831959	C|G	1	CLEC2D	uc021quw.2	intronic	None	None	None	None	None	8539	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	uc001qwf.3	intronic	None	None	None	None	None	91	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	uc001qwg.3	intronic	None	None	None	None	None	91	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	uc021quw.2	intronic	None	None	None	None	None	91	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	uc009zgu.3	intronic	None	None	None	None	None	91	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	uc021quv.2	intronic	None	None	None	None	None	91	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	uc001qwh.3	non-coding intronic	None	None	None	None	None	16	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	uc009zgs.3	non-coding intronic	None	None	None	None	None	16	None
+rs7310460	chr12	9840773	T|A	1	CLEC2D	uc009zgt.3	non-coding intronic	None	None	None	None	None	16	None
+rs4763879	chr12	9910164	G|A	1	CD69	uc001qwk.3	intronic	None	None	None	None	None	1149	None
+rs4763879	chr12	9910164	G|A	1	CD69	uc010sgu.2	intronic	None	None	None	None	None	1149	None
+rs4763879	chr12	9910164	G|A	1	CD69	uc010sgv.1	intronic	None	None	None	None	None	1149	None
+rs16910627	chr12	15267486	A|T	1	RERG	uc001rcs.3	intronic	None	None	None	None	None	3135	None
+rs16910627	chr12	15267486	A|T	1	RERG	uc001rct.3	intronic	None	None	None	None	None	3135	None
+rs16910627	chr12	15267486	A|T	1	RERG	uc010shu.2	intronic	None	None	None	None	None	3135	None
+rs7955585	chr12	32114454	C|K	1	KIAA1551	uc001rks.3	intronic	None	None	None	None	None	649	None
+rs10876266	chr12	52676403	A|G	1	KRT86	uc010snq.2	intronic	None	None	None	None	None	19294	None
+rs10876266	chr12	52676403	A|G	1	KRT86	uc009zmg.3	intronic	None	None	None	None	None	6673	None
+rs1873914	chr12	56379427	G|C	1	RAB5B	uc001siv.3	intronic	None	None	None	None	None	1226	None
+rs1873914	chr12	56379427	G|C	1	RAB5B	uc001siw.3	intronic	None	None	None	None	None	1226	None
+rs1873914	chr12	56379427	G|C	1	RAB5B	uc009zog.3	intronic	None	None	None	None	None	1226	None
+rs1873914	chr12	56379427	G|C	1	RAB5B	uc010spz.2	intronic	None	None	None	None	None	1226	None
+rs705698	chr12	56384687	T|C	1	RAB5B	uc010spz.2	intronic	None	None	None	None	None	457	None
+rs705698	chr12	56384687	T|C	1	RAB5B	uc001siv.3	intronic	None	None	None	None	None	99	None
+rs705698	chr12	56384687	T|C	1	RAB5B	uc001siw.3	intronic	None	None	None	None	None	99	None
+rs705698	chr12	56384687	T|C	1	RAB5B	uc009zog.3	intronic	None	None	None	None	None	99	None
+rs705702	chr12	56390636	A|G	1	SUOX	uc001six.3	5upstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	SUOX	uc001siy.3	5upstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	SUOX	uc001siz.3	5upstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	SUOX	uc009zoh.3	5upstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	RAB5B	uc001siv.3	3downstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	RAB5B	uc001siw.3	3downstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	RAB5B	uc009zog.3	3downstream	None	None	None	None	None	None	None
+rs705702	chr12	56390636	A|G	1	RAB5B	uc010spz.2	3downstream	None	None	None	None	None	None	None
+rs2292239	chr12	56482180	T|G	1	ERBB3	uc010sqb.2	intronic	None	None	None	None	None	6085	None
+rs2292239	chr12	56482180	T|G	1	ERBB3	uc001sji.3	5upstream	None	None	None	None	None	None	None
+rs2292239	chr12	56482180	T|G	1	ERBB3	uc001sjh.3	intronic	None	None	None	None	None	147	None
+rs2292239	chr12	56482180	T|G	1	ERBB3	uc009zoj.3	non-coding intronic	None	None	None	None	None	147	None
+rs2292239	chr12	56482180	T|G	1	ERBB3	uc010sqc.2	intronic	None	None	None	None	None	147	None
+rs10859739	chr12	95016969	T|A	1	TMCC3	uc001tdj.2	intronic	None	None	None	None	None	27160	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	uc001tif.2	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	uc001tig.3	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	uc001tih.3	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	uc001tii.3	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	uc001tij.3	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	uc001tik.3	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	uc010svq.2	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	uc010svr.2	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	uc010svs.2	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	uc010svt.2	intronic	None	None	None	None	None	337	None
+rs11110901	chr12	102030113	C|T	1	MYBPC1	uc010svu.2	intronic	None	None	None	None	None	1730	None
+rs4766517	chr12	111359712	G|C	1	MYL2	uc001try.4	5upstream	None	None	None	None	None	None	None
+rs7398833	chr12	111786892	T|C	1	CUX2	uc001tsa.2	3utr	5378	None	None	None	None	None	None
+rs634389	chr12	112164715	C|G	1	ACAD10	uc001tsp.3	intronic	None	None	None	None	None	1051	None
+rs634389	chr12	112164715	C|G	1	ACAD10	uc001tsq.3	intronic	None	None	None	None	None	1051	None
+rs634389	chr12	112164715	C|G	1	ACAD10	uc009zvx.3	intronic	None	None	None	None	None	1051	None
+rs634389	chr12	112164715	C|G	1	ACAD10	uc001tss.1	non-coding intronic	None	None	None	None	None	2895	None
+rs10744777	chr12	112233018	T|C	1	ALDH2	uc001tst.3	intronic	None	None	None	None	None	2432	None
+rs10744777	chr12	112233018	T|C	1	ALDH2	uc010syi.2	intronic	None	None	None	None	None	2432	None
+rs3742000	chr12	112338539	T|C	1	ADAM1A	uc021rea.1	coding	1673	898	300	C>R	nonsyn	None	MCYTPWHIKRESPVVSTSWQQGSRKPHDLQALSYLWSHKKYVEMFVVVNNQRFQMWGSNVNETVQTVVDVIALANSFTRGINTEVVLAGMEIWTEGDLIDVTVDLQITLRNFNHWRQEMLFHRAKHDVAHMIVGHHPGQNMGQAFLSGACSSGFAAAVESFHHEDVLLFAALMAHELGHNLGIQHDHSACFCKDKHFCLMHENITKESGFSSCSSDYFYQFLREHKGACLFNKPRPRGRKRRDSACGNGVVEDTEQCDCGSLCQHHACCDENCILKAKAECSDGPCCHKCKFHRKGYPCCPSSRSCDLPEFCNGTSALCPNNRHKQDGSKCHTIYECLKVHCMDPNNQCLQLYGYGAKSASQECYNSMNSKGDQFGNCGISTSPGSQYVRCSDGNIFCGKLICSGITGLPKINLQHTMIQVPQGDGSCWSMDAYMSTDIPDEGDVHNGTYCAPNKVCLNSACTDKTPVISACNPEKTCNGKGVCNDLGHCHCNEGHAPPDCVTAGSGGSVDSGPPGKLGGTPSGEGENHNMTHSRREEHAVDMMILSFIILFIILLLSTII*|MCYTPWHIKRESPVVSTSWQQGSRKPHDLQALSYLWSHKKYVEMFVVVNNQRFQMWGSNVNETVQTVVDVIALANSFTRGINTEVVLAGMEIWTEGDLIDVTVDLQITLRNFNHWRQEMLFHRAKHDVAHMIVGHHPGQNMGQAFLSGACSSGFAAAVESFHHEDVLLFAALMAHELGHNLGIQHDHSACFCKDKHFCLMHENITKESGFSSCSSDYFYQFLREHKGACLFNKPRPRGRKRRDSACGNGVVEDTEQCDCGSLCQHHACCDENCILKAKAECSDGPCCHKCKFHRKGYPCRPSSRSCDLPEFCNGTSALCPNNRHKQDGSKCHTIYECLKVHCMDPNNQCLQLYGYGAKSASQECYNSMNSKGDQFGNCGISTSPGSQYVRCSDGNIFCGKLICSGITGLPKINLQHTMIQVPQGDGSCWSMDAYMSTDIPDEGDVHNGTYCAPNKVCLNSACTDKTPVISACNPEKTCNGKGVCNDLGHCHCNEGHAPPDCVTAGSGGSVDSGPPGKLGGTPSGEGENHNMTHSRREEHAVDMMILSFIILFIILLLSTII*
+rs12321677	chr12	112339015	G|A	1	ADAM1A	uc021rea.1	coding	2149	1374	458	L>L	syn	None	MCYTPWHIKRESPVVSTSWQQGSRKPHDLQALSYLWSHKKYVEMFVVVNNQRFQMWGSNVNETVQTVVDVIALANSFTRGINTEVVLAGMEIWTEGDLIDVTVDLQITLRNFNHWRQEMLFHRAKHDVAHMIVGHHPGQNMGQAFLSGACSSGFAAAVESFHHEDVLLFAALMAHELGHNLGIQHDHSACFCKDKHFCLMHENITKESGFSSCSSDYFYQFLREHKGACLFNKPRPRGRKRRDSACGNGVVEDTEQCDCGSLCQHHACCDENCILKAKAECSDGPCCHKCKFHRKGYPCCPSSRSCDLPEFCNGTSALCPNNRHKQDGSKCHTIYECLKVHCMDPNNQCLQLYGYGAKSASQECYNSMNSKGDQFGNCGISTSPGSQYVRCSDGNIFCGKLICSGITGLPKINLQHTMIQVPQGDGSCWSMDAYMSTDIPDEGDVHNGTYCAPNKVCLNSACTDKTPVISACNPEKTCNGKGVCNDLGHCHCNEGHAPPDCVTAGSGGSVDSGPPGKLGGTPSGEGENHNMTHSRREEHAVDMMILSFIILFIILLLSTII*
+rs4767293	chr12	112463296	A|G	1	NAA25	uc001ttm.3	3downstream	None	None	None	None	None	None	None
+rs4767293	chr12	112463296	A|G	1	NAA25	uc001ttn.4	3downstream	None	None	None	None	None	None	None
+rs17696736	chr12	112486818	A|G	1	NAA25	uc001ttn.4	non-coding intronic	None	None	None	None	None	469	None
+rs17696736	chr12	112486818	A|G	1	NAA25	uc001ttm.3	intronic	None	None	None	None	None	571	None
+rs17696736	chr12	112486818	A|G	1	NAA25	uc009zvz.2	intronic	None	None	None	None	None	571	None
+rs17696736	chr12	112486818	A|G	1	NAA25	uc009zwa.2	intronic	None	None	None	None	None	571	None
+rs9554277	chr13	28728026	G|A	1	PAN3	uc001urz.3	intronic	None	None	None	None	None	14802	None
+rs9554277	chr13	28728026	G|A	1	PAN3	uc010tdo.1	intronic	None	None	None	None	None	14802	None
+rs9554296	chr13	28833143	C|T	1	PAN3	uc001urx.3	intronic	None	None	None	None	None	1441	None
+rs9554296	chr13	28833143	C|T	1	PAN3	uc001ury.3	intronic	None	None	None	None	None	1441	None
+rs9554296	chr13	28833143	C|T	1	PAN3	uc001urz.3	intronic	None	None	None	None	None	1441	None
+rs9554296	chr13	28833143	C|T	1	PAN3	uc010tdo.1	intronic	None	None	None	None	None	1441	None
+rs641696	chr13	32478444	A|G	1	EEF1DP3	uc001utu.3	intronic	None	None	None	None	None	37001	None
+rs641696	chr13	32478444	A|G	1	EEF1DP3	uc010tdv.2	non-coding intronic	None	None	None	None	None	41702	None
+rs9315704	chr13	40140215	A|G	1	LHFP	uc001uxf.3	intronic	None	None	None	None	None	34754	None
+rs7995795	chr13	96222531	T|C	1	CLDN10	uc001vmg.2	intronic	None	None	None	None	None	6954	None
+rs7995795	chr13	96222531	T|C	1	CLDN10	uc001vmh.2	intronic	None	None	None	None	None	6954	None
+rs7995795	chr13	96222531	T|C	1	CLDN10	uc010tii.1	intronic	None	None	None	None	None	6954	None
+rs11838497	chr13	102663147	A|C	1	FGF14	uc001vpf.2	intronic	None	None	None	None	None	135501	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	uc001wti.3	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	uc001wtj.3	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	uc010amp.3	non-coding intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	uc010tpv.2	intronic	None	None	None	None	None	3656	None
+rs10483456	chr14	36036167	C|T	1	RALGAPA1	uc010tpw.1	intronic	None	None	None	None	None	3656	None
+rs2274818	chr14	98426655	C|T	1	C14orf64	uc001yfw.2	non-coding intronic	None	None	None	None	None	8955	None
+rs2274818	chr14	98426655	C|T	1	C14orf64	uc001yfx.2	non-coding intronic	None	None	None	None	None	8955	None
+rs2274818	chr14	98426655	C|T	1	C14orf64	uc010avq.2	non-coding intronic	None	None	None	None	None	498	None
+rs2274818	chr14	98426655	C|T	1	C14orf64	uc001yfy.2	non-coding	523	None	None	None	None	None	None
+rs1052912	chr14	103603653	G|A	1	TNFAIP2	uc001ymm.1	3utr	4052	None	None	None	None	None	None
+rs1052912	chr14	103603653	G|A	1	TNFAIP2	uc010awo.1	3utr	3156	None	None	None	None	None	None
+rs1052912	chr14	103603653	G|A	1	TNFAIP2	uc010txz.1	3utr	3571	None	None	None	None	None	None
+rs1052912	chr14	103603653	G|A	1	TNFAIP2	uc010tya.1	3downstream	None	None	None	None	None	None	None
+rs12907720	chr15	31897012	T|C	1	OTUD7A	uc001zfs.1	non-coding intronic	None	None	None	None	None	34612	None
+rs12907720	chr15	31897012	T|C	1	OTUD7A	uc001zfq.3	intronic	None	None	None	None	None	34612	None
+rs12907720	chr15	31897012	T|C	1	OTUD7A	uc001zfr.3	intronic	None	None	None	None	None	34612	None
+rs12907720	chr15	31897012	T|C	1	OTUD7A	uc010baa.1	intronic	None	None	None	None	None	34612	None
+rs7170060	chr15	31897837	T|C	1	OTUD7A	uc001zfs.1	non-coding intronic	None	None	None	None	None	35437	None
+rs7170060	chr15	31897837	T|C	1	OTUD7A	uc001zfq.3	intronic	None	None	None	None	None	35437	None
+rs7170060	chr15	31897837	T|C	1	OTUD7A	uc001zfr.3	intronic	None	None	None	None	None	35437	None
+rs7170060	chr15	31897837	T|C	1	OTUD7A	uc010baa.1	intronic	None	None	None	None	None	35437	None
+rs345778	chr15	33397146	T|C	1	FMN1	uc031qrh.1	intronic	None	None	None	None	None	15971	None
+rs782916	chr15	61398155	T|C	1	RORA	uc002agx.3	intronic	None	None	None	None	None	123097	None
+rs17237810	chr15	61508186	A|S	1	RORA	uc002agx.3	intronic	None	None	None	None	None	13066	None
+rs11858454	chr15	71669115	A|G	1	THSD4	uc002atb.1	intronic	None	None	None	None	None	34911	None
+rs11858454	chr15	71669115	A|G	1	THSD4	uc002atd.1	intronic	None	None	None	None	None	34911	None
+rs8032794	chr15	71906850	G|A	1	THSD4	uc002atb.1	intronic	None	None	None	None	None	46019	None
+rs8032794	chr15	71906850	G|A	1	THSD4	uc002atd.1	intronic	None	None	None	None	None	46019	None
+rs8032794	chr15	71906850	G|A	1	THSD4	uc002ate.2	intronic	None	None	None	None	None	46019	None
+rs8032794	chr15	71906850	G|A	1	THSD4	uc010ukg.1	intronic	None	None	None	None	None	46019	None
+rs893379	chr15	93194688	T|C	1	FAM174B	uc010boe.3	intronic	None	None	None	None	None	3858	None
+rs893379	chr15	93194688	T|C	1	FAM174B	uc002bsl.4	non-coding intronic	None	None	None	None	None	21113	None
+rs401072	chr15	93211991	G|A	1	FAM174B	uc002bsl.4	non-coding intronic	None	None	None	None	None	30279	None
+rs285753	chr15	93218077	G|A	1	FAM174B	uc002bsl.4	non-coding intronic	None	None	None	None	None	24193	None
+rs6598368	chr15	101155726	T|C	1	ASB7	uc002bwj.3	intronic	None	None	None	None	None	3094	None
+rs6598368	chr15	101155726	T|C	1	ASB7	uc002bwk.3	intronic	None	None	None	None	None	3094	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	uc002cys.2	intronic	None	None	None	None	None	1952	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	uc002cyt.2	intronic	None	None	None	None	None	1952	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	uc010uxz.1	intronic	None	None	None	None	None	1952	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	uc010uya.1	intronic	None	None	None	None	None	1952	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	uc010uyb.1	intronic	None	None	None	None	None	1952	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	uc002cyw.2	intronic	None	None	None	None	None	8580	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	uc002cyx.2	intronic	None	None	None	None	None	8580	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	uc002cyy.2	intronic	None	None	None	None	None	8580	None
+rs1019142	chr16	7712979	G|C	1	RBFOX1	uc010uyc.1	intronic	None	None	None	None	None	8580	None
+rs12708716	chr16	11179873	A|G	1	CLEC16A	uc002dan.4	intronic	None	None	None	None	None	24994	None
+rs12708716	chr16	11179873	A|G	1	CLEC16A	uc002dao.3	intronic	None	None	None	None	None	24994	None
+rs12708716	chr16	11179873	A|G	1	CLEC16A	uc021tcy.1	intronic	None	None	None	None	None	24994	None
+rs12924729	chr16	11187783	G|A	1	CLEC16A	uc002dan.4	intronic	None	None	None	None	None	26689	None
+rs12924729	chr16	11187783	G|A	1	CLEC16A	uc002dao.3	intronic	None	None	None	None	None	26689	None
+rs12924729	chr16	11187783	G|A	1	CLEC16A	uc021tcy.1	intronic	None	None	None	None	None	26689	None
+rs9746695	chr16	11207894	T|C	1	CLEC16A	uc002dan.4	intronic	None	None	None	None	None	6578	None
+rs9746695	chr16	11207894	T|C	1	CLEC16A	uc002dao.3	intronic	None	None	None	None	None	6578	None
+rs9746695	chr16	11207894	T|C	1	CLEC16A	uc021tcy.1	intronic	None	None	None	None	None	6578	None
+rs2545886	chr16	21029197	A|G	1	DNAH3	uc010vbe.2	intronic	None	None	None	None	None	1749	None
+rs9930029	chr16	24772562	G|A	1	TNRC6A	uc002dmm.3	intronic	None	None	None	None	None	2881	None
+rs8063113	chr16	78271066	C|T	1	WWOX	uc010che.3	intronic	None	None	None	None	None	122015	None
+rs8063113	chr16	78271066	C|T	1	WWOX	uc002ffj.2	intronic	None	None	None	None	None	41434	None
+rs8063113	chr16	78271066	C|T	1	WWOX	uc002ffk.3	intronic	None	None	None	None	None	72880	None
+rs8063113	chr16	78271066	C|T	1	WWOX	uc010vnk.2	intronic	None	None	None	None	None	72880	None
+rs8063113	chr16	78271066	C|T	1	WWOX	uc002ffl.3	intronic	None	None	None	None	None	72880	None
+rs433900	chr16	84295086	A|G	1	5S_rRNA	uc021tly.1	3downstream	None	None	None	None	None	None	None
+rs3803676	chr16	89596106	C|T	1	SPG7	uc002fni.3	intronic	None	None	None	None	None	119	None
+rs3803676	chr16	89596106	C|T	1	SPG7	uc002fnj.3	intronic	None	None	None	None	None	119	None
+rs382745	chr16	89603586	A|G	1	SPG7	uc002fnj.3	intronic	None	None	None	None	None	4542	None
+rs382745	chr16	89603586	A|G	1	SPG7	uc002fni.3	3utr	1759	None	None	None	None	None	None
+rs16945811	chr17	1294614	G|A	1	YWHAE	uc002fsj.3	intronic	None	None	None	None	None	8727	None
+rs16945811	chr17	1294614	G|A	1	YWHAE	uc010vqh.2	non-coding intronic	None	None	None	None	None	8727	None
+rs16945811	chr17	1294614	G|A	1	YWHAE	uc010vqi.2	non-coding intronic	None	None	None	None	None	8727	None
+rs16945811	chr17	1294614	G|A	1	YWHAE	uc002fsk.3	intronic	None	None	None	None	None	8727	None
+rs9900326	chr17	10708208	T|C	1	TMEM220-AS1	uc031qzb.1	intronic	None	None	None	None	None	1272	None
+rs9900326	chr17	10708208	T|C	1	LINC00675	uc002gmz.3	5upstream	None	None	None	None	None	None	None
+rs4792677	chr17	15688147	G|T	1	MEIS3P1	uc002gpc.3	5upstream	None	None	None	None	None	None	None
+rs2429542	chr17	38922456	C|R	1	KRT26	uc002hvf.3	3downstream	None	None	None	None	None	None	None
+rs1263978	chr17	49816472	G|A	1	CA10	uc002itv.4	intronic	None	None	None	None	None	8521	None
+rs1263978	chr17	49816472	G|A	1	CA10	uc002itw.4	intronic	None	None	None	None	None	8521	None
+rs1263978	chr17	49816472	G|A	1	CA10	uc002itx.4	intronic	None	None	None	None	None	8521	None
+rs1263978	chr17	49816472	G|A	1	CA10	uc002ity.4	intronic	None	None	None	None	None	8521	None
+rs1263978	chr17	49816472	G|A	1	CA10	uc002itz.2	intronic	None	None	None	None	None	8521	None
+rs8075641	chr17	55865288	T|C	1	7SK	uc021ual.1	5upstream	None	None	None	None	None	None	None
+rs11081349	chr18	7977468	T|C	1	PTPRM	uc002knn.4	intronic	None	None	None	None	None	22056	None
+rs11081349	chr18	7977468	T|C	1	PTPRM	uc010dkv.3	intronic	None	None	None	None	None	22056	None
+rs11081349	chr18	7977468	T|C	1	PTPRM	uc010wzl.2	intronic	None	None	None	None	None	22056	None
+rs355334	chr18	33075099	A|G	1	INO80C	uc002kyx.4	intronic	None	None	None	None	None	1640	None
+rs355334	chr18	33075099	A|G	1	INO80C	uc002kyw.1	intronic	None	None	None	None	None	2584	None
+rs355334	chr18	33075099	A|G	1	INO80C	uc002kyy.4	intronic	None	None	None	None	None	2584	None
+rs355334	chr18	33075099	A|G	1	INO80C	uc010dmt.3	intronic	None	None	None	None	None	2584	None
+rs12958322	chr18	42309786	T|C	1	SETBP1	uc002lay.3	intronic	None	None	None	None	None	27989	None
+rs12958322	chr18	42309786	T|C	1	SETBP1	uc010dni.3	intronic	None	None	None	None	None	27989	None
+rs17724409	chr18	42438388	C|A	1	SETBP1	uc002lay.3	intronic	None	None	None	None	None	10807	None
+rs17724409	chr18	42438388	C|A	1	SETBP1	uc010dni.3	intronic	None	None	None	None	None	10807	None
+rs2289609	chr18	72776891	C|T	1	ZNF407	uc002llw.2	3utr	7267	None	None	None	None	None	None
+rs7260268	chr19	21270521	A|T	1	ZNF714	uc002npl.3	intronic	None	None	None	None	None	3646	None
+rs7260268	chr19	21270521	A|T	1	ZNF714	uc002npn.3	non-coding intronic	None	None	None	None	None	3646	None
+rs7260268	chr19	21270521	A|T	1	ZNF714	uc002npo.4	intronic	None	None	None	None	None	3646	None
+rs7260268	chr19	21270521	A|T	1	ZNF714	uc010ecp.2	non-coding intronic	None	None	None	None	None	3646	None
+rs16978732	chr19	44633056	C|T	1	ZNF225	uc002oyj.1	intronic	None	None	None	None	None	1947	None
+rs16978732	chr19	44633056	C|T	1	ZNF225	uc010ejf.1	intronic	None	None	None	None	None	1947	None
+rs16978732	chr19	44633056	C|T	1	AX748287	uc002oyk.1	non-coding	450	None	None	None	None	None	None
+rs41360748	chr19	44639110	A|G	1	ZNF225	uc002oyj.1	3downstream	None	None	None	None	None	None	None
+rs41360748	chr19	44639110	A|G	1	ZNF225	uc010ejf.1	3downstream	None	None	None	None	None	None	None
+rs1542038	chr19	56984278	C|T	1	ZNF667	uc002qnd.3	intronic	None	None	None	None	None	4363	None
+rs1542038	chr19	56984278	C|T	1	ZNF667	uc010etm.3	intronic	None	None	None	None	None	4363	None
+rs1542038	chr19	56984278	C|T	1	ZNF667	uc010etl.3	5utr	160	None	None	None	None	None	None
+rs1542038	chr19	56984278	C|T	1	ZNF667	uc002qne.3	intronic	None	None	None	None	None	722	None
+rs11678712	chr2	8290837	A|T	1	LINC00299	uc010eww.2	non-coding intronic	None	None	None	None	None	90302	None
+rs6721746	chr2	44962016	G|A	1	CAMKMT	uc002rum.3	intronic	None	None	None	None	None	8745	None
+rs6732505	chr2	58455258	G|Y	1	FANCL	uc010fcf.1	intronic	None	None	None	None	None	6081	None
+rs6732505	chr2	58455258	G|Y	1	FANCL	uc002rzw.4	intronic	None	None	None	None	None	1339	None
+rs6732505	chr2	58455258	G|Y	1	FANCL	uc002rzx.4	intronic	None	None	None	None	None	1339	None
+rs6732505	chr2	58455258	G|Y	1	FANCL	uc010fce.3	intronic	None	None	None	None	None	1339	None
+rs11126425	chr2	74380989	A|G	1	BOLA3-AS1	uc002ske.3	3downstream	None	None	None	None	None	None	None
+rs11126425	chr2	74380989	A|G	1	BOLA3-AS1	uc002skg.3	3downstream	None	None	None	None	None	None	None
+rs17727191	chr2	75733641	C|T	1	EVA1A	uc002sni.2	intronic	None	None	None	None	None	11541	None
+rs17727191	chr2	75733641	C|T	1	EVA1A	uc002snj.1	intronic	None	None	None	None	None	11541	None
+rs17727191	chr2	75733641	C|T	1	EVA1A	uc002snk.1	intronic	None	None	None	None	None	11541	None
+rs13390216	chr2	79541531	A|C	1	CTNNA2	uc010yse.2	intronic	None	None	None	None	None	1609	None
+rs7605430	chr2	100647552	C|G	1	AFF3	uc002tag.3	intronic	None	None	None	None	None	22158	None
+rs7605430	chr2	100647552	C|G	1	AFF3	uc010fiq.1	intronic	None	None	None	None	None	22158	None
+rs7605430	chr2	100647552	C|G	1	AFF3	uc002taf.3	intronic	None	None	None	None	None	19519	None
+rs7605430	chr2	100647552	C|G	1	AFF3	uc002tah.1	intronic	None	None	None	None	None	19519	None
+rs7605430	chr2	100647552	C|G	1	AFF3	uc010fir.1	intronic	None	None	None	None	None	19519	None
+rs7605430	chr2	100647552	C|G	1	AFF3	uc010yvr.1	intronic	None	None	None	None	None	19519	None
+rs1430306	chr2	109807885	G|A	1	SH3RF3	uc010ywt.1	intronic	None	None	None	None	None	61316	None
+rs6706577	chr2	111796833	A|K	1	ACOXL	uc010yxk.1	intronic	None	None	None	None	None	7542	None
+rs6706577	chr2	111796833	A|K	1	ACOXL	uc021vmm.1	intronic	None	None	None	None	None	7542	None
+rs6706577	chr2	111796833	A|K	1	ACOXL	uc021vmn.1	intronic	None	None	None	None	None	7542	None
+rs10187034	chr2	111812617	T|S	1	ACOXL	uc010yxk.1	intronic	None	None	None	None	None	5752	None
+rs10187034	chr2	111812617	T|S	1	ACOXL	uc021vmm.1	intronic	None	None	None	None	None	5752	None
+rs10187034	chr2	111812617	T|S	1	ACOXL	uc021vmn.1	intronic	None	None	None	None	None	5752	None
+rs6734603	chr2	182038729	T|C	1	AK125001	uc002uns.1	non-coding intronic	None	None	None	None	None	50022	None
+rs9967792	chr2	191974435	T|C	1	STAT4	uc002usm.2	intronic	None	None	None	None	None	33384	None
+rs9967792	chr2	191974435	T|C	1	STAT4	uc002usn.2	intronic	None	None	None	None	None	33384	None
+rs9967792	chr2	191974435	T|C	1	STAT4	uc002uso.2	intronic	None	None	None	None	None	33384	None
+rs9967792	chr2	191974435	T|C	1	STAT4	uc002usp.4	intronic	None	None	None	None	None	33384	None
+rs7570606	chr2	196791792	A|G	1	DNAH7	uc002utj.4	intronic	None	None	None	None	None	502	None
+rs1409612	chr2	215800710	G|A	1	ABCA12	uc002vev.3	intronic	None	None	None	None	None	1524	None
+rs1409612	chr2	215800710	G|A	1	ABCA12	uc002vew.3	intronic	None	None	None	None	None	1524	None
+rs1409612	chr2	215800710	G|A	1	ABCA12	uc010zjn.2	intronic	None	None	None	None	None	1524	None
+rs4673129	chr2	225877033	C|T	1	DOCK10	uc002vod.1	intronic	None	None	None	None	None	29936	None
+rs4673129	chr2	225877033	C|T	1	DOCK10	uc010fwz.1	intronic	None	None	None	None	None	29936	None
+rs4673129	chr2	225877033	C|T	1	MIR4439	uc021vxm.1	5upstream	None	None	None	None	None	None	None
+rs8117563	chr20	1346162	A|G	1	FKBP1A-SDCBP2	uc010gac.2	intronic	None	None	None	None	None	27316	None
+rs8117563	chr20	1346162	A|G	1	FKBP1A-SDCBP2	uc021vzo.1	intronic	None	None	None	None	None	27316	None
+rs8117563	chr20	1346162	A|G	1	SDCBP2-AS1	uc002wew.3	non-coding intronic	None	None	None	None	None	7560	None
+rs8117563	chr20	1346162	A|G	1	SDCBP2-AS1	uc002wex.3	non-coding intronic	None	None	None	None	None	7560	None
+rs8117563	chr20	1346162	A|G	1	SDCBP2-AS1	uc021vzp.1	non-coding intronic	None	None	None	None	None	7560	None
+rs6075643	chr20	20298392	A|G	1	C20orf26	uc002wru.3	intronic	None	None	None	None	None	19362	None
+rs6075643	chr20	20298392	A|G	1	C20orf26	uc002wrw.3	non-coding intronic	None	None	None	None	None	19362	None
+rs7262414	chr20	40811780	C|A	1	PTPRT	uc002xkg.3	intronic	None	None	None	None	None	16100	None
+rs7262414	chr20	40811780	C|A	1	PTPRT	uc010ggi.3	intronic	None	None	None	None	None	16100	None
+rs7262414	chr20	40811780	C|A	1	PTPRT	uc010ggj.3	intronic	None	None	None	None	None	16100	None
+rs2868853	chr20	45742310	C|T	1	EYA2	uc002xsm.3	intronic	None	None	None	None	None	16503	None
+rs2868853	chr20	45742310	C|T	1	EYA2	uc010ghp.3	intronic	None	None	None	None	None	16503	None
+rs2868853	chr20	45742310	C|T	1	EYA2	uc002xsq.3	intronic	None	None	None	None	None	16503	None
+rs3787249	chr20	45744355	A|K	1	EYA2	uc002xsm.3	intronic	None	None	None	None	None	18548	None
+rs3787249	chr20	45744355	A|K	1	EYA2	uc010ghp.3	intronic	None	None	None	None	None	18548	None
+rs3787249	chr20	45744355	A|K	1	EYA2	uc002xsq.3	intronic	None	None	None	None	None	18548	None
+rs919197	chr20	57480933	T|S	1	GNAS	uc002xzt.3	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	uc002xzw.3	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	uc002xzx.3	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	uc002yaa.3	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	uc002yad.3	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	uc002yae.3	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	uc010gjq.3	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	uc021wfl.1	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	uc021wfn.1	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	uc021wfo.1	intronic	None	None	None	None	None	398	None
+rs919197	chr20	57480933	T|S	1	GNAS	uc021wfp.1	intronic	None	None	None	None	None	398	None
+rs7264923	chr20	58923936	A|B	1	LOC284757	uc010gjw.3	non-coding intronic	None	None	None	None	None	70142	None
+rs240462	chr21	17752828	A|T	1	LINC00478	uc002ykc.2	non-coding intronic	None	None	None	None	None	11106	None
+rs240462	chr21	17752828	A|T	1	LINC00478	uc010glc.2	non-coding intronic	None	None	None	None	None	11106	None
+rs240462	chr21	17752828	A|T	1	LINC00478	uc002ykb.2	non-coding intronic	None	None	None	None	None	106982	None
+rs2824545	chr21	19288192	C|T	1	CHODL	uc002ykr.3	intronic	None	None	None	None	None	1345	None
+rs2824545	chr21	19288192	C|T	1	CHODL	uc002yks.3	5upstream	None	None	None	None	None	None	None
+rs2824545	chr21	19288192	C|T	1	CHODL	uc002ykt.3	5upstream	None	None	None	None	None	None	None
+rs2824545	chr21	19288192	C|T	1	CHODL	uc002yku.3	5upstream	None	None	None	None	None	None	None
+rs2824545	chr21	19288192	C|T	1	CHODL	uc021whr.1	5upstream	None	None	None	None	None	None	None
+rs11700615	chr21	32908593	T|M	1	TIAM1	uc002yow.1	intronic	None	None	None	None	None	22647	None
+rs11700615	chr21	32908593	T|M	1	TIAM1	uc002yox.1	intronic	None	None	None	None	None	23639	None
+rs2154420	chr21	33854206	T|C	1	EVA1C	uc002ypr.1	intronic	None	None	None	None	None	13131	None
+rs2154420	chr21	33854206	T|C	1	EVA1C	uc002yps.1	non-coding intronic	None	None	None	None	None	13131	None
+rs2154420	chr21	33854206	T|C	1	EVA1C	uc002ypu.1	intronic	None	None	None	None	None	13131	None
+rs2154420	chr21	33854206	T|C	1	EVA1C	uc010glw.1	intronic	None	None	None	None	None	13131	None
+rs41513350	chr21	36818747	C|T	1	RUNX1	uc002yut.1	non-coding intronic	None	None	None	None	None	15512	None
+rs41513350	chr21	36818747	C|T	1	LOC100506403	uc031rvg.1	non-coding intronic	None	None	None	None	None	15512	None
+rs12152099	chr21	41303073	G|C	1	PCP4	uc002yyp.3	3downstream	None	None	None	None	None	None	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	uc003alv.3	non-coding intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	uc011alv.2	non-coding intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	uc003als.3	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	uc003alt.3	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	uc003alu.3	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	uc003alw.3	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	uc010gwk.3	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	uc011als.2	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	uc011alu.2	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	uc011alx.2	intronic	None	None	None	None	None	158	None
+rs5994443	chr22	32275353	T|C	1	DEPDC5	uc011aly.2	intronic	None	None	None	None	None	158	None
+rs1109364	chr22	32856594	C|T	1	BPIFC	uc003amo.4	intronic	None	None	None	None	None	967	None
+rs1109364	chr22	32856594	C|T	1	BPIFC	uc011amb.1	intronic	None	None	None	None	None	967	None
+rs135475	chr22	32934659	C|G	1	SYN3	uc003amx.3	intronic	None	None	None	None	None	563	None
+rs135475	chr22	32934659	C|G	1	SYN3	uc003amy.3	intronic	None	None	None	None	None	563	None
+rs135475	chr22	32934659	C|G	1	SYN3	uc003amz.3	intronic	None	None	None	None	None	563	None
+rs738494	chr22	44370439	A|C	1	SAMM50	uc003bek.3	5upstream	None	None	None	None	None	None	None
+rs738494	chr22	44370439	A|C	1	SAMM50	uc003bej.3	intronic	None	None	None	None	None	1236	None
+rs738494	chr22	44370439	A|C	1	SAMM50	uc011aqd.2	intronic	None	None	None	None	None	1236	None
+rs9616913	chr22	51115526	T|C	1	SHANK3	uc031ryd.1	intronic	None	None	None	None	None	405	None
+rs6798623	chr3	8247957	G|C	1	LMCD1-AS1	uc003bqp.3	non-coding intronic	None	None	None	None	None	11197	None
+rs9874351	chr3	21481230	A|T	1	ZNF385D	uc010hfb.1	non-coding intronic	None	None	None	None	None	2535	None
+rs9874351	chr3	21481230	A|T	1	ZNF385D	uc003cce.3	intronic	None	None	None	None	None	2535	None
+rs17025857	chr3	30681095	A|G	1	TGFBR2	uc003ceo.3	intronic	None	None	None	None	None	5144	None
+rs17025857	chr3	30681095	A|G	1	TGFBR2	uc021wut.1	intronic	None	None	None	None	None	5144	None
+rs17025857	chr3	30681095	A|G	1	TGFBR2	uc003cen.3	intronic	None	None	None	None	None	5144	None
+rs9808969	chr3	76165179	G|A	1	ROBO2	uc021xat.1	intronic	None	None	None	None	None	178426	None
+rs1354728	chr3	97558176	A|G	1	CRYBG3	uc021xbn.2	intronic	None	None	None	None	None	3863	None
+rs16841378	chr3	99285819	G|T	1	MIR548G	uc021xbq.1	non-coding intronic	None	None	None	None	None	12648	None
+rs10511176	chr3	99326501	T|C	1	MIR548G	uc021xbq.1	non-coding intronic	None	None	None	None	None	53330	None
+rs2399399	chr3	111637904	G|W	1	PHLDB2	uc003dyc.3	intronic	None	None	None	None	None	15	None
+rs2399399	chr3	111637904	G|W	1	PHLDB2	uc003dyd.3	intronic	None	None	None	None	None	15	None
+rs2399399	chr3	111637904	G|W	1	PHLDB2	uc003dyg.3	intronic	None	None	None	None	None	15	None
+rs2399399	chr3	111637904	G|W	1	PHLDB2	uc003dyh.3	intronic	None	None	None	None	None	15	None
+rs2399399	chr3	111637904	G|W	1	PHLDB2	uc003dyi.3	intronic	None	None	None	None	None	15	None
+rs2399399	chr3	111637904	G|W	1	PHLDB2	uc010hqa.3	intronic	None	None	None	None	None	15	None
+rs2399399	chr3	111637904	G|W	1	PHLDB2	uc003dyf.4	3downstream	None	None	None	None	None	None	None
+rs1135438	chr3	143016478	A|G	1	SLC9A9	uc003evn.3	intronic	None	None	None	None	None	28656	None
+rs9840380	chr3	150647396	T|R	1	CLRN1-AS1	uc011bny.1	non-coding intronic	None	None	None	None	None	77003	None
+rs9840380	chr3	150647396	T|R	1	CLRN1	uc021xfr.1	intronic	None	None	None	None	None	11973	None
+rs9840380	chr3	150647396	T|R	1	CLRN1	uc021xfq.1	non-coding intronic	None	None	None	None	None	11973	None
+rs9840380	chr3	150647396	T|R	1	CLRN1	uc021xfs.1	intronic	None	None	None	None	None	1408	None
+rs9840380	chr3	150647396	T|R	1	CLRN1	uc003eyj.3	intronic	None	None	None	None	None	1408	None
+rs9840380	chr3	150647396	T|R	1	CLRN1	uc003eyk.1	intronic	None	None	None	None	None	1408	None
+rs9840380	chr3	150647396	T|R	1	CLRN1	uc031sbx.1	intronic	None	None	None	None	None	1408	None
+rs3821664	chr3	151102305	C|G	1	P2RY12	uc003eyx.1	intronic	None	None	None	None	None	175	None
+rs3821664	chr3	151102305	C|G	1	P2RY12	uc011boa.2	intronic	None	None	None	None	None	175	None
+rs3821664	chr3	151102305	C|G	1	MED12L	uc003eyp.3	intronic	None	None	None	None	None	299	None
+rs3821664	chr3	151102305	C|G	1	MED12L	uc003eyy.1	intronic	None	None	None	None	None	299	None
+rs3821664	chr3	151102305	C|G	1	MED12L	uc011bnz.2	intronic	None	None	None	None	None	299	None
+rs1515650	chr3	154100726	T|C	1	GPR149	uc003faa.3	intronic	None	None	None	None	None	38102	None
+rs1542487	chr3	174956762	G|T	1	NAALADL2	uc003fit.3	intronic	None	None	None	None	None	4768	None
+rs1542487	chr3	174956762	G|T	1	NAALADL2	uc003fiu.1	intronic	None	None	None	None	None	4768	None
+rs1542487	chr3	174956762	G|T	1	NAALADL2	uc010hwy.2	intronic	None	None	None	None	None	4768	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	uc031sea.1	non-coding intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	uc031seb.1	intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	uc031sdx.1	intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	uc031sdy.1	non-coding intronic	None	None	None	None	None	81741	None
+rs10517031	chr4	23968295	A|G	1	PPARGC1A	uc031sdz.1	intronic	None	None	None	None	None	81741	None
+rs17005996	chr4	83570300	T|C	1	SCD5	uc003hna.2	intronic	None	None	None	None	None	12324	None
+rs17388568	chr4	123329362	G|A	1	ADAD1	uc003ieo.3	intronic	None	None	None	None	None	176	None
+rs17388568	chr4	123329362	G|A	1	ADAD1	uc003ieq.3	intronic	None	None	None	None	None	176	None
+rs17388568	chr4	123329362	G|A	1	ADAD1	uc003iep.3	intronic	None	None	None	None	None	176	None
+rs2086346	chr4	123333671	A|G	1	ADAD1	uc003ieo.3	intronic	None	None	None	None	None	64	None
+rs2086346	chr4	123333671	A|G	1	ADAD1	uc003iep.3	intronic	None	None	None	None	None	64	None
+rs2086346	chr4	123333671	A|G	1	ADAD1	uc003ieq.3	intronic	None	None	None	None	None	64	None
+rs17484678	chr4	149268146	G|A	1	NR3C2	uc003ilj.4	intronic	None	None	None	None	None	86877	None
+rs17484678	chr4	149268146	G|A	1	NR3C2	uc003ilk.4	intronic	None	None	None	None	None	86877	None
+rs17484678	chr4	149268146	G|A	1	NR3C2	uc010iph.3	non-coding intronic	None	None	None	None	None	86877	None
+rs2128427	chr4	177154196	A|T	1	ASB5	uc003iup.2	intronic	None	None	None	None	None	7704	None
+rs2128427	chr4	177154196	A|T	1	ASB5	uc003iuq.2	intronic	None	None	None	None	None	7704	None
+rs43188	chr5	52320940	G|A	1	ITGA2	uc003joy.3	intronic	None	None	None	None	None	1638	None
+rs43188	chr5	52320940	G|A	1	ITGA2	uc011cqa.2	non-coding intronic	None	None	None	None	None	1638	None
+rs43188	chr5	52320940	G|A	1	ITGA2	uc011cqb.2	non-coding intronic	None	None	None	None	None	1638	None
+rs43188	chr5	52320940	G|A	1	ITGA2	uc011cqd.2	non-coding intronic	None	None	None	None	None	1638	None
+rs43188	chr5	52320940	G|A	1	ITGA2	uc011cqe.2	non-coding intronic	None	None	None	None	None	1638	None
+rs43188	chr5	52320940	G|A	1	ITGA2	uc011cqc.2	intronic	None	None	None	None	None	17002	None
+rs26949	chr5	59825300	T|C	1	PART1	uc003jsg.2	non-coding	781	None	None	None	None	None	None
+rs17134152	chr5	111479955	G|T	1	EPB41L4A	uc003kpp.1	intronic	None	None	None	None	None	378	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	uc003lok.5	intronic	None	None	None	None	None	23149	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	uc010jgm.4	intronic	None	None	None	None	None	23149	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	uc003loe.4	intronic	None	None	None	None	None	44652	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	uc003lof.5	intronic	None	None	None	None	None	44652	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	uc003log.5	intronic	None	None	None	None	None	44652	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	uc003loh.5	intronic	None	None	None	None	None	44652	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	uc011dbv.3	intronic	None	None	None	None	None	44652	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	uc003loj.5	intronic	None	None	None	None	None	132208	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	uc003loi.5	intronic	None	None	None	None	None	132208	None
+rs249900	chr5	146212913	T|R	1	PPP2R2B	uc011dbu.3	intronic	None	None	None	None	None	132208	None
+rs3776069	chr5	149315287	T|C	1	PDE6A	uc021yfs.1	intronic	None	None	None	None	None	4556	None
+rs3776069	chr5	149315287	T|C	1	PDE6A	uc003lrg.4	intronic	None	None	None	None	None	1006	None
+rs17659728	chr5	150637133	A|G	1	GM2A	uc003ltr.4	intronic	None	None	None	None	None	2183	None
+rs17659728	chr5	150637133	A|G	1	GM2A	uc011dcr.2	intronic	None	None	None	None	None	2183	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	uc003luy.4	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	uc003luz.4	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	uc003lva.4	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	uc010jia.1	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	uc011dcv.2	non-coding intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	uc011dcw.2	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	uc011dcx.2	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	uc011dcy.2	intronic	None	None	None	None	None	39	None
+rs10035262	chr5	153065746	A|G	1	GRIA1	uc011dcz.2	intronic	None	None	None	None	None	39	None
+rs2112594	chr5	179744009	T|A|C|G	1	GFPT2	uc003mlw.1	coding	1106	1008	336	S>S|S>S|S>S	syn|syn|syn	None	MCGIFAYMNYRVPRTRKEIFETLIKGLQRLEYRGYDSAGVAIDGNNHEVKERHIQLVKKRGKVKALDEELYKQDSMDLKVEFETHFGIAHTRWATHGVPSAVNSHPQRSDKGNEFVVIHNGIITNYKDLRKFLESKGYEFESETDTETIAKLIKYVFDNRETEDITFSTLVERVIQQLEGAFALVFKSVHYPGEAVATRRGSPLLIGVRSKYKLSTEQIPILYRTCTLENVKNICKTRMKRLDSSACLHAVGDKAVEFFFASDASAIIEHTNRVIFLEDDDIAAVADGKLSIHRVKRSASDDPSRAIQTLQMELQQIMKGNFSAFMQKEIFEQPESVFNTMRGRVNFETNTVLLGGLKDHLKEIRRCRRLIVIGCGTSYHAAVATRQVLEELTELPVMVELASDFLDRNTPVFRDDVCFFISQSGETADTLLALRYCKDRGALTVGVTNTVGSSISRETDCGVHINAGPEIGVASTKAYTSQFISLVMFGLMMSEDRISLQNRRQEIIRGLRSLPELIKEVLSLEEKIHDLALELYTQRSLLVMGRGYNYATCLEGALKIKEITYMHSEGILAGELKHGPLALIDKQMPVIMVIMKDPCFAKCQNALQQVTARQGRPIILCSKDDTESSKFAYKTIELPHTVDCLQGILSVIPLQLLSFHLAVLRGYDVDFPRNLAKSVTVE*
+rs9405484	chr6	1498457	G|T	1	BC087858	uc003mto.3	non-coding intronic	None	None	None	None	None	107	None
+rs4959824	chr6	3409112	G|A	1	SLC22A23	uc003mvm.3	intronic	None	None	None	None	None	1310	None
+rs4959824	chr6	3409112	G|A	1	SLC22A23	uc003mvn.3	intronic	None	None	None	None	None	1310	None
+rs4959824	chr6	3409112	G|A	1	SLC22A23	uc003mvo.3	intronic	None	None	None	None	None	1310	None
+rs4959824	chr6	3409112	G|A	1	SLC22A23	uc003mvp.1	non-coding intronic	None	None	None	None	None	1310	None
+rs4959824	chr6	3409112	G|A	1	SLC22A23	uc010jnn.3	intronic	None	None	None	None	None	1310	None
+rs4959824	chr6	3409112	G|A	1	SLC22A23	uc010jno.2	intronic	None	None	None	None	None	1310	None
+rs523383	chr6	25869848	A|G	1	SLC17A3	uc003nfi.4	intronic	None	None	None	None	None	1200	None
+rs523383	chr6	25869848	A|G	1	SLC17A3	uc003nfk.4	intronic	None	None	None	None	None	1200	None
+rs523383	chr6	25869848	A|G	1	SLC17A3	uc011dka.1	intronic	None	None	None	None	None	1200	None
+rs523383	chr6	25869848	A|G	1	SLC17A3	uc011djz.1	5upstream	None	None	None	None	None	None	None
+rs9467704	chr6	26319486	C|T	1	TRNA_Trp	uc021ynb.1	5upstream	None	None	None	None	None	None	None
+rs3734536	chr6	26365346	G|C	1	BTN3A2	uc003nhp.3	5upstream	None	None	None	None	None	None	None
+rs3734536	chr6	26365346	G|C	1	BTN3A2	uc010jqh.2	5upstream	None	None	None	None	None	None	None
+rs3734536	chr6	26365346	G|C	1	BTN3A2	uc011dkd.2	5upstream	None	None	None	None	None	None	None
+rs3734536	chr6	26365346	G|C	1	BTN3A2	uc011dke.2	5upstream	None	None	None	None	None	None	None
+rs10456045	chr6	26404958	G|A	1	BTN3A1	uc003nhv.3	intronic	None	None	None	None	None	642	None
+rs10456045	chr6	26404958	G|A	1	BTN3A1	uc011dkj.2	intronic	None	None	None	None	None	642	None
+rs10456045	chr6	26404958	G|A	1	BTN3A1	uc011dkk.2	intronic	None	None	None	None	None	642	None
+rs10456045	chr6	26404958	G|A	1	BTN3A1	uc010jqj.3	intronic	None	None	None	None	None	812	None
+rs2237236	chr6	26451553	A|S	1	BTN3A3	uc003nhz.3	intronic	None	None	None	None	None	350	None
+rs2237236	chr6	26451553	A|S	1	BTN3A3	uc011dkn.2	intronic	None	None	None	None	None	350	None
+rs2237236	chr6	26451553	A|S	1	BTN3A3	uc021ynh.1	intronic	None	None	None	None	None	350	None
+rs7763910	chr6	26472655	A|G	1	BTN2A1	uc021yni.1	intronic	None	None	None	None	None	3695	None
+rs7763910	chr6	26472655	A|G	1	LOC285819	uc003nie.2	non-coding intronic	None	None	None	None	None	234	None
+rs4713062	chr6	26948195	C|D	1	LINC00240	uc003nit.4	non-coding intronic	None	None	None	None	None	11894	None
+rs7451149	chr6	27057518	T|C	1	TRNA_Pro	uc021yov.1	5upstream	None	None	None	None	None	None	None
+rs200481	chr6	27773832	T|A	1	HIST1H2BL	uc003njl.3	3downstream	None	None	None	None	None	None	None
+rs201002	chr6	27808192	A|G	1	HIST1H2AK	uc003njs.3	5upstream	None	None	None	None	None	None	None
+rs201002	chr6	27808192	A|G	1	HIST1H2BN	uc003nju.1	intronic	None	None	None	None	None	1150	None
+rs201002	chr6	27808192	A|G	1	HIST1H2BN	uc003njt.1	non-coding intronic	None	None	None	None	None	1150	None
+rs201002	chr6	27808192	A|G	1	HIST1H2BN	uc003njv.3	3downstream	None	None	None	None	None	None	None
+rs200995	chr6	27813694	T|C	1	HIST1H2BN	uc003njt.1	non-coding intronic	None	None	None	None	None	4255	None
+rs200995	chr6	27813694	T|C	1	HIST1H2BN	uc003nju.1	intronic	None	None	None	None	None	4255	None
+rs200991	chr6	27815494	C|A	1	HIST1H2BN	uc003njt.1	non-coding intronic	None	None	None	None	None	4393	None
+rs200991	chr6	27815494	C|A	1	HIST1H2BN	uc003nju.1	intronic	None	None	None	None	None	4393	None
+rs203885	chr6	28076886	C|T	1	LOC100129195	uc010jqw.2	intronic	None	None	None	None	None	17640	None
+rs203884	chr6	28077374	C|A	1	LOC100129195	uc010jqw.2	intronic	None	None	None	None	None	18128	None
+rs1225709	chr6	28103648	T|C	1	LOC100129195	uc010jqw.2	intronic	None	None	None	None	None	875	None
+rs1225709	chr6	28103648	T|C	1	LOC100129195	uc003nkl.2	intronic	None	None	None	None	None	875	None
+rs1225709	chr6	28103648	T|C	1	LOC100129195	uc003nkk.2	non-coding intronic	None	None	None	None	None	875	None
+rs1871695	chr6	28109960	A|G	1	ZKSCAN8	uc011dkz.2	5upstream	None	None	None	None	None	None	None
+rs1871695	chr6	28109960	A|G	1	ZKSCAN8	uc010jqx.2	intronic	None	None	None	None	None	153	None
+rs1871695	chr6	28109960	A|G	1	ZKSCAN8	uc003nkn.2	intronic	None	None	None	None	None	153	None
+rs1871695	chr6	28109960	A|G	1	ZKSCAN8	uc010jqy.2	intronic	None	None	None	None	None	153	None
+rs17720293	chr6	28214698	C|T	1	ZKSCAN4	uc003nks.1	intronic	None	None	None	None	None	49	None
+rs17720293	chr6	28214698	C|T	1	ZKSCAN4	uc011dlb.1	intronic	None	None	None	None	None	49	None
+rs9272346	chr6	32604372	G|A	1	HLA-DQA1	uc003obr.3	5upstream	None	None	None	None	None	None	None
+rs9272346	chr6	32604372	G|A	1	HLA-DQA1	uc003obs.3	5upstream	None	None	None	None	None	None	None
+rs9272346	chr6	32604372	G|A	1	HLA-DQA1	uc003obt.1	5upstream	None	None	None	None	None	None	None
+rs9272723	chr6	32609427	T|C	1	HLA-DQA1	uc003obs.3	non-coding intronic	None	None	None	None	None	92	None
+rs9272723	chr6	32609427	T|C	1	HLA-DQA1	uc003obt.1	intronic	None	None	None	None	None	92	None
+rs9272723	chr6	32609427	T|C	1	HLA-DQA1	uc003obu.3	5upstream	None	None	None	None	None	None	None
+rs9272723	chr6	32609427	T|C	1	HLA-DQA1	uc003obr.3	intronic	None	None	None	None	None	92	None
+rs10807124	chr6	33404064	G|A	1	SYNGAP1	uc010juz.3	5upstream	None	None	None	None	None	None	None
+rs10807124	chr6	33404064	G|A	1	SYNGAP1	uc003oeo.2	intronic	None	None	None	None	None	674	None
+rs10807124	chr6	33404064	G|A	1	SYNGAP1	uc010juy.4	intronic	None	None	None	None	None	674	None
+rs10807124	chr6	33404064	G|A	1	SYNGAP1	uc011dri.2	intronic	None	None	None	None	None	674	None
+rs10807124	chr6	33404064	G|A	1	MIR5004	uc031snz.1	5upstream	None	None	None	None	None	None	None
+rs4713843	chr6	35203745	T|C	1	SCUBE3	uc003okf.1	intronic	None	None	None	None	None	1934	None
+rs4713843	chr6	35203745	T|C	1	SCUBE3	uc003okg.1	intronic	None	None	None	None	None	1934	None
+rs4713843	chr6	35203745	T|C	1	SCUBE3	uc003okh.1	intronic	None	None	None	None	None	475	None
+rs4607417	chr6	41978274	C|K	1	CCND3	uc011duk.2	intronic	None	None	None	None	None	37965	None
+rs4607417	chr6	41978274	C|K	1	CCND3	uc003orp.3	intronic	None	None	None	None	None	37965	None
+rs4607417	chr6	41978274	C|K	1	CCND3	uc011dum.1	intronic	None	None	None	None	None	37965	None
+rs9395726	chr6	51673301	A|G	1	PKHD1	uc003pah.1	intronic	None	None	None	None	None	17130	None
+rs9395726	chr6	51673301	A|G	1	PKHD1	uc003pai.3	intronic	None	None	None	None	None	17130	None
+rs9395726	chr6	51673301	A|G	1	PKHD1	uc010jzn.1	intronic	None	None	None	None	None	17130	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	uc003qbk.3	intronic	None	None	None	None	None	3826	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	uc003qbj.3	intronic	None	None	None	None	None	3823	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	uc003qbl.1	intronic	None	None	None	None	None	3823	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	uc010kfc.3	intronic	None	None	None	None	None	3823	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	uc011ebu.2	intronic	None	None	None	None	None	3823	None
+rs2326671	chr6	128334236	T|C	1	PTPRK	uc011ebv.1	intronic	None	None	None	None	None	3823	None
+rs9375615	chr6	129401222	A|K	1	LAMA2	uc003qbn.3	intronic	None	None	None	None	None	18096	None
+rs9375615	chr6	129401222	A|K	1	LAMA2	uc003qbo.3	intronic	None	None	None	None	None	18096	None
+rs9375615	chr6	129401222	A|K	1	LAMA2	uc021zfb.1	intronic	None	None	None	None	None	18096	None
+rs9365243	chr6	158085403	A|C	1	ZDHHC14	uc003qqt.3	intronic	None	None	None	None	None	8353	None
+rs9365243	chr6	158085403	A|C	1	ZDHHC14	uc010kjn.3	intronic	None	None	None	None	None	8353	None
+rs9365243	chr6	158085403	A|C	1	ZDHHC14	uc003qqs.3	intronic	None	None	None	None	None	8398	None
+rs341160	chr6	158832854	T|C	1	TULP4	uc003qrf.3	intronic	None	None	None	None	None	1243	None
+rs341160	chr6	158832854	T|C	1	TULP4	uc003qrg.3	intronic	None	None	None	None	None	1243	None
+rs341160	chr6	158832854	T|C	1	TULP4	uc011efo.2	intronic	None	None	None	None	None	1243	None
+rs13231142	chr7	11356286	T|G	1	BC040327	uc003ssb.3	non-coding intronic	None	None	None	None	None	62628	None
+rs2648654	chr7	29057968	T|M	1	CPVL	uc003szv.3	intronic	None	None	None	None	None	12225	None
+rs2648654	chr7	29057968	T|M	1	CPVL	uc003szw.3	intronic	None	None	None	None	None	12225	None
+rs2648654	chr7	29057968	T|M	1	CPVL	uc003szx.3	intronic	None	None	None	None	None	12225	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	uc003tcm.2	intronic	None	None	None	None	None	76237	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	uc003tcn.1	intronic	None	None	None	None	None	76237	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	uc003tcr.3	intronic	None	None	None	None	None	76237	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	uc003tcs.3	intronic	None	None	None	None	None	76237	None
+rs17160736	chr7	32014929	T|C	1	PDE1C	uc003tco.2	intronic	None	None	None	None	None	94456	None
+rs323925	chr7	34730255	G|A	1	NPSR1-AS1	uc010kwo.2	non-coding intronic	None	None	None	None	None	38094	None
+rs323925	chr7	34730255	G|A	1	NPSR1-AS1	uc010kwq.2	non-coding intronic	None	None	None	None	None	38094	None
+rs323925	chr7	34730255	G|A	1	NPSR1-AS1	uc011kaq.1	non-coding intronic	None	None	None	None	None	38094	None
+rs323925	chr7	34730255	G|A	1	NPSR1	uc003teg.1	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1	uc003teh.1	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1	uc003tei.1	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1	uc010kwu.1	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1	uc010kww.1	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1	uc010kwt.1	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1	uc010kwv.1	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1	uc011kar.1	intronic	None	None	None	None	None	5959	None
+rs323925	chr7	34730255	G|A	1	NPSR1-AS1	uc010kwp.2	non-coding intronic	None	None	None	None	None	38094	None
+rs323925	chr7	34730255	G|A	1	NPSR1-AS1	uc003teb.1	non-coding intronic	None	None	None	None	None	13437	None
+rs323925	chr7	34730255	G|A	1	NPSR1-AS1	uc003tdz.3	non-coding intronic	None	None	None	None	None	38094	None
+rs1525791	chr7	39156558	C|T	1	POU6F2	uc003thb.2	intronic	None	None	None	None	None	30927	None
+rs1525791	chr7	39156558	C|T	1	POU6F2	uc010kxo.3	intronic	None	None	None	None	None	30927	None
+rs1525791	chr7	39156558	C|T	1	POU6F2	uc022acb.1	intronic	None	None	None	None	None	30927	None
+rs3735361	chr7	42000924	C|W	1	GLI3	uc011kbg.2	3utr	7724	None	None	None	None	None	None
+rs3735361	chr7	42000924	C|W	1	GLI3	uc011kbh.2	3utr	7838	None	None	None	None	None	None
+rs10265492	chr7	47539322	G|M	1	TNS3	uc003tnw.3	intronic	None	None	None	None	None	7183	None
+rs10265492	chr7	47539322	G|M	1	TNS3	uc010kyo.1	intronic	None	None	None	None	None	7183	None
+rs1058425	chr7	80387766	C|T	1	SEMA3C	uc003uhj.3	coding	2086	1524	508	Q>Q	syn	None	MAFRTICVLVGVFICSICVKGSSQPQARVYLTFDELRETKTSEYFSLSHHPLDYRILLMDEDQDRIYVGSKDHILSLNINNISQEALSVFWPASTIKVEECKMAGKDPTHGCGNFVRVIQTFNRTHLYVCGSGAFSPVCTYLNRGRRSEDQVFMIDSKCESGKGRCSFNPNVNTVSVMINEELFSGMYIDFMGTDAAIFRSLTKRNAVRTDQHNSKWLSEPMFVDAHVIPDGTDPNDAKVYFFFKEKLTDNNRSTKQIHSMIARICPNDTGGLRSLVNKWTTFLKARLVCSVTDEDGPETHFDELEDVFLLETDNPRTTLVYGIFTTSSSVFKGSAVCVYHLSDIQTVFNGPFAHKEGPNHQLISYQGRIPYPRPGTCPGGAFTPNMRTTKEFPDDVVTFIRNHPLMYNSIYPIHKRPLIVRIGTDYKYTKIAVDRVNAADGRYHVLFLGTDRGTVQKVVVLPTNNSVSGELILEELEVFKNHAPITTMKISSKKQQLYVSSNEGVSQVSLHRCHIYGTACADCCLARDPYCAWDGHSCSRFYPTGKRRSRRQDVRHGNPLTQCRGFNLKAYRNAAEIVQYGVKNNTTFLECAPKSPQASIKWLLQKDKDRRKEVKLNERIIATSQGLLIRSVQGSDQGLYHCIATENSFKQTIAKINFKVLDSEMVAVVTDKWSPWTWASSVRALPFHPKDIMGAFSHSEMQMINQYCKDTRQQHQQGDESQKMRGDYGKLKALINSRKSRNRRNQLPES*
+rs1058425	chr7	80387766	C|T	1	SEMA3C	uc011kgw.2	coding	1657	1578	526	Q>Q	syn	None	MLSKKGIFPWILTCISEEMAFRTICVLVGVFICSICVKGSSQPQARVYLTFDELRETKTSEYFSLSHHPLDYRILLMDEDQDRIYVGSKDHILSLNINNISQEALSVFWPASTIKVEECKMAGKDPTHGCGNFVRVIQTFNRTHLYVCGSGAFSPVCTYLNRGRRSEDQVFMIDSKCESGKGRCSFNPNVNTVSVMINEELFSGMYIDFMGTDAAIFRSLTKRNAVRTDQHNSKWLSEPMFVDAHVIPDGTDPNDAKVYFFFKEKLTDNNRSTKQIHSMIARICPNDTGGLRSLVNKWTTFLKARLVCSVTDEDGPETHFDELEDVFLLETDNPRTTLVYGIFTTSSSVFKGSAVCVYHLSDIQTVFNGPFAHKEGPNHQLISYQGRIPYPRPGTCPGGAFTPNMRTTKEFPDDVVTFIRNHPLMYNSIYPIHKRPLIVRIGTDYKYTKIAVDRVNAADGRYHVLFLGTDRGTVQKVVVLPTNNSVSGELILEELEVFKNHAPITTMKISSKKQQLYVSSNEGVSQVSLHRCHIYGTACADCCLARDPYCAWDGHSCSRFYPTGKRRSRRQDVRHGNPLTQCRGFNLKAYRNAAEIVQYGVKNNTTFLECAPKSPQASIKWLLQKDKDRRKEVKLNERIIATSQGLLIRSVQGSDQGLYHCIATENSFKQTIAKINFKVLDSEMVAVVTDKWSPWTWASSVRALPFHPKDIMGAFSHSEMQMINQYCKDTRQQHQQGDESQKMRGDYGKLKALINSRKSRNRRNQLPES*
+rs1880959	chr7	80427495	C|A	1	SEMA3C	uc003uhj.3	coding	1606	1044	348	V>V	syn	None	MAFRTICVLVGVFICSICVKGSSQPQARVYLTFDELRETKTSEYFSLSHHPLDYRILLMDEDQDRIYVGSKDHILSLNINNISQEALSVFWPASTIKVEECKMAGKDPTHGCGNFVRVIQTFNRTHLYVCGSGAFSPVCTYLNRGRRSEDQVFMIDSKCESGKGRCSFNPNVNTVSVMINEELFSGMYIDFMGTDAAIFRSLTKRNAVRTDQHNSKWLSEPMFVDAHVIPDGTDPNDAKVYFFFKEKLTDNNRSTKQIHSMIARICPNDTGGLRSLVNKWTTFLKARLVCSVTDEDGPETHFDELEDVFLLETDNPRTTLVYGIFTTSSSVFKGSAVCVYHLSDIQTVFNGPFAHKEGPNHQLISYQGRIPYPRPGTCPGGAFTPNMRTTKEFPDDVVTFIRNHPLMYNSIYPIHKRPLIVRIGTDYKYTKIAVDRVNAADGRYHVLFLGTDRGTVQKVVVLPTNNSVSGELILEELEVFKNHAPITTMKISSKKQQLYVSSNEGVSQVSLHRCHIYGTACADCCLARDPYCAWDGHSCSRFYPTGKRRSRRQDVRHGNPLTQCRGFNLKAYRNAAEIVQYGVKNNTTFLECAPKSPQASIKWLLQKDKDRRKEVKLNERIIATSQGLLIRSVQGSDQGLYHCIATENSFKQTIAKINFKVLDSEMVAVVTDKWSPWTWASSVRALPFHPKDIMGAFSHSEMQMINQYCKDTRQQHQQGDESQKMRGDYGKLKALINSRKSRNRRNQLPES*
+rs1880959	chr7	80427495	C|A	1	SEMA3C	uc011kgw.2	coding	1177	1098	366	V>V	syn	None	MLSKKGIFPWILTCISEEMAFRTICVLVGVFICSICVKGSSQPQARVYLTFDELRETKTSEYFSLSHHPLDYRILLMDEDQDRIYVGSKDHILSLNINNISQEALSVFWPASTIKVEECKMAGKDPTHGCGNFVRVIQTFNRTHLYVCGSGAFSPVCTYLNRGRRSEDQVFMIDSKCESGKGRCSFNPNVNTVSVMINEELFSGMYIDFMGTDAAIFRSLTKRNAVRTDQHNSKWLSEPMFVDAHVIPDGTDPNDAKVYFFFKEKLTDNNRSTKQIHSMIARICPNDTGGLRSLVNKWTTFLKARLVCSVTDEDGPETHFDELEDVFLLETDNPRTTLVYGIFTTSSSVFKGSAVCVYHLSDIQTVFNGPFAHKEGPNHQLISYQGRIPYPRPGTCPGGAFTPNMRTTKEFPDDVVTFIRNHPLMYNSIYPIHKRPLIVRIGTDYKYTKIAVDRVNAADGRYHVLFLGTDRGTVQKVVVLPTNNSVSGELILEELEVFKNHAPITTMKISSKKQQLYVSSNEGVSQVSLHRCHIYGTACADCCLARDPYCAWDGHSCSRFYPTGKRRSRRQDVRHGNPLTQCRGFNLKAYRNAAEIVQYGVKNNTTFLECAPKSPQASIKWLLQKDKDRRKEVKLNERIIATSQGLLIRSVQGSDQGLYHCIATENSFKQTIAKINFKVLDSEMVAVVTDKWSPWTWASSVRALPFHPKDIMGAFSHSEMQMINQYCKDTRQQHQQGDESQKMRGDYGKLKALINSRKSRNRRNQLPES*
+rs1880959	chr7	80427495	C|A	1	SEMA3C	uc011kgx.1	coding	1262	600	200	V>V	syn	None	MDQVFMIDSKCESGKGRCSFNPNVNTVSVMINEELFSGMYIDFMGTDAAIFRSLTKRNAVRTDQHNSKWLSEPMFVDAHVIPDGTDPNDAKVYFFFKEKLTDNNRSTKQIHSMIARICPNDTGGLRSLVNKWTTFLKARLVCSVTDEDGPETHFDELEDVFLLETDNPRTTLVYGIFTTSSSVFKGSAVCVYHLSDIQTVFNGPFAHKEGPNHQLISYQGRIPYPRPGTNTCV*
+rs17136882	chr7	103983576	C|G	1	LHFPL3	uc003vce.3	intronic	None	None	None	None	None	13904	None
+rs17136882	chr7	103983576	C|G	1	LHFPL3	uc003vcf.3	intronic	None	None	None	None	None	13904	None
+rs10487463	chr7	126619872	G|A	1	GRM8	uc003vlu.1	intronic	None	None	None	None	None	75135	None
+rs10487463	chr7	126619872	G|A	1	GRM8	uc003vlr.2	intronic	None	None	None	None	None	75135	None
+rs10487463	chr7	126619872	G|A	1	GRM8	uc003vls.2	non-coding intronic	None	None	None	None	None	75135	None
+rs10487463	chr7	126619872	G|A	1	GRM8	uc003vlt.2	intronic	None	None	None	None	None	75135	None
+rs10487463	chr7	126619872	G|A	1	GRM8	uc010lkz.1	non-coding intronic	None	None	None	None	None	75135	None
+rs10487463	chr7	126619872	G|A	1	GRM8	uc011kof.1	non-coding intronic	None	None	None	None	None	75135	None
+rs2566878	chr7	128902590	G|A	1	AHCYL2	uc011kov.2	intronic	None	None	None	None	None	37310	None
+rs2566878	chr7	128902590	G|A	1	AHCYL2	uc003vot.3	intronic	None	None	None	None	None	37310	None
+rs7780008	chr7	151462537	C|T	1	PRKAG2	uc003wkj.3	intronic	None	None	None	None	None	15701	None
+rs7780008	chr7	151462537	C|T	1	PRKAG2	uc003wkk.3	intronic	None	None	None	None	None	15701	None
+rs7780008	chr7	151462537	C|T	1	PRKAG2	uc003wkm.1	intronic	None	None	None	None	None	15701	None
+rs7780008	chr7	151462537	C|T	1	PRKAG2	uc010lqe.1	non-coding intronic	None	None	None	None	None	15701	None
+rs1593403	chr8	25646700	A|K	1	PPP2R2A	uc003xek.3	intronic	None	None	None	None	None	399952	None
+rs10958514	chr8	57881921	C|K	1	IMPAD1	uc003xte.4	intronic	None	None	None	None	None	3010	None
+rs2383894	chr8	74348656	T|C	1	STAU2-AS1	uc003xzl.3	intronic	None	None	None	None	None	2511	None
+rs2383894	chr8	74348656	T|C	1	STAU2	uc011lfh.2	intronic	None	None	None	None	None	13719	None
+rs2383894	chr8	74348656	T|C	1	STAU2	uc003xzm.3	intronic	None	None	None	None	None	13719	None
+rs2383894	chr8	74348656	T|C	1	STAU2	uc003xzn.3	intronic	None	None	None	None	None	13719	None
+rs2383894	chr8	74348656	T|C	1	STAU2	uc011lfg.2	intronic	None	None	None	None	None	13719	None
+rs13252935	chr8	124133518	C|T	1	WDR67	uc003ypp.2	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	WDR67	uc003ypq.2	non-coding intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	WDR67	uc003yps.2	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	WDR67	uc011lig.2	intronic	None	None	None	None	None	1090	None
+rs13252935	chr8	124133518	C|T	1	WDR67	uc011lih.2	intronic	None	None	None	None	None	1090	None
+rs1435447	chr8	131878994	A|G	1	ADCY8	uc010mds.3	intronic	None	None	None	None	None	17816	None
+rs1435447	chr8	131878994	A|G	1	ADCY8	uc003ytd.4	intronic	None	None	None	None	None	1098	None
+rs1398293	chr8	139309169	G|W	1	FAM135B	uc003yux.3	intronic	None	None	None	None	None	13915	None
+rs1398293	chr8	139309169	G|W	1	FAM135B	uc003yuy.3	intronic	None	None	None	None	None	13915	None
+rs1398293	chr8	139309169	G|W	1	FAM135B	uc003yuz.3	non-coding intronic	None	None	None	None	None	13915	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc010mix.1	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc022bed.1	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc022bee.1	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc022bef.1	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc022beg.1	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc022beh.1	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc022bei.1	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc022bej.1	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc022bel.1	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc022bem.1	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc022ben.1	non-coding intronic	None	None	None	None	None	15745	None
+rs7865618	chr9	22031005	G|W	1	MTAP	uc003zpi.1	3downstream	None	None	None	None	None	None	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc003zpm.3	non-coding intronic	None	None	None	None	None	1412	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc010miw.1	non-coding intronic	None	None	None	None	None	1412	None
+rs7865618	chr9	22031005	G|W	1	CDKN2B-AS1	uc022bek.1	non-coding intronic	None	None	None	None	None	1412	None
+rs11138830	chr9	72085456	C|T	1	APBA1	uc004ahh.2	intronic	None	None	None	None	None	1116	None
+rs11145084	chr9	79435471	C|A	1	PRUNE2	uc010mpk.3	intronic	None	None	None	None	None	3077	None
+rs11145084	chr9	79435471	C|A	1	PRUNE2	uc022bih.1	intronic	None	None	None	None	None	3077	None
+rs7027501	chr9	89612224	T|C	1	LOC100506834	uc004aoy.3	non-coding intronic	None	None	None	None	None	5	None
+rs41382949	chr9	103281780	G|A	1	MSANTD3-TMEFF1	uc004bay.2	intronic	None	None	None	None	None	2727	None
+rs41382949	chr9	103281780	G|A	1	TMEFF1	uc004baz.2	intronic	None	None	None	None	None	2727	None
+rs10989147	chr9	103300396	G|T	1	MSANTD3-TMEFF1	uc004bay.2	intronic	None	None	None	None	None	9630	None
+rs10989147	chr9	103300396	G|T	1	TMEFF1	uc004baz.2	intronic	None	None	None	None	None	9630	None
+rs10989154	chr9	103324394	C|K	1	MSANTD3-TMEFF1	uc004bay.2	intronic	None	None	None	None	None	592	None
+rs10989154	chr9	103324394	C|K	1	TMEFF1	uc004baz.2	intronic	None	None	None	None	None	592	None
+rs445722	chr9	106082463	C|T	1	BC035187	uc004bbt.3	non-coding	46	None	None	None	None	None	None
+rs411567	chr9	106082968	T|C	1	BC035187	uc004bbt.3	non-coding intronic	None	None	None	None	None	500	None
+rs2622932	chr9	106086711	T|A	1	BC035187	uc004bbt.3	non-coding intronic	None	None	None	None	None	562	None
+rs12686004	chr9	107653426	G|A	1	ABCA1	uc004bcl.3	intronic	None	None	None	None	None	1950	None
+rs12686004	chr9	107653426	G|A	1	ABCA1	uc004bcm.3	intronic	None	None	None	None	None	1950	None
+rs1772033	chr9	111769543	G|A	1	CTNNAL1	uc004bdo.1	intronic	None	None	None	None	None	6039	None
+rs1772033	chr9	111769543	G|A	1	CTNNAL1	uc004bdp.1	intronic	None	None	None	None	None	6039	None
+rs4979354	chr9	116973755	G|A	1	MIR455	uc011lxm.2	3downstream	None	None	None	None	None	None	None
+rs4979354	chr9	116973755	G|A	1	COL27A1	uc010mvd.2	intronic	None	None	None	None	None	449	None
+rs4979354	chr9	116973755	G|A	1	COL27A1	uc004bii.3	non-coding intronic	None	None	None	None	None	449	None
+rs4979354	chr9	116973755	G|A	1	COL27A1	uc011lxl.2	intronic	None	None	None	None	None	449	None
+rs16927327	chr9	127047450	G|A	1	NEK6	uc004bof.3	intronic	None	None	None	None	None	16765	None
+rs16927327	chr9	127047450	G|A	1	NEK6	uc004boh.3	intronic	None	None	None	None	None	7678	None
+rs16927327	chr9	127047450	G|A	1	NEK6	uc004bog.3	intronic	None	None	None	None	None	16765	None
+rs16927327	chr9	127047450	G|A	1	NEK6	uc010mwk.3	intronic	None	None	None	None	None	16765	None

@@ -1,0 +1,2 @@
+Variation ID	Chromosome	Region Start	Region End	CpG Island	Length	CpG %	C/G %	Ratio
+rs382745	chr16	89603563	89603896	CpG: 29	333	17.4	64.9	0.83

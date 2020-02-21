@@ -1,0 +1,491 @@
+Pathway ID	Description	Parent(s)	p-Value	Genes Involved	Variation IDs
+R-HSA-8934593	Regulation of RUNX1 Expression and Activity	Gene expression (Transcription)	0.000468	CCND3,TNRC6A,RUNX1	rs41513350,rs4607417,rs9930029
+R-HSA-8851680	Butyrophilin (BTN) family interactions	Immune System	0.000552	BTN3A1,BTN3A3,BTN2A1	rs10456045,rs2237236,rs7763910
+R-HSA-8875878	MET promotes cell motility	Signal Transduction	0.000601	TNS3,LAMA2,ITGA2,COL27A1	rs10265492,rs43188,rs4979354,rs9375615
+R-HSA-112315	Transmission across Chemical Synapses	Neuronal System	0.000603	ALDH2,PRKAG2,GRIA1,GABRA6,APBA1,SYN3,CACNB2,ADCY8,HTR3B	rs10035262,rs10744777,rs11138830,rs1176738,rs1176739,rs1176740,rs1176741,rs135475,rs1435447,rs17116117,rs17116145,rs4237348,rs7780008,rs9313891
+R-HSA-8874081	MET activates PTK2 signaling	Signal Transduction	0.003105	LAMA2,ITGA2,COL27A1	rs43188,rs4979354,rs9375615
+R-HSA-112316	Neuronal System	Neuronal System	0.003395	CACNB2,ALDH2,PRKAG2,GRIA1,GABRA6,APBA1,SYN3,ADCY8,NRXN2,HTR3B	rs10035262,rs10744777,rs11138830,rs1176738,rs1176739,rs1176740,rs1176741,rs135475,rs1435447,rs17116117,rs17116145,rs4237348,rs480617,rs7780008,rs9313891
+R-HSA-6806834	Signaling by MET	Signal Transduction	0.005772	TNS3,LAMA2,ITGA2,COL27A1	rs10265492,rs43188,rs4979354,rs9375615
+R-HSA-442755	Activation of NMDA receptors and postsynaptic events	Neuronal System	0.007967	GRIA1,PRKAG2,APBA1,ADCY8	rs10035262,rs11138830,rs1435447,rs7780008
+R-HSA-5609974	Defective PGM1 causes PGM1-CDG (CDG1t)	Disease	0.008663	PGM1	rs11208264,rs2269238,rs2269239,rs2269241,rs3790857,rs4643
+R-HSA-5619052	Defective SLC9A9 causes autism 16 (AUTS16)	Disease	0.008663	SLC9A9	rs1135438
+R-HSA-5682294	Defective ABCA12 causes autosomal recessive congenital ichthyosis type 4B	Disease	0.008663	ABCA12	rs1409612
+R-HSA-164378	PKA activation in glucagon signalling	Metabolism	0.009283	GNAS,ADCY8	rs1435447,rs919197
+R-HSA-112314	Neurotransmitter receptors and postsynaptic signal transmission	Neuronal System	0.009536	PRKAG2,GRIA1,GABRA6,APBA1,ADCY8,HTR3B	rs10035262,rs11138830,rs1176738,rs1176739,rs1176740,rs1176741,rs1435447,rs17116117,rs17116145,rs7780008,rs9313891
+R-HSA-168249	Innate Immune System	Immune System	0.011888	RAB5B,GM2A,PGM1	rs11208264,rs17659728,rs1873914,rs2269238,rs2269239,rs2269241,rs3790857,rs4643,rs705698
+R-HSA-2028269	Signaling by Hippo	Signal Transduction	0.012753	YWHAE,MOB1A	rs11126425,rs16945811
+R-HSA-163685	Integration of energy metabolism	Metabolism	0.016628	GNAS,CACNB2,PRKAG2,ADCY8	rs1435447,rs4237348,rs7780008,rs919197
+R-HSA-212676	Dopamine Neurotransmitter Release Cycle	Neuronal System	0.016698	APBA1,SYN3	rs11138830,rs135475
+R-HSA-3642279	TGFBR2 MSI Frameshift Mutants in Cancer	Disease	0.017252	TGFBR2	rs17025857
+R-HSA-380612	Metabolism of serotonin	Neuronal System	0.017252	ALDH2	rs10744777
+R-HSA-5682113	Defective ABCA1 causes Tangier disease	Disease	0.017252	ABCA1	rs12686004
+R-HSA-8936459	RUNX1 regulates genes involved in megakaryocyte differentiation and platelet function	Gene expression (Transcription)	0.022720	HIST1H2BN,TNRC6A,RUNX1	rs200991,rs200995,rs201002,rs41513350,rs9930029
+R-HSA-3642278	Loss of Function of TGFBR2 in Cancer	Disease	0.025768	TGFBR2	rs17025857
+R-HSA-3645790	TGFBR2 Kinase Domain Mutants in Cancer	Disease	0.025768	TGFBR2	rs17025857
+R-HSA-380615	Serotonin clearance from the synaptic cleft	Neuronal System	0.025768	ALDH2	rs10744777
+R-HSA-8951911	RUNX3 regulates RUNX1-mediated transcription	Gene expression (Transcription)	0.025768	RUNX1	rs41513350
+R-HSA-3000157	Laminin interactions	Extracellular matrix organization	0.027609	LAMA2,ITGA2	rs43188,rs9375615
+R-HSA-4090294	SUMOylation of intracellular receptors	Metabolism of proteins	0.027609	NR3C2,RORA	rs17237810,rs17484678,rs782916
+R-HSA-422356	Regulation of insulin secretion	Metabolism	0.029081	CACNB2,GNAS,ADCY8	rs1435447,rs4237348,rs919197
+R-HSA-418594	G alpha (i) signalling events	Signal Transduction	0.030904	P2RY12,GNAS,PDE1C,BCO2,PDE6A,GRM8,CAMKMT,ADCY8	rs10487463,rs1435447,rs17160736,rs2115763,rs3776069,rs3821664,rs6721746,rs919197
+R-HSA-438064	Post NMDA receptor activation events	Neuronal System	0.031055	GRIA1,PRKAG2,ADCY8	rs10035262,rs1435447,rs7780008
+R-HSA-163359	Glucagon signaling in metabolic regulation	Metabolism	0.032957	GNAS,ADCY8	rs1435447,rs919197
+R-HSA-2514859	Inactivation, recovery and regulation of the phototransduction cascade	Signal Transduction	0.032957	PDE6A,CAMKMT	rs3776069,rs6721746
+R-HSA-1912408	Pre-NOTCH Transcription and Translation	Signal Transduction	0.033097	HIST1H2BN,TNRC6A,RUNX1	rs200991,rs200995,rs201002,rs41513350,rs9930029
+R-HSA-212436	Generic Transcription Pathway	Gene expression (Transcription)	0.033422	RBFOX1,WWOX,HIST1H2BN,NR3C2,PRKAG2,YWHAE,RORA,ZNF667,CCND3,ZNF225,HUS1,ZNF714,LMO1,TNRC6A,RUNX1,ZKSCAN4,ZKSCAN8,GLI3	rs1019142,rs1542038,rs16945811,rs16978732,rs17237810,rs17484678,rs17720293,rs1871695,rs200991,rs200995,rs201002,rs3735361,rs41513350,rs439667,rs4607417,rs7260268,rs7780008,rs7783847,rs782916,rs8063113,rs9930029
+R-HSA-111957	Cam-PDE 1 activation	Signal Transduction	0.034210	PDE1C	rs17160736
+R-HSA-3656535	TGFBR1 LBD Mutants in Cancer	Disease	0.034210	TGFBR2	rs17025857
+R-HSA-399710	Activation of AMPA receptors	Neuronal System	0.034210	GRIA1	rs10035262
+R-HSA-8941333	RUNX2 regulates genes involved in differentiation of myeloid cells	Gene expression (Transcription)	0.034210	RUNX1	rs41513350
+R-HSA-8985801	Regulation of cortical dendrite branching	Developmental Biology	0.034210	ROBO2	rs9808969
+R-HSA-111933	Calmodulin induced events	Signal Transduction	0.034822	PDE1C,ADCY8	rs1435447,rs17160736
+R-HSA-111997	CaM pathway	Signal Transduction	0.034822	PDE1C,ADCY8	rs1435447,rs17160736
+R-HSA-2514856	The phototransduction cascade	Signal Transduction	0.034822	PDE6A,CAMKMT	rs3776069,rs6721746
+R-HSA-5628897	TP53 Regulates Metabolic Genes	Gene expression (Transcription)	0.038501	PRKAG2,YWHAE,TNRC6A	rs16945811,rs7780008,rs9930029
+R-HSA-69473	G2/M DNA damage checkpoint	Cell Cycle	0.038501	HIST1H2BN,YWHAE,HUS1	rs16945811,rs200991,rs200995,rs201002,rs7783847
+R-HSA-111996	Ca-dependent events	Signal Transduction	0.038674	PDE1C,ADCY8	rs1435447,rs17160736
+R-HSA-8876198	RAB GEFs exchange GTP for GDP on RABs	Vesicle-mediated transport	0.041947	YWHAE,RAB5B,SBF2	rs10500712,rs16945811,rs1873914,rs705698
+R-HSA-1306955	GRB7 events in ERBB2 signaling	Signal Transduction	0.042580	ERBB3	rs2292239
+R-HSA-209931	Serotonin and melatonin biosynthesis	Metabolism	0.042580	TPH1	rs10741734
+R-HSA-8875513	MET interacts with TNS proteins	Signal Transduction	0.042580	TNS3	rs10265492
+R-HSA-8935964	RUNX1 regulates expression of components of tight junctions	Gene expression (Transcription)	0.042580	RUNX1	rs41513350
+R-HSA-8939247	RUNX1 regulates transcription of genes involved in interleukin signaling	Gene expression (Transcription)	0.042580	RUNX1	rs41513350
+R-HSA-9022707	MECP2 regulates transcription factors	Gene expression (Transcription)	0.042580	RBFOX1	rs1019142
+R-HSA-6794362	Protein-protein interactions at synapses	Neuronal System	0.044328	GRIA1,APBA1,NRXN2	rs10035262,rs11138830,rs480617
+R-HSA-1489509	DAG and IP3 signaling	Signal Transduction	0.046832	PDE1C,ADCY8	rs1435447,rs17160736
+R-HSA-205025	NADE modulates death signalling	Signal Transduction	0.050878	YWHAE	rs16945811
+R-HSA-3304356	SMAD2/3 Phosphorylation Motif Mutants in Cancer	Disease	0.050878	TGFBR2	rs17025857
+R-HSA-3656532	TGFBR1 KD Mutants in Cancer	Disease	0.050878	TGFBR2	rs17025857
+R-HSA-8931987	RUNX1 regulates estrogen receptor mediated transcription	Gene expression (Transcription)	0.050878	RUNX1	rs41513350
+R-HSA-8939245	RUNX1 regulates transcription of genes involved in BCR signaling	Gene expression (Transcription)	0.050878	RUNX1	rs41513350
+R-HSA-8939256	RUNX1 regulates transcription of genes involved in WNT signaling	Gene expression (Transcription)	0.050878	RUNX1	rs41513350
+R-HSA-9032845	Activated NTRK2 signals through CDK5	Signal Transduction	0.050878	TIAM1	rs11700615
+R-HSA-381676	Glucagon-like Peptide-1 (GLP1) regulates insulin secretion	Metabolism	0.051127	GNAS,ADCY8	rs1435447,rs919197
+R-HSA-9029569	NR1H3 & NR1H2 regulate gene expression linked to cholesterol transport and efflux	Signal Transduction	0.051127	ABCA1,TNRC6A	rs12686004,rs9930029
+R-HSA-1912422	Pre-NOTCH Expression and Processing	Signal Transduction	0.051865	HIST1H2BN,TNRC6A,RUNX1	rs200991,rs200995,rs201002,rs41513350,rs9930029
+R-HSA-432040	Vasopressin regulates renal water homeostasis via Aquaporins	Transport of small molecules	0.053325	GNAS,ADCY8	rs1435447,rs919197
+R-HSA-8878171	Transcriptional regulation by RUNX1	Gene expression (Transcription)	0.054024	HIST1H2BN,CCND3,LMO1,RUNX1,TNRC6A	rs200991,rs200995,rs201002,rs41513350,rs439667,rs4607417,rs9930029
+R-HSA-5576892	Phase 0 - rapid depolarisation	Muscle contraction	0.055557	CACNB2,FGF14	rs11838497,rs4237348
+R-HSA-2980767	Activation of NIMA Kinases NEK9, NEK6, NEK7	Cell Cycle	0.059105	NEK6	rs16927327
+R-HSA-3304349	Loss of Function of SMAD2/3 in Cancer	Disease	0.059105	TGFBR2	rs17025857
+R-HSA-3656534	Loss of Function of TGFBR1 in Cancer	Disease	0.059105	TGFBR2	rs17025857
+R-HSA-426496	Post-transcriptional silencing by small RNAs	Gene expression (Transcription)	0.059105	TNRC6A	rs9930029
+R-HSA-5635851	GLI proteins bind promoters of Hh responsive genes to promote transcription	Signal Transduction	0.059105	GLI3	rs3735361
+R-HSA-8939246	RUNX1 regulates transcription of genes involved in differentiation of myeloid cells	Gene expression (Transcription)	0.059105	RUNX1	rs41513350
+R-HSA-418597	G alpha (z) signalling events	Signal Transduction	0.062444	GNAS,ADCY8	rs1435447,rs919197
+R-HSA-2187338	Visual phototransduction	Signal Transduction	0.062812	BCO2,PDE6A,CAMKMT	rs2115763,rs3776069,rs6721746
+R-HSA-8953854	Metabolism of RNA	Metabolism of RNA	0.066660	CCAR1,PAN3	rs1566222,rs9554277,rs9554296
+R-HSA-163680	AMPK inhibits chREBP transcriptional activation activity	Metabolism	0.067262	PRKAG2	rs7780008
+R-HSA-3304351	Signaling by TGF-beta Receptor Complex in Cancer	Disease	0.067262	TGFBR2	rs17025857
+R-HSA-446210	Synthesis of UDP-N-acetyl-glucosamine	Metabolism of proteins	0.067262	GFPT2	rs2112594
+R-HSA-8939242	RUNX1 regulates transcription of genes involved in differentiation of keratinocytes	Gene expression (Transcription)	0.067262	RUNX1	rs41513350
+R-HSA-8963896	HDL assembly	Transport of small molecules	0.067262	ABCA1	rs12686004
+R-HSA-9006934	Signaling by Receptor Tyrosine Kinases	Signal Transduction	0.070672	TNS3,WWOX,PTPRK,ERBB3,LAMA2,ITGA2,TIAM1,COL27A1	rs10265492,rs11700615,rs2292239,rs2326671,rs43188,rs4979354,rs8063113,rs9375615
+R-HSA-112310	Neurotransmitter release cycle	Neuronal System	0.072049	APBA1,SYN3	rs11138830,rs135475
+R-HSA-112043	PLC beta mediated events	Signal Transduction	0.074521	PDE1C,ADCY8	rs1435447,rs17160736
+R-HSA-445717	Aquaporin-mediated transport	Transport of small molecules	0.074521	GNAS,ADCY8	rs1435447,rs919197
+R-HSA-9024446	NR1H2 and NR1H3-mediated signaling	Signal Transduction	0.074521	ABCA1,TNRC6A	rs12686004,rs9930029
+R-HSA-389887	Beta-oxidation of pristanoyl-CoA	Metabolism	0.075348	ACOXL	rs10187034,rs6706577
+R-HSA-425986	Sodium/Proton exchangers	Transport of small molecules	0.075348	SLC9A9	rs1135438
+R-HSA-447041	CHL1 interactions	Developmental Biology	0.075348	ITGA2	rs43188
+R-HSA-9010642	ROBO receptors bind AKAP5	Developmental Biology	0.075348	ROBO2	rs9808969
+R-HSA-9020933	Interleukin-23 signaling	Immune System	0.075348	STAT4	rs9967792
+R-HSA-9613354	Lipophagy	Autophagy	0.075348	PRKAG2	rs7780008
+R-HSA-112040	G-protein mediated events	Signal Transduction	0.077019	PDE1C,ADCY8	rs1435447,rs17160736
+R-HSA-8939236	RUNX1 regulates transcription of genes involved in differentiation of HSCs	Gene expression (Transcription)	0.077869	HIST1H2BN,LMO1,RUNX1	rs200991,rs200995,rs201002,rs41513350,rs439667
+R-HSA-8978868	Fatty acid metabolism	Metabolism	0.081560	ACAD10,SCD5,PRKAG2,ACOXL	rs10187034,rs17005996,rs634389,rs6706577,rs7780008
+R-HSA-112311	Neurotransmitter clearance	Neuronal System	0.083365	ALDH2	rs10744777
+R-HSA-170660	Adenylate cyclase activating pathway	Signal Transduction	0.083365	ADCY8	rs1435447
+R-HSA-2151209	Activation of PPARGC1A (PGC-1alpha) by phosphorylation	Organelle biogenesis and maintenance	0.083365	PRKAG2	rs7780008
+R-HSA-425381	Bicarbonate transporters	Transport of small molecules	0.083365	AHCYL2	rs2566878
+R-HSA-428542	Regulation of commissural axon pathfinding by SLIT and ROBO	Developmental Biology	0.083365	ROBO2	rs9808969
+R-HSA-549127	Organic cation transport	Transport of small molecules	0.083365	RUNX1	rs41513350
+R-HSA-8866904	Negative regulation of activity of TFAP2 (AP-2) family transcription factors	Gene expression (Transcription)	0.083365	WWOX	rs8063113
+R-HSA-8877330	RUNX1 and FOXP3 control the development of regulatory T lymphocytes (Tregs)	Gene expression (Transcription)	0.083365	RUNX1	rs41513350
+R-HSA-9020958	Interleukin-21 signaling	Immune System	0.083365	STAT4	rs9967792
+R-HSA-6794361	Neurexins and neuroligins	Neuronal System	0.084671	APBA1,NRXN2	rs11138830,rs480617
+R-HSA-9007101	Rab regulation of trafficking	Vesicle-mediated transport	0.085939	YWHAE,RAB5B,SBF2	rs10500712,rs16945811,rs1873914,rs705698
+R-HSA-73857	RNA Polymerase II Transcription	Gene expression (Transcription)	0.086407	YWHAE,RBFOX1,WWOX,NR3C2,PRKAG2,HIST1H2BN,RORA,ZNF667,ZNF225,CCND3,HUS1,ZNF714,LMO1,RUNX1,TNRC6A,ZKSCAN4,ZKSCAN8,GLI3	rs1019142,rs1542038,rs16945811,rs16978732,rs17237810,rs17484678,rs17720293,rs1871695,rs200991,rs200995,rs201002,rs3735361,rs41513350,rs439667,rs4607417,rs7260268,rs7780008,rs7783847,rs782916,rs8063113,rs9930029
+R-HSA-383280	Nuclear Receptor transcription pathway	Gene expression (Transcription)	0.087272	NR3C2,RORA	rs17237810,rs17484678,rs782916
+R-HSA-9018519	Estrogen-dependent gene expression	Signal Transduction	0.089263	HIST1H2BN,TNRC6A,RUNX1	rs200991,rs200995,rs201002,rs41513350,rs9930029
+R-HSA-1236394	Signaling by ERBB4	Signal Transduction	0.089896	WWOX,ERBB3	rs2292239,rs8063113
+R-HSA-2485179	Activation of the phototransduction cascade	Signal Transduction	0.091313	PDE6A	rs3776069
+R-HSA-2534343	Interaction With Cumulus Cells And The Zona Pellucida	Reproduction	0.091313	OVGP1	rs1264882
+R-HSA-8948700	Competing endogenous RNAs (ceRNAs) regulate PTEN translation	Signal Transduction	0.091313	TNRC6A	rs9930029
+R-HSA-5610787	Hedgehog 'off' state	Signal Transduction	0.096071	GNAS,GLI3,ADCY8	rs1435447,rs3735361,rs919197
+R-HSA-112308	Presynaptic depolarization and calcium channel opening	Neuronal System	0.099193	CACNB2	rs4237348
+R-HSA-417957	P2Y receptors	Signal Transduction	0.099193	P2RY12	rs3821664
+R-HSA-442720	CREB1 phosphorylation through the activation of Adenylate Cyclase	Neuronal System	0.099193	ADCY8	rs1435447
+R-HSA-71384	Ethanol oxidation	Metabolism	0.099193	ALDH2	rs10744777
+R-HSA-8866907	Activation of the TFAP2 (AP-2) family of transcription factors	Gene expression (Transcription)	0.099193	WWOX	rs8063113
+R-HSA-8984722	Interleukin-35 Signalling	Immune System	0.099193	STAT4	rs9967792
+R-HSA-4086398	Ca2+ pathway	Signal Transduction	0.100620	PDE6A,TNRC6A	rs3776069,rs9930029
+R-HSA-8986944	Transcriptional Regulation by MECP2	Gene expression (Transcription)	0.100620	RBFOX1,TNRC6A	rs1019142,rs9930029
+R-HSA-9616222	Transcriptional regulation of granulopoiesis	Developmental Biology	0.100620	HIST1H2BN,RUNX1	rs200991,rs200995,rs201002,rs41513350
+R-HSA-977443	GABA receptor activation	Neuronal System	0.100620	GABRA6,ADCY8	rs1435447,rs9313891
+R-HSA-382551	Transport of small molecules	Transport of small molecules	0.103200	SLC44A3,GNAS,ANO3,SPG7,ABCA1,SLC17A3,RUNX1,AHCYL2,ADCY8,SLC9A9,ABCA12	rs10834986,rs1135438,rs12686004,rs1409612,rs1435447,rs2566878,rs3803676,rs382745,rs41513350,rs523383,rs7945815,rs859065,rs919197
+R-HSA-168256	Immune System	Immune System	0.106447	CLEC2D,BTN3A1,RAB5B,SYNGAP1,ASB5,RORA,HLA-DQA1,GM2A,PGM1,ERBB3,BTN3A3,BTN2A1,ASB7,STAT4	rs10456045,rs10807124,rs11052372,rs11208264,rs17237810,rs17659728,rs1873914,rs2114870,rs2128427,rs2237236,rs2269238,rs2269239,rs2269241,rs2292239,rs3790857,rs4643,rs6598368,rs705698,rs7310460,rs7763910,rs782916,rs9272346,rs9272723,rs9967792
+R-HSA-1358803	Downregulation of ERBB2:ERBB3 signaling	Signal Transduction	0.107005	ERBB3	rs2292239
+R-HSA-200425	Import of palmitoyl-CoA into the mitochondrial matrix	Metabolism	0.107005	PRKAG2	rs7780008
+R-HSA-75035	Chk1/Chk2(Cds1) mediated inactivation of Cyclin B:Cdk1 complex	Cell Cycle	0.107005	YWHAE	rs16945811
+R-HSA-8847993	ERBB2 Activates PTK6 Signaling	Signal Transduction	0.107005	ERBB3	rs2292239
+R-HSA-8943723	Regulation of PTEN mRNA translation	Signal Transduction	0.107005	TNRC6A	rs9930029
+R-HSA-5625740	RHO GTPases activate PKNs	Signal Transduction	0.111679	HIST1H2BN,YWHAE	rs16945811,rs200991,rs200995,rs201002
+R-HSA-5688426	Deubiquitination	Metabolism of proteins	0.114046	USP28,INO80C,HIST1H2BN,OTUD7A,TGFBR2	rs12907720,rs1633548,rs1633550,rs17025857,rs200991,rs200995,rs201002,rs2513574,rs2519200,rs355334,rs7170060
+R-HSA-3000171	Non-integrin membrane-ECM interactions	Extracellular matrix organization	0.114492	LAMA2,ITGA2	rs43188,rs9375615
+R-HSA-5693565	Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks	DNA Repair	0.114492	HIST1H2BN,EYA2	rs200991,rs200995,rs201002,rs2868853,rs3787249
+R-HSA-170670	Adenylate cyclase inhibitory pathway	Neuronal System;Signal Transduction	0.114751	ADCY8	rs1435447
+R-HSA-8951936	RUNX3 regulates p14-ARF	Gene expression (Transcription)	0.114751	RUNX1	rs41513350
+R-HSA-5693606	DNA Double Strand Break Response	DNA Repair	0.117324	HIST1H2BN,EYA2	rs200991,rs200995,rs201002,rs2868853,rs3787249
+R-HSA-111447	Activation of BAD and translocation to mitochondria 	Programmed Cell Death	0.122429	YWHAE	rs16945811
+R-HSA-418038	Nucleotide-like (purinergic) receptors	Signal Transduction	0.122429	P2RY12	rs3821664
+R-HSA-549132	Organic cation/anion/zwitterion transport	Transport of small molecules	0.122429	RUNX1	rs41513350
+R-HSA-6785631	ERBB2 Regulates Cell Motility	Signal Transduction	0.122429	ERBB3	rs2292239
+R-HSA-75892	Platelet Adhesion to exposed collagen	Hemostasis	0.122429	ITGA2	rs43188
+R-HSA-446219	Synthesis of substrates in N-glycan biosythesis	Metabolism of proteins	0.123039	GFPT2,ST6GALNAC5	rs2112594,rs41515647
+R-HSA-1445148	Translocation of SLC2A4 (GLUT4) to the plasma membrane	Vesicle-mediated transport	0.125922	PRKAG2,YWHAE	rs16945811,rs7780008
+R-HSA-597592	Post-translational protein modification	Metabolism of proteins	0.128531	INO80C,USP28,NR3C2,GRIA1,RAB5B,ASB5,HIST1H2BN,RORA,GFPT2,OTUD7A,OPCML,TGFBR2,ASB7,ST6GALNAC5,THSD4,TULP4,CAMKMT,EVA1A	rs10035262,rs11223425,rs11858454,rs12907720,rs1633548,rs1633550,rs17025857,rs17237810,rs17484678,rs17727191,rs1873914,rs200991,rs200995,rs201002,rs2112594,rs2128427,rs2155373,rs2513574,rs2519200,rs341160,rs355334,rs41515647,rs6598368,rs6721746,rs705698,rs7170060,rs782916,rs8032794
+R-HSA-1963642	PI3K events in ERBB2 signaling	Signal Transduction	0.130042	ERBB3	rs2292239
+R-HSA-2173791	TGF-beta receptor signaling in EMT (epithelial to mesenchymal transition)	Signal Transduction	0.130042	TGFBR2	rs17025857
+R-HSA-3322077	Glycogen synthesis	Metabolism	0.130042	PGM1	rs11208264,rs2269238,rs2269239,rs2269241,rs3790857,rs4643
+R-HSA-163615	PKA activation	Signal Transduction	0.137590	ADCY8	rs1435447
+R-HSA-416993	Trafficking of GluR2-containing AMPA receptors	Neuronal System	0.137590	GRIA1	rs10035262
+R-HSA-8876725	Protein methylation	Metabolism of proteins	0.137590	CAMKMT	rs6721746
+R-HSA-204998	Cell death signalling via NRAGE, NRIF and NADE	Signal Transduction	0.137611	YWHAE,TIAM1	rs11700615,rs16945811
+R-HSA-1368082	RORA activates gene expression	Circadian Clock	0.145072	RORA	rs17237810,rs782916
+R-HSA-1369062	ABC transporters in lipid homeostasis	Transport of small molecules	0.145072	ABCA12	rs1409612
+R-HSA-181429	Serotonin Neurotransmitter Release Cycle	Neuronal System	0.145072	SYN3	rs135475
+R-HSA-209776	Metabolism of amine-derived hormones	Metabolism	0.145072	TPH1	rs10741734
+R-HSA-8949664	Processing of SMDT1	Transport of small molecules	0.145072	SPG7	rs3803676,rs382745
+R-HSA-3000178	ECM proteoglycans	Extracellular matrix organization	0.146530	LAMA2,ITGA2	rs43188,rs9375615
+R-HSA-5578749	Transcriptional regulation by small RNAs	Gene expression (Transcription)	0.149529	HIST1H2BN,TNRC6A	rs200991,rs200995,rs201002,rs9930029
+R-HSA-111931	PKA-mediated phosphorylation of CREB	Signal Transduction	0.152491	ADCY8	rs1435447
+R-HSA-392851	Prostacyclin signalling through prostacyclin receptor	Hemostasis	0.152491	GNAS	rs919197
+R-HSA-8963898	Plasma lipoprotein assembly	Transport of small molecules	0.152491	ABCA1	rs12686004
+R-HSA-5693532	DNA Double-Strand Break Repair	DNA Repair	0.155206	HIST1H2BN,EYA2,HUS1	rs200991,rs200995,rs201002,rs2868853,rs3787249,rs7783847
+R-HSA-438066	Unblocking of NMDA receptors, glutamate binding and activation	Neuronal System	0.159845	GRIA1	rs10035262
+R-HSA-5358351	Signaling by Hedgehog	Signal Transduction	0.167754	GNAS,GLI3,ADCY8	rs1435447,rs3735361,rs919197
+R-HSA-446193	Biosynthesis of the N-glycan precursor (dolichol lipid-linked oligosaccharide, LLO) and transfer to a nascent protein	Metabolism of proteins	0.167772	GFPT2,ST6GALNAC5	rs2112594,rs41515647
+R-HSA-1250196	SHC1 events in ERBB2 signaling	Signal Transduction	0.174366	ERBB3	rs2292239
+R-HSA-392170	ADP signalling through P2Y purinoceptor 12	Hemostasis	0.174366	P2RY12	rs3821664
+R-HSA-8862803	Deregulated CDK5 triggers multiple neurodegenerative pathways in Alzheimer's disease models	Disease	0.174366	YWHAE	rs16945811
+R-HSA-8863678	Neurodegenerative Diseases	Disease	0.174366	YWHAE	rs16945811
+R-HSA-9620244	Long-term potentiation	Neuronal System	0.174366	GRIA1	rs10035262
+R-HSA-111885	Opioid Signalling	Signal Transduction	0.180140	PDE1C,ADCY8	rs1435447,rs17160736
+R-HSA-5693607	Processing of DNA double-strand break ends	DNA Repair	0.180140	HIST1H2BN,HUS1	rs200991,rs200995,rs201002,rs7783847
+R-HSA-74160	Gene expression (Transcription)	Gene expression (Transcription)	0.180634	YWHAE,RBFOX1,WWOX,NR3C2,PRKAG2,RORA,HIST1H2BN,ZNF667,ZNF225,CCND3,HUS1,ZNF714,LMO1,RUNX1,TNRC6A,ZKSCAN4,ZKSCAN8,GLI3	rs1019142,rs1542038,rs16945811,rs16978732,rs17237810,rs17484678,rs17720293,rs1871695,rs200991,rs200995,rs201002,rs3735361,rs41513350,rs439667,rs4607417,rs7260268,rs7780008,rs7783847,rs782916,rs8063113,rs9930029
+R-HSA-69481	G2/M Checkpoints	Cell Cycle	0.187108	YWHAE,HIST1H2BN,HUS1	rs16945811,rs200991,rs200995,rs201002,rs7783847
+R-HSA-156584	Cytosolic sulfonation of small molecules	Metabolism	0.188637	IMPAD1	rs10958514
+R-HSA-8940973	RUNX2 regulates osteoblast differentiation	Gene expression (Transcription)	0.188637	GLI3	rs3735361
+R-HSA-429947	Deadenylation of mRNA	Metabolism of RNA	0.195681	PAN3	rs9554277,rs9554296
+R-HSA-5609975	Diseases associated with glycosylation precursor biosynthesis	Disease	0.195681	PGM1	rs11208264,rs2269238,rs2269239,rs2269241,rs3790857,rs4643
+R-HSA-8849932	Synaptic adhesion-like molecules	Neuronal System	0.195681	GRIA1	rs10035262
+R-HSA-8949215	Mitochondrial calcium ion transport	Transport of small molecules	0.195681	SPG7	rs3803676,rs382745
+R-HSA-9006115	Signaling by NTRK2 (TRKB)	Signal Transduction	0.195681	TIAM1	rs11700615
+R-HSA-1592230	Mitochondrial biogenesis	Organelle biogenesis and maintenance	0.198937	PRKAG2,SAMM50	rs738494,rs7780008
+R-HSA-193704	p75 NTR receptor-mediated signalling	Signal Transduction	0.202093	YWHAE,TIAM1	rs11700615,rs16945811
+R-HSA-428157	Sphingolipid metabolism	Metabolism	0.202093	GM2A,SGMS1	rs17659728,rs2842107
+R-HSA-5619084	ABC transporter disorders	Disease	0.202093	ABCA1,ABCA12	rs12686004,rs1409612
+R-HSA-1187000	Fertilization	Reproduction	0.202665	OVGP1	rs1264882
+R-HSA-2173788	Downregulation of TGF-beta receptor signaling	Signal Transduction	0.202665	TGFBR2	rs17025857
+R-HSA-8854691	Interleukin-20 family signaling	Immune System	0.202665	STAT4	rs9967792
+R-HSA-425366	Transport of bile salts and organic acids, metal ions and amine compounds	Transport of small molecules	0.205256	SLC44A3,RUNX1	rs41513350,rs859065
+R-HSA-6804756	Regulation of TP53 Activity through Phosphorylation	Gene expression (Transcription)	0.205256	PRKAG2,HUS1	rs7780008,rs7783847
+R-HSA-73894	DNA Repair	DNA Repair	0.206244	INO80C,HIST1H2BN,FANCL,EYA2,HUS1	rs200991,rs200995,rs201002,rs2868853,rs355334,rs3787249,rs6732505,rs7783847
+R-HSA-3000170	Syndecan interactions	Extracellular matrix organization	0.209589	ITGA2	rs43188
+R-HSA-5576893	Phase 2 - plateau phase	Muscle contraction	0.209589	CACNB2	rs4237348
+R-HSA-8982491	Glycogen metabolism	Metabolism	0.209589	PGM1	rs11208264,rs2269238,rs2269239,rs2269241,rs3790857,rs4643
+R-HSA-400042	Adrenaline,noradrenaline inhibits insulin secretion	Metabolism	0.216453	CACNB2	rs4237348
+R-HSA-9619483	Activation of AMPK downstream of NMDARs	Neuronal System	0.216453	PRKAG2	rs7780008
+R-HSA-2559580	Oxidative Stress Induced Senescence	Cellular responses to external stimuli	0.217960	HIST1H2BN,TNRC6A	rs200991,rs200995,rs201002,rs9930029
+R-HSA-380972	Energy dependent regulation of mTOR by LKB1-AMPK	Signal Transduction	0.223258	PRKAG2	rs7780008
+R-HSA-390918	Peroxisomal lipid metabolism	Metabolism	0.223258	ACOXL	rs10187034,rs6706577
+R-HSA-525793	Myogenesis	Developmental Biology	0.223258	CTNNA2	rs13390216
+R-HSA-8863795	Downregulation of ERBB2 signaling	Signal Transduction	0.223258	ERBB3	rs2292239
+R-HSA-556833	Metabolism of lipids	Metabolism	0.224702	SLC44A3,ACAD10,SCD5,SBF2,PRKAG2,RORA,GM2A,ACOXL,ABCA1,SGMS1	rs10187034,rs10500712,rs12686004,rs17005996,rs17237810,rs17659728,rs2842107,rs634389,rs6706577,rs7780008,rs782916,rs859065
+R-HSA-114452	Activation of BH3-only proteins	Programmed Cell Death	0.230004	YWHAE	rs16945811
+R-HSA-420029	Tight junction interactions	Cell-Cell communication	0.230004	CLDN10	rs7995795
+R-HSA-5687128	MAPK6/MAPK4 signaling	Signal Transduction	0.233933	CCND3,TNRC6A	rs4607417,rs9930029
+R-HSA-8939211	ESR-mediated signaling	Signal Transduction	0.234261	HIST1H2BN,TNRC6A,RUNX1	rs200991,rs200995,rs201002,rs41513350,rs9930029
+R-HSA-182971	EGFR downregulation	Signal Transduction	0.236693	PTPRK	rs2326671
+R-HSA-399719	Trafficking of AMPA receptors	Neuronal System	0.236693	GRIA1	rs10035262
+R-HSA-399721	Glutamate binding, activation of AMPA receptors and synaptic plasticity	Neuronal System	0.236693	GRIA1	rs10035262
+R-HSA-8941326	RUNX2 regulates bone development	Gene expression (Transcription)	0.236693	GLI3	rs3735361
+R-HSA-8949613	Cristae formation	Organelle biogenesis and maintenance	0.236693	SAMM50	rs738494
+R-HSA-2672351	Stimuli-sensing channels	Transport of small molecules	0.237138	ANO3,SLC17A3	rs10834986,rs523383,rs7945815
+R-HSA-425393	Transport of inorganic cations/anions and amino acids/oligopeptides	Transport of small molecules	0.237138	AHCYL2,SLC9A9	rs1135438,rs2566878
+R-HSA-5689603	UCH proteinases	Metabolism of proteins	0.240345	INO80C,TGFBR2	rs17025857,rs355334
+R-HSA-5619115	Disorders of transmembrane transporters	Disease	0.241175	ABCA1,SLC9A9,ABCA12	rs1135438,rs12686004,rs1409612
+R-HSA-1251985	Nuclear signaling by ERBB4	Signal Transduction	0.243324	WWOX	rs8063113
+R-HSA-171306	Packaging Of Telomere Ends	Cell Cycle	0.243324	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-2173789	TGF-beta receptor signaling activates SMADs	Signal Transduction	0.243324	TGFBR2	rs17025857
+R-HSA-392518	Signal amplification	Hemostasis	0.243324	P2RY12	rs3821664
+R-HSA-9022692	Regulation of MECP2 expression and activity	Gene expression (Transcription)	0.243324	TNRC6A	rs9930029
+R-HSA-162582	Signal Transduction	Signal Transduction	0.243513	GNAS,TNS3,P2RY12,PTPRK,WWOX,PRKAG2,SYNGAP1,YWHAE,PDE1C,CCND3,BCO2,LAMA2,ITGA2,ABCA1,PDE6A,HIST1H2BN,TIAM1,ERBB3,GRM8,COL27A1,NPSR1,TNRC6A,TGFBR2,RUNX1,ZW10,MOB1A,CAMKMT,ADCY8,GLI3,ARHGAP32	rs10265492,rs10487463,rs10807124,rs11126425,rs11700615,rs12686004,rs1435447,rs16945811,rs17025857,rs17160736,rs17541153,rs200991,rs200995,rs201002,rs2115763,rs2292239,rs2326671,rs323925,rs3735361,rs3776069,rs3821664,rs41513350,rs43188,rs4607417,rs4979354,rs511296,rs6721746,rs7780008,rs8063113,rs919197,rs9375615,rs9930029
+R-HSA-211000	Gene Silencing by RNA	Gene expression (Transcription)	0.246765	HIST1H2BN,TNRC6A	rs200991,rs200995,rs201002,rs9930029
+R-HSA-2559585	Oncogene Induced Senescence	Cellular responses to external stimuli	0.249897	TNRC6A	rs9930029
+R-HSA-420092	Glucagon-type ligand receptors	Signal Transduction	0.249897	GNAS	rs919197
+R-HSA-5694530	Cargo concentration in the ER	Vesicle-mediated transport;Metabolism of proteins	0.249897	GRIA1	rs10035262
+R-HSA-68875	Mitotic Prophase	Cell Cycle	0.262840	HIST1H2BN,NEK6	rs16927327,rs200991,rs200995,rs201002
+R-HSA-73728	RNA Polymerase I Promoter Opening	Gene expression (Transcription)	0.262876	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-397014	Muscle contraction	Muscle contraction	0.264457	CACNB2,MYBPC1,FGF14	rs11110901,rs11838497,rs4237348
+R-HSA-71291	Metabolism of amino acids and derivatives	Metabolism	0.265489	TPH1	rs10741734
+R-HSA-110330	Recognition and association of DNA glycosylase with site containing an affected purine	DNA Repair	0.269282	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-110331	Cleavage of the damaged purine	DNA Repair	0.269282	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-3301854	Nuclear Pore Complex (NPC) Disassembly	Cell Cycle	0.269282	NEK6	rs16927327
+R-HSA-390522	Striated Muscle Contraction	Muscle contraction	0.269282	MYBPC1	rs11110901
+R-HSA-5334118	DNA methylation	Gene expression (Transcription)	0.269282	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-73927	Depurination	DNA Repair	0.269282	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-176187	Activation of ATR in response to replication stress	Cell Cycle	0.275633	HUS1	rs7783847
+R-HSA-5685938	HDR through Single Strand Annealing (SSA)	DNA Repair	0.275633	HUS1	rs7783847
+R-HSA-77289	Mitochondrial Fatty Acid Beta-Oxidation	Metabolism	0.275633	ACAD10	rs634389
+R-HSA-1280215	Cytokine Signaling in Immune system	Immune System	0.276966	SYNGAP1,RORA,HLA-DQA1,ERBB3,STAT4	rs10807124,rs17237810,rs2292239,rs782916,rs9272346,rs9272723,rs9967792
+R-HSA-5083635	Defective B3GALTL causes Peters-plus syndrome (PpS)	Disease	0.281929	THSD4	rs11858454,rs8032794
+R-HSA-5689896	Ovarian tumor domain proteases	Metabolism of proteins	0.281929	OTUD7A	rs12907720,rs7170060
+R-HSA-5696394	DNA Damage Recognition in GG-NER	DNA Repair	0.281929	INO80C	rs355334
+R-HSA-8864260	Transcriptional regulation by the AP-2 (TFAP2) family of transcription factors	Gene expression (Transcription)	0.281929	WWOX	rs8063113
+R-HSA-8950505	Gene and protein expression by JAK-STAT signaling after Interleukin-12 stimulation	Immune System	0.281929	STAT4	rs9967792
+R-HSA-1474165	Reproduction	Reproduction	0.282142	HIST1H2BN,OVGP1	rs1264882,rs200991,rs200995,rs201002
+R-HSA-1989781	PPARA activates gene expression	Metabolism	0.282142	RORA,ABCA1	rs12686004,rs17237810,rs782916
+R-HSA-5173214	O-glycosylation of TSR domain-containing proteins	Metabolism of proteins	0.288171	THSD4	rs11858454,rs8032794
+R-HSA-5625886	Activated PKN1 stimulates transcription of AR (androgen receptor) regulated genes KLK2 and KLK3	Signal Transduction	0.288171	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-5693616	Presynaptic phase of homologous DNA pairing and strand exchange	DNA Repair	0.288171	HUS1	rs7783847
+R-HSA-6783310	Fanconi Anemia Pathway	DNA Repair	0.288171	FANCL	rs6732505
+R-HSA-400206	Regulation of lipid metabolism by Peroxisome proliferator-activated receptor alpha (PPARalpha)	Metabolism	0.288570	RORA,ABCA1	rs12686004,rs17237810,rs782916
+R-HSA-5693567	HDR through Homologous Recombination (HRR) or Single Strand Annealing (SSA)	DNA Repair	0.288570	HIST1H2BN,HUS1	rs200991,rs200995,rs201002,rs7783847
+R-HSA-425407	SLC-mediated transmembrane transport	Transport of small molecules	0.291739	SLC44A3,RUNX1,AHCYL2,SLC9A9	rs1135438,rs2566878,rs41513350,rs859065
+R-HSA-1483191	Synthesis of PC	Metabolism	0.294359	SLC44A3	rs859065
+R-HSA-165159	mTOR signalling	Signal Transduction	0.294359	PRKAG2	rs7780008
+R-HSA-4085001	Sialic acid metabolism	Metabolism of proteins	0.294359	ST6GALNAC5	rs41515647
+R-HSA-427359	SIRT1 negatively regulates rRNA expression	Gene expression (Transcription)	0.294359	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-110328	Recognition and association of DNA glycosylase with site containing an affected pyrimidine	DNA Repair	0.300494	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-110329	Cleavage of the damaged pyrimidine 	DNA Repair	0.300494	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-73928	Depyrimidination	DNA Repair	0.300494	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-9609736	Assembly and cell surface presentation of NMDA receptors	Neuronal System	0.300494	APBA1	rs11138830
+R-HSA-9006931	Signaling by Nuclear Receptors	Signal Transduction	0.303105	HIST1H2BN,ABCA1,TNRC6A,RUNX1	rs12686004,rs200991,rs200995,rs201002,rs41513350,rs9930029
+R-HSA-3928662	EPHB-mediated forward signaling	Developmental Biology	0.306576	TIAM1	rs11700615
+R-HSA-419037	NCAM1 interactions	Developmental Biology	0.306576	CACNB2	rs4237348
+R-HSA-5693579	Homologous DNA Pairing and Strand Exchange	DNA Repair	0.306576	HUS1	rs7783847
+R-HSA-8854214	TBC/RABGAPs	Vesicle-mediated transport	0.306576	RAB5B	rs1873914,rs705698
+R-HSA-5693538	Homology Directed Repair	DNA Repair	0.307812	HIST1H2BN,HUS1	rs200991,rs200995,rs201002,rs7783847
+R-HSA-3371511	HSF1 activation	Cellular responses to external stimuli	0.312606	YWHAE	rs16945811
+R-HSA-73929	Base-Excision Repair, AP Site Formation	DNA Repair	0.312606	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-1660661	Sphingolipid de novo biosynthesis	Metabolism	0.318584	SGMS1	rs2842107
+R-HSA-451927	Interleukin-2 family signaling	Immune System	0.318584	STAT4	rs9967792
+R-HSA-69231	Cyclin D associated events in G1	Cell Cycle	0.318584	CCND3	rs4607417
+R-HSA-69236	G1 Phase	Cell Cycle	0.318584	CCND3	rs4607417
+R-HSA-8878166	Transcriptional regulation by RUNX2	Gene expression (Transcription)	0.320589	RUNX1,GLI3	rs3735361,rs41513350
+R-HSA-977444	GABA B receptor activation	Neuronal System	0.324510	ADCY8	rs1435447
+R-HSA-991365	Activation of GABAB receptors	Neuronal System	0.324510	ADCY8	rs1435447
+R-HSA-69620	Cell Cycle Checkpoints	Cell Cycle	0.328096	YWHAE,HIST1H2BN,HUS1,ZW10	rs16945811,rs17541153,rs200991,rs200995,rs201002,rs7783847
+R-HSA-212300	PRC2 methylates histones and DNA	Gene expression (Transcription)	0.330385	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-2299718	Condensation of Prophase Chromosomes	Cell Cycle	0.330385	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-9020591	Interleukin-12 signaling	Immune System	0.336210	STAT4	rs9967792
+R-HSA-194840	Rho GTPase cycle	Signal Transduction	0.336483	ARHGAP32,TIAM1	rs11700615,rs511296
+R-HSA-5576891	Cardiac conduction	Muscle contraction	0.336483	CACNB2,FGF14	rs11838497,rs4237348
+R-HSA-8939243	RUNX1 interacts with co-factors whose precise effect on RUNX1 targets is not known	Gene expression (Transcription)	0.341985	RUNX1	rs41513350
+R-HSA-8948216	Collagen chain trimerization	Extracellular matrix organization	0.341985	COL27A1	rs4979354
+R-HSA-5683057	MAPK family signaling cascades	Signal Transduction	0.344967	ERBB3,SYNGAP1,CCND3,TNRC6A	rs10807124,rs2292239,rs4607417,rs9930029
+R-HSA-1474244	Extracellular matrix organization	Extracellular matrix organization	0.346320	LAMA2,ITGA2,COL27A1,SCUBE3	rs43188,rs4713843,rs4979354,rs9375615
+R-HSA-177929	Signaling by EGFR	Signal Transduction	0.347710	PTPRK	rs2326671
+R-HSA-75105	Fatty acyl-CoA biosynthesis	Metabolism	0.347710	SCD5	rs17005996
+R-HSA-975634	Retinoid metabolism and transport	Metabolism;Signal Transduction	0.347710	BCO2	rs2115763
+R-HSA-1227986	Signaling by ERBB2	Signal Transduction	0.353385	ERBB3	rs2292239
+R-HSA-1660499	Synthesis of PIPs at the plasma membrane	Metabolism	0.359012	SBF2	rs10500712
+R-HSA-3928665	EPH-ephrin mediated repulsion of cells	Developmental Biology	0.359012	TIAM1	rs11700615
+R-HSA-73887	Death Receptor Signalling	Signal Transduction	0.361680	YWHAE,TIAM1	rs11700615,rs16945811
+R-HSA-1660662	Glycosphingolipid metabolism	Metabolism	0.364590	GM2A	rs17659728
+R-HSA-109606	Intrinsic Pathway for Apoptosis	Programmed Cell Death	0.370121	YWHAE	rs16945811
+R-HSA-2980766	Nuclear Envelope Breakdown	Cell Cycle	0.370121	NEK6	rs16927327
+R-HSA-606279	Deposition of new CENPA-containing nucleosomes at the centromere	Cell Cycle	0.370121	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-6806667	Metabolism of fat-soluble vitamins	Metabolism	0.370121	BCO2	rs2115763
+R-HSA-774815	Nucleosome assembly	Cell Cycle	0.370121	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-8866654	E3 ubiquitin ligases ubiquitinate target proteins	Metabolism of proteins	0.370121	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-427389	ERCC6 (CSB) and EHMT2 (G9a) positively regulate rRNA expression	Gene expression (Transcription)	0.375603	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-8848021	Signaling by PTK6	Signal Transduction	0.381038	ERBB3	rs2292239
+R-HSA-9006927	Signaling by Non-Receptor Tyrosine Kinases	Signal Transduction	0.381038	ERBB3	rs2292239
+R-HSA-3781865	Diseases of glycosylation	Disease	0.383442	PGM1,THSD4	rs11208264,rs11858454,rs2269238,rs2269239,rs2269241,rs3790857,rs4643,rs8032794
+R-HSA-447115	Interleukin-12 family signaling	Immune System	0.391769	STAT4	rs9967792
+R-HSA-193648	NRAGE signals death through JNK	Signal Transduction	0.397065	TIAM1	rs11700615
+R-HSA-420499	Class C/3 (Metabotropic glutamate/pheromone receptors)	Signal Transduction	0.397065	GRM8	rs10487463
+R-HSA-3858494	Beta-catenin independent WNT signaling	Signal Transduction	0.401846	PDE6A,TNRC6A	rs3776069,rs9930029
+R-HSA-1221632	Meiotic synapsis	Reproduction;Cell Cycle	0.402315	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-2559586	DNA Damage/Telomere Stress Induced Senescence	Cellular responses to external stimuli	0.407520	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-5693571	Nonhomologous End-Joining (NHEJ)	DNA Repair	0.407520	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-9639288	Amino acids regulate mTORC1	Cellular responses to external stimuli	0.412681	DEPDC5	rs5994443
+R-HSA-157579	Telomere Maintenance	Cell Cycle	0.417796	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-194315	Signaling by Rho GTPases	Signal Transduction	0.418076	HIST1H2BN,YWHAE,TIAM1,ZW10,ARHGAP32	rs11700615,rs16945811,rs17541153,rs200991,rs200995,rs201002,rs511296
+R-HSA-375165	NCAM signaling for neurite out-growth	Developmental Biology	0.422868	CACNB2	rs4237348
+R-HSA-912446	Meiotic recombination	Reproduction;Cell Cycle	0.422868	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-201722	Formation of the beta-catenin:TCF transactivating complex	Signal Transduction	0.427896	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-202430	Translocation of ZAP-70 to Immunological synapse	Immune System	0.427896	HLA-DQA1	rs9272346,rs9272723
+R-HSA-3214815	HDACs deacetylate histones	Chromatin organization	0.427896	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-8873719	RAB geranylgeranylation	Metabolism of proteins	0.427896	RAB5B	rs1873914,rs705698
+R-HSA-1268020	Mitochondrial protein import	Protein localization	0.432881	SAMM50	rs738494
+R-HSA-2022090	Assembly of collagen fibrils and other multimeric structures	Extracellular matrix organization	0.432881	COL27A1	rs4979354
+R-HSA-421270	Cell-cell junction organization	Cell-Cell communication	0.432881	CLDN10	rs7995795
+R-HSA-429914	Deadenylation-dependent mRNA decay	Metabolism of RNA	0.437822	PAN3	rs9554277,rs9554296
+R-HSA-3371497	HSP90 chaperone cycle for steroid hormone receptors (SHR)	Cellular responses to external stimuli	0.442721	NR3C2	rs17484678
+R-HSA-5685942	HDR through Homologous Recombination (HRR)	DNA Repair	0.442721	HUS1	rs7783847
+R-HSA-449147	Signaling by Interleukins	Immune System	0.443564	RORA,STAT4	rs17237810,rs782916,rs9967792
+R-HSA-202427	Phosphorylation of CD3 and TCR zeta chains	Immune System	0.447578	HLA-DQA1	rs9272346,rs9272723
+R-HSA-204005	COPII-mediated vesicle transport	Vesicle-mediated transport;Metabolism of proteins	0.447578	GRIA1	rs10035262
+R-HSA-389948	PD-1 signaling	Immune System	0.447578	HLA-DQA1	rs9272346,rs9272723
+R-HSA-174824	Plasma lipoprotein assembly, remodeling, and clearance	Transport of small molecules	0.457166	ABCA1	rs12686004
+R-HSA-400253	Circadian Clock	Circadian Clock	0.457166	RORA	rs17237810,rs782916
+R-HSA-5250924	B-WICH complex positively regulates rRNA expression	Gene expression (Transcription)	0.457166	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-157118	Signaling by NOTCH	Signal Transduction	0.461059	HIST1H2BN,TNRC6A,RUNX1	rs200991,rs200995,rs201002,rs41513350,rs9930029
+R-HSA-1650814	Collagen biosynthesis and modifying enzymes	Extracellular matrix organization	0.461898	COL27A1	rs4979354
+R-HSA-3906995	Diseases associated with O-glycosylation of proteins	Disease	0.461898	THSD4	rs11858454,rs8032794
+R-HSA-73884	Base Excision Repair	DNA Repair	0.461898	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-170834	Signaling by TGF-beta Receptor Complex	Signal Transduction	0.471240	TGFBR2	rs17025857
+R-HSA-5610785	GLI3 is processed to GLI3R by the proteasome	Signal Transduction	0.471240	GLI3	rs3735361
+R-HSA-8852135	Protein ubiquitination	Metabolism of proteins	0.471240	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-8951664	Neddylation	Metabolism of proteins	0.479611	ASB5,ASB7,TULP4	rs2128427,rs341160,rs6598368
+R-HSA-2219530	Constitutive Signaling by Aberrant PI3K in Cancer	Disease	0.480421	ERBB3	rs2292239
+R-HSA-73772	RNA Polymerase I Promoter Escape	Gene expression (Transcription)	0.480421	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-380259	Loss of Nlp from mitotic centrosomes	Cell Cycle	0.484952	YWHAE	rs16945811
+R-HSA-380284	Loss of proteins required for interphase microtubule organization from the centrosome	Cell Cycle	0.484952	YWHAE	rs16945811
+R-HSA-418555	G alpha (s) signalling events	Signal Transduction	0.490455	GNAS,NPSR1,ADCY8	rs1435447,rs323925,rs919197
+R-HSA-202433	Generation of second messenger molecules	Immune System	0.493898	HLA-DQA1	rs9272346,rs9272723
+R-HSA-8854518	AURKA Activation by TPX2	Cell Cycle	0.498313	YWHAE	rs16945811
+R-HSA-416482	G alpha (12/13) signalling events	Signal Transduction	0.502690	TIAM1	rs11700615
+R-HSA-1483255	PI Metabolism	Metabolism	0.507029	SBF2	rs10500712
+R-HSA-977225	Amyloid fiber formation	Metabolism of proteins	0.507029	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-5658442	Regulation of RAS by GAPs	Immune System;Signal Transduction	0.511331	SYNGAP1	rs10807124
+R-HSA-71387	Metabolism of carbohydrates	Metabolism	0.523854	PGM1	rs11208264,rs2269238,rs2269239,rs2269241,rs3790857,rs4643
+R-HSA-216083	Integrin cell surface interactions	Extracellular matrix organization	0.524014	ITGA2	rs43188
+R-HSA-418346	Platelet homeostasis	Hemostasis	0.524014	GNAS	rs919197
+R-HSA-913531	Interferon Signaling	Immune System	0.525833	HLA-DQA1	rs9272346,rs9272723
+R-HSA-2559582	Senescence-Associated Secretory Phenotype (SASP)	Cellular responses to external stimuli	0.532288	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-380270	Recruitment of mitotic centrosome proteins and complexes	Cell Cycle	0.532288	YWHAE	rs16945811
+R-HSA-380287	Centrosome maturation	Cell Cycle	0.532288	YWHAE	rs16945811
+R-HSA-5696399	Global Genome Nucleotide Excision Repair (GG-NER)	DNA Repair	0.540419	INO80C	rs355334
+R-HSA-73886	Chromosome Maintenance	Cell Cycle	0.540419	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-9006925	Intracellular signaling by second messengers	Signal Transduction	0.541839	ERBB3,PDE1C,TNRC6A,ADCY8	rs1435447,rs17160736,rs2292239,rs9930029
+R-HSA-381340	Transcriptional regulation of white adipocyte differentiation	Developmental Biology	0.544432	CCND3	rs4607417
+R-HSA-427413	NoRC negatively regulates rRNA expression	Gene expression (Transcription)	0.548411	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-5250913	Positive epigenetic regulation of rRNA expression	Gene expression (Transcription)	0.548411	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-2682334	EPH-Ephrin signaling	Developmental Biology	0.552355	TIAM1	rs11700615
+R-HSA-446728	Cell junction organization	Cell-Cell communication	0.552355	CLDN10	rs7995795
+R-HSA-5617472	Activation of anterior HOX genes in hindbrain development during early embryogenesis	Developmental Biology	0.552355	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-5619507	Activation of HOX genes during differentiation	Developmental Biology	0.552355	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-1474290	Collagen formation	Extracellular matrix organization	0.560141	COL27A1	rs4979354
+R-HSA-2565942	Regulation of PLK1 Activity at G2/M Transition	Cell Cycle	0.560141	YWHAE	rs16945811
+R-HSA-373080	Class B/2 (Secretin family receptors)	Signal Transduction	0.560141	GNAS	rs919197
+R-HSA-5250941	Negative epigenetic regulation of rRNA expression	Gene expression (Transcription)	0.560141	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-141424	Amplification of signal from the kinetochores	Cell Cycle	0.563983	ZW10	rs17541153
+R-HSA-141444	Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal	Cell Cycle	0.563983	ZW10	rs17541153
+R-HSA-1500620	Meiosis	Reproduction;Cell Cycle	0.563983	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-3371453	Regulation of HSF1-mediated heat shock response	Cellular responses to external stimuli	0.563983	YWHAE	rs16945811
+R-HSA-5632684	Hedgehog 'on' state	Signal Transduction	0.579024	GLI3	rs3735361
+R-HSA-1632852	Macroautophagy	Autophagy	0.582703	PRKAG2	rs7780008
+R-HSA-380320	Recruitment of NuMA to mitotic centrosomes	Cell Cycle	0.582703	YWHAE	rs16945811
+R-HSA-5619102	SLC transporter disorders	Disease	0.582703	SLC9A9	rs1135438
+R-HSA-73854	RNA Polymerase I Promoter Clearance	Gene expression (Transcription)	0.582703	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-68886	M Phase	Cell Cycle	0.584008	HIST1H2BN,NEK6,YWHAE,ZW10	rs16927327,rs16945811,rs17541153,rs200991,rs200995,rs201002
+R-HSA-3700989	Transcriptional Regulation by TP53	Gene expression (Transcription)	0.585929	PRKAG2,YWHAE,HUS1,TNRC6A	rs16945811,rs7780008,rs7783847,rs9930029
+R-HSA-166520	Signaling by NTRKs	Signal Transduction	0.586351	TIAM1	rs11700615
+R-HSA-6811434	COPI-dependent Golgi-to-ER retrograde traffic	Vesicle-mediated transport	0.586351	ZW10	rs17541153
+R-HSA-73864	RNA Polymerase I Transcription	Gene expression (Transcription)	0.586351	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-2219528	PI3K/AKT Signaling in Cancer	Disease	0.589967	ERBB3	rs2292239
+R-HSA-9006936	Signaling by TGF-beta family members	Signal Transduction	0.589967	TGFBR2	rs17025857
+R-HSA-983169	Class I MHC mediated antigen processing & presentation	Immune System	0.593479	ASB5,ASB7	rs2128427,rs6598368
+R-HSA-163125	Post-translational modification: synthesis of GPI-anchored proteins	Metabolism of proteins	0.597105	OPCML	rs11223425,rs2155373
+R-HSA-5620912	Anchoring of the basal body to the plasma membrane	Organelle biogenesis and maintenance	0.597105	YWHAE	rs16945811
+R-HSA-6811558	PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling	Signal Transduction	0.607582	ERBB3	rs2292239
+R-HSA-156580	Phase II - Conjugation of compounds	Metabolism	0.611014	IMPAD1	rs10958514
+R-HSA-3214847	HATs acetylate histones	Chromatin organization	0.614417	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-8957275	Post-translational protein phosphorylation	Metabolism of proteins	0.614417	EVA1A	rs17727191
+R-HSA-211945	Phase I - Functionalization of compounds	Metabolism	0.617790	ALDH2	rs10744777
+R-HSA-5173105	O-linked glycosylation	Metabolism of proteins	0.621133	THSD4	rs11858454,rs8032794
+R-HSA-69618	Mitotic Spindle Checkpoint	Cell Cycle	0.621133	ZW10	rs17541153
+R-HSA-2262752	Cellular responses to stress	Cellular responses to external stimuli	0.626352	NR3C2,DEPDC5,HIST1H2BN,YWHAE,TNRC6A	rs16945811,rs17484678,rs200991,rs200995,rs201002,rs5994443,rs9930029
+R-HSA-8878159	Transcriptional regulation by RUNX3	Gene expression (Transcription)	0.627734	RUNX1	rs41513350
+R-HSA-5633007	Regulation of TP53 Activity	Gene expression (Transcription)	0.664150	PRKAG2,HUS1	rs7780008,rs7783847
+R-HSA-109582	Hemostasis	Hemostasis	0.665123	DOCK10,GNAS,P2RY12,ITGA2	rs3821664,rs43188,rs4673129,rs919197
+R-HSA-2559583	Cellular Senescence	Cellular responses to external stimuli	0.666181	HIST1H2BN,TNRC6A	rs200991,rs200995,rs201002,rs9930029
+R-HSA-983712	Ion channel transport	Transport of small molecules	0.682310	ANO3,SLC17A3	rs10834986,rs523383,rs7945815
+R-HSA-3108232	SUMO E3 ligases SUMOylate target proteins	Metabolism of proteins	0.683432	NR3C2,RORA	rs17237810,rs17484678,rs782916
+R-HSA-2990846	SUMOylation	Metabolism of proteins	0.690261	NR3C2,RORA	rs17237810,rs17484678,rs782916
+R-HSA-68877	Mitotic Prometaphase	Cell Cycle	0.705494	YWHAE,ZW10	rs16945811,rs17541153
+R-HSA-5689880	Ub-specific processing proteases	Metabolism of proteins	0.715059	USP28,HIST1H2BN	rs1633548,rs1633550,rs200991,rs200995,rs201002,rs2513574,rs2519200
+R-HSA-211859	Biological oxidations	Metabolism	0.722283	ALDH2,IMPAD1	rs10744777,rs10958514
+R-HSA-1483257	Phospholipid metabolism	Metabolism	0.724696	SLC44A3,SBF2	rs10500712,rs859065
+R-HSA-198933	Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell	Immune System	0.725337	CLEC2D	rs11052372,rs2114870,rs7310460
+R-HSA-376176	Signaling by ROBO receptors	Developmental Biology	0.725406	ROBO2	rs9808969
+R-HSA-3247509	Chromatin modifying enzymes	Chromatin organization	0.726424	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-4839726	Chromatin organization	Chromatin organization	0.726424	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-6805567	Keratinization	Developmental Biology	0.727266	KRT86	rs10876266
+R-HSA-72203	Processing of Capped Intron-Containing Pre-mRNA	Metabolism of RNA	0.729881	CCAR1	rs1566222
+R-HSA-76002	Platelet activation, signaling and aggregation	Hemostasis	0.732388	P2RY12	rs3821664
+R-HSA-1643685	Disease	Disease	0.732898	YWHAE,ABCA1,PGM1,ERBB3,TGFBR2,THSD4,SLC9A9,ABCA12	rs11208264,rs1135438,rs11858454,rs12686004,rs1409612,rs16945811,rs17025857,rs2269238,rs2269239,rs2269241,rs2292239,rs3790857,rs4643,rs8032794
+R-HSA-195258	RHO GTPase Effectors	Signal Transduction	0.743502	HIST1H2BN,YWHAE,ZW10	rs16945811,rs17541153,rs200991,rs200995,rs201002
+R-HSA-1852241	Organelle biogenesis and maintenance	Organelle biogenesis and maintenance	0.750446	PRKAG2,YWHAE,SAMM50	rs16945811,rs738494,rs7780008
+R-HSA-446203	Asparagine N-linked glycosylation	Metabolism of proteins	0.755679	GRIA1,GFPT2,ST6GALNAC5	rs10035262,rs2112594,rs41515647
+R-HSA-195721	Signaling by WNT	Signal Transduction	0.758102	HIST1H2BN,PDE6A,TNRC6A	rs200991,rs200995,rs201002,rs3776069,rs9930029
+R-HSA-5663202	Diseases of signal transduction	Disease	0.776541	ERBB3,TGFBR2	rs17025857,rs2292239
+R-HSA-6798695	Neutrophil degranulation	Immune System	0.803350	RAB5B,GM2A,PGM1	rs11208264,rs17659728,rs1873914,rs2269238,rs2269239,rs2269241,rs3790857,rs4643,rs705698
+R-HSA-8953897	Cellular responses to external stimuli	Cellular responses to external stimuli	0.805672	DEPDC5,YWHAE,NR3C2,HIST1H2BN,TNRC6A	rs16945811,rs17484678,rs200991,rs200995,rs201002,rs5994443,rs9930029
+R-HSA-69278	Cell Cycle, Mitotic	Cell Cycle	0.810172	HIST1H2BN,NEK6,YWHAE,CCND3,ZW10	rs16927327,rs16945811,rs17541153,rs200991,rs200995,rs201002,rs4607417
+R-HSA-422475	Axon guidance	Developmental Biology	0.819101	CACNB2,ITGA2,TIAM1,ROBO2	rs11700615,rs4237348,rs43188,rs9808969
+R-HSA-199991	Membrane Trafficking	Vesicle-mediated transport	0.823361	RAB5B,PRKAG2,SBF2,YWHAE,GRIA1,ZW10	rs10035262,rs10500712,rs16945811,rs17541153,rs1873914,rs705698,rs7780008
+R-HSA-1640170	Cell Cycle	Cell Cycle	0.827270	YWHAE,NEK6,CCND3,HUS1,HIST1H2BN,ZW10	rs16927327,rs16945811,rs17541153,rs200991,rs200995,rs201002,rs4607417,rs7783847
+R-HSA-1280218	Adaptive Immune System	Immune System	0.855066	BTN3A1,CLEC2D,ASB5,HLA-DQA1,BTN3A3,BTN2A1,ASB7	rs10456045,rs11052372,rs2114870,rs2128427,rs2237236,rs6598368,rs7310460,rs7763910,rs9272346,rs9272723
+R-HSA-1266738	Developmental Biology	Developmental Biology	0.867465	CACNB2,KRT86,CCND3,ITGA2,HIST1H2BN,TIAM1,RUNX1,CTNNA2,ROBO2	rs10876266,rs11700615,rs13390216,rs200991,rs200995,rs201002,rs41513350,rs4237348,rs43188,rs4607417,rs9808969
+R-HSA-1430728	Metabolism	Metabolism	0.898107	SLC44A3,CACNB2,GNAS,ALDH2,PRKAG2,SBF2,ACAD10,SCD5,RORA,BCO2,GM2A,ABCA1,ACOXL,PGM1,SGMS1,TPH1,IMPAD1,ADCY8	rs10187034,rs10500712,rs10741734,rs10744777,rs10958514,rs11208264,rs12686004,rs1435447,rs17005996,rs17237810,rs17659728,rs2115763,rs2269238,rs2269239,rs2269241,rs2842107,rs3790857,rs4237348,rs4643,rs634389,rs6706577,rs7780008,rs782916,rs859065,rs919197
+R-HSA-109581	Apoptosis	Programmed Cell Death	1.000000	YWHAE	rs16945811
+R-HSA-1257604	PIP3 activates AKT signaling	Signal Transduction	1.000000	ERBB3,TNRC6A	rs2292239,rs9930029
+R-HSA-1474228	Degradation of the extracellular matrix	Extracellular matrix organization	1.000000	SCUBE3	rs4713843
+R-HSA-1483206	Glycerophospholipid biosynthesis	Metabolism	1.000000	SLC44A3	rs859065
+R-HSA-1500931	Cell-Cell communication	Cell-Cell communication	1.000000	CLDN10	rs7995795
+R-HSA-196854	Metabolism of vitamins and cofactors	Metabolism	1.000000	BCO2	rs2115763
+R-HSA-199418	Negative regulation of the PI3K/AKT network	Signal Transduction	1.000000	ERBB3	rs2292239
+R-HSA-199977	ER to Golgi Anterograde Transport	Vesicle-mediated transport;Metabolism of proteins	1.000000	GRIA1	rs10035262
+R-HSA-201681	TCF dependent signaling in response to WNT	Signal Transduction	1.000000	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-202403	TCR signaling	Immune System	1.000000	HLA-DQA1	rs9272346,rs9272723
+R-HSA-202424	Downstream TCR signaling	Immune System	1.000000	HLA-DQA1	rs9272346,rs9272723
+R-HSA-212165	Epigenetic regulation of gene expression	Gene expression (Transcription)	1.000000	HIST1H2BN	rs200991,rs200995,rs201002
+R-HSA-2132295	MHC class II antigen presentation	Immune System	1.000000	HLA-DQA1	rs9272346,rs9272723
+R-HSA-2467813	Separation of Sister Chromatids	Cell Cycle	1.000000	ZW10	rs17541153
+R-HSA-2500257	Resolution of Sister Chromatid Cohesion	Cell Cycle	1.000000	ZW10	rs17541153
+R-HSA-2555396	Mitotic Metaphase and Anaphase	Cell Cycle	1.000000	ZW10	rs17541153
+R-HSA-3371556	Cellular response to heat stress	Cellular responses to external stimuli	1.000000	YWHAE	rs16945811
+R-HSA-372790	Signaling by GPCR	Signal Transduction	1.000000	GNAS,P2RY12,PDE1C,BCO2,PDE6A,GRM8,TIAM1,NPSR1,CAMKMT,ADCY8	rs10487463,rs11700615,rs1435447,rs17160736,rs2115763,rs323925,rs3776069,rs3821664,rs6721746,rs919197
+R-HSA-373076	Class A/1 (Rhodopsin-like receptors)	Signal Transduction	1.000000	P2RY12,NPSR1	rs323925,rs3821664
+R-HSA-373760	L1CAM interactions	Developmental Biology	1.000000	ITGA2	rs43188
+R-HSA-375276	Peptide ligand-binding receptors	Signal Transduction	1.000000	NPSR1	rs323925
+R-HSA-381426	Regulation of Insulin-like Growth Factor (IGF) transport and uptake by Insulin-like Growth Factor Binding Proteins (IGFBPs)	Metabolism of proteins	1.000000	EVA1A	rs17727191
+R-HSA-382556	ABC-family proteins mediated transport	Transport of small molecules	1.000000	ABCA12	rs1409612
+R-HSA-388396	GPCR downstream signalling	Signal Transduction	1.000000	P2RY12,GNAS,PDE1C,BCO2,PDE6A,GRM8,TIAM1,NPSR1,CAMKMT,ADCY8	rs10487463,rs11700615,rs1435447,rs17160736,rs2115763,rs323925,rs3776069,rs3821664,rs6721746,rs919197
+R-HSA-388841	Costimulation by the CD28 family	Immune System	1.000000	HLA-DQA1	rs9272346,rs9272723
+R-HSA-392499	Metabolism of proteins	Metabolism of proteins	1.000000	USP28,INO80C,NR3C2,HIST1H2BN,RAB5B,ASB5,GRIA1,RORA,GFPT2,OTUD7A,OPCML,TGFBR2,ST6GALNAC5,ASB7,THSD4,TULP4,CAMKMT,EVA1A	rs10035262,rs11223425,rs11858454,rs12907720,rs1633548,rs1633550,rs17025857,rs17237810,rs17484678,rs17727191,rs1873914,rs200991,rs200995,rs201002,rs2112594,rs2128427,rs2155373,rs2513574,rs2519200,rs341160,rs355334,rs41515647,rs6598368,rs6721746,rs705698,rs7170060,rs782916,rs8032794
+R-HSA-416476	G alpha (q) signalling events	Signal Transduction	1.000000	NPSR1	rs323925
+R-HSA-453274	Mitotic G2-G2/M phases	Cell Cycle	1.000000	YWHAE	rs16945811
+R-HSA-453279	Mitotic G1-G1/S phases	Cell Cycle	1.000000	CCND3	rs4607417
+R-HSA-500792	GPCR ligand binding	Signal Transduction	1.000000	GNAS,P2RY12,GRM8,NPSR1	rs10487463,rs323925,rs3821664,rs919197
+R-HSA-5357801	Programmed Cell Death	Programmed Cell Death	1.000000	YWHAE	rs16945811
+R-HSA-5617833	Cilium Assembly	Organelle biogenesis and maintenance	1.000000	YWHAE	rs16945811
+R-HSA-5653656	Vesicle-mediated transport	Vesicle-mediated transport	1.000000	GRIA1,RAB5B,SBF2,PRKAG2,YWHAE,ZW10	rs10035262,rs10500712,rs16945811,rs17541153,rs1873914,rs705698,rs7780008
+R-HSA-5663220	RHO GTPases Activate Formins	Signal Transduction	1.000000	ZW10	rs17541153
+R-HSA-5673001	RAF/MAP kinase cascade	Immune System;Signal Transduction	1.000000	ERBB3,SYNGAP1	rs10807124,rs2292239
+R-HSA-5684996	MAPK1/MAPK3 signaling	Signal Transduction	1.000000	ERBB3,SYNGAP1	rs10807124,rs2292239
+R-HSA-5696398	Nucleotide Excision Repair	DNA Repair	1.000000	INO80C	rs355334
+R-HSA-6785807	Interleukin-4 and Interleukin-13 signaling	Immune System	1.000000	RORA	rs17237810,rs782916
+R-HSA-6807070	PTEN Regulation	Signal Transduction	1.000000	TNRC6A	rs9930029
+R-HSA-6809371	Formation of the cornified envelope	Developmental Biology	1.000000	KRT86	rs10876266
+R-HSA-6811442	Intra-Golgi and retrograde Golgi-to-ER traffic	Vesicle-mediated transport	1.000000	ZW10	rs17541153
+R-HSA-68882	Mitotic Anaphase	Cell Cycle	1.000000	ZW10	rs17541153
+R-HSA-69275	G2/M Transition	Cell Cycle	1.000000	YWHAE	rs16945811
+R-HSA-72163	mRNA Splicing - Major Pathway	Metabolism of RNA	1.000000	CCAR1	rs1566222
+R-HSA-72172	mRNA Splicing	Metabolism of RNA	1.000000	CCAR1	rs1566222
+R-HSA-877300	Interferon gamma signaling	Immune System	1.000000	HLA-DQA1	rs9272346,rs9272723
+R-HSA-8856688	Golgi-to-ER retrograde transport	Vesicle-mediated transport	1.000000	ZW10	rs17541153
+R-HSA-8856828	Clathrin-mediated endocytosis	Vesicle-mediated transport	1.000000	RAB5B	rs1873914,rs705698
+R-HSA-9010553	Regulation of expression of SLITs and ROBOs	Developmental Biology	1.000000	ROBO2	rs9808969
+R-HSA-948021	Transport to the Golgi and subsequent modification	Metabolism of proteins	1.000000	GRIA1	rs10035262
+R-HSA-9607240	FLT3 Signaling	Immune System	1.000000	ERBB3,SYNGAP1	rs10807124,rs2292239
+R-HSA-9609507	Protein localization	Protein localization	1.000000	SAMM50	rs738494
+R-HSA-9612973	Autophagy	Autophagy	1.000000	PRKAG2	rs7780008
+R-HSA-983168	Antigen processing: Ubiquitination & Proteasome degradation	Immune System	1.000000	ASB5,ASB7	rs2128427,rs6598368
+R-HSA-983231	Factors involved in megakaryocyte development and platelet production	Hemostasis	1.000000	DOCK10	rs4673129

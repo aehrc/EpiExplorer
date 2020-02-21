@@ -1,0 +1,17 @@
+Variation ID	Chromosome	Gene	Transcript	Protein change	Consequence	Domain	Oncogenic classification	Location	Tumour driver	Role	In cluster	Delicate domain	Deleterious (CADD score)
+rs17005996	chr4	SCD5	ENST00000319540	intron_variant	IntronicSNV	None	not protein-affecting	-	False	None	False	False	None
+rs2128427	chr4	ASB5	ENST00000296525	intron_variant	IntronicSNV	None	not protein-affecting	-	False	None	False	False	None
+rs249900	chr5	PPP2R2B	ENST00000336640	intron_variant	IntronicSNV	None	not protein-affecting	-	False	None	False	False	None
+rs249900	chr5	PPP2R2B	ENST00000336640	intron_variant	IntronicSNV	None	not protein-affecting	-	False	None	False	False	None
+rs2112594	chr5	GFPT2	ENST00000253778	S336S	Synonymous	None	polymorphism	before last exon	False	None	False	False	0.137
+rs2112594	chr5	GFPT2	ENST00000253778	S336S	Synonymous	None	not protein-affecting	before last exon	False	None	False	False	0.014
+rs2112594	chr5	GFPT2	ENST00000253778	S336S	Synonymous	None	not protein-affecting	before last exon	False	None	False	False	4.480
+rs341160	chr6	TULP4	ENST00000367097	intron_variant	IntronicSNV	None	not protein-affecting	-	False	None	False	False	None
+rs17160736	chr7	PDE1C	ENST00000396193	intron_variant	IntronicSNV	None	not protein-affecting	-	False	None	False	False	None
+rs323925	chr7	NPSR1	ENST00000359791	intron_variant	IntronicSNV	None	not protein-affecting	-	False	None	False	False	None
+rs1525791	chr7	POU6F2	ENST00000403058	intron_variant	IntronicSNV	None	not protein-affecting	-	False	Loss of function	False	False	None
+rs3735361	chr7	GLI3	ENST00000395925	None	3-UTRSNV	None	not protein-affecting	-	False	None	False	False	None
+rs3735361	chr7	GLI3	ENST00000395925	None	3-UTRSNV	None	not protein-affecting	-	False	None	False	False	None
+rs1058425	chr7	SEMA3C	ENST00000265361	Q508Q	Synonymous	None	polymorphism	before last exon	False	None	False	False	10.540
+rs1880959	chr7	SEMA3C	ENST00000265361	V348V	Synonymous	Sema	polymorphism	before last exon	False	None	False	False	20.300
+rs17136882	chr7	LHFPL3	ENST00000535008	intron_variant	IntronicSNV	None	not protein-affecting	-	False	None	False	False	None

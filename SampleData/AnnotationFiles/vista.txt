@@ -1,0 +1,1 @@
+Variation ID	Chromosome	Region Start	Region End	Vista Item	Score

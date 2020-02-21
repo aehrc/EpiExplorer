@@ -1,0 +1,1 @@
+Gene	Observed alteration	Compound	Binding potency	MOA	Match
