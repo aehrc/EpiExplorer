@@ -390,6 +390,7 @@ class ReadWriteData:
                 annotation_df = pd.read_csv(annotation_file, sep="\t")
                 if 'Variation ID' in annotation_df.columns:
                     annotation_df = annotation_df.rename(columns={'Variation ID': 'id'})
+                    # TODO Add the other common columns
                     new_node_df = new_node_df.merge(annotation_df, on='id', how='left')
                     new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
                 else:
@@ -707,24 +708,23 @@ class ReadWriteData:
         edge_file_path = ''
 
         user_given_output_path = self.output_file
-        print(user_given_output_path)
 
         if user_given_output_path == '':
             # Check if directory exists
             directory = False
-            if os.path.isdir('../SampleData/InteractionLists/'):
+            if os.path.isdir('../SampleData/InteractionGraph/'):
                 directory = True
             else:
-                os.makedirs('../SampleData/InteractionLists/')
+                os.makedirs('../SampleData/InteractionGraph/')
                 directory = True
 
             if directory:
                 if interaction_or_edge == 1:
-                    node_file_path = os.path.join('../SampleData/InteractionLists/', node_file_name)
-                    edge_file_path = os.path.join('../SampleData/InteractionLists/', edge_file_name)
+                    node_file_path = os.path.join('../SampleData/InteractionGraph/', node_file_name)
+                    edge_file_path = os.path.join('../SampleData/InteractionGraph/', edge_file_name)
                 elif interaction_or_edge == 2:
-                    node_file_path = os.path.join('../SampleData/InteractionLists/', trans_node_file_name)
-                    edge_file_path = os.path.join('../SampleData/InteractionLists/', trans_edge_file_name)
+                    node_file_path = os.path.join('../SampleData/InteractionGraph/', trans_node_file_name)
+                    edge_file_path = os.path.join('../SampleData/InteractionGraph/', trans_edge_file_name)
             else:
                 print('Error: Could not find output directory')
         else:

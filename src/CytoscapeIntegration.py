@@ -14,7 +14,7 @@ class CytoscapeIntegration:
         self.core_details = core_details
         self.interaction_or_edge = interaction_or_edge
         self.json_file_name = 'json_file.json'
-        self.json_file_path = os.path.join('../SampleData/InteractionLists/', self.json_file_name)
+        self.json_file_path = os.path.join('../SampleData/InteractionGraph/', self.json_file_name)
 
     # Method to convert the DataFrames to a json object and save as a .json file
     def dataframe_to_json(self):
@@ -185,7 +185,8 @@ class CytoscapeIntegration:
                                                      mappings=order_colour_key_value_pair)
                 elif update_type == 'Type':
                     # https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/basic-fundamentals.ipynb
-                    my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='NODE_FILL_COLOR', points=type_colour_variation)
+                    my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='NODE_FILL_COLOR',
+                                                       points=type_colour_variation)
 
                 elif update_type == 'Overlap':
                     my_style.create_discrete_mapping(column='Overlap', col_type='String', vp='NODE_FILL_COLOR',
@@ -217,46 +218,60 @@ class CytoscapeIntegration:
 
                 if 'gray' in self.core_details.columns:
                     # Link: https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/advanced-view-api.ipynb
+                    print('Alrighty GRAY OUT +++++++++++++++++++============++++++++++++++++')
+                    # Check if the gray out is set to True
+                    if self.core_details.at[0, 'gray']:
+                        user_query = self.core_details.at[0, 'query']
+                        print(user_query)
 
-                    user_query = self.core_details.at[0, 'query']
+                        if 'invert' in self.core_details.columns:
+                            if self.core_details.at[0, 'invert'] != 0:
+                                # TODO write code to modify query, basically the stuff I did below
+                                print('Query needs to be modified')
 
-                    if 'invert' in self.core_details.columns:
-                        if self.core_details.at[0, 'invert'] != 0:
-                            # TODO write code to modify query, basically the stuff I did below
-                            print('Query needs to be modified')
+                        # Get the network from cytoscape
+                        view_id_list = node_edge_network.get_views()
+                        my_style_2 = node_edge_network.get_view(view_id_list[0], fmt='view')
 
-                    # Get the network from cytoscape
-                    view_id_list = node_edge_network.get_views()
-                    my_style_2 = node_edge_network.get_view(view_id_list[0], format='json')
-                    print(my_style_2)
+                        # Get nodes and edges as a df
+                        view_df = pd.DataFrame.from_dict(my_style_2, orient='index')
+                        nodes_edge_df = view_df.iat[4, 0]
+                        # print(json.dumps(nodes_edge_df, indent=4))
+                        # print('_________')
 
-                    # Get node and edge views as a dictionary
-                    node_views_dict = my_style_2.get_node_views_as_dict()
-                    edge_views_dict = my_style_2.get_edge_views_as_dict()
+                        node_list = nodes_edge_df['nodes']
+                        node_df = pd.DataFrame(node_list)
+                        node_data_df = pd.DataFrame(node_df['data'])
 
-                    # Convert to pandas dataframe
-                    node_view_df = pd.DataFrame.from_dict(node_views_dict, orient='index')
-                    print(node_view_df)
-                    print('_________')
+                        correct_node_data_df = pd.DataFrame()
 
-                    # filter out the user desired data
-                    filtered_df = node_view_df.query(user_query)
+                        for index, row in node_data_df.iterrows():
+                            correct_node_data_df = correct_node_data_df.append(node_data_df.iloc[index, 0],
+                                                     ignore_index=True)
 
-                    # Remove the filtered data and make a new df
-                    new_df = node_view_df.merge(filtered_df, on='id')
-                    print('this is the new df')
-                    print(new_df)
-                    node_view_df[(~node_view_df.id.isin(new_df.id))]
+                        edge_list = nodes_edge_df['edges']
+                        print(correct_node_data_df)
 
-                    for index, row in filtered_df.iterrows():
-                        row['NODE_FILL_COLOR'] = '#d3d3d3'
+                        # filter out the user desired data
+                        filtered_df = correct_node_data_df.query("reason_to_exist == 'Presentation'")
+                        print('filtered df')
+                        print(filtered_df)
 
-                    # combine the new DataFrame and the newly changed DataFrame with filters
-                    new_df = new_df.merge(filtered_df, on='id')
+                        # Remove the filtered data and make a new df
+                        # new_df = correct_node_data_df.merge(filtered_df, on=['id_original', 'name'])
+                        # correct_node_data_df[(~correct_node_data_df.id.isin(new_df.id))]
+                        # print('this is the new df')
+                        # print(new_df)
 
-                    my_style_2.batch_update_node_views(new_df)
-                    Image(node_edge_network.get_png(height=400))
-                    self.filter_data()
+                        for index, row in filtered_df.iterrows():
+                            row['NODE_FILL_COLOR'] = '#d3d3d3'
+
+                        # combine the new DataFrame and the newly changed DataFrame with filters
+                        # new_df = new_df.merge(filtered_df, on='id')
+
+                        my_style_2.batch_update_node_views(filtered_df)
+                        Image(node_edge_network.get_png(height=400))
+                        self.filter_data()
 
         cy.style.apply(my_style, node_edge_network)
 
