@@ -218,7 +218,7 @@ class CytoscapeIntegration:
 
                 if 'gray' in self.core_details.columns:
                     # Link: https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/advanced-view-api.ipynb
-                    print('Alrighty GRAY OUT +++++++++++++++++++============++++++++++++++++')
+                    print('Alrighty GRAY OUT SUCKAH +++++++++++++++++++============++++++++++++++++')
                     # Check if the gray out is set to True
                     if self.core_details.at[0, 'gray']:
                         user_query = self.core_details.at[0, 'query']
@@ -231,13 +231,13 @@ class CytoscapeIntegration:
 
                         # Get the network from cytoscape
                         view_id_list = node_edge_network.get_views()
-                        my_style_2 = node_edge_network.get_view(view_id_list[0], fmt='view')
+                        # TODO check why format == 'view' doesn't work!!!!!!
+                        view1 = node_edge_network.get_view(view_id_list[0], fmt='view')
+                        my_style_2 = node_edge_network.get_view(view_id_list[0])
 
                         # Get nodes and edges as a df
                         view_df = pd.DataFrame.from_dict(my_style_2, orient='index')
                         nodes_edge_df = view_df.iat[4, 0]
-                        # print(json.dumps(nodes_edge_df, indent=4))
-                        # print('_________')
 
                         node_list = nodes_edge_df['nodes']
                         node_df = pd.DataFrame(node_list)
@@ -247,15 +247,11 @@ class CytoscapeIntegration:
 
                         for index, row in node_data_df.iterrows():
                             correct_node_data_df = correct_node_data_df.append(node_data_df.iloc[index, 0],
-                                                     ignore_index=True)
-
-                        edge_list = nodes_edge_df['edges']
-                        print(correct_node_data_df)
+                                                                               ignore_index=True)
 
                         # filter out the user desired data
-                        filtered_df = correct_node_data_df.query("reason_to_exist == 'Presentation'")
-                        print('filtered df')
-                        print(filtered_df)
+                        filtered_df = correct_node_data_df.query("reason_to_exist == 'Presentation'").reset_index(
+                            drop=True)
 
                         # Remove the filtered data and make a new df
                         # new_df = correct_node_data_df.merge(filtered_df, on=['id_original', 'name'])
@@ -263,13 +259,47 @@ class CytoscapeIntegration:
                         # print('this is the new df')
                         # print(new_df)
 
+                        # Get node/edge views as a Python dictionary
+                        node_views_dict = view1.get_node_views_as_dict()
+                        # Convert it into Pandas DataFrame
+                        nv_df = pd.DataFrame.from_dict(node_views_dict, orient='index')
+                        # Extract specific Visual Property values...
+                        node_location_df = nv_df['NODE_FILL_COLOR']
+                        node_location_df = pd.DataFrame(node_location_df, columns=['NODE_FILL_COLOR'])
+                        node_location_df['id'] = node_location_df.index
+                        node_location_df = node_location_df.reset_index(drop=True)
+                        print(node_location_df)
+                        print(node_location_df.dtypes)
+                        print(filtered_df)
+                        print(filtered_df.dtypes)
+                        print('chanign datatype')
+
+                        convert_dict = {'id': int}
+
+                        filtered_df = filtered_df.astype(convert_dict)
+                        print(filtered_df.dtypes)
+                        key_value_pair = {}
                         for index, row in filtered_df.iterrows():
-                            row['NODE_FILL_COLOR'] = '#d3d3d3'
+                            filtered_id = filtered_df.at[index, 'id']
+                            for index_node_loc, row_loc in node_location_df.iterrows():
+                                node_loc_id = node_location_df.at[index_node_loc, 'id']
+                                if filtered_id == node_loc_id:
+                                    print('node loc id ', node_loc_id, ' fil ', filtered_id)
+                                    print('changing color')
+                                    node_location_df.at[index_node_loc, 'NODE_FILL_COLOR'] = '#d3d3d3'
+                                    key_value_pair[node_loc_id] = '#d3d3d3'
+                                else:
+                                    key_value_pair[node_loc_id] = node_location_df.at[index_node_loc, 'NODE_FILL_COLOR']
 
                         # combine the new DataFrame and the newly changed DataFrame with filters
                         # new_df = new_df.merge(filtered_df, on='id')
 
-                        my_style_2.batch_update_node_views(filtered_df)
+                        print('changed node loc df')
+                        print(node_location_df)
+
+                        print(key_value_pair)
+
+                        view1.update_node_views(visual_property='NODE_FILL_COLOR', values=key_value_pair)
                         Image(node_edge_network.get_png(height=400))
                         self.filter_data()
 
