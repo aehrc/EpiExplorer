@@ -707,6 +707,7 @@ class ReadWriteData:
         edge_file_path = ''
 
         user_given_output_path = self.output_file
+        print(user_given_output_path)
 
         if user_given_output_path == '':
             # Check if directory exists
