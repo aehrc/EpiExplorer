@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # Main method to start the program
 import argparse
 import pandas as pd
