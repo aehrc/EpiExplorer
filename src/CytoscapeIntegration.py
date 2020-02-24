@@ -287,9 +287,9 @@ class CytoscapeIntegration:
                                     print('node loc id ', node_loc_id, ' fil ', filtered_id)
                                     print('changing color')
                                     node_location_df.at[index_node_loc, 'NODE_FILL_COLOR'] = '#d3d3d3'
-                                    key_value_pair[node_loc_id] = '#d3d3d3'
+                                    key_value_pair[str(node_loc_id)] = '#d3d3d3'
                                 else:
-                                    key_value_pair[node_loc_id] = node_location_df.at[index_node_loc, 'NODE_FILL_COLOR']
+                                    key_value_pair[str(node_loc_id)] = node_location_df.at[index_node_loc, 'NODE_FILL_COLOR']
 
                         # combine the new DataFrame and the newly changed DataFrame with filters
                         # new_df = new_df.merge(filtered_df, on='id')
