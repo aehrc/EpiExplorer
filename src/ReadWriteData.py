@@ -5,8 +5,6 @@ import numpy as np
 
 
 class ReadWriteData:
-    input_type = ''
-    order = ''
 
     def __init__(self, input_file, annotation_file, output_file):
         self.input_file = input_file
@@ -15,12 +13,7 @@ class ReadWriteData:
         self.int_id = 0
 
     # Method to validate the input file
-    # TODO change this when generalising
     def validate_input_file(self):
-        global order
-        global input_type
-        first_job_index = ''
-        last_job_index = ''
         extension = ''
         valid = True
         # Split the file name and verify each substring
@@ -31,30 +24,9 @@ class ReadWriteData:
         if len(new_input_file) <= 1:
             valid = False
         else:
-            prefix = new_input_file[0][-1]
-
-            # Alpha or Beta
-            input_type = new_input_file[1]
-            if (input_type == 'Alpha' or input_type == 'Beta' or input_type == 'best') \
-                    and valid:
-                if input_type != 'best':
-                    order = new_input_file[2]
-                    if order != '1' and order != '2' \
-                            and order != '3' and order != '4':
-                        valid = False
-
-                    # JobIndex is only there depending on the length of the list
-                    if len(new_input_file) == 5 and valid:
-                        valid = False
-
-                    if len(new_input_file) == 6 and valid:
-                        first_job_index = new_input_file[3]
-                        last_job_index = new_input_file[4]
-
-                extension = new_input_file[-1]
-
-                if (extension != 'csv') and valid:
-                    valid = False
+            extension = new_input_file[-1]
+            if (extension != 'csv') and valid:
+                valid = False
 
         return valid
 
@@ -78,7 +50,7 @@ class ReadWriteData:
             # Determine the input type for each row and add the association power
             new_alpha = ''
             new_beta = ''
-            if input_type == 'Alpha':
+            if annotation_type == 'Alpha':
                 new_alpha = df.at[index, 'Alpha']
                 new_beta = '0'
             else:
@@ -152,14 +124,12 @@ class ReadWriteData:
             # Determine the input type to add the association power
             new_alpha = ''
             new_beta = ''
-            if input_type == 'Alpha':
+            if annotation_type == 'Alpha':
                 new_alpha = df.at[index, 'Alpha']
                 new_beta = '0'
             else:
                 new_alpha = '0'
                 new_beta = df.at[index, 'Beta']
-
-
 
             # Get the single SNPs at the specific position
             snp_a_cell_value = df.at[index, 'SNP_A']
@@ -218,7 +188,6 @@ class ReadWriteData:
         # individual SNP -> interaction node
         edge_df = pd.DataFrame(columns=['id', 'source', 'target', 'interaction', 'order'])
 
-        # TODO check if the column exists not the int_order
         # If the order is greater than 1 then there exist interactions between nodes
         if int_order >= 2:
             for index, row in df.iterrows():
@@ -274,7 +243,7 @@ class ReadWriteData:
         # Determine the input type
         new_alpha = ''
         new_beta = ''
-        if input_type == 'Alpha':
+        if annotation_type == 'Alpha':
             new_alpha = 'Alpha'
             new_beta = 'None'
         else:
@@ -282,7 +251,6 @@ class ReadWriteData:
             new_beta = 'Beta'
 
         # If the order is greater than 1 then there exist interactions between nodes
-        # TODO check if the column exists not the int_order
         if int_order >= 2:
             for index, row in df.iterrows():
                 # If order is greater than 1
@@ -390,11 +358,12 @@ class ReadWriteData:
                 annotation_df = pd.read_csv(annotation_file, sep="\t")
                 if 'Variation ID' in annotation_df.columns:
                     annotation_df = annotation_df.rename(columns={'Variation ID': 'id'})
-                    # TODO Add the other common columns
-                    new_node_df = new_node_df.merge(annotation_df, on='id', how='left')
+                    # Remove the duplicate columns
+                    new_node_df = new_node_df.merge(annotation_df, on='id', how='left', suffixes=('', '_y'))
+                    new_node_df.drop(list(new_node_df.filter(regex='_y$')), axis=1, inplace=True)
                     new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
                 else:
-                    print('Annotation file does not have Variation ID')
+                    print('Annotation file does not have Variation ID.')
                     new_node_df = new_node_df
         return new_node_df
 
@@ -403,7 +372,6 @@ class ReadWriteData:
         connection_count_df = pd.DataFrame(columns=['id', 'count'])
         for index, row in correct_edge_df.iterrows():
             temp_node = correct_edge_df.at[index, 'target']
-            # TODO check the error saying 'lengths must match to compare'
             count = str(correct_edge_df.loc[correct_edge_df.target == temp_node, 'target'].count())
             connection_count_df = connection_count_df.append(pd.DataFrame([[temp_node, count]]
                                                                           , columns=['id', 'count'])
@@ -698,7 +666,7 @@ class ReadWriteData:
         return new_node_df
 
     # Method to write data in the correct format
-    def get_correctly_fomatted_dataframes(self, node_df, edge_df, int_order, interaction_or_edge):
+    def get_correctly_formatted_dataframes(self, node_df, edge_df, int_order, interaction_or_edge):
         data_written_to_csv = True
         node_file_name = 'nodes.csv'
         edge_file_name = 'edges.csv'
@@ -793,9 +761,28 @@ class ReadWriteData:
     # Method to read in data and write data from and to a csv file
     def get_dataframes(self, interaction_or_edge):
         read_write_done = True
+        global order
+        global annotation_type
 
         df = pd.read_csv(self.input_file)
-        int_order = int(order)
+
+        # Get the number of columns in order to determine the input type and SNP_X columns
+        df_length = len(df.columns)
+        print('length of df: ', df_length)
+        order = df_length - 1
+
+        if order > 4:
+            print('EpiExplorer takes only up to four SNPs per interaction.')
+            order = 4
+
+        print('Order of the input file is: ', order)
+
+        if 'Alpha' in df.columns:
+            annotation_type = 'Alpha'
+        elif 'Beta' in df.columns:
+            annotation_type = 'Beta'
+
+        print('Annotation type of the input file is:', annotation_type)
 
         if df.empty:
             read_write_done = False
@@ -804,17 +791,17 @@ class ReadWriteData:
             # Get the node_df in order to write to csv
             # Get the edge_df in order to write to csv
             if interaction_or_edge == 1:
-                node_df = self.create_interaction_node_df(df, int_order)
-                edge_df = self.create_interaction_edge_df(df, int_order)
+                node_df = self.create_interaction_node_df(df, order)
+                edge_df = self.create_interaction_edge_df(df, order)
             elif interaction_or_edge == 2:
-                node_df = self.create_node_df(df, int_order)
-                edge_df = self.create_edge_df(df, int_order)
+                node_df = self.create_node_df(df, order)
+                edge_df = self.create_edge_df(df, order)
 
-            if node_df.empty or (edge_df.empty and int_order != 1):
+            if node_df.empty or (edge_df.empty and order != 1):
                 read_write_done = False
                 print('Error the newly created DataFrames are empty.')
             else:
-                data_written = self.get_correctly_fomatted_dataframes(node_df, edge_df, int_order, interaction_or_edge)
+                data_written = self.get_correctly_formatted_dataframes(node_df, edge_df, order, interaction_or_edge)
                 if not data_written[2]:
                     read_write_done = False
                     print('Error could not write data to the csv file/s!')

@@ -75,7 +75,7 @@ class FormGUI:
     # Method to create the form
     def form(self):
         root = tk.Tk()
-        root.title('Epi Explorer')
+        root.title('EpiExplorer')
 
         # Add icon to the GUI
         img_path = r'csiro.png'
@@ -90,7 +90,8 @@ class FormGUI:
 
         canvas = tk.Canvas(root, bg='#f0f0f0', height=720, width=640)
         canvas.pack()
-        main_title = tk.Label(root, bg='#f0f0f0', text='Welcome to Epi Explorer! What changes would you like to see?')
+        main_title = tk.Label(root, bg='#f0f0f0', text='Welcome to EpiExplorer! A visualisation tool for SNP '
+                                                       'interactions.')
         main_title.place(relx=0.01, rely=0.035, relheight=0.05, relwidth=0.75)
 
         logo = PhotoImage(file=img_path)
@@ -112,7 +113,7 @@ class FormGUI:
                                      command=lambda: self.select_input_files(root, input_file_entry))
         load_file_button.place(relx=0.8, rely=0.1, relwidth=0.15, relheight=0.15)
 
-        annot_file_title = tk.Label(file_frame, text='Annotation file: ')
+        annot_file_title = tk.Label(file_frame, text='Annotation file/s: ')
         annot_file_title.place(relx=0.01, rely=0.3, relheight=0.15, relwidth=0.25)
 
         annot_file_entry = tk.Entry(file_frame)
