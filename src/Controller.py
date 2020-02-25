@@ -19,7 +19,7 @@ class Controller:
 
     # Method to call Model functionality from View
     # Takes the arguments: GUI filtering requirements, whether graph should be updated or if it's the first time,
-    # If the network type is Interaction or Edge
+    # if the network type is Interaction or Edge
     def perform_core_functionality(self, core_details, update, interaction_or_edge):
         global integration
         files_loaded = False
@@ -49,7 +49,7 @@ class Controller:
                             'The input file, {}, has been successfully loaded '
                             'and the output file has been created successfully.'.format(
                                 input_file))
-                        print('Send data to Cytoscape.')
+                        print('Sending data to Cytoscape . . .')
 
                         # Send the DataFrames in order to create the json file and create the network
                         if integration is None:
@@ -61,7 +61,8 @@ class Controller:
                         if cytoscape_successful:
                             print('Successful creation of network!')
                         else:
-                            print('Network creation unsuccessful, please make sure that Cytoscape is running in the background')
+                            print('Network creation unsuccessful, please make sure that Cytoscape is running in the '
+                                  'background.')
                     else:
                         print('Error has occurred in Read and/or Write of the file.')
                 elif not valid_input_file:
@@ -70,15 +71,15 @@ class Controller:
                 elif not valid_annotation_file:
                     print('Error found when loading the annotation file')
                     files_loaded = False
-                print('___________________________________')
         elif update:
-            print('Calliiinnggg update')
+            print('Updating the network')
             cytoscape_successful = integration.cytoscape_successful(update, core_details)
             if cytoscape_successful:
                 print('Successful creation of network!')
             else:
-                print('Network creation unsuccessful, please make sure that Cytoscape is running in the background')
+                print('Network creation unsuccessful, please make sure your update requests are correct')
 
+        print('____________________DONE ~>.<~___________________')
         return files_loaded
 
 

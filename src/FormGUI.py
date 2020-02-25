@@ -1,12 +1,10 @@
 # Class containing all the GUI functionality
-import os
-from tkinter import *
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import PhotoImage
 import tkinter.filedialog
-from PIL import Image
 import pandas as pd
+import webbrowser
 
 
 class FormGUI:
@@ -21,9 +19,11 @@ class FormGUI:
         self.input_file_names = ''
         self.annotation_files = ''
         self.output_file = ''
+        # Setting initial values as edge mode and not inverted
         self.var_interaction_or_edge = 2
         self.var_invert_or_not = 0
 
+    # Method to get the invert of the query
     def invert_or_not(self, var_invert):
         if var_invert == 0:
             print('No inverting')
@@ -32,32 +32,36 @@ class FormGUI:
             print('Invert')
             self.var_invert_or_not = 1
 
+    # Method to check if mode is interaction or edge
     def check_interaction_or_edge(self, var_interaction):
         if var_interaction == 0:
-            print('Loading network as Edge mode')
+            print('Loading network in Edge mode.')
             self.var_interaction_or_edge = 2
         else:
-            print('Loading network as Interaction Node')
+            print('Loading network in Interaction as a Node mode.')
             self.var_interaction_or_edge = 1
 
+    # Method for the user to specify output file directory
     def select_output_file(self, root, output_file_entry):
         received_file = tkinter.filedialog.askdirectory(parent=root, title='Choose directory')
         self.output_file = received_file
         output_file_entry.insert(0, self.output_file)
 
-    def select_annot_files(self, root, annot_file_entry):
+    # Method for the user to specify annotation file paths
+    def select_annotation_files(self, root, annotation_file_entry):
         received_files = tkinter.filedialog.askopenfilenames(parent=root, title='Choose a file/s')
         received_files = root.tk.splitlist(received_files)
         self.annotation_files = received_files
-        annot_file_entry.insert(0, self.annotation_files)
+        annotation_file_entry.insert(0, self.annotation_files)
 
+    # Method for the user to specify input file paths
     def select_input_files(self, root, input_file_entry):
         received_files = tkinter.filedialog.askopenfilenames(parent=root, title='Choose a file/s')
         received_files = root.tk.splitlist(received_files)
         self.input_file_names = received_files
         input_file_entry.insert(0, self.input_file_names)
 
-    # Load file upon clicking submit on the GUI
+    # Load files upon clicking load on the GUI
     def load_files(self, input_file, annotation_file, interaction_or_edge):
         details_df = pd.DataFrame([[input_file, annotation_file, self.output_file, True]],
                                   columns=['input_file', 'annotation_file', 'output_file', 'reset'])
@@ -78,7 +82,7 @@ class FormGUI:
         imgicon = tk.Image('photo', file=img_path)
         root.tk.call('wm', 'iconphoto', root._w, imgicon)
 
-        # Main window
+        # Main window colour scheme
         # Blue: '#00A9CE'
         # Dark blue: '#001D34'
         # Steel: '#757579'
@@ -115,7 +119,7 @@ class FormGUI:
         annot_file_entry.place(relx=0.275, rely=0.3, relwidth=0.5, relheight=0.15)
 
         load_annot_file_button = tk.Button(file_frame, bg='#DADBDC', text="Open",
-                                           command=lambda: self.select_annot_files(root, annot_file_entry))
+                                           command=lambda: self.select_annotation_files(root, annot_file_entry))
         load_annot_file_button.place(relx=0.8, rely=0.3, relwidth=0.15, relheight=0.15)
 
         output_file_title = tk.Label(file_frame, text='Output path: ')
@@ -227,8 +231,8 @@ class FormGUI:
         # Check button to invert query
         var_invert = tk.IntVar()
         invert_check_button = tk.Checkbutton(filter_frame, text='Invert', bg='#DADBDC',
-                                             variable=var_invert, command=lambda: self.check_interaction_or_edge(
-                var_invert.get()))
+                                             variable=var_invert,
+                                             command=lambda: self.check_interaction_or_edge(var_invert.get()))
 
         invert_check_button.place(relx=0.04, rely=0.85, relwidth=0.225, relheight=0.1)
 
@@ -323,7 +327,8 @@ class FormGUI:
         self.controller.perform_core_functionality(form_details_df, False, interaction_or_edge)
 
     def help(self):
-        messagebox.showinfo('Info', 'This is how the query should be done: \nAaaaaaseemmennnyaaaa hfkewrhgethg4ui5!!')
+        messagebox.showinfo('Info', 'If you want to go to our wiki click ok!')
+        webbrowser.open_new('https://github.com/aehrc/EpiExplorer/blob/master/README.md')
         pass
 
     def quit(self, root):

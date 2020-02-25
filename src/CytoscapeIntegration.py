@@ -16,7 +16,7 @@ class CytoscapeIntegration:
         self.json_file_name = 'json_file.json'
         self.json_file_path = os.path.join('../SampleData/InteractionGraph/', self.json_file_name)
         self.cy = CyRestClient()
-        self.node_edge_network = None # = self.cy.network.create_from(self.json_file_path)
+        self.node_edge_network = None  # = self.cy.network.create_from(self.json_file_path)
 
     # Method to convert the DataFrames to a json object and save as a .json file
     def dataframe_to_json(self):
@@ -150,7 +150,6 @@ class CytoscapeIntegration:
             # Add styles to the network
             my_style = self.cy.style.create('Epi_Explorer_style')
 
-
             # If the GUI is being loaded for the first time
             # Then create network with 'default' styles
 
@@ -177,7 +176,6 @@ class CytoscapeIntegration:
             self.cy.style.apply(my_style, self.node_edge_network)
 
 
-        # TODO when reset/ submit same thing as what the user specified gets loaded
         elif update:
             print('Update styles')
             print(core_details)
@@ -301,7 +299,8 @@ class CytoscapeIntegration:
                                     node_location_df.at[index_node_loc, 'NODE_FILL_COLOR'] = '#d3d3d3'
                                     key_value_pair[str(node_loc_id)] = '#d3d3d3'
                                 else:
-                                    key_value_pair[str(node_loc_id)] = node_location_df.at[index_node_loc, 'NODE_FILL_COLOR']
+                                    key_value_pair[str(node_loc_id)] = node_location_df.at[
+                                        index_node_loc, 'NODE_FILL_COLOR']
 
                         # combine the new DataFrame and the newly changed DataFrame with filters
                         # new_df = new_df.merge(filtered_df, on='id')
