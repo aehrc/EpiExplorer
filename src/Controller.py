@@ -52,7 +52,7 @@ class Controller:
                         print('Sending data to Cytoscape . . .')
 
                         # Send the DataFrames in order to create the json file and create the network
-                        if integration is None:
+                        if integration is None or not update:
                             integration = CytoscapeIntegration(read_write_done[0], read_write_done[1],
                                                                interaction_or_edge)
                         # Call function and determine if cytoscape worked

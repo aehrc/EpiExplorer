@@ -232,7 +232,7 @@ class FormGUI:
         var_invert = tk.IntVar()
         invert_check_button = tk.Checkbutton(filter_frame, text='Invert', bg='#DADBDC',
                                              variable=var_invert,
-                                             command=lambda: self.check_interaction_or_edge(var_invert.get()))
+                                             command=lambda: self.invert_or_not(var_invert.get()))
 
         invert_check_button.place(relx=0.04, rely=0.85, relwidth=0.225, relheight=0.1)
 

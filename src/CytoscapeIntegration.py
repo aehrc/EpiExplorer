@@ -133,8 +133,9 @@ class CytoscapeIntegration:
             'NETWORK_BACKGROUND_PAINT': 'white'
         }
 
+        # If the program is being loaded for the first time or the user wants to reset the network
         if not update:
-
+            print('Creating network.')
             # Clear current session
             self.cy.session.delete()
 
@@ -142,7 +143,6 @@ class CytoscapeIntegration:
             self.dataframe_to_json()
 
             # Create network from json file
-            print(">>>> Create Network")
             self.node_edge_network = self.cy.network.create_from(self.json_file_path)
 
             self.cy.layout.apply(network=self.node_edge_network)
@@ -166,6 +166,7 @@ class CytoscapeIntegration:
                 my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SHAPE',
                                                  mappings=order_shape_key_value_pair)
 
+            # General styles for both modes of the network
             my_style.create_discrete_mapping(column='order', col_type='String',
                                              vp='EDGE_STROKE_UNSELECTED_PAINT',
                                              mappings=edge_order_colour_key_value_pair)
@@ -175,7 +176,7 @@ class CytoscapeIntegration:
 
             self.cy.style.apply(my_style, self.node_edge_network)
 
-
+        # If user wants to update according to a specific style/ query
         elif update:
             print('Update styles')
             print(core_details)
@@ -230,7 +231,6 @@ class CytoscapeIntegration:
 
                 if 'gray' in core_details.columns:
                     # Link: https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/advanced-view-api.ipynb
-                    print('Alrighty GRAY OUT +++++++++++++++++++============++++++++++++++++')
 
                     # Check if the gray out is set to True
                     if core_details.at[0, 'gray']:
@@ -257,17 +257,14 @@ class CytoscapeIntegration:
                                                                                ignore_index=True)
 
                         # filter out the user desired data
-                        filtered_df = correct_node_data_df.query("reason_to_exist == 'Presentation'").reset_index(
+                        filtered_df = correct_node_data_df.query(user_query).reset_index(
                             drop=True)
 
                         if 'invert' in core_details.columns:
                             if core_details.at[0, 'invert'] != 0:
                                 # Invert
-                                new_df = correct_node_data_df.merge(filtered_df, on=['id_original', 'name'])
+                                new_df = correct_node_data_df.merge(filtered_df, on=['id', 'name'])
                                 filtered_df = correct_node_data_df[(~correct_node_data_df.id.isin(new_df.id))]
-                                print('this is the new filtered df')
-                                print(filtered_df)
-                                print('Query needs to be modified')
 
                         # Get node/edge views as a Python dictionary
                         node_views_dict = view1.get_node_views_as_dict()
@@ -278,43 +275,25 @@ class CytoscapeIntegration:
                         node_location_df = pd.DataFrame(node_location_df, columns=['NODE_FILL_COLOR'])
                         node_location_df['id'] = node_location_df.index
                         node_location_df = node_location_df.reset_index(drop=True)
-                        print(node_location_df)
-                        print(node_location_df.dtypes)
-                        print(filtered_df)
-                        print(filtered_df.dtypes)
-                        print('chanign datatype')
 
                         convert_dict = {'id': int}
 
                         filtered_df = filtered_df.astype(convert_dict)
-                        print(filtered_df.dtypes)
                         key_value_pair = {}
                         for index, row in filtered_df.iterrows():
                             filtered_id = filtered_df.at[index, 'id']
                             for index_node_loc, row_loc in node_location_df.iterrows():
                                 node_loc_id = node_location_df.at[index_node_loc, 'id']
                                 if filtered_id == node_loc_id:
-                                    print('node loc id ', node_loc_id, ' fil ', filtered_id)
-                                    print('changing color')
                                     node_location_df.at[index_node_loc, 'NODE_FILL_COLOR'] = '#d3d3d3'
                                     key_value_pair[str(node_loc_id)] = '#d3d3d3'
                                 else:
                                     key_value_pair[str(node_loc_id)] = node_location_df.at[
                                         index_node_loc, 'NODE_FILL_COLOR']
 
-                        # combine the new DataFrame and the newly changed DataFrame with filters
-                        # new_df = new_df.merge(filtered_df, on='id')
-
-                        print('changed node loc df')
-                        print(node_location_df)
-
-                        print(key_value_pair)
-
                         view1.update_node_views(visual_property='NODE_FILL_COLOR', values=key_value_pair)
                         Image(self.node_edge_network.get_png(height=400))
                         self.filter_data()
-
-        # cy.style.apply(my_style, node_edge_network)
 
         self.cy.layout.fit(network=self.node_edge_network)
         Image(self.node_edge_network.get_png(height=400))
