@@ -220,7 +220,6 @@ class CytoscapeIntegration:
             # Code for querying out data
             if 'query' in core_details.columns:
                 if 'hide' in core_details.columns:
-                    # TODO check if hide is set to True first omh
                     self.filter_data()
 
                 if 'show' in core_details.columns:
@@ -235,7 +234,7 @@ class CytoscapeIntegration:
                     # Check if the gray out is set to True
                     if core_details.at[0, 'gray']:
                         user_query = core_details.at[0, 'query']
-                        print(user_query)
+                        print('Querying the data using: ', user_query)
 
                         # Get the network from cytoscape
                         view_id_list = self.node_edge_network.get_views()

@@ -225,7 +225,7 @@ class FormGUI:
         filter_frame_title = tk.Label(filter_frame, bg='#757579', text='Specify how you would like to filter!')
         filter_frame_title.place(relx=0.04, rely=0.05, relheight=0.1, relwidth=0.95)
 
-        filter_entry = tk.Entry(filter_frame, font=24)
+        filter_entry = tk.Text(filter_frame, font=24)
         filter_entry.place(relx=0.05, rely=0.2, relwidth=0.925, relheight=0.3)
 
         # Check button to invert query
