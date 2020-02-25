@@ -16,7 +16,6 @@ class CytoscapeIntegration:
         self.json_file_name = 'json_file.json'
         self.json_file_path = os.path.join('../SampleData/InteractionGraph/', self.json_file_name)
         self.cy = CyRestClient()
-        #self.node_edge_network = self.cy.network
         self.node_edge_network = None # = self.cy.network.create_from(self.json_file_path)
 
     # Method to convert the DataFrames to a json object and save as a .json file
@@ -64,11 +63,80 @@ class CytoscapeIntegration:
     def cytoscape_successful(self, update, core_details):
 
         cytoscape_successful = True
+
+        # Discrete mappings for specific regions
+        order_colour_key_value_pair = {
+            '1': '#c99e10',
+            '2': '#9b4f0f',
+            '3': '#1e434c',
+            '4': '#8d230f'
+        }
+
+        overlap_colour_key_value_pair = {
+            'Protein_coding': '#c99e10',
+            'Non_coding': '#9b4f0f',
+            'Intergenic': '#1e434c'
+        }
+
+        edge_order_colour_key_value_pair = {
+            '2': '#9b4f0f',
+            '3': '#1e434c',
+            '4': '#8d230f'
+        }
+
+        edge_order_size_key_value_pair = {
+            '2': '5.0',
+            '3': '3.0',
+            '4': '1.0'
+        }
+
+        order_size_key_value_pair = {
+            '1': '25.0',
+            '2': '35.0',
+            '3': '40.0',
+            '4': '50.0'
+        }
+
+        order_shape_key_value_pair = {
+            '1': 'Ellipse',
+            '2': 'Diamond',
+            '3': 'Triangle',
+            '4': 'Hexagon'
+        }
+
+        type_colour_variation = [
+            {
+                'value': '1.0',
+                'lesser': '#9b4f0f',
+                'equal': '#9b4f0f',
+                'greater': '#9b4f0f'
+            },
+            {
+                'value': '20.0',
+                'lesser': '#8d230f',
+                'equal': '#8d230f',
+                'greater': '#8d230f'
+            }
+        ]
+        new_styles = {
+            'NODE_FILL_COLOR': '#363636',
+            'NODE_SIZE': 10,
+            'NODE_BORDER_WIDTH': 0,
+            'NODE_TRANSPARENCY': 255,
+            'NODE_LABEL_COLOR': '#323334',
+
+            'EDGE_WIDTH': 3,
+            'EDGE_STROKE_UNSELECTED_PAINT': '#a9a9a9',
+            'EDGE_LINE_TYPE': 'SOLID',
+            'EDGE_TRANSPARENCY': 120,
+
+            'NETWORK_BACKGROUND_PAINT': 'white'
+        }
+
         if not update:
-            # Create client
 
             # Clear current session
-            #cy.session.delete()
+            self.cy.session.delete()
 
             # Convert DataFrame to json file and save file
             self.dataframe_to_json()
@@ -82,74 +150,7 @@ class CytoscapeIntegration:
             # Add styles to the network
             my_style = self.cy.style.create('Epi_Explorer_style')
 
-            # Discrete mappings for specific regions
-            order_colour_key_value_pair = {
-                '1': '#c99e10',
-                '2': '#9b4f0f',
-                '3': '#1e434c',
-                '4': '#8d230f'
-            }
 
-            overlap_colour_key_value_pair = {
-                'Protein_coding': '#c99e10',
-                'Non_coding': '#9b4f0f',
-                'Intergenic': '#1e434c'
-            }
-
-            edge_order_colour_key_value_pair = {
-                '2': '#9b4f0f',
-                '3': '#1e434c',
-                '4': '#8d230f'
-            }
-
-            edge_order_size_key_value_pair = {
-                '2': '5.0',
-                '3': '3.0',
-                '4': '1.0'
-            }
-
-            order_size_key_value_pair = {
-                '1': '25.0',
-                '2': '35.0',
-                '3': '40.0',
-                '4': '50.0'
-            }
-
-            order_shape_key_value_pair = {
-                '1': 'Ellipse',
-                '2': 'Diamond',
-                '3': 'Triangle',
-                '4': 'Hexagon'
-            }
-
-            type_colour_variation = [
-                {
-                    'value': '1.0',
-                    'lesser': '#9b4f0f',
-                    'equal': '#9b4f0f',
-                    'greater': '#9b4f0f'
-                },
-                {
-                    'value': '20.0',
-                    'lesser': '#8d230f',
-                    'equal': '#8d230f',
-                    'greater': '#8d230f'
-                }
-            ]
-            new_styles = {
-                'NODE_FILL_COLOR': '#363636',
-                'NODE_SIZE': 10,
-                'NODE_BORDER_WIDTH': 0,
-                'NODE_TRANSPARENCY': 255,
-                'NODE_LABEL_COLOR': '#323334',
-
-                'EDGE_WIDTH': 3,
-                'EDGE_STROKE_UNSELECTED_PAINT': '#a9a9a9',
-                'EDGE_LINE_TYPE': 'SOLID',
-                'EDGE_TRANSPARENCY': 120,
-
-                'NETWORK_BACKGROUND_PAINT': 'white'
-            }
             # If the GUI is being loaded for the first time
             # Then create network with 'default' styles
 
@@ -182,34 +183,40 @@ class CytoscapeIntegration:
             print(core_details)
             # TODO add code for the rest of the styles
             # TODO check if the column exists in the annotation file
+            my_style = self.cy.style.create('Epi_Explorer_style')
+            my_style.update_defaults(new_styles)
+
             if 'node_colour' in core_details.columns:
                 print('Styling node colour')
                 update_type = core_details.at[0, 'node_colour']
 
-                # if update_type == 'Order' or update_type == 'Default':
-                #     my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
-                #                                      mappings=order_colour_key_value_pair)
-                # elif update_type == 'Type':
-                #     # https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/basic-fundamentals.ipynb
-                #     my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='NODE_FILL_COLOR',
-                #                                        points=type_colour_variation)
-                #
-                # elif update_type == 'Overlap':
-                #     my_style.create_discrete_mapping(column='Overlap', col_type='String', vp='NODE_FILL_COLOR',
-                #                                      mappings=overlap_colour_key_value_pair)
+                if update_type == 'Order' or update_type == 'Default':
+                    my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
+                                                     mappings=order_colour_key_value_pair)
+                elif update_type == 'Type':
+                    # https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/basic-fundamentals.ipynb
+                    my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='NODE_FILL_COLOR',
+                                                       points=type_colour_variation)
+
+                elif update_type == 'Overlap':
+                    my_style.create_discrete_mapping(column='Overlap', col_type='String', vp='NODE_FILL_COLOR',
+                                                     mappings=overlap_colour_key_value_pair)
+
+                self.cy.style.apply(my_style, self.node_edge_network)
 
             if 'node_size' in core_details.columns:
                 print('Styling node size')
                 update_type = core_details.at[0, 'node_size']
 
                 if update_type == 'Order' or update_type == 'Default':
-                    print('')
-                    # my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SIZE',
-                    #                                  mappings=order_size_key_value_pair)
+                    my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SIZE',
+                                                     mappings=order_size_key_value_pair)
 
                 elif update_type == 'Type':
                     # TODO add continuous mapping for Alpha/ Beta values
                     print('TODO')
+
+                self.cy.style.apply(my_style, self.node_edge_network)
 
             # Code for querying out data
             if 'query' in core_details.columns:
@@ -226,54 +233,6 @@ class CytoscapeIntegration:
                 if 'gray' in core_details.columns:
                     # Link: https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/advanced-view-api.ipynb
                     print('Alrighty GRAY OUT +++++++++++++++++++============++++++++++++++++')
-
-                    # network_suid = node_edge_network.get_id()
-                    # print('This object references to Cytoscape network with SUID ' + str(network_suid) + '\n')
-                    # print('And its name is: ' + str(node_edge_network.get_network_value(column='name')) + '\n')
-                    #
-                    # nodes = node_edge_network.get_node_table()
-                    # edges = node_edge_network.get_edge_table()
-                    # nodes.columns = nodes.columns.str.replace("[ ]", "_")
-                    #
-                    # # filter out the user desired data
-                    # filtered_df = nodes.query("reason_to_exist == 'Presentation'").reset_index(
-                    #     drop=True)
-                    #
-                    # print('filtered df')
-                    # print(filtered_df)
-                    #
-                    # if 'invert' in self.core_details.columns:
-                    #     if self.core_details.at[0, 'invert'] != 0:
-                    #         # Invert
-                    #         new_df = nodes.merge(filtered_df, on=['id_original', 'name'])
-                    #         filtered_df = nodes[(~nodes.id.isin(new_df.id))]
-                    #         print('this is the new filtered df')
-                    #         print(filtered_df)
-                    #         print('Query needs to be modified')
-                    #
-                    # # Create a new style
-                    # gray_style = cy.style.create('gray_out_style')
-                    # # Get a reference to the existing style
-                    # default_style = cy.style.create('Epi_Explorer_style')
-                    #
-                    # print('______ get default stuff _______')
-                    # print(default_style.get_name())
-                    # print('views????')
-                    #
-                    # for index, row in nodes.iterrows():
-                    #
-                    #     print(nodes.at[index, 'SUID'], ' : ', node_edge_network.get_node_value(id=nodes[index]))
-                    #
-                    #
-                    # key_value_pair = {}
-                    # for index, row in filtered_df.iterrows():
-                    #     filtered_id = filtered_df.at[index, 'SUID']
-                    #     key_value_pair[str(filtered_id)] = '#ff0000'
-                    #
-                    # gray_style.create_discrete_mapping(column='SUID', col_type='string',
-                    #                                    vp='NODE_FILL_COLOR', mappings=key_value_pair)
-                    #
-                    # cy.style.apply(gray_style, node_edge_network)
 
                     # Check if the gray out is set to True
                     if core_details.at[0, 'gray']:
