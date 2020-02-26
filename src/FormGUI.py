@@ -78,9 +78,9 @@ class FormGUI:
         root.title('EpiExplorer')
 
         # Add icon to the GUI
-        img_path = r'csiro.png'
-        imgicon = tk.Image('photo', file=img_path)
-        root.tk.call('wm', 'iconphoto', root._w, imgicon)
+        # img_path = r'csiro.png'
+        # imgicon = tk.Image('photo', file=img_path)
+        # root.tk.call('wm', 'iconphoto', root._w, imgicon)
 
         # Main window colour scheme
         # Blue: '#00A9CE'
@@ -94,10 +94,10 @@ class FormGUI:
                                                        'interactions.')
         main_title.place(relx=0.01, rely=0.035, relheight=0.05, relwidth=0.75)
 
-        logo = PhotoImage(file=img_path)
-        logo_resized = logo.subsample(10, 10)
-        photo_label = tk.Label(root, image=logo_resized)
-        photo_label.place(relx=0.8, rely=0.01, relheight=0.075, relwidth=0.25)
+        # logo = PhotoImage(file=img_path)
+        # logo_resized = logo.subsample(10, 10)
+        # photo_label = tk.Label(root, image=logo_resized)
+        # photo_label.place(relx=0.8, rely=0.01, relheight=0.075, relwidth=0.25)
 
         # Frame to input files and load
         file_frame = tk.Frame(root, bg='#001D34', bd=5)
