@@ -438,9 +438,9 @@ class ReadWriteData:
                                     ignore_index=True).reset_index(drop=True)
 
                             self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
-                                    [[temp_node, new_alpha, new_beta]],
-                                    columns=['id', 'Alpha', 'Beta']),
-                                    ignore_index=True).reset_index(drop=True)
+                                [[temp_node, new_alpha, new_beta]],
+                                columns=['id', 'Alpha', 'Beta']),
+                                ignore_index=True).reset_index(drop=True)
 
                             i = i - len(temp_df)
                             found = True

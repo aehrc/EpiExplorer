@@ -50,7 +50,6 @@ class CytoscapeIntegration:
             json.dump(full_dict, outfile, sort_keys=True, indent=4)
 
     # When a style is changed in the GUI this method is called
-    # TODO add code to filter data for network
     def filter_data(self, core_details):
         user_query = core_details.at[0, 'query']
         print('Querying the data using: ', user_query)

@@ -91,7 +91,7 @@ class FormGUI:
         canvas = tk.Canvas(root, height=720, width=640)
         canvas.pack()
         main_title = tk.Label(root, text='Welcome to EpiExplorer! A visualisation tool for SNP '
-                                                       'interactions.')
+                                         'interactions.')
         main_title.place(relx=0.01, rely=0.035, relheight=0.05, relwidth=0.75)
 
         # logo = PhotoImage(file=img_path)
