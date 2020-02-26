@@ -11,6 +11,7 @@ class ReadWriteData:
         self.annotation_files = annotation_file
         self.output_file = output_file
         self.int_id = 0
+        self.alpha_beta_df = pd.DataFrame(columns=['id', 'Alpha', 'Beta'])
 
     # Method to validate the input file
     def validate_input_file(self):
@@ -436,6 +437,11 @@ class ReadWriteData:
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
 
+                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
+                                    [[temp_node, new_alpha, new_beta]],
+                                    columns=['id', 'Alpha', 'Beta']),
+                                    ignore_index=True).reset_index(drop=True)
+
                             i = i - len(temp_df)
                             found = True
                         # If only Alpha values were present
@@ -454,6 +460,11 @@ class ReadWriteData:
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
 
+                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
+                                [[temp_node, new_alpha, '0']],
+                                columns=['id', 'Alpha', 'Beta']),
+                                ignore_index=True).reset_index(drop=True)
+
                             i = i - len(temp_df)
                             found = True
                         # If only Beta values were found
@@ -470,6 +481,12 @@ class ReadWriteData:
                                     [[temp_node, temp_node, new_order, '0', new_beta, new_reason]],
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
+
+                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
+                                [[temp_node, '0', new_beta]],
+                                columns=['id', 'Alpha', 'Beta']),
+                                ignore_index=True).reset_index(drop=True)
+
                             i = i - len(temp_df)
                             found = True
                         # Both aren't present
@@ -485,6 +502,11 @@ class ReadWriteData:
                                     [[temp_node, temp_node, new_order, '0', '0', new_reason]],
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
+
+                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
+                                [[temp_node, '0', '0']],
+                                columns=['id', 'Alpha', 'Beta']),
+                                ignore_index=True).reset_index(drop=True)
 
                             i = i - len(temp_df)
                             found = True
@@ -504,6 +526,11 @@ class ReadWriteData:
                                 [[temp_node, temp_node, new_order, new_alpha, new_beta, new_reason]],
                                 columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                 ignore_index=True).reset_index(drop=True)
+
+                        self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
+                            [[temp_node, new_alpha, new_beta]],
+                            columns=['id', 'Alpha', 'Beta']),
+                            ignore_index=True).reset_index(drop=True)
 
                         i = i - len(temp_df)
                         found = True
@@ -542,6 +569,11 @@ class ReadWriteData:
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
 
+                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
+                                [[temp_node, new_alpha, new_beta]],
+                                columns=['id', 'Alpha', 'Beta']),
+                                ignore_index=True).reset_index(drop=True)
+
                             i = i - len(temp_df)
                             found = True
                         # If only Alpha values were present
@@ -560,6 +592,11 @@ class ReadWriteData:
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
 
+                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
+                                [[temp_node, new_alpha, '0']],
+                                columns=['id', 'Alpha', 'Beta']),
+                                ignore_index=True).reset_index(drop=True)
+
                             i = i - len(temp_df)
                             found = True
                         # If only Beta values were found
@@ -576,6 +613,12 @@ class ReadWriteData:
                                     [[temp_node, temp_node, new_order, '0', new_beta, new_reason]],
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
+
+                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
+                                [[temp_node, '0', new_beta]],
+                                columns=['id', 'Alpha', 'Beta']),
+                                ignore_index=True).reset_index(drop=True)
+
                             i = i - len(temp_df)
                             found = True
                         # Both aren't present
@@ -591,6 +634,11 @@ class ReadWriteData:
                                     [[temp_node, temp_node, new_order, '0', '0', new_reason]],
                                     columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                     ignore_index=True).reset_index(drop=True)
+
+                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
+                                [[temp_node, '0', '0']],
+                                columns=['id', 'Alpha', 'Beta']),
+                                ignore_index=True).reset_index(drop=True)
 
                             i = i - len(temp_df)
                             found = True
@@ -610,6 +658,11 @@ class ReadWriteData:
                                 [[temp_node, temp_node, new_order, new_alpha, new_beta, new_reason]],
                                 columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                 ignore_index=True).reset_index(drop=True)
+
+                        self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
+                            [[temp_node, new_alpha, new_beta]],
+                            columns=['id', 'Alpha', 'Beta']),
+                            ignore_index=True).reset_index(drop=True)
 
                         i = i - len(temp_df)
                         found = True
@@ -665,6 +718,12 @@ class ReadWriteData:
 
         return new_node_df
 
+    def merge_association_to_edge_df(self, correct_edge_df):
+        correct_edge_df = correct_edge_df.merge(self.alpha_beta_df, on='id', how='left', suffixes=('', '_y'))
+        correct_edge_df.drop(list(correct_edge_df.filter(regex='_y$')), axis=1, inplace=True)
+        correct_edge_df = correct_edge_df.replace(np.nan, 'None', regex=True)
+        return correct_edge_df
+
     # Method to write data in the correct format
     def get_correctly_formatted_dataframes(self, node_df, edge_df, int_order, interaction_or_edge):
         data_written_to_csv = True
@@ -708,12 +767,24 @@ class ReadWriteData:
         correct_node_df = pd.DataFrame
         correct_edge_df = pd.DataFrame
 
+        # Precheck for appending alpha and beta values for edge df
+        if not os.path.isfile(node_file_path):
+            print('No existing node file found. Creating a new file nodes.csv')
+            new_node_df = self.check_node_duplicates(node_df, node_df)
+        else:
+            print('Existing node file found. Appending to node.csv')
+            # Read in the existing DataFrame and check for duplicates
+            existing_df = pd.read_csv(node_file_path)
+            # Get a new DataFrame without any duplicated nodes
+            new_node_df = self.check_node_duplicates(node_df, existing_df)
+
         # Check if files exist
         # Create a new file if there is no existing one
         # If exists then append to the existing file
         if not os.path.isfile(edge_file_path):
             print('No existing edges file found. Creating a new file edges.csv')
             new_edge_df = self.check_edge_duplicates(edge_df, edge_df, interaction_or_edge)
+            new_edge_df = self.merge_association_to_edge_df(new_edge_df)
             new_edge_df.to_csv(edge_file_path, encoding='utf-8', index=False)
             correct_edge_df = new_edge_df
         else:
@@ -723,11 +794,13 @@ class ReadWriteData:
             if existing_df.empty:
                 print('The existing file is empty. Creating a new file edges.csv')
                 new_edge_df = self.check_edge_duplicates(edge_df, edge_df, interaction_or_edge)
+                new_edge_df = self.merge_association_to_edge_df(new_edge_df)
                 new_edge_df.to_csv(edge_file_path, encoding='utf-8', index=False)
                 correct_edge_df = new_edge_df
             else:
                 # Get a new DataFrame without any duplicated edges
                 new_edge_df = self.check_edge_duplicates(edge_df, existing_df, interaction_or_edge)
+                new_edge_df = self.merge_association_to_edge_df(new_edge_df)
                 os.remove(edge_file_path)
                 new_edge_df.to_csv(edge_file_path, encoding='utf-8', index=False)
                 correct_edge_df = new_edge_df

@@ -20,7 +20,7 @@ class FormGUI:
         self.annotation_files = ''
         self.output_file = ''
         # Setting initial values as edge mode and not inverted
-        self.var_interaction_or_edge = 2
+        self.var_interaction_or_edge = 1
         self.var_invert_or_not = 0
 
     # Method to get the invert of the query
@@ -88,15 +88,15 @@ class FormGUI:
         # Steel: '#757579'
         # Mist: '#DADBDC'
 
-        canvas = tk.Canvas(root, bg='#f0f0f0', height=720, width=640)
+        canvas = tk.Canvas(root, height=720, width=640)
         canvas.pack()
-        main_title = tk.Label(root, bg='#f0f0f0', text='Welcome to EpiExplorer! A visualisation tool for SNP '
+        main_title = tk.Label(root, text='Welcome to EpiExplorer! A visualisation tool for SNP '
                                                        'interactions.')
         main_title.place(relx=0.01, rely=0.035, relheight=0.05, relwidth=0.75)
 
         logo = PhotoImage(file=img_path)
         logo_resized = logo.subsample(10, 10)
-        photo_label = tk.Label(root, bg='#f0f0f0', image=logo_resized)
+        photo_label = tk.Label(root, image=logo_resized)
         photo_label.place(relx=0.8, rely=0.01, relheight=0.075, relwidth=0.25)
 
         # Frame to input files and load
@@ -139,7 +139,7 @@ class FormGUI:
                                            variable=var_interaction,
                                            command=lambda: self.check_interaction_or_edge(
                                                var_interaction.get()))
-
+        node_check_button.select()
         node_check_button.place(relx=0.01, rely=0.75, relwidth=0.35, relheight=0.2)
 
         load_button = tk.Button(file_frame, bg='#DADBDC', text="Load",
@@ -151,15 +151,16 @@ class FormGUI:
         view_frame = tk.Frame(root, bg='#757579', bd=5)
         view_frame.place(relx=0.258, rely=0.31, relwidth=0.468, relheight=0.575, anchor='n')
 
-        view_frame_title = tk.Label(view_frame, bg='#757579', text='Specify how you would like to put styles!')
+        view_frame_title = tk.Label(view_frame, bg='#757579', text='Apply styles to SNPs.')
         view_frame_title.place(relx=0.04, rely=0.05, relheight=0.1, relwidth=0.95)
 
         node_colour_title = tk.Label(view_frame, bg='#DADBDC', justify='left', text='Node colour by: ')
         node_colour_title.place(relx=0.04, rely=0.2, relheight=0.1, relwidth=0.45)
 
-        node_color_list = ['Order', 'Type', 'Overlap', 'Default']
+        node_color_list = ['Order', 'Alpha', 'Beta']
         node_colour_variable = tk.StringVar(view_frame)
-        node_colour_variable.set(node_color_list[3])
+        node_colour_variable.set(node_color_list[0])
+
         node_colour_options = tk.OptionMenu(view_frame, node_colour_variable, *node_color_list,
                                             command=lambda x: self.node_colour(node_colour_variable.get(),
                                                                                input_file_entry.get(),
@@ -170,9 +171,10 @@ class FormGUI:
         node_size_title = tk.Label(view_frame, bg='#DADBDC', text='Node size by: ')
         node_size_title.place(relx=0.04, rely=0.35, relheight=0.1, relwidth=0.45)
 
-        node_size_list = ['Order', 'Type', 'Default']
+        node_size_list = ['Order', 'Alpha', 'Beta']
         node_size_variable = tk.StringVar(view_frame)
-        node_size_variable.set(node_size_list[2])
+        node_size_variable.set(node_color_list[0])
+
         node_size_options = tk.OptionMenu(view_frame, node_size_variable, *node_size_list,
                                           command=lambda x: self.node_size(node_size_variable.get(),
                                                                            input_file_entry.get(),
@@ -183,9 +185,9 @@ class FormGUI:
         node_shape_title = tk.Label(view_frame, bg='#DADBDC', text='Node shape by: ')
         node_shape_title.place(relx=0.04, rely=0.5, relheight=0.1, relwidth=0.45)
 
-        node_shape_list = ['Order', 'Type', 'Default']
+        node_shape_list = ['Order', 'Alpha', 'Beta']
         node_shape_variable = tk.StringVar(view_frame)
-        node_shape_variable.set(node_shape_list[2])
+        node_shape_variable.set(node_color_list[0])
         node_shape_options = tk.OptionMenu(view_frame, node_shape_variable, *node_shape_list,
                                            command=lambda x: self.node_shape(node_shape_variable.get(),
                                                                              input_file_entry.get(),
@@ -196,9 +198,9 @@ class FormGUI:
         edge_colour_title = tk.Label(view_frame, bg='#DADBDC', text='Edge colour by: ')
         edge_colour_title.place(relx=0.04, rely=0.65, relheight=0.1, relwidth=0.45)
 
-        edge_colour_list = ['Order', 'Default']
+        edge_colour_list = ['Order', 'Alpha', 'Beta']
         edge_colour_variable = tk.StringVar(view_frame)
-        edge_colour_variable.set(edge_colour_list[1])
+        edge_colour_variable.set(edge_colour_list[0])
         edge_colour_options = tk.OptionMenu(view_frame, edge_colour_variable, *edge_colour_list,
                                             command=lambda x: self.edge_colour(edge_colour_variable.get(),
                                                                                input_file_entry.get(),
@@ -209,9 +211,9 @@ class FormGUI:
         edge_thickness_title = tk.Label(view_frame, bg='#DADBDC', text='Edge thickness by: ')
         edge_thickness_title.place(relx=0.04, rely=0.8, relheight=0.1, relwidth=0.45)
 
-        edge_thickness_list = ['Order', 'Type', 'Default']
+        edge_thickness_list = ['Order', 'Alpha', 'Beta']
         edge_thickness_variable = tk.StringVar(view_frame)
-        edge_thickness_variable.set(edge_thickness_list[2])
+        edge_thickness_variable.set(edge_thickness_list[0])
         edge_thickness_options = tk.OptionMenu(view_frame, edge_thickness_variable, *edge_thickness_list,
                                                command=lambda x: self.edge_thickness(edge_thickness_variable.get(),
                                                                                      input_file_entry.get(),
@@ -223,10 +225,11 @@ class FormGUI:
         filter_frame = tk.Frame(root, bg='#757579', bd=5)
         filter_frame.place(relx=0.74, rely=0.31, relwidth=0.468, relheight=0.575, anchor='n')
 
-        filter_frame_title = tk.Label(filter_frame, bg='#757579', text='Specify how you would like to filter!')
+        filter_frame_title = tk.Label(filter_frame, bg='#757579', text='Query SNPs as shown below.')
         filter_frame_title.place(relx=0.04, rely=0.05, relheight=0.1, relwidth=0.95)
 
         filter_entry = tk.Text(filter_frame, font=24)
+        filter_entry.insert('1.0', 'Presentation == \'Important\'')
         filter_entry.place(relx=0.05, rely=0.2, relwidth=0.925, relheight=0.3)
 
         # Check button to invert query
@@ -270,7 +273,7 @@ class FormGUI:
                                 command=lambda: self.help())
         help_button.place(relx=0.775, rely=0.85, relheight=0.1, relwidth=0.2)
 
-        submit_button = tk.Button(root, text="Submit", bg='#DADBDC', command=lambda root=root: self.quit(root))
+        submit_button = tk.Button(root, text="Done", bg='#f0f0f0', command=lambda root=root: self.quit(root))
         submit_button.place(relx=0.3, rely=0.9, relheight=0.075, relwidth=0.35)
 
         root.mainloop()

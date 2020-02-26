@@ -5,6 +5,7 @@ from py2cytoscape.data.cynetwork import CyNetwork
 from IPython.display import Image
 import json
 import pandas as pd
+from py2cytoscape.data.style import StyleUtil
 
 
 class CytoscapeIntegration:
@@ -72,12 +73,6 @@ class CytoscapeIntegration:
             '4': '#8d230f'
         }
 
-        overlap_colour_key_value_pair = {
-            'Protein_coding': '#c99e10',
-            'Non_coding': '#9b4f0f',
-            'Intergenic': '#1e434c'
-        }
-
         edge_order_colour_key_value_pair = {
             '2': '#9b4f0f',
             '3': '#1e434c',
@@ -91,10 +86,10 @@ class CytoscapeIntegration:
         }
 
         order_size_key_value_pair = {
-            '1': '25.0',
+            '1': '15.0',
             '2': '35.0',
-            '3': '40.0',
-            '4': '50.0'
+            '3': '55.0',
+            '4': '75.0'
         }
 
         order_shape_key_value_pair = {
@@ -106,18 +101,64 @@ class CytoscapeIntegration:
 
         type_colour_variation = [
             {
-                'value': '1.0',
-                'lesser': '#9b4f0f',
-                'equal': '#9b4f0f',
-                'greater': '#9b4f0f'
+                'value': '0.0050',
+                'lesser': '#1e434c',
+                'equal': '#1e434c',
+                'greater': '#1e434c'
             },
             {
-                'value': '20.0',
+                'value': '0.05',
+                'lesser': '#f0f0f0',
+                'equal': '#f0f0f0',
+                'greater': '#f0f0f0'
+            },
+            {
+                'value': '0.1',
                 'lesser': '#8d230f',
                 'equal': '#8d230f',
                 'greater': '#8d230f'
             }
         ]
+
+        type_shape_variation = [
+            {
+                'value': '0.0050',
+                'lesser': 'Ellipse',
+                'equal': 'Ellipse',
+                'greater': 'Ellipse'
+            },
+            {
+                'value': '0.1',
+                'lesser': 'Hexagon',
+                'equal': 'Hexagon',
+                'greater': 'Hexagon'
+            }
+
+        ]
+
+        node_type_size = StyleUtil.create_slope(min=0.001, max=0.01, values=(10, 50))
+
+        edge_type_thickness = [
+            {
+                'value': '0.0050',
+                'lesser': '1.0',
+                'equal': '1.0',
+                'greater': '1.0'
+            },
+            {
+                'value': '0.05',
+                'lesser': '3.0',
+                'equal': '3.0',
+                'greater': '3.0'
+            },
+            {
+                'value': '0.1',
+                'lesser': '5.0',
+                'equal': '5.0',
+                'greater': '5.0'
+            }
+        ]
+
         new_styles = {
             'NODE_FILL_COLOR': '#363636',
             'NODE_SIZE': 10,
@@ -152,7 +193,6 @@ class CytoscapeIntegration:
 
             # If the GUI is being loaded for the first time
             # Then create network with 'default' styles
-
             my_style.update_defaults(new_styles)
 
             # Add these styles only if the network type is Interaction
@@ -179,9 +219,7 @@ class CytoscapeIntegration:
         # If user wants to update according to a specific style/ query
         elif update:
             print('Update styles')
-            print(core_details)
             # TODO add code for the rest of the styles
-            # TODO check if the column exists in the annotation file
             my_style = self.cy.style.create('Epi_Explorer_style')
             my_style.update_defaults(new_styles)
 
@@ -189,17 +227,16 @@ class CytoscapeIntegration:
                 print('Styling node colour')
                 update_type = core_details.at[0, 'node_colour']
 
-                if update_type == 'Order' or update_type == 'Default':
+                if update_type == 'Order':
                     my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
                                                      mappings=order_colour_key_value_pair)
-                elif update_type == 'Type':
+                elif update_type == 'Alpha':
                     # https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/basic-fundamentals.ipynb
                     my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='NODE_FILL_COLOR',
                                                        points=type_colour_variation)
-
-                elif update_type == 'Overlap':
-                    my_style.create_discrete_mapping(column='Overlap', col_type='String', vp='NODE_FILL_COLOR',
-                                                     mappings=overlap_colour_key_value_pair)
+                elif update_type == 'Beta':
+                    my_style.create_continuous_mapping(column='Beta', col_type='Double', vp='NODE_FILL_COLOR',
+                                                       points=type_colour_variation)
 
                 self.cy.style.apply(my_style, self.node_edge_network)
 
@@ -207,13 +244,67 @@ class CytoscapeIntegration:
                 print('Styling node size')
                 update_type = core_details.at[0, 'node_size']
 
-                if update_type == 'Order' or update_type == 'Default':
+                if update_type == 'Order':
                     my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SIZE',
                                                      mappings=order_size_key_value_pair)
 
-                elif update_type == 'Type':
-                    # TODO add continuous mapping for Alpha/ Beta values
-                    print('TODO')
+                elif update_type == 'Alpha':
+                    my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='NODE_SIZE',
+                                                       points=node_type_size)
+                elif update_type == 'Beta':
+                    my_style.create_continuous_mapping(column='Beta', col_type='Double', vp='NODE_SIZE',
+                                                       points=node_type_size)
+
+                self.cy.style.apply(my_style, self.node_edge_network)
+
+            if 'node_shape' in core_details.columns:
+                print('Styling node shape')
+                update_type = core_details.at[0, 'node_shape']
+
+                if update_type == 'Order':
+                    my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SHAPE',
+                                                     mappings=order_shape_key_value_pair)
+
+                elif update_type == 'Alpha':
+                    my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='NODE_SHAPE',
+                                                       points=type_shape_variation)
+                elif update_type == 'Beta':
+                    my_style.create_continuous_mapping(column='Beta', col_type='Double', vp='NODE_SHAPE',
+                                                       points=type_shape_variation)
+
+                self.cy.style.apply(my_style, self.node_edge_network)
+
+            if 'edge_colour' in core_details.columns:
+                print('Styling edge colour')
+                update_type = core_details.at[0, 'edge_colour']
+
+                if update_type == 'Order' or update_type == 'Default':
+                    my_style.create_discrete_mapping(column='order', col_type='String', vp='EDGE_STROKE_UNSELECTED_PAINT',
+                                                     mappings=edge_order_colour_key_value_pair)
+
+                elif update_type == 'Alpha':
+                    my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='EDGE_STROKE_UNSELECTED_PAINT',
+                                                       points=type_colour_variation)
+                elif update_type == 'Beta':
+                    my_style.create_continuous_mapping(column='Beta', col_type='Double', vp='EDGE_STROKE_UNSELECTED_PAINT',
+                                                       points=type_colour_variation)
+
+                self.cy.style.apply(my_style, self.node_edge_network)
+
+            if 'edge_thickness' in core_details.columns:
+                print('Styling edge thickness')
+                update_type = core_details.at[0, 'edge_thickness']
+
+                if update_type == 'Order' or update_type == 'Default':
+                    my_style.create_discrete_mapping(column='order', col_type='String', vp='EDGE_WIDTH',
+                                                     mappings=edge_order_size_key_value_pair)
+
+                elif update_type == 'Alpha':
+                    my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='EDGE_WIDTH',
+                                                       points=edge_type_thickness)
+                elif update_type == 'Beta':
+                    my_style.create_continuous_mapping(column='Beta', col_type='Double', vp='EDGE_WIDTH',
+                                                       points=edge_type_thickness)
 
                 self.cy.style.apply(my_style, self.node_edge_network)
 
