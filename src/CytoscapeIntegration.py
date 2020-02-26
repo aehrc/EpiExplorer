@@ -51,7 +51,6 @@ class CytoscapeIntegration:
 
     # When a style is changed in the GUI this method is called
     # TODO add code to filter data for network
-    # TODO send the grayed out nodes 'to the back'
     def filter_data(self, core_details):
         user_query = core_details.at[0, 'query']
         print('Querying the data using: ', user_query)
@@ -345,7 +344,123 @@ class CytoscapeIntegration:
             # Code for querying out data
             if 'query' in core_details.columns:
                 if 'hide' in core_details.columns:
-                    self.filter_data()
+
+                    user_query = core_details.at[0, 'query']
+                    print('Querying the data using: ', user_query)
+
+                    # Get the network from cytoscape
+                    view_id_list = self.node_edge_network.get_views()
+                    view1 = self.node_edge_network.get_view(view_id_list[0], fmt='view')
+                    my_style_2 = self.node_edge_network.get_view(view_id_list[0])
+
+                    # Get nodes and edges as a df
+                    view_df = pd.DataFrame.from_dict(my_style_2, orient='index')
+                    nodes_edge_df = view_df.iat[4, 0]
+
+                    node_list = nodes_edge_df['nodes']
+                    edge_list = nodes_edge_df['edges']
+                    node_df = pd.DataFrame(node_list)
+                    edge_df = pd.DataFrame(edge_list)
+                    node_data_df = pd.DataFrame(node_df['data'])
+                    edge_data_df = pd.DataFrame(edge_df['data'])
+
+                    correct_node_data_df = pd.DataFrame()
+                    correct_edge_data_df = pd.DataFrame()
+
+                    for index, row in node_data_df.iterrows():
+                        correct_node_data_df = correct_node_data_df.append(node_data_df.iloc[index, 0],
+                                                                           ignore_index=True)
+
+                    for index, row in edge_data_df.iterrows():
+                        correct_edge_data_df = correct_edge_data_df.append(edge_data_df.iloc[index, 0],
+                                                                           ignore_index=True)
+
+                    # filter out the user desired data
+                    filtered_df = correct_node_data_df.query(user_query).reset_index(
+                        drop=True)
+
+                    if 'invert' in core_details.columns:
+                        if core_details.at[0, 'invert'] != 0:
+                            # Invert
+                            new_df = correct_node_data_df.merge(filtered_df, on=['id', 'name'])
+                            filtered_df = correct_node_data_df[(~correct_node_data_df.id.isin(new_df.id))]
+
+                    filtered_edge_df = pd.DataFrame(columns=['id', 'source_original'])
+                    for index, row in filtered_df.iterrows():
+                        filtered_name = filtered_df.at[index, 'name']
+                        for index_edge_loc, row_loc in correct_edge_data_df.iterrows():
+                            edge_loc_source = correct_edge_data_df.at[index_edge_loc, 'source_original']
+                            edge_loc_id = correct_edge_data_df.at[index_edge_loc, 'id']
+                            if filtered_name == edge_loc_source:
+                                filtered_edge_df = filtered_edge_df.append(
+                                    pd.DataFrame([[edge_loc_id, edge_loc_source]],
+                                                 columns=['id', 'source_original']),
+                                    ignore_index=True)
+
+                    # Get node/edge views as a Python dictionary
+                    node_views_dict = view1.get_node_views_as_dict()
+                    # Convert it into Pandas DataFrame
+                    nv_df = pd.DataFrame.from_dict(node_views_dict, orient='index')
+
+                    # Get node/edge views as a Python dictionary
+                    edge_views_dict = view1.get_edge_views_as_dict()
+                    # Convert it into Pandas DataFrame
+                    ev_df = pd.DataFrame.from_dict(edge_views_dict, orient='index')
+
+                    # Extract specific Visual Property values for nodes...
+                    node_location_df = nv_df['NODE_VISIBLE']
+                    node_location_df = pd.DataFrame(node_location_df, columns=['NODE_VISIBLE'])
+                    node_location_df['id'] = node_location_df.index
+                    node_location_df = node_location_df.reset_index(drop=True)
+
+                    convert_dict = {'id': int}
+
+                    filtered_df = filtered_df.astype(convert_dict)
+
+                    # Extract specific Visual Property values for edges...
+                    edge_location_df = ev_df['EDGE_VISIBLE']
+                    edge_location_df = pd.DataFrame(edge_location_df, columns=['EDGE_VISIBLE'])
+                    edge_location_df['id'] = edge_location_df.index
+                    edge_location_df = edge_location_df.reset_index(drop=True)
+
+                    convert_edge_dict = {'id': int}
+
+                    filtered_edge_df = filtered_edge_df.astype(convert_edge_dict)
+
+                    key_value_pair = {}
+                    for index, row in filtered_df.iterrows():
+                        filtered_id = filtered_df.at[index, 'id']
+                        for index_node_loc, row_loc in node_location_df.iterrows():
+                            node_loc_id = node_location_df.at[index_node_loc, 'id']
+                            if filtered_id == node_loc_id:
+                                node_location_df.at[index_node_loc, 'NODE_VISIBLE'] = False
+                                key_value_pair[str(node_loc_id)] = False
+                            else:
+                                key_value_pair[str(node_loc_id)] = node_location_df.at[
+                                    index_node_loc, 'NODE_VISIBLE']
+
+                    edge_key_value_pair = {}
+                    for index, row in filtered_edge_df.iterrows():
+                        filtered_edge_id = filtered_edge_df.at[index, 'id']
+                        for index_edge_loc, row_loc in edge_location_df.iterrows():
+                            node_loc_id = edge_location_df.at[index_edge_loc, 'id']
+                            if filtered_edge_id == node_loc_id:
+                                edge_location_df.at[index_edge_loc, 'EDGE_VISIBLE'] = False
+                                edge_key_value_pair[str(node_loc_id)] = False
+                            else:
+                                edge_key_value_pair[str(node_loc_id)] = edge_location_df.at[
+                                    index_edge_loc, 'EDGE_VISIBLE']
+
+                    key_value_pair = {k: v if isinstance(v, (str, int)) else str(v) for k, v in
+                                      key_value_pair.items() if k != ''}
+
+                    edge_key_value_pair = {k: v if isinstance(v, (str, int)) else str(v) for k, v in
+                                           edge_key_value_pair.items() if k != ''}
+
+                    view1.update_node_views(visual_property='NODE_VISIBLE', values=key_value_pair)
+                    view1.update_edge_views(visual_property='EDGE_VISIBLE', values=edge_key_value_pair)
+
+                    Image(self.node_edge_network.get_png(height=400))
 
                 if 'show' in core_details.columns:
                     self.filter_data()
