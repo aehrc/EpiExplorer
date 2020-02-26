@@ -52,13 +52,46 @@ class CytoscapeIntegration:
     # When a style is changed in the GUI this method is called
     # TODO add code to filter data for network
     # TODO send the grayed out nodes 'to the back'
-    def filter_data(self):
-        print('Inside filter data')
-        # Read the network in cytoscape
-        # Get all the node details and styles
-        # Change the styles according to core_details
-        # Update the network
-        return True
+    def filter_data(self, core_details):
+        user_query = core_details.at[0, 'query']
+        print('Querying the data using: ', user_query)
+
+        # Get the network from cytoscape
+        view_id_list = self.node_edge_network.get_views()
+        view1 = self.node_edge_network.get_view(view_id_list[0], fmt='view')
+        my_style_2 = self.node_edge_network.get_view(view_id_list[0])
+
+        # Get nodes and edges as a df
+        view_df = pd.DataFrame.from_dict(my_style_2, orient='index')
+        nodes_edge_df = view_df.iat[4, 0]
+
+        node_list = nodes_edge_df['nodes']
+        node_df = pd.DataFrame(node_list)
+        node_data_df = pd.DataFrame(node_df['data'])
+
+        correct_node_data_df = pd.DataFrame()
+
+        for index, row in node_data_df.iterrows():
+            correct_node_data_df = correct_node_data_df.append(node_data_df.iloc[index, 0],
+                                                               ignore_index=True)
+
+        # filter out the user desired data
+        filtered_df = correct_node_data_df.query(user_query).reset_index(
+            drop=True)
+
+        if 'invert' in core_details.columns:
+            if core_details.at[0, 'invert'] != 0:
+                # Invert
+                new_df = correct_node_data_df.merge(filtered_df, on=['id', 'name'])
+                filtered_df = correct_node_data_df[(~correct_node_data_df.id.isin(new_df.id))]
+
+        # Get node/edge views as a Python dictionary
+        node_views_dict = view1.get_node_views_as_dict()
+        # Convert it into Pandas DataFrame
+        nv_df = pd.DataFrame.from_dict(node_views_dict, orient='index')
+
+        data = [filtered_df, nv_df, view1]
+        return data
 
     # Method to create the network and add styles
     def cytoscape_successful(self, update, core_details):
@@ -318,49 +351,56 @@ class CytoscapeIntegration:
                     self.filter_data()
 
                 if 'highlight' in core_details.columns:
-                    self.filter_data()
+                    if 'highlight' in core_details.columns:
+                        # Check if the highlight out is set to True
+                        if core_details.at[0, 'highlight']:
+                            if core_details.at[0, 'invert'] == 0:
+                                core_details.at[0, 'invert'] = 1
+                            else:
+                                core_details.at[0, 'invert'] = 0
+
+                            data = self.filter_data(core_details)
+                            filtered_df = data[0]
+                            nv_df = data[1]
+                            view1 = data[2]
+
+                            # Extract specific Visual Property values...
+                            node_location_df = nv_df['NODE_TRANSPARENCY']
+                            node_location_df = pd.DataFrame(node_location_df, columns=['NODE_TRANSPARENCY'])
+                            node_location_df['id'] = node_location_df.index
+                            node_location_df = node_location_df.reset_index(drop=True)
+
+                            convert_dict = {'id': int}
+
+                            filtered_df = filtered_df.astype(convert_dict)
+                            key_value_pair = {}
+                            for index, row in filtered_df.iterrows():
+                                filtered_id = filtered_df.at[index, 'id']
+                                for index_node_loc, row_loc in node_location_df.iterrows():
+                                    node_loc_id = node_location_df.at[index_node_loc, 'id']
+                                    if filtered_id == node_loc_id:
+                                        node_location_df.at[index_node_loc, 'NODE_TRANSPARENCY'] = str(int(100))
+                                        key_value_pair[str(node_loc_id)] = str(int(100))
+                                    else:
+                                        key_value_pair[str(node_loc_id)] = node_location_df.at[
+                                            index_node_loc, 'NODE_TRANSPARENCY']
+
+                            key_value_pair = {k: v if isinstance(v, (str, int)) else str(v) for k, v in
+                                              key_value_pair.items() if k != ''}
+
+                            view1.update_node_views(visual_property='NODE_TRANSPARENCY', values=key_value_pair)
+                            Image(self.node_edge_network.get_png(height=400))
 
                 if 'gray' in core_details.columns:
                     # Link: https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/advanced-view-api.ipynb
-
                     # Check if the gray out is set to True
                     if core_details.at[0, 'gray']:
-                        user_query = core_details.at[0, 'query']
-                        print('Querying the data using: ', user_query)
 
-                        # Get the network from cytoscape
-                        view_id_list = self.node_edge_network.get_views()
-                        view1 = self.node_edge_network.get_view(view_id_list[0], fmt='view')
-                        my_style_2 = self.node_edge_network.get_view(view_id_list[0])
+                        data = self.filter_data(core_details)
+                        filtered_df = data[0]
+                        nv_df = data[1]
+                        view1 = data[2]
 
-                        # Get nodes and edges as a df
-                        view_df = pd.DataFrame.from_dict(my_style_2, orient='index')
-                        nodes_edge_df = view_df.iat[4, 0]
-
-                        node_list = nodes_edge_df['nodes']
-                        node_df = pd.DataFrame(node_list)
-                        node_data_df = pd.DataFrame(node_df['data'])
-
-                        correct_node_data_df = pd.DataFrame()
-
-                        for index, row in node_data_df.iterrows():
-                            correct_node_data_df = correct_node_data_df.append(node_data_df.iloc[index, 0],
-                                                                               ignore_index=True)
-
-                        # filter out the user desired data
-                        filtered_df = correct_node_data_df.query(user_query).reset_index(
-                            drop=True)
-
-                        if 'invert' in core_details.columns:
-                            if core_details.at[0, 'invert'] != 0:
-                                # Invert
-                                new_df = correct_node_data_df.merge(filtered_df, on=['id', 'name'])
-                                filtered_df = correct_node_data_df[(~correct_node_data_df.id.isin(new_df.id))]
-
-                        # Get node/edge views as a Python dictionary
-                        node_views_dict = view1.get_node_views_as_dict()
-                        # Convert it into Pandas DataFrame
-                        nv_df = pd.DataFrame.from_dict(node_views_dict, orient='index')
                         # Extract specific Visual Property values...
                         node_location_df = nv_df['NODE_FILL_COLOR']
                         node_location_df = pd.DataFrame(node_location_df, columns=['NODE_FILL_COLOR'])
@@ -381,10 +421,8 @@ class CytoscapeIntegration:
                                 else:
                                     key_value_pair[str(node_loc_id)] = node_location_df.at[
                                         index_node_loc, 'NODE_FILL_COLOR']
-
                         view1.update_node_views(visual_property='NODE_FILL_COLOR', values=key_value_pair)
                         Image(self.node_edge_network.get_png(height=400))
-                        self.filter_data()
 
         self.cy.layout.fit(network=self.node_edge_network)
         Image(self.node_edge_network.get_png(height=400))

@@ -104,7 +104,7 @@ class ReadWriteData:
                     # Add a cell value to the new DataFrame
                 node_df = node_df.append \
                         (pd.DataFrame(
-                        [[new_cell_value, new_cell_value, new_order, new_alpha, new_beta, reason]],
+                        [[new_cell_value, new_cell_value, new_order, new_alpha, new_beta, 'Important']],
                         columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                         ignore_index=True)
 
@@ -156,7 +156,7 @@ class ReadWriteData:
                 # Add a cell value to the new DataFrame
                 node_df = node_df.append \
                         (pd.DataFrame(
-                        [[snp_b_cell_value, snp_b_cell_value, new_order, new_alpha, new_beta, reason]],
+                        [[snp_b_cell_value, snp_b_cell_value, new_order, new_alpha, new_beta, 'Important']],
                         columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                         ignore_index=True)
 
@@ -166,7 +166,7 @@ class ReadWriteData:
                 # Add a cell value to the new DataFrame
                 node_df = node_df.append \
                         (pd.DataFrame(
-                        [[snp_c_cell_value, snp_c_cell_value, new_order, new_alpha, new_beta, reason]],
+                        [[snp_c_cell_value, snp_c_cell_value, new_order, new_alpha, new_beta, 'Important']],
                         columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                         ignore_index=True)
 
@@ -176,7 +176,7 @@ class ReadWriteData:
                 # Add a cell value to the new DataFrame
                 node_df = node_df.append \
                         (pd.DataFrame(
-                        [[snp_d_cell_value, snp_d_cell_value, new_order, new_alpha, new_beta, reason]],
+                        [[snp_d_cell_value, snp_d_cell_value, new_order, new_alpha, new_beta, 'Important']],
                         columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                         ignore_index=True)
 
