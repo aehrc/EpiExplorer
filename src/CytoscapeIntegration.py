@@ -219,7 +219,6 @@ class CytoscapeIntegration:
         # If user wants to update according to a specific style/ query
         elif update:
             print('Update styles')
-            # TODO add code for the rest of the styles
             my_style = self.cy.style.create('Epi_Explorer_style')
             my_style.update_defaults(new_styles)
 
@@ -231,7 +230,6 @@ class CytoscapeIntegration:
                     my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
                                                      mappings=order_colour_key_value_pair)
                 elif update_type == 'Alpha':
-                    # https://github.com/cytoscape/cytoscape-automation/blob/master/for-scripters/Python/basic-fundamentals.ipynb
                     my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='NODE_FILL_COLOR',
                                                        points=type_colour_variation)
                 elif update_type == 'Beta':
@@ -279,14 +277,17 @@ class CytoscapeIntegration:
                 update_type = core_details.at[0, 'edge_colour']
 
                 if update_type == 'Order' or update_type == 'Default':
-                    my_style.create_discrete_mapping(column='order', col_type='String', vp='EDGE_STROKE_UNSELECTED_PAINT',
+                    my_style.create_discrete_mapping(column='order', col_type='String',
+                                                     vp='EDGE_STROKE_UNSELECTED_PAINT',
                                                      mappings=edge_order_colour_key_value_pair)
 
                 elif update_type == 'Alpha':
-                    my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='EDGE_STROKE_UNSELECTED_PAINT',
+                    my_style.create_continuous_mapping(column='Alpha', col_type='Double',
+                                                       vp='EDGE_STROKE_UNSELECTED_PAINT',
                                                        points=type_colour_variation)
                 elif update_type == 'Beta':
-                    my_style.create_continuous_mapping(column='Beta', col_type='Double', vp='EDGE_STROKE_UNSELECTED_PAINT',
+                    my_style.create_continuous_mapping(column='Beta', col_type='Double',
+                                                       vp='EDGE_STROKE_UNSELECTED_PAINT',
                                                        points=type_colour_variation)
 
                 self.cy.style.apply(my_style, self.node_edge_network)
