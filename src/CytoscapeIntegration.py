@@ -343,7 +343,12 @@ class CytoscapeIntegration:
 
             # Code for querying out data
             if 'query' in core_details.columns:
-                if 'hide' in core_details.columns:
+                if 'hide' in core_details.columns or 'show' in core_details:
+                    visibility = False
+
+                    if 'show' in core_details.columns:
+                        if core_details.at[0, 'show']:
+                            visibility = True
 
                     user_query = core_details.at[0, 'query']
                     print('Querying the data using: ', user_query)
@@ -433,8 +438,8 @@ class CytoscapeIntegration:
                         for index_node_loc, row_loc in node_location_df.iterrows():
                             node_loc_id = node_location_df.at[index_node_loc, 'id']
                             if filtered_id == node_loc_id:
-                                node_location_df.at[index_node_loc, 'NODE_VISIBLE'] = False
-                                key_value_pair[str(node_loc_id)] = False
+                                node_location_df.at[index_node_loc, 'NODE_VISIBLE'] = visibility
+                                key_value_pair[str(node_loc_id)] = visibility
                             else:
                                 key_value_pair[str(node_loc_id)] = node_location_df.at[
                                     index_node_loc, 'NODE_VISIBLE']
@@ -445,8 +450,8 @@ class CytoscapeIntegration:
                         for index_edge_loc, row_loc in edge_location_df.iterrows():
                             node_loc_id = edge_location_df.at[index_edge_loc, 'id']
                             if filtered_edge_id == node_loc_id:
-                                edge_location_df.at[index_edge_loc, 'EDGE_VISIBLE'] = False
-                                edge_key_value_pair[str(node_loc_id)] = False
+                                edge_location_df.at[index_edge_loc, 'EDGE_VISIBLE'] = visibility
+                                edge_key_value_pair[str(node_loc_id)] = visibility
                             else:
                                 edge_key_value_pair[str(node_loc_id)] = edge_location_df.at[
                                     index_edge_loc, 'EDGE_VISIBLE']
@@ -461,9 +466,6 @@ class CytoscapeIntegration:
                     view1.update_edge_views(visual_property='EDGE_VISIBLE', values=edge_key_value_pair)
 
                     Image(self.node_edge_network.get_png(height=400))
-
-                if 'show' in core_details.columns:
-                    self.filter_data()
 
                 if 'highlight' in core_details.columns:
                     if 'highlight' in core_details.columns:
