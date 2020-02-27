@@ -360,12 +360,15 @@ class ReadWriteData:
                 if 'Variation ID' in annotation_df.columns:
                     annotation_df = annotation_df.rename(columns={'Variation ID': 'id'})
                     # Remove the duplicate columns
+                    print(new_node_df.head(5))
+                    print(annotation_df.head(5))
                     new_node_df = new_node_df.merge(annotation_df, on='id', how='left', suffixes=('', '_y'))
                     new_node_df.drop(list(new_node_df.filter(regex='_y$')), axis=1, inplace=True)
                     new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
                 else:
                     print('Annotation file does not have Variation ID.')
                     new_node_df = new_node_df
+        print(new_node_df.head(5))
         return new_node_df
 
     # Method to get the number of interaction nodes connected to a node
@@ -766,7 +769,7 @@ class ReadWriteData:
         # DataFrames to send to Cytoscape
         correct_node_df = pd.DataFrame
         correct_edge_df = pd.DataFrame
-
+        # TODO check the merging of the alpha, beta, count and annotation files
         # Precheck for appending alpha and beta values for edge df
         if not os.path.isfile(node_file_path):
             print('No existing node file found. Creating a new file nodes.csv')

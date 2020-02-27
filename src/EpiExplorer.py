@@ -14,8 +14,7 @@ from Controller import Controller
 def gui_main():
     print('Welcome to EpiExplorer >,<')
     controller = Controller()
-    form_details = controller.perform_form_functionality()
-    controller.perform_core_functionality(form_details[0], form_details[1], form_details[2])
+    controller.perform_form_functionality()
 
 
 # Console based program

@@ -91,11 +91,58 @@ class CytoscapeIntegration:
         data = [filtered_df, nv_df, view1]
         return data
 
+    def style_filter_get_annotation(self, given_annotation):
+        # Get the network from cytoscape
+        view_id_list = self.node_edge_network.get_views()
+        my_style_2 = self.node_edge_network.get_view(view_id_list[0])
+
+        # Get nodes and edges as a df
+        view_df = pd.DataFrame.from_dict(my_style_2, orient='index')
+        nodes_edge_df = view_df.iat[4, 0]
+
+        node_list = nodes_edge_df['nodes']
+        node_df = pd.DataFrame(node_list)
+        node_data_df = pd.DataFrame(node_df['data'])
+
+        correct_node_data_df = pd.DataFrame()
+
+        for index, row in node_data_df.iterrows():
+            correct_node_data_df = correct_node_data_df.append(node_data_df.iloc[index, 0],
+                                                               ignore_index=True)
+
+        correct_node_data_df['Alpha'] = correct_node_data_df['Alpha'].astype(float)
+        correct_node_data_df['Beta'] = correct_node_data_df['Beta'].astype(float)
+
+        alpha_max = correct_node_data_df['Alpha'].max()
+        alpha_min = correct_node_data_df['Alpha'].mask(correct_node_data_df['Alpha'] == 0.0).min().min()
+        alpha_mean = correct_node_data_df['Alpha'].mean()
+
+        beta_max = correct_node_data_df['Beta'].max()
+        beta_min = correct_node_data_df['Beta'].mask(correct_node_data_df['Beta'] == 0.0).min().min()
+        beta_mean = correct_node_data_df['Beta'].mean()
+
+        print('A max: ', alpha_max, ' min: ', alpha_min, ' mean: ', alpha_mean)
+        print('B max: ', beta_max, ' min: ', beta_min, ' mean: ', beta_mean)
+
+        alpha = [alpha_max, alpha_mean, alpha_min]
+        beta = [beta_max, beta_mean, beta_min]
+
+        annotation_list = ''
+
+        if given_annotation == 'Alpha':
+            annotation_list = alpha
+        elif given_annotation == 'Beta':
+            annotation_list = beta
+
+        return annotation_list
+
+
     # Method to create the network and add styles
     def cytoscape_successful(self, update, core_details):
 
         cytoscape_successful = True
 
+        # TODO set the alpha and beta values by reading the dataframes
         # Discrete mappings for specific regions
         order_colour_key_value_pair = {
             '1': '#c99e10',
@@ -129,66 +176,6 @@ class CytoscapeIntegration:
             '3': 'Triangle',
             '4': 'Hexagon'
         }
-
-        type_colour_variation = [
-            {
-                'value': '0.0050',
-                'lesser': '#1e434c',
-                'equal': '#1e434c',
-                'greater': '#1e434c'
-            },
-            {
-                'value': '0.05',
-                'lesser': '#f0f0f0',
-                'equal': '#f0f0f0',
-                'greater': '#f0f0f0'
-            },
-            {
-                'value': '0.1',
-                'lesser': '#8d230f',
-                'equal': '#8d230f',
-                'greater': '#8d230f'
-            }
-        ]
-
-        type_shape_variation = [
-            {
-                'value': '0.0050',
-                'lesser': 'Ellipse',
-                'equal': 'Ellipse',
-                'greater': 'Ellipse'
-            },
-            {
-                'value': '0.1',
-                'lesser': 'Hexagon',
-                'equal': 'Hexagon',
-                'greater': 'Hexagon'
-            }
-
-        ]
-
-        node_type_size = StyleUtil.create_slope(min=0.001, max=0.01, values=(10, 50))
-
-        edge_type_thickness = [
-            {
-                'value': '0.0050',
-                'lesser': '1.0',
-                'equal': '1.0',
-                'greater': '1.0'
-            },
-            {
-                'value': '0.05',
-                'lesser': '3.0',
-                'equal': '3.0',
-                'greater': '3.0'
-            },
-            {
-                'value': '0.1',
-                'lesser': '5.0',
-                'equal': '5.0',
-                'greater': '5.0'
-            }
-        ]
 
         new_styles = {
             'NODE_FILL_COLOR': '#363636',
@@ -253,9 +240,32 @@ class CytoscapeIntegration:
             my_style = self.cy.style.create('Epi_Explorer_style')
             my_style.update_defaults(new_styles)
 
+            # Get the Alpha/ Beta values by reading the cytoscape network
+
             if 'node_colour' in core_details.columns:
                 print('Styling node colour')
                 update_type = core_details.at[0, 'node_colour']
+                annotation_list = self.style_filter_get_annotation(update_type)
+                type_colour_variation = [
+                    {
+                        'value': '0.0050',
+                        'lesser': '#1e434c',
+                        'equal': '#1e434c',
+                        'greater': '#1e434c'
+                    },
+                    {
+                        'value': '0.05',
+                        'lesser': '#f0f0f0',
+                        'equal': '#f0f0f0',
+                        'greater': '#f0f0f0'
+                    },
+                    {
+                        'value': '0.1',
+                        'lesser': '#8d230f',
+                        'equal': '#8d230f',
+                        'greater': '#8d230f'
+                    }
+                ]
 
                 if update_type == 'Order':
                     my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_FILL_COLOR',
@@ -273,6 +283,8 @@ class CytoscapeIntegration:
                 print('Styling node size')
                 update_type = core_details.at[0, 'node_size']
 
+                node_type_size = StyleUtil.create_slope(min=0.001, max=0.01, values=(10, 50))
+
                 if update_type == 'Order':
                     my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SIZE',
                                                      mappings=order_size_key_value_pair)
@@ -289,6 +301,22 @@ class CytoscapeIntegration:
             if 'node_shape' in core_details.columns:
                 print('Styling node shape')
                 update_type = core_details.at[0, 'node_shape']
+
+                type_shape_variation = [
+                    {
+                        'value': '0.0050',
+                        'lesser': 'Ellipse',
+                        'equal': 'Ellipse',
+                        'greater': 'Ellipse'
+                    },
+                    {
+                        'value': '0.1',
+                        'lesser': 'Hexagon',
+                        'equal': 'Hexagon',
+                        'greater': 'Hexagon'
+                    }
+
+                ]
 
                 if update_type == 'Order':
                     my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SHAPE',
@@ -326,6 +354,27 @@ class CytoscapeIntegration:
             if 'edge_thickness' in core_details.columns:
                 print('Styling edge thickness')
                 update_type = core_details.at[0, 'edge_thickness']
+
+                edge_type_thickness = [
+                    {
+                        'value': '0.0050',
+                        'lesser': '1.0',
+                        'equal': '1.0',
+                        'greater': '1.0'
+                    },
+                    {
+                        'value': '0.05',
+                        'lesser': '3.0',
+                        'equal': '3.0',
+                        'greater': '3.0'
+                    },
+                    {
+                        'value': '0.1',
+                        'lesser': '5.0',
+                        'equal': '5.0',
+                        'greater': '5.0'
+                    }
+                ]
 
                 if update_type == 'Order' or update_type == 'Default':
                     my_style.create_discrete_mapping(column='order', col_type='String', vp='EDGE_WIDTH',
