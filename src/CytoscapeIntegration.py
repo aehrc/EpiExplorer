@@ -117,7 +117,11 @@ class CytoscapeIntegration:
 
         if given_annotation == 'Alpha':
             alpha_max = correct_node_data_df['Alpha'].max()
-            alpha_min = correct_node_data_df['Alpha'].mask(correct_node_data_df['Alpha'] == 0.0).min().min()
+            temp_node_df = correct_node_data_df.loc[(correct_node_data_df['Alpha'] != 0.0)]
+            if temp_node_df.empty:
+                alpha_min = 0.0
+            else:
+                alpha_min = correct_node_data_df['Alpha'].mask(correct_node_data_df['Alpha'] == 0.0).min().min()
             alpha_mean = correct_node_data_df['Alpha'].mean()
 
             alpha = [alpha_max, alpha_mean, alpha_min]
@@ -126,7 +130,11 @@ class CytoscapeIntegration:
         elif given_annotation == 'Beta':
 
             beta_max = correct_node_data_df['Beta'].max()
-            beta_min = correct_node_data_df['Beta'].mask(correct_node_data_df['Beta'] == 0.0).min().min()
+            temp_node_df = correct_node_data_df.loc[(correct_node_data_df['Beta'] != 0.0)]
+            if temp_node_df.empty:
+                beta_min = 0.0
+            else:
+                beta_min = correct_node_data_df['Alpha'].mask(correct_node_data_df['Alpha'] == 0.0).min().min()
             beta_mean = correct_node_data_df['Beta'].mean()
 
             beta = [beta_max, beta_mean, beta_min]
@@ -247,12 +255,11 @@ class CytoscapeIntegration:
                 print('Styling node colour')
                 update_type = core_details.at[0, 'node_colour']
 
-                if update_type == 'Alpha' or 'Beta':
+                if update_type == 'Alpha' or update_type == 'Beta':
                     annotation_list = self.style_filter_get_annotation(update_type)
                     max_value = str(annotation_list[0])
                     mean_value = str(annotation_list[1])
                     min_value = str(annotation_list[2])
-
                 type_colour_variation = [
                     {
                         'value': max_value,
@@ -289,23 +296,24 @@ class CytoscapeIntegration:
             if 'node_size' in core_details.columns:
                 print('Styling node size')
                 update_type = core_details.at[0, 'node_size']
-
-                if update_type == 'Alpha' or 'Beta':
+                print(update_type)
+                if update_type == 'Alpha' or update_type == 'Beta':
                     annotation_list = self.style_filter_get_annotation(update_type)
-                    max_value = str(annotation_list[0])
-                    mean_value = str(annotation_list[1])
-                    min_value = str(annotation_list[2])
-
-                node_type_size = StyleUtil.create_slope(min=min_value, max=max_value, values=(10, 50))
+                    max_value = annotation_list[0]
+                    mean_value = annotation_list[1]
+                    min_value = annotation_list[2]
+                    print(max_value, ' ', min_value, '  ', mean_value)
 
                 if update_type == 'Order':
                     my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SIZE',
                                                      mappings=order_size_key_value_pair)
 
                 elif update_type == 'Alpha':
+                    node_type_size = StyleUtil.create_slope(min=min_value, max=max_value, values=(10, 50))
                     my_style.create_continuous_mapping(column='Alpha', col_type='Double', vp='NODE_SIZE',
                                                        points=node_type_size)
                 elif update_type == 'Beta':
+                    node_type_size = StyleUtil.create_slope(min=min_value, max=max_value, values=(10, 50))
                     my_style.create_continuous_mapping(column='Beta', col_type='Double', vp='NODE_SIZE',
                                                        points=node_type_size)
 
@@ -315,7 +323,7 @@ class CytoscapeIntegration:
                 print('Styling node shape')
                 update_type = core_details.at[0, 'node_shape']
 
-                if update_type == 'Alpha' or 'Beta':
+                if update_type == 'Alpha' or update_type == 'Beta':
                     annotation_list = self.style_filter_get_annotation(update_type)
                     max_value = str(annotation_list[0])
                     mean_value = str(annotation_list[1])
@@ -353,7 +361,7 @@ class CytoscapeIntegration:
                 print('Styling edge colour')
                 update_type = core_details.at[0, 'edge_colour']
 
-                if update_type == 'Alpha' or 'Beta':
+                if update_type == 'Alpha' or update_type == 'Beta':
                     annotation_list = self.style_filter_get_annotation(update_type)
                     max_value = str(annotation_list[0])
                     mean_value = str(annotation_list[1])
@@ -399,7 +407,7 @@ class CytoscapeIntegration:
                 print('Styling edge thickness')
                 update_type = core_details.at[0, 'edge_thickness']
 
-                if update_type == 'Alpha' or 'Beta':
+                if update_type == 'Alpha' or update_type == 'Beta':
                     annotation_list = self.style_filter_get_annotation(update_type)
                     max_value = str(annotation_list[0])
                     mean_value = str(annotation_list[1])
