@@ -113,29 +113,27 @@ class CytoscapeIntegration:
         correct_node_data_df['Alpha'] = correct_node_data_df['Alpha'].astype(float)
         correct_node_data_df['Beta'] = correct_node_data_df['Beta'].astype(float)
 
-        alpha_max = correct_node_data_df['Alpha'].max()
-        alpha_min = correct_node_data_df['Alpha'].mask(correct_node_data_df['Alpha'] == 0.0).min().min()
-        alpha_mean = correct_node_data_df['Alpha'].mean()
-
-        beta_max = correct_node_data_df['Beta'].max()
-        beta_min = correct_node_data_df['Beta'].mask(correct_node_data_df['Beta'] == 0.0).min().min()
-        beta_mean = correct_node_data_df['Beta'].mean()
-
-        print('A max: ', alpha_max, ' min: ', alpha_min, ' mean: ', alpha_mean)
-        print('B max: ', beta_max, ' min: ', beta_min, ' mean: ', beta_mean)
-
-        alpha = [alpha_max, alpha_mean, alpha_min]
-        beta = [beta_max, beta_mean, beta_min]
-
         annotation_list = ''
 
         if given_annotation == 'Alpha':
+            alpha_max = correct_node_data_df['Alpha'].max()
+            alpha_min = correct_node_data_df['Alpha'].mask(correct_node_data_df['Alpha'] == 0.0).min().min()
+            alpha_mean = correct_node_data_df['Alpha'].mean()
+
+            alpha = [alpha_max, alpha_mean, alpha_min]
+
             annotation_list = alpha
         elif given_annotation == 'Beta':
+
+            beta_max = correct_node_data_df['Beta'].max()
+            beta_min = correct_node_data_df['Beta'].mask(correct_node_data_df['Beta'] == 0.0).min().min()
+            beta_mean = correct_node_data_df['Beta'].mean()
+
+            beta = [beta_max, beta_mean, beta_min]
+
             annotation_list = beta
 
         return annotation_list
-
 
     # Method to create the network and add styles
     def cytoscape_successful(self, update, core_details):
@@ -241,26 +239,37 @@ class CytoscapeIntegration:
             my_style.update_defaults(new_styles)
 
             # Get the Alpha/ Beta values by reading the cytoscape network
+            max_value = ''
+            min_value = ''
+            mean_value = ''
 
             if 'node_colour' in core_details.columns:
                 print('Styling node colour')
                 update_type = core_details.at[0, 'node_colour']
-                annotation_list = self.style_filter_get_annotation(update_type)
+
+                if update_type == 'Alpha' or 'Beta':
+                    annotation_list = self.style_filter_get_annotation(update_type)
+                    max_value = str(annotation_list[0])
+                    mean_value = str(annotation_list[1])
+                    min_value = str(annotation_list[2])
+
+                    print(max_value, ' ', mean_value, ' ', min_value)
+
                 type_colour_variation = [
                     {
-                        'value': '0.0050',
+                        'value': max_value,
                         'lesser': '#1e434c',
                         'equal': '#1e434c',
                         'greater': '#1e434c'
                     },
                     {
-                        'value': '0.05',
+                        'value': mean_value,
                         'lesser': '#f0f0f0',
                         'equal': '#f0f0f0',
                         'greater': '#f0f0f0'
                     },
                     {
-                        'value': '0.1',
+                        'value': min_value,
                         'lesser': '#8d230f',
                         'equal': '#8d230f',
                         'greater': '#8d230f'
