@@ -347,7 +347,7 @@ class ReadWriteData:
         return edge_df
 
     # Merge node df with AnnotationFiles
-    def create_df_with_annotations(self, new_node_df):
+    def merge_df_with_annotations(self, new_node_df):
         if self.annotation_files == '':
             print('No annotation file given')
             new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
@@ -810,7 +810,7 @@ class ReadWriteData:
             print('No existing node file found. Creating a new file nodes.csv')
             new_node_df = self.check_node_duplicates(node_df, node_df)
             new_node_df = self.get_merged_new_node_df(new_node_df, connection_count_df)
-            new_node_df = self.create_df_with_annotations(new_node_df)
+            new_node_df = self.merge_df_with_annotations(new_node_df)
             new_node_df.to_csv(node_file_path, encoding='utf-8', index=False)
             correct_node_df = new_node_df
         else:
@@ -820,7 +820,7 @@ class ReadWriteData:
             # Get a new DataFrame without any duplicated nodes
             new_node_df = self.check_node_duplicates(node_df, existing_df)
             new_node_df = self.get_merged_new_node_df(new_node_df, connection_count_df)
-            new_node_df = self.create_df_with_annotations(new_node_df)
+            new_node_df = self.merge_df_with_annotations(new_node_df)
             os.remove(node_file_path)
             new_node_df.to_csv(node_file_path, encoding='utf-8', index=False)
             correct_node_df = new_node_df
