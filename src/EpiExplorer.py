@@ -27,7 +27,7 @@ def main():
     args = vars(parser.parse_args())
     input_file = args['i']
     annotation_file = args['a']
-    # TODO needs to be changed
+    # TODO needs to be changed but how?
     details_df = pd.DataFrame([[input_file, annotation_file, True]], columns=['input_file', 'annotation_file', 'reset'])
     controller = Controller()
     controller.perform_core_functionality(details_df)

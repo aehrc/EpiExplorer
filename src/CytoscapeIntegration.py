@@ -148,7 +148,6 @@ class CytoscapeIntegration:
 
         cytoscape_successful = True
 
-        # TODO set the alpha and beta values by reading the dataframes
         # Discrete mappings for specific regions
         order_colour_key_value_pair = {
             '1': '#c99e10',

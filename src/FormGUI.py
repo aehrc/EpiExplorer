@@ -19,7 +19,7 @@ class FormGUI:
         self.reset_bool = False
         self.input_file_names = ''
         self.annotation_files = ''
-        self.output_file = ''
+        self.output_file_path = ''
         # Setting initial values as edge mode and not inverted
         self.var_interaction_or_edge = 1
         self.var_invert_or_not = 0
@@ -45,8 +45,8 @@ class FormGUI:
     # Method for the user to specify output file directory
     def select_output_file(self, root, output_file_entry):
         received_file = tkinter.filedialog.askdirectory(parent=root, title='Choose directory')
-        self.output_file = received_file
-        output_file_entry.insert(0, self.output_file)
+        self.output_file_path = received_file
+        output_file_entry.insert(0, self.output_file_path)
 
     # Method for the user to specify annotation file paths
     def select_annotation_files(self, root, annotation_file_entry):
@@ -64,7 +64,7 @@ class FormGUI:
 
     # Load files upon clicking load on the GUI
     def load_files(self, input_file, annotation_file, interaction_or_edge):
-        details_df = pd.DataFrame([[input_file, annotation_file, self.output_file, True]],
+        details_df = pd.DataFrame([[input_file, annotation_file, self.output_file_path, True]],
                                   columns=['input_file', 'annotation_file', 'output_file', 'reset'])
         # Call the validate function in Controller class
         valid = self.controller.perform_core_functionality(details_df, False, interaction_or_edge)
@@ -294,7 +294,7 @@ class FormGUI:
     def hide(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.hide_bool = True
         form_details_df = pd.DataFrame(
-            [[input_file, annotation_file, self.output_file, self.hide_bool, filter_entry, var_invert_or_not]],
+            [[input_file, annotation_file, self.output_file_path, self.hide_bool, filter_entry, var_invert_or_not]],
             columns=['input_file', 'annotation_file', 'output_file', 'hide', 'query', 'invert'])
         print('_______________________*^!@#_____________', filter_entry)
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
@@ -302,27 +302,27 @@ class FormGUI:
     def show(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.show_bool = True
         form_details_df = pd.DataFrame(
-            [[input_file, annotation_file, self.output_file, self.show_bool, filter_entry, var_invert_or_not]],
+            [[input_file, annotation_file, self.output_file_path, self.show_bool, filter_entry, var_invert_or_not]],
             columns=['input_file', 'annotation_file', 'output_file', 'show', 'query', 'invert'])
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def highlight(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.highlight_bool = True
         form_details_df = pd.DataFrame(
-            [[input_file, annotation_file, self.output_file, self.highlight_bool, filter_entry, var_invert_or_not]],
+            [[input_file, annotation_file, self.output_file_path, self.highlight_bool, filter_entry, var_invert_or_not]],
             columns=['input_file', 'annotation_file', 'output_file', 'highlight', 'query', 'invert'])
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def grayout(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.gray_bool = True
         form_details_df = pd.DataFrame(
-            [[input_file, annotation_file, self.output_file, self.gray_bool, filter_entry, var_invert_or_not]],
+            [[input_file, annotation_file, self.output_file_path, self.gray_bool, filter_entry, var_invert_or_not]],
             columns=['input_file', 'annotation_file', 'output_file', 'gray', 'query', 'invert'])
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def reset(self, input_file, annotation_file, interaction_or_edge):
         self.reset_bool = True
-        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file, self.reset_bool]],
+        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file_path, self.reset_bool]],
                                        columns=['input_file', 'annotation_file', 'output_file', 'reset'])
         self.controller.perform_core_functionality(form_details_df, False, interaction_or_edge)
 
@@ -335,26 +335,26 @@ class FormGUI:
         root.quit()
 
     def node_colour(self, node_colour, input_file, annotation_file, interaction_or_edge):
-        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file, node_colour]],
+        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file_path, node_colour]],
                                        columns=['input_file', 'annotation_file', 'output_file', 'node_colour'])
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def node_size(self, node_size, input_file, annotation_file, interaction_or_edge):
-        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file, node_size]],
+        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file_path, node_size]],
                                        columns=['input_file', 'annotation_file', 'output_file', 'node_size'])
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def node_shape(self, node_shape, input_file, annotation_file, interaction_or_edge):
-        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file, node_shape]],
+        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file_path, node_shape]],
                                        columns=['input_file', 'annotation_file', 'output_file', 'node_shape'])
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def edge_colour(self, edge_colour, input_file, annotation_file, interaction_or_edge):
-        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file, edge_colour]],
+        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file_path, edge_colour]],
                                        columns=['input_file', 'annotation_file', 'output_file', 'edge_colour'])
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def edge_thickness(self, edge_thickness, input_file, annotation_file, interaction_or_edge):
-        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file, edge_thickness]],
+        form_details_df = pd.DataFrame([[input_file, annotation_file, self.output_file_path, edge_thickness]],
                                        columns=['input_file', 'annotation_file', 'output_file', 'edge_thickness'])
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
