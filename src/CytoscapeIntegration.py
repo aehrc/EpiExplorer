@@ -253,8 +253,6 @@ class CytoscapeIntegration:
                     mean_value = str(annotation_list[1])
                     min_value = str(annotation_list[2])
 
-                    print(max_value, ' ', mean_value, ' ', min_value)
-
                 type_colour_variation = [
                     {
                         'value': max_value,
@@ -292,7 +290,13 @@ class CytoscapeIntegration:
                 print('Styling node size')
                 update_type = core_details.at[0, 'node_size']
 
-                node_type_size = StyleUtil.create_slope(min=0.001, max=0.01, values=(10, 50))
+                if update_type == 'Alpha' or 'Beta':
+                    annotation_list = self.style_filter_get_annotation(update_type)
+                    max_value = str(annotation_list[0])
+                    mean_value = str(annotation_list[1])
+                    min_value = str(annotation_list[2])
+
+                node_type_size = StyleUtil.create_slope(min=min_value, max=max_value, values=(10, 50))
 
                 if update_type == 'Order':
                     my_style.create_discrete_mapping(column='order', col_type='String', vp='NODE_SIZE',
@@ -311,20 +315,25 @@ class CytoscapeIntegration:
                 print('Styling node shape')
                 update_type = core_details.at[0, 'node_shape']
 
+                if update_type == 'Alpha' or 'Beta':
+                    annotation_list = self.style_filter_get_annotation(update_type)
+                    max_value = str(annotation_list[0])
+                    mean_value = str(annotation_list[1])
+                    min_value = str(annotation_list[2])
+
                 type_shape_variation = [
                     {
-                        'value': '0.0050',
+                        'value': min_value,
                         'lesser': 'Ellipse',
                         'equal': 'Ellipse',
                         'greater': 'Ellipse'
                     },
                     {
-                        'value': '0.1',
+                        'value': max_value,
                         'lesser': 'Hexagon',
                         'equal': 'Hexagon',
                         'greater': 'Hexagon'
                     }
-
                 ]
 
                 if update_type == 'Order':
@@ -344,6 +353,32 @@ class CytoscapeIntegration:
                 print('Styling edge colour')
                 update_type = core_details.at[0, 'edge_colour']
 
+                if update_type == 'Alpha' or 'Beta':
+                    annotation_list = self.style_filter_get_annotation(update_type)
+                    max_value = str(annotation_list[0])
+                    mean_value = str(annotation_list[1])
+                    min_value = str(annotation_list[2])
+
+                type_colour_variation = [
+                    {
+                        'value': min_value,
+                        'lesser': '#1e434c',
+                        'equal': '#1e434c',
+                        'greater': '#1e434c'
+                    },
+                    {
+                        'value': mean_value,
+                        'lesser': '#f0f0f0',
+                        'equal': '#f0f0f0',
+                        'greater': '#f0f0f0'
+                    },
+                    {
+                        'value': max_value,
+                        'lesser': '#8d230f',
+                        'equal': '#8d230f',
+                        'greater': '#8d230f'
+                    }
+                ]
                 if update_type == 'Order' or update_type == 'Default':
                     my_style.create_discrete_mapping(column='order', col_type='String',
                                                      vp='EDGE_STROKE_UNSELECTED_PAINT',
@@ -364,21 +399,27 @@ class CytoscapeIntegration:
                 print('Styling edge thickness')
                 update_type = core_details.at[0, 'edge_thickness']
 
+                if update_type == 'Alpha' or 'Beta':
+                    annotation_list = self.style_filter_get_annotation(update_type)
+                    max_value = str(annotation_list[0])
+                    mean_value = str(annotation_list[1])
+                    min_value = str(annotation_list[2])
+
                 edge_type_thickness = [
                     {
-                        'value': '0.0050',
+                        'value': min_value,
                         'lesser': '1.0',
                         'equal': '1.0',
                         'greater': '1.0'
                     },
                     {
-                        'value': '0.05',
+                        'value': mean_value,
                         'lesser': '3.0',
                         'equal': '3.0',
                         'greater': '3.0'
                     },
                     {
-                        'value': '0.1',
+                        'value': max_value,
                         'lesser': '5.0',
                         'equal': '5.0',
                         'greater': '5.0'
