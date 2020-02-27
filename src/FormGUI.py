@@ -2,6 +2,7 @@
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import PhotoImage
+from tkinter.scrolledtext import ScrolledText
 import tkinter.filedialog
 import pandas as pd
 import webbrowser
@@ -107,6 +108,15 @@ class FormGUI:
         input_file_title.place(relx=0.01, rely=0.1, relheight=0.15, relwidth=0.25)
 
         input_file_entry = tk.Entry(file_frame)
+        input_file_entry.insert('0', '../SampleData/BitEpiOutputSmall/output.Alpha.1.csv '
+                                     '../SampleData/BitEpiOutputSmall/output.Alpha.2.csv '
+                                     '../SampleData/BitEpiOutputSmall/output.Alpha.3.csv '
+                                     '../SampleData/BitEpiOutputSmall/output.Alpha.4.csv '
+                                     '../SampleData/BitEpiOutputSmall/output.Beta.1.csv '
+                                     '../SampleData/BitEpiOutputSmall/output.Beta.2.csv '
+                                     '../SampleData/BitEpiOutputSmall/output.Beta.3.csv '
+                                     '../SampleData/BitEpiOutputSmall/output.Beta.4.csv')
+
         input_file_entry.place(relx=0.275, rely=0.1, relwidth=0.5, relheight=0.15)
 
         load_file_button = tk.Button(file_frame, bg='#DADBDC', text="Open",
@@ -117,6 +127,7 @@ class FormGUI:
         annot_file_title.place(relx=0.01, rely=0.3, relheight=0.15, relwidth=0.25)
 
         annot_file_entry = tk.Entry(file_frame)
+        annot_file_entry.insert('0', '../SampleData/AnnotationFiles/1KGen.txt')
         annot_file_entry.place(relx=0.275, rely=0.3, relwidth=0.5, relheight=0.15)
 
         load_annot_file_button = tk.Button(file_frame, bg='#DADBDC', text="Open",
@@ -127,6 +138,7 @@ class FormGUI:
         output_file_title.place(relx=0.01, rely=0.5, relheight=0.15, relwidth=0.25)
 
         output_file_entry = tk.Entry(file_frame)
+        output_file_entry.insert('0', '../SampleData/InteractionGraph/')
         output_file_entry.place(relx=0.275, rely=0.5, relwidth=0.5, relheight=0.15)
 
         load_output_file_button = tk.Button(file_frame, bg='#DADBDC', text="Open",
@@ -228,7 +240,8 @@ class FormGUI:
         filter_frame_title = tk.Label(filter_frame, bg='#757579', text='Query SNPs as shown below.')
         filter_frame_title.place(relx=0.04, rely=0.05, relheight=0.1, relwidth=0.95)
 
-        filter_entry = tk.Entry(filter_frame, font=24)
+        filter_entry = tk.scrolledtext.ScrolledText(filter_frame)
+        filter_entry.insert('insert', 'order == \'3\'')
         filter_entry.place(relx=0.05, rely=0.2, relwidth=0.925, relheight=0.3)
 
         # Check button to invert query
@@ -241,26 +254,26 @@ class FormGUI:
 
         hide_button = tk.Button(filter_frame, bg='#DADBDC', text="Hide",
                                 command=lambda: self.hide(input_file_entry.get(), annot_file_entry.get(),
-                                                          self.var_interaction_or_edge, filter_entry.get(),
+                                                          self.var_interaction_or_edge, filter_entry.get("1.0", tkinter.END),
                                                           self.var_invert_or_not))
         hide_button.place(relx=0.04, rely=0.55, relheight=0.1, relwidth=0.45)
 
         show_button = tk.Button(filter_frame, bg='#DADBDC', text="Show",
                                 command=lambda: self.show(input_file_entry.get(), annot_file_entry.get(),
-                                                          self.var_interaction_or_edge, filter_entry.get(),
+                                                          self.var_interaction_or_edge, filter_entry.get("1.0", tkinter.END),
                                                           self.var_invert_or_not))
         show_button.place(relx=0.525, rely=0.55, relheight=0.1, relwidth=0.45)
 
         hl_button = tk.Button(filter_frame, bg='#DADBDC', text="Highlight",
                               command=lambda: self.highlight(input_file_entry.get(), annot_file_entry.get(),
-                                                             self.var_interaction_or_edge, filter_entry.get(),
+                                                             self.var_interaction_or_edge, filter_entry.get("1.0", tkinter.END),
                                                              self.var_invert_or_not))
         hl_button.place(relx=0.04, rely=0.7, relheight=0.1, relwidth=0.45)
 
         gray_button = tk.Button(filter_frame, bg='#DADBDC', text="Gray out",
                                 command=lambda: self.grayout(input_file_entry.get(),
                                                              annot_file_entry.get(), self.var_interaction_or_edge,
-                                                             filter_entry.get(), self.var_invert_or_not))
+                                                             filter_entry.get("1.0", tkinter.END), self.var_invert_or_not))
         gray_button.place(relx=0.525, rely=0.7, relheight=0.1, relwidth=0.45)
 
         reset_button = tk.Button(filter_frame, bg='#DADBDC', text="Reset",
@@ -277,29 +290,13 @@ class FormGUI:
 
         root.mainloop()
 
-        # DataFrame to send to Cytoscape_Integration class
-        form_details_df = pd.DataFrame([[input_file_entry.get(), annot_file_entry.get(), self.output_file,
-                                         node_colour_variable.get(),
-                                         node_size_variable.get(), node_shape_variable.get()
-                                            , edge_colour_variable.get(), edge_thickness_variable.get(),
-                                         filter_entry.get()
-                                            , self.hide_bool, self.show_bool, self.highlight_bool, self.gray_bool,
-                                         self.reset_bool, var_invert.get()]]
-                                       , columns=['input_file', 'annotation_file', 'output_file', 'node_colour',
-                                                  'node_size',
-                                                  'node_shape'
-                , 'edge_colour', 'edge_thickness', 'query', 'hide', 'show', 'highlight', 'gray', 'reset', 'invert'])
-
-        form_details = [form_details_df, True, self.var_interaction_or_edge]
-
-        return form_details
-
     # Helper methods to update Cytoscape upon the press of buttons in the GUI
     def hide(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.hide_bool = True
         form_details_df = pd.DataFrame(
             [[input_file, annotation_file, self.output_file, self.hide_bool, filter_entry, var_invert_or_not]],
             columns=['input_file', 'annotation_file', 'output_file', 'hide', 'query', 'invert'])
+        print('_______________________*^!@#_____________', filter_entry)
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 
     def show(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):

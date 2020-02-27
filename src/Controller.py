@@ -13,9 +13,7 @@ class Controller:
     def perform_form_functionality(self):
         controller = Controller()
         form = FormGUI(controller)
-        form_details = form.form()
-
-        return form_details
+        form.form()
 
     # Method to call Model functionality from View
     # Takes the arguments: GUI filtering requirements, whether graph should be updated or if it's the first time,
@@ -27,6 +25,8 @@ class Controller:
             # Validate input file
             input_files = core_details.iat[0, 0]
             input_files = input_files.split()
+            number_of_input_files = len(input_files)
+            print('Loading in ', number_of_input_files, ' input files.')
             for input_file in input_files:
                 print(input_file)
                 read_write_data = ReadWriteData(input_file, core_details.iat[0, 1], core_details.iat[0, 2])
@@ -49,20 +49,23 @@ class Controller:
                             'The input file, {}, has been successfully loaded '
                             'and the output file has been created successfully.'.format(
                                 input_file))
-                        print('Sending data to Cytoscape . . .')
+                        number_of_input_files = number_of_input_files - 1
+                        print('Number of input files left to load: ', number_of_input_files)
+                        if number_of_input_files == 0:
+                            print('Sending data to Cytoscape . . .')
+                            # Send the DataFrames in order to create the json file and create the network
+                            if integration is None or not update:
+                                integration = CytoscapeIntegration(read_write_done[0], read_write_done[1],
+                                                                   interaction_or_edge)
+                            # Call function and determine if cytoscape worked
+                            cytoscape_successful = integration.cytoscape_successful(update, core_details)
 
-                        # Send the DataFrames in order to create the json file and create the network
-                        if integration is None or not update:
-                            integration = CytoscapeIntegration(read_write_done[0], read_write_done[1],
-                                                               interaction_or_edge)
-                        # Call function and determine if cytoscape worked
-                        cytoscape_successful = integration.cytoscape_successful(update, core_details)
-
-                        if cytoscape_successful:
-                            print('Successful creation of network!')
-                        else:
-                            print('Network creation unsuccessful, please make sure that Cytoscape is running in the '
-                                  'background.')
+                            if cytoscape_successful:
+                                print('Successful creation of network!')
+                            else:
+                                print('Network creation unsuccessful, please make sure that Cytoscape is running in '
+                                      'the '
+                                      'background.')
                     else:
                         print('Error has occurred in Read and/or Write of the file.')
                 elif not valid_input_file:
