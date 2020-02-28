@@ -1,4 +1,5 @@
 # Class containing all the GUI functionality
+import os
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import PhotoImage
@@ -64,6 +65,21 @@ class FormGUI:
 
     # Load files upon clicking load on the GUI
     def load_files(self, input_file, annotation_file, interaction_or_edge):
+        # node_file_name = 'nodes.csv'
+        # edge_file_name = 'edges.csv'
+        # trans_edge_file_name = 'trans_edges.csv'
+        # trans_node_file_name = 'trans_nodes.csv'
+        #
+        # node_file_path = os.path.join(self.output_file_path, node_file_name)
+        # edge_file_path = os.path.join(self.output_file_path, edge_file_name)
+        # trans_node_path = os.path.join(self.output_file_path, trans_node_file_name)
+        # trans_edge_path = os.path.join(self.output_file_path, trans_edge_file_name)
+        #
+        # os.remove(node_file_path)
+        # os.remove(edge_file_path)
+        # os.remove(trans_node_path)
+        # os.remove(trans_edge_path)
+
         details_df = pd.DataFrame([[input_file, annotation_file, self.output_file_path, True]],
                                   columns=['input_file', 'annotation_file', 'output_file', 'reset'])
         # Call the validate function in Controller class
@@ -254,26 +270,30 @@ class FormGUI:
 
         hide_button = tk.Button(filter_frame, bg='#DADBDC', text="Hide",
                                 command=lambda: self.hide(input_file_entry.get(), annot_file_entry.get(),
-                                                          self.var_interaction_or_edge, filter_entry.get("1.0", tkinter.END),
+                                                          self.var_interaction_or_edge,
+                                                          filter_entry.get("1.0", tkinter.END),
                                                           self.var_invert_or_not))
         hide_button.place(relx=0.04, rely=0.55, relheight=0.1, relwidth=0.45)
 
         show_button = tk.Button(filter_frame, bg='#DADBDC', text="Show",
                                 command=lambda: self.show(input_file_entry.get(), annot_file_entry.get(),
-                                                          self.var_interaction_or_edge, filter_entry.get("1.0", tkinter.END),
+                                                          self.var_interaction_or_edge,
+                                                          filter_entry.get("1.0", tkinter.END),
                                                           self.var_invert_or_not))
         show_button.place(relx=0.525, rely=0.55, relheight=0.1, relwidth=0.45)
 
         hl_button = tk.Button(filter_frame, bg='#DADBDC', text="Highlight",
                               command=lambda: self.highlight(input_file_entry.get(), annot_file_entry.get(),
-                                                             self.var_interaction_or_edge, filter_entry.get("1.0", tkinter.END),
+                                                             self.var_interaction_or_edge,
+                                                             filter_entry.get("1.0", tkinter.END),
                                                              self.var_invert_or_not))
         hl_button.place(relx=0.04, rely=0.7, relheight=0.1, relwidth=0.45)
 
         gray_button = tk.Button(filter_frame, bg='#DADBDC', text="Gray out",
                                 command=lambda: self.grayout(input_file_entry.get(),
                                                              annot_file_entry.get(), self.var_interaction_or_edge,
-                                                             filter_entry.get("1.0", tkinter.END), self.var_invert_or_not))
+                                                             filter_entry.get("1.0", tkinter.END),
+                                                             self.var_invert_or_not))
         gray_button.place(relx=0.525, rely=0.7, relheight=0.1, relwidth=0.45)
 
         reset_button = tk.Button(filter_frame, bg='#DADBDC', text="Reset",
@@ -309,7 +329,8 @@ class FormGUI:
     def highlight(self, input_file, annotation_file, interaction_or_edge, filter_entry, var_invert_or_not):
         self.highlight_bool = True
         form_details_df = pd.DataFrame(
-            [[input_file, annotation_file, self.output_file_path, self.highlight_bool, filter_entry, var_invert_or_not]],
+            [[input_file, annotation_file, self.output_file_path, self.highlight_bool, filter_entry,
+              var_invert_or_not]],
             columns=['input_file', 'annotation_file', 'output_file', 'highlight', 'query', 'invert'])
         self.controller.perform_core_functionality(form_details_df, True, interaction_or_edge)
 

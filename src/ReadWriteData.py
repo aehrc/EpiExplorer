@@ -70,9 +70,14 @@ class ReadWriteData:
                 else:
                     reason = 'Presentation'
 
-                # Add a cell value to the new DataFrame
-                node_df = node_df.append(pd.DataFrame
-                                         ([[cell_value, cell_value, new_order, new_alpha, new_beta, reason]],
+                if int_order == 1:
+                    node_df = node_df.append(pd.DataFrame
+                                             ([[cell_value, cell_value, new_order, new_alpha, new_beta, reason]],
+                                              columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
+                                             ignore_index=True)
+                else:
+                    node_df = node_df.append(pd.DataFrame
+                                         ([[cell_value, cell_value, new_order, '0', '0', reason]],
                                           columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                          ignore_index=True)
             if int_order >= 2:
@@ -143,9 +148,15 @@ class ReadWriteData:
             else:
                 reason = 'Presentation'
 
-                # Add a cell value to the new DataFrame
-            node_df = node_df.append(pd.DataFrame
-                                     ([[snp_a_cell_value, snp_a_cell_value, new_order, new_alpha, new_beta, reason]],
+            # Add a cell value to the new DataFrame
+            if int_order == 1:
+                node_df = node_df.append(pd.DataFrame
+                                         ([[snp_a_cell_value, snp_a_cell_value, new_order, new_alpha, new_beta, reason]],
+                                          columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
+                                         ignore_index=True)
+            else:
+                node_df = node_df.append(pd.DataFrame
+                                     ([[snp_a_cell_value, snp_a_cell_value, new_order, '0', '0', reason]],
                                       columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
                                      ignore_index=True)
             new_cell_value = ''
@@ -225,7 +236,7 @@ class ReadWriteData:
                             new_order = '4'
 
                         # Add the new edge-node pair to the DataFrame
-                        edge_df = edge_df.append(pd.DataFrame([[edge_value, node,
+                        edge_df = edge_df.append(pd.DataFrame([[node, node,
                                                                 edge_value,
                                                                 node, new_order]],
                                                               columns=['id', 'source', 'target', 'interaction',
@@ -386,294 +397,34 @@ class ReadWriteData:
             existing_df = existing_df.drop('count', axis=1)
         # Create a new node DataFrame with the non-duplicated nodes
         new_node_df = pd.concat([node_df, existing_df], axis=0).reset_index(drop=True)
-        # Remove duplicates and keep only the node from order=1 or the original node
-        i = len(new_node_df) - 1
-        for index, row in new_node_df.iterrows():
-            # Get all the duplicates of a specific id at an index
-            # Filter all the rows which has that id
-            # Loop through them and look for the specific conditions and drop others
-            temp_node = new_node_df.at[i, 'id']
-            new_order = ''
-            temp_df = new_node_df.loc[new_node_df['id'] == temp_node]
-            found = False
 
-            if not found:
-                temp_node_important = temp_df.loc[temp_df['reason to exist'] == 'Important'].reset_index(drop=True)
-                temp_node_presentation = temp_df.loc[temp_df['reason to exist'] == 'Presentation'].reset_index(
-                    drop=True)
-
-                # Not important i.e presentation
-                if temp_node_important.empty:
-                    # Check if an Alpha/ Beta value exist by checking if the Alpha/ Beta value is set to None
-                    found_both_alpha_and_beta = temp_node_presentation.loc[(temp_node_presentation['Alpha'] != '0')
-                                                                           & (temp_node_presentation['Beta'] != '0')] \
-                        .reset_index(drop=True)
-                    new_reason = 'Presentation'
-                    # Both Alpha and Beta together aren't present
-                    if found_both_alpha_and_beta.empty:
-                        found_only_alpha = temp_df.loc[(temp_df['Alpha'] != '0')
-                                                       & (temp_df['reason to exist'] == 'Presentation')].reset_index(
-                            drop=True)
-                        found_only_beta = temp_df.loc[(temp_df['Beta'] != '0')
-                                                      & (temp_df['reason to exist'] == 'Presentation')].reset_index(
-                            drop=True)
-
-                        # There exists rows with either one of Alpha or Beta values
-                        if (not found_only_alpha.empty) and (not found_only_beta.empty):
-                            # Remove duplicates
-                            new_node_df = new_node_df.loc[new_node_df['id'] != temp_node]
-                            # Create a new DataFrame object
-                            # Convert int order value to str
-                            new_order = str(found_only_alpha.at[0, 'order'])
-                            new_alpha = found_only_alpha.at[0, 'Alpha']
-                            # Get the beta value
-                            new_beta = found_only_beta.at[0, 'Beta']
-
-                            # Append the new obj to the DataFrame
-                            new_node_df = new_node_df.append \
-                                    (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, new_alpha, new_beta, new_reason]],
-                                    columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                    ignore_index=True).reset_index(drop=True)
-
-                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
-                                [[temp_node, new_alpha, new_beta]],
-                                columns=['id', 'Alpha', 'Beta']),
-                                ignore_index=True).reset_index(drop=True)
-
-                            i = i - len(temp_df)
-                            found = True
-                        # If only Alpha values were present
-                        elif (not found_only_alpha.empty) and found_only_beta.empty:
-                            # Remove duplicates
-                            new_node_df = new_node_df.loc[new_node_df['id'] != temp_node]
-                            # Create a new DataFrame object
-                            # Convert int order value to str
-                            new_order = str(found_only_alpha.at[0, 'order'])
-                            new_alpha = found_only_alpha.at[0, 'Alpha']
-
-                            # Append the new obj to the DataFrame
-                            new_node_df = new_node_df.append \
-                                    (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, new_alpha, '0', new_reason]],
-                                    columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                    ignore_index=True).reset_index(drop=True)
-
-                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
-                                [[temp_node, new_alpha, '0']],
-                                columns=['id', 'Alpha', 'Beta']),
-                                ignore_index=True).reset_index(drop=True)
-
-                            i = i - len(temp_df)
-                            found = True
-                        # If only Beta values were found
-                        elif found_only_alpha.empty and (not found_only_beta.empty):
-                            # Remove duplicates
-                            new_node_df = new_node_df.loc[new_node_df['id'] != temp_node]
-                            # Create a new DataFrame object
-                            # Convert int order value to str
-                            new_order = str(found_only_beta.at[0, 'order'])
-                            new_beta = found_only_beta.at[0, 'Beta']
-                            # Append the new cell to the DataFrame
-                            new_node_df = new_node_df.append \
-                                    (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, '0', new_beta, new_reason]],
-                                    columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                    ignore_index=True).reset_index(drop=True)
-
-                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
-                                [[temp_node, '0', new_beta]],
-                                columns=['id', 'Alpha', 'Beta']),
-                                ignore_index=True).reset_index(drop=True)
-
-                            i = i - len(temp_df)
-                            found = True
-                        # Both aren't present
-                        else:
-                            # Remove duplicates
-                            new_node_df = new_node_df.loc[new_node_df['id'] != temp_node]
-                            # Create a new DataFrame object
-                            # Convert int order value to str
-                            new_order = str(temp_node_presentation.at[0, 'order'])
-                            # Append the new cell to the DataFrame
-                            new_node_df = new_node_df.append \
-                                    (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, '0', '0', new_reason]],
-                                    columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                    ignore_index=True).reset_index(drop=True)
-
-                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
-                                [[temp_node, '0', '0']],
-                                columns=['id', 'Alpha', 'Beta']),
-                                ignore_index=True).reset_index(drop=True)
-
-                            i = i - len(temp_df)
-                            found = True
-
-                    # Both Alpha and Beta are present for Presentation cell
-                    else:
-                        # Remove duplicates
-                        new_node_df = new_node_df.loc[new_node_df['id'] != temp_node]
-                        # Create a new DataFrame object
-                        # Convert int order value to str
-                        new_order = str(found_both_alpha_and_beta.at[0, 'order'])
-                        new_beta = found_both_alpha_and_beta.at[0, 'Beta']
-                        new_alpha = found_both_alpha_and_beta.at[0, 'Alpha']
-                        # Append the new cell to the DataFrame
-                        new_node_df = new_node_df.append \
-                                (pd.DataFrame(
-                                [[temp_node, temp_node, new_order, new_alpha, new_beta, new_reason]],
-                                columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                ignore_index=True).reset_index(drop=True)
-
-                        self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
-                            [[temp_node, new_alpha, new_beta]],
-                            columns=['id', 'Alpha', 'Beta']),
-                            ignore_index=True).reset_index(drop=True)
-
-                        i = i - len(temp_df)
-                        found = True
-
-                # Important
-                else:
-                    found_both_alpha_and_beta = temp_node_important.loc[(temp_node_important['Alpha'] != '0')
-                                                                        & (temp_node_important['Beta'] != '0')] \
-                        .reset_index(drop=True)
-                    new_reason = 'Important'
-
-                    # Both Alpha and Beta together aren't present
-                    if found_both_alpha_and_beta.empty:
-                        found_only_alpha = temp_df.loc[(temp_df['Alpha'] != '0')
-                                                       & (temp_df['reason to exist'] == 'Important')].reset_index(
-                            drop=True).reset_index(drop=True)
-                        found_only_beta = temp_df.loc[(temp_df['Beta'] != '0')
-                                                      & (temp_df['reason to exist'] == 'Important')].reset_index(
-                            drop=True).reset_index(drop=True)
-
-                        # There exists rows with either one of Alpha or Beta values
-                        if (not found_only_alpha.empty) and (not found_only_beta.empty):
-                            # Get the first alpha row and the first beta row
-                            new_beta = found_only_beta.at[0, 'Beta']
-                            # Remove duplicates
-                            new_node_df = new_node_df.loc[new_node_df['id'] != temp_node]
-                            # Create a new DataFrame object
-                            # Convert int order value to str
-                            new_order = str(found_only_alpha.at[0, 'order'])
-                            new_alpha = found_only_alpha.at[0, 'Alpha']
-
-                            # Append the new cell to the DataFrame
-                            new_node_df = new_node_df.append \
-                                    (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, new_alpha, new_beta, new_reason]],
-                                    columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                    ignore_index=True).reset_index(drop=True)
-
-                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
-                                [[temp_node, new_alpha, new_beta]],
-                                columns=['id', 'Alpha', 'Beta']),
-                                ignore_index=True).reset_index(drop=True)
-
-                            i = i - len(temp_df)
-                            found = True
-                        # If only Alpha values were present
-                        elif (not found_only_alpha.empty) and found_only_beta.empty:
-                            # Remove duplicates
-                            new_node_df = new_node_df.loc[new_node_df['id'] != temp_node]
-                            # Create a new DataFrame object
-                            # Convert int order value to str
-                            new_order = str(found_only_alpha.at[0, 'order'])
-                            new_alpha = found_only_alpha.at[0, 'Alpha']
-
-                            # Append the new cell to the DataFrame
-                            new_node_df = new_node_df.append \
-                                    (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, new_alpha, '0', new_reason]],
-                                    columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                    ignore_index=True).reset_index(drop=True)
-
-                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
-                                [[temp_node, new_alpha, '0']],
-                                columns=['id', 'Alpha', 'Beta']),
-                                ignore_index=True).reset_index(drop=True)
-
-                            i = i - len(temp_df)
-                            found = True
-                        # If only Beta values were found
-                        elif found_only_alpha.empty and (not found_only_beta.empty):
-                            # Remove duplicates
-                            new_node_df = new_node_df.loc[new_node_df['id'] != temp_node]
-                            # Create a new DataFrame object
-                            # Convert int order value to str
-                            new_order = str(found_only_beta.at[0, 'order'])
-                            new_beta = found_only_beta.at[0, 'Beta']
-                            # Append the new cell to the DataFrame
-                            new_node_df = new_node_df.append \
-                                    (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, '0', new_beta, new_reason]],
-                                    columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                    ignore_index=True).reset_index(drop=True)
-
-                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
-                                [[temp_node, '0', new_beta]],
-                                columns=['id', 'Alpha', 'Beta']),
-                                ignore_index=True).reset_index(drop=True)
-
-                            i = i - len(temp_df)
-                            found = True
-                        # Both aren't present
-                        else:
-                            # Remove duplicates
-                            new_node_df = new_node_df.loc[new_node_df['id'] != temp_node]
-                            # Create a new DataFrame object
-                            # Convert int order value to str
-                            new_order = str(temp_node_presentation.at[0, 'order'])
-                            # Append the new cell to the DataFrame
-                            new_node_df = new_node_df.append \
-                                    (pd.DataFrame(
-                                    [[temp_node, temp_node, new_order, '0', '0', new_reason]],
-                                    columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                    ignore_index=True).reset_index(drop=True)
-
-                            self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
-                                [[temp_node, '0', '0']],
-                                columns=['id', 'Alpha', 'Beta']),
-                                ignore_index=True).reset_index(drop=True)
-
-                            i = i - len(temp_df)
-                            found = True
-
-                    # Both Alpha and Beta are present for Important cell
-                    else:
-                        # Remove duplicates
-                        new_node_df = new_node_df.loc[new_node_df['id'] != temp_node]
-                        # Create a new DataFrame object
-                        # Convert int order value to str
-                        new_order = str(found_both_alpha_and_beta.at[0, 'order'])
-                        new_beta = found_both_alpha_and_beta.at[0, 'Beta']
-                        new_alpha = found_both_alpha_and_beta.at[0, 'Alpha']
-                        # Append the new cell to the DataFrame
-                        new_node_df = new_node_df.append \
-                                (pd.DataFrame(
-                                [[temp_node, temp_node, new_order, new_alpha, new_beta, new_reason]],
-                                columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                ignore_index=True).reset_index(drop=True)
-
-                        self.alpha_beta_df = self.alpha_beta_df.append(pd.DataFrame(
-                            [[temp_node, new_alpha, new_beta]],
-                            columns=['id', 'Alpha', 'Beta']),
-                            ignore_index=True).reset_index(drop=True)
-
-                        i = i - len(temp_df)
-                        found = True
-                # exit for loop once the correct new_node_df is made
-                if index == len(new_node_df) - 1:
-                    break
-            # Major error coz important and other values aren't found
+        # deduplicate
+        def non_nan(series):
+            set_values = [v for v in series if v not in (np.nan, None)]
+            if not set_values:
+                return None
             else:
-                print('Abort mission: Duplicates found!')
+                return set_values[0]
 
-        # print(new_node_df)
-        # print('_______________________________________________________________________________________')
+        def max_string(series):
+            return series.loc[0]
+
+        main_func = {
+            'name': max_string,
+            'order': max_string,
+            'Alpha': max_string,
+            'Beta': max_string,
+            'reason_to_exist': (lambda s: 'Important' if 'Important' in set(s) else 'Presentation')
+        }
+
+        main_func.update({
+            c: non_nan for c in new_node_df.columns if c not in set(main_func.keys()) | {'id'}
+        })
+
+        new_node_df = new_node_df.groupby('id', as_index=False).agg(main_func)
+        self.alpha_beta_df = new_node_df[['id', 'Alpha', 'Beta']]
+        print(new_node_df)
+        print(self.alpha_beta_df)
         return new_node_df
 
     # Method to check edge duplicates
@@ -705,7 +456,10 @@ class ReadWriteData:
                 # exit for loop once the correct new_node_df is made
                 if i == 0:
                     break
-
+        # Delete the alpha/ beta columns so that they will be added later
+        if 'Alpha' in new_edge_df.columns and 'Beta' in new_edge_df.columns:
+            del new_edge_df['Alpha']
+            del new_edge_df['Beta']
         # print(new_edge_df)
         return new_edge_df.reset_index(drop=True)
 
@@ -766,7 +520,7 @@ class ReadWriteData:
         correct_node_df = pd.DataFrame
         correct_edge_df = pd.DataFrame
         # TODO check the merging of the alpha, beta, count and annotation files
-        # Precheck for appending alpha and beta values for edge df
+        # Pre-check for appending alpha and beta values for edge df
         if not os.path.isfile(node_file_path):
             print('No existing node file found. Creating a new file nodes.csv')
             new_node_df = self.check_node_duplicates(node_df, node_df)
@@ -783,7 +537,8 @@ class ReadWriteData:
         if not os.path.isfile(edge_file_path):
             print('No existing edges file found. Creating a new file edges.csv')
             new_edge_df = self.check_edge_duplicates(edge_df, edge_df, interaction_or_edge)
-            new_edge_df = self.merge_association_to_edge_df(new_edge_df)
+            if not new_edge_df.empty:
+                new_edge_df = self.merge_association_to_edge_df(new_edge_df)
             new_edge_df.to_csv(edge_file_path, encoding='utf-8', index=False)
             correct_edge_df = new_edge_df
         else:
@@ -798,6 +553,7 @@ class ReadWriteData:
                 correct_edge_df = new_edge_df
             else:
                 # Get a new DataFrame without any duplicated edges
+                print('The existing file is NOT empty. Appending to file edges.csv')
                 new_edge_df = self.check_edge_duplicates(edge_df, existing_df, interaction_or_edge)
                 new_edge_df = self.merge_association_to_edge_df(new_edge_df)
                 os.remove(edge_file_path)
