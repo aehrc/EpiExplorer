@@ -30,50 +30,49 @@ class Controller:
             for input_file in input_files:
                 print(input_file)
                 read_write_data = ReadWriteData(input_file, core_details.iat[0, 1], core_details.iat[0, 2])
-                valid_input_file = read_write_data.validate_input_file()
+                valid_input_files = read_write_data.validate_input_file()
                 valid_annotation_file = read_write_data.validate_annotation_file()
                 files_loaded = False
-                if valid_input_file and valid_annotation_file:
-                    print('The input file, {}, has been successfully validated.'
-                          .format(input_file))
 
-                    print('The annotation file, {}, has been successfully loaded.'
-                          .format(core_details.iat[0, 1]))
+            if valid_input_files and valid_annotation_file:
+                print('The input file, {}, has been successfully validated.'
+                      .format(input_files))
 
-                    files_loaded = True
+                print('The annotation file, {}, has been successfully loaded.'
+                      .format(core_details.iat[0, 1]))
 
-                    # Get the node_df, edge_df and if the functions were successful
-                    read_write_done = read_write_data.get_dataframes(interaction_or_edge)
-                    if read_write_done[2]:
-                        print(
-                            'The input file, {}, has been successfully loaded '
-                            'and the output file has been created successfully.'.format(
-                                input_file))
-                        number_of_input_files = number_of_input_files - 1
-                        print('Number of input files left to load: ', number_of_input_files)
-                        if number_of_input_files == 0:
-                            print('Sending data to Cytoscape . . .')
-                            # Send the DataFrames in order to create the json file and create the network
-                            if integration is None or not update:
-                                integration = CytoscapeIntegration(read_write_done[0], read_write_done[1],
-                                                                   interaction_or_edge)
-                            # Call function and determine if cytoscape worked
-                            cytoscape_successful = integration.cytoscape_successful(update, core_details)
+                files_loaded = True
 
-                            if cytoscape_successful:
-                                print('Successful creation of network!')
-                            else:
-                                print('Network creation unsuccessful, please make sure that Cytoscape is running in '
-                                      'the '
-                                      'background.')
+                read_write_data = ReadWriteData(input_files, core_details.iat[0, 1], core_details.iat[0, 2])
+                # Get the node_df, edge_df and if the functions were successful
+                read_write_done = read_write_data.get_dataframes(interaction_or_edge)
+                if read_write_done[2]:
+                    print(
+                        'The input files, {}, have been successfully loaded '
+                        'and the output file has been created successfully.'.format(
+                            input_files))
+                    print('Sending data to Cytoscape . . .')
+                    # Send the DataFrames in order to create the json file and create the network
+                    if integration is None or not update:
+                        integration = CytoscapeIntegration(read_write_done[0], read_write_done[1],
+                                                           interaction_or_edge)
+                    # Call function and determine if cytoscape worked
+                    cytoscape_successful = integration.cytoscape_successful(update, core_details)
+
+                    if cytoscape_successful:
+                        print('Successful creation of network!')
                     else:
-                        print('Error has occurred in Read and/or Write of the file.')
-                elif not valid_input_file:
-                    print('Error found in input file format.')
-                    files_loaded = False
-                elif not valid_annotation_file:
-                    print('Error found when loading the annotation file')
-                    files_loaded = False
+                        print('Network creation unsuccessful, please make sure that Cytoscape is running in '
+                              'the '
+                              'background.')
+                else:
+                    print('Error has occurred in Read and/or Write of the file.')
+            elif not valid_input_files:
+                print('Error found in input file format.')
+                files_loaded = False
+            elif not valid_annotation_file:
+                print('Error found when loading the annotation file')
+                files_loaded = False
         elif update:
             print('Updating the network')
             cytoscape_successful = integration.cytoscape_successful(update, core_details)

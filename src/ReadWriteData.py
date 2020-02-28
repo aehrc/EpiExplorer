@@ -2,6 +2,7 @@
 import os
 import pandas as pd
 import numpy as np
+import itertools
 
 
 class ReadWriteData:
@@ -37,445 +38,152 @@ class ReadWriteData:
             print('Optional annotation file not given')
         return True
 
-    # Method to create the node DataFrame
-    def create_interaction_node_df(self, df, int_order):
-        # A DataFrame with the interaction node
-        # (concat of all the names of the gene) and SNPs
-        node_df = pd.DataFrame(columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist'])
+    # Method to create the initial dataframe with Alpha/ Beta
+    def CreateIntList(self):
+        a_df = pd.DataFrame(columns=['id', 'Alpha'])
+        b_df = pd.DataFrame(columns=['id', 'Beta'])
+        s_df = pd.DataFrame(columns=['id'])
 
-        # Loop through each row
-        # Get the cell values of each column of each row and concat the values
-        # Add the values to the new DataFrame
-        for index, row in df.iterrows():
+        for file in self.input_file:
+            df = pd.read_csv(file, header=0, index_col=False)
 
-            # Determine the input type for each row and add the association power
-            new_alpha = ''
-            new_beta = ''
-            if annotation_type == 'Alpha':
-                new_alpha = df.at[index, 'Alpha']
-                new_beta = '0'
+            # Get list of all SNPs
+            mt = df.iloc[:, 1:].values.tolist()
+            snps = list(itertools.chain(*mt))
+            x_df = pd.DataFrame(snps, columns=['id'])
+            s_df = s_df.append(x_df)
+
+            # Check the order
+            order = df.shape[1] - 1
+            if (order < 1 or order > 4):
+                print(file + ' must have 2 to 5 columns but it has ' +
+                      str(order + 1) + ' columns')
+                continue
+
+            # Check for Alpha or Beta
+            firstColName = df.columns[0]
+            isAlpha = False
+            if firstColName == 'Alpha':
+                isAlpha = True
+            elif firstColName == 'Beta':
+                isAlpha = False
             else:
-                new_alpha = '0'
-                new_beta = df.at[index, 'Beta']
+                print(
+                    'In ' + file + ' the first colunm name should be Alpha or Beta but it is: ' + firstColName)
 
-            for i in range(int_order):
-                # Get the single SNPs at the specific position
-                cell_value = df.iat[index, i + 1]
-                new_order = '1'
+            # name interactions
+            df['id'] = df.iloc[:, 1:].agg('#'.join, axis=1)
 
-                # Determine if the node comes from order=1 or an interaction node
-                reason = ''
-                if int_order == 1:
-                    reason = 'Important'
-                else:
-                    reason = 'Presentation'
-
-                if int_order == 1:
-                    node_df = node_df.append(pd.DataFrame
-                                             ([[cell_value, cell_value, new_order, new_alpha, new_beta, reason]],
-                                              columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                             ignore_index=True)
-                else:
-                    node_df = node_df.append(pd.DataFrame
-                                         ([[cell_value, cell_value, new_order, '0', '0', reason]],
-                                          columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                         ignore_index=True)
-            if int_order >= 2:
-                new_cell_value = ''
-                new_order = ''
-                if int_order == 2:
-                    snp_b_cell_value = df.at[index, 'SNP_B']
-                    snp_a_cell_value = df.at[index, 'SNP_A']
-                    new_order = '2'
-                    new_cell_value = str(snp_a_cell_value) + str(snp_b_cell_value)
-
-                elif int_order == 3:
-                    snp_c_cell_value = df.at[index, 'SNP_C']
-                    snp_b_cell_value = df.at[index, 'SNP_B']
-                    snp_a_cell_value = df.at[index, 'SNP_A']
-                    new_order = '3'
-                    new_cell_value = str(snp_a_cell_value) \
-                                     + str(snp_b_cell_value) + str(snp_c_cell_value)
-
-                elif int_order == 4:
-                    snp_d_cell_value = df.at[index, 'SNP_D']
-                    snp_c_cell_value = df.at[index, 'SNP_C']
-                    snp_b_cell_value = df.at[index, 'SNP_B']
-                    snp_a_cell_value = df.at[index, 'SNP_A']
-                    new_order = '4'
-                    new_cell_value = str(snp_a_cell_value) + str(snp_b_cell_value) \
-                                     + str(snp_c_cell_value) + str(snp_d_cell_value)
-
-                    # Add a cell value to the new DataFrame
-                node_df = node_df.append \
-                        (pd.DataFrame(
-                        [[new_cell_value, new_cell_value, new_order, new_alpha, new_beta, 'Important']],
-                        columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                        ignore_index=True)
-
-        # print(node_df)
-        return node_df
-
-    # Method to create the node DataFrame for interaction mode
-    def create_node_df(self, df, int_order):
-        # A DataFrame with the interaction node
-        # (concat of all the names of the gene) and SNPs
-        node_df = pd.DataFrame(columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist'])
-
-        # Loop through each row
-        # Get the cell values of each column of each row and concat the values
-        # Add the values to the new DataFrame
-        for index, row in df.iterrows():
-
-            # Determine the input type to add the association power
-            new_alpha = ''
-            new_beta = ''
-            if annotation_type == 'Alpha':
-                new_alpha = df.at[index, 'Alpha']
-                new_beta = '0'
+            if (isAlpha):
+                a_df = a_df.append(df[['id', 'Alpha']])
             else:
-                new_alpha = '0'
-                new_beta = df.at[index, 'Beta']
+                b_df = b_df.append(df[['id', 'Beta']])
 
-            # Get the single SNPs at the specific position
-            snp_a_cell_value = df.at[index, 'SNP_A']
-            new_order = '1'
+        # Merge Alpha and Beta
+        ab_df = a_df.merge(b_df, on='id', how='outer').replace(np.nan, 0)
 
-            # Determine if the node comes from order=1 or an interaction node
-            reason = ''
-            if int_order == 1:
-                reason = 'Important'
-            else:
-                reason = 'Presentation'
+        # Merge extra SNP with ab_df
+        ab_df = ab_df.merge(s_df.drop_duplicates(), on='id',
+                            how='outer').replace(np.nan, 0)
 
-            # Add a cell value to the new DataFrame
-            if int_order == 1:
-                node_df = node_df.append(pd.DataFrame
-                                         ([[snp_a_cell_value, snp_a_cell_value, new_order, new_alpha, new_beta, reason]],
-                                          columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                         ignore_index=True)
-            else:
-                node_df = node_df.append(pd.DataFrame
-                                     ([[snp_a_cell_value, snp_a_cell_value, new_order, '0', '0', reason]],
-                                      columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                                     ignore_index=True)
-            new_cell_value = ''
-            new_order = ''
-            if 'SNP_B' in df.columns:
-                snp_b_cell_value = df.at[index, 'SNP_B']
-                new_order = '2'
-                # Add a cell value to the new DataFrame
-                node_df = node_df.append \
-                        (pd.DataFrame(
-                        [[snp_b_cell_value, snp_b_cell_value, new_order, new_alpha, new_beta, 'Important']],
-                        columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                        ignore_index=True)
+        ab_df['order'] = 0
+        for i, r in ab_df.iterrows():
+            interaction = r['id']
+            snps = interaction.split('#')
+            order = len(snps)
+            ab_df.at[i, 'order'] = order
 
-            if 'SNP_C' in df.columns:
-                snp_c_cell_value = df.at[index, 'SNP_C']
-                new_order = '3'
-                # Add a cell value to the new DataFrame
-                node_df = node_df.append \
-                        (pd.DataFrame(
-                        [[snp_c_cell_value, snp_c_cell_value, new_order, new_alpha, new_beta, 'Important']],
-                        columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                        ignore_index=True)
+        return ab_df
 
-            if 'SNP_D' in df.columns:
-                snp_d_cell_value = df.at[index, 'SNP_D']
-                new_order = '4'
-                # Add a cell value to the new DataFrame
-                node_df = node_df.append \
-                        (pd.DataFrame(
-                        [[snp_d_cell_value, snp_d_cell_value, new_order, new_alpha, new_beta, 'Important']],
-                        columns=['id', 'name', 'order', 'Alpha', 'Beta', 'reason to exist']),
-                        ignore_index=True)
-
-        # print(node_df)
-        return node_df
-
-    # Method to create the edge DataFrame for interaction network type
-    def create_interaction_edge_df(self, df, int_order):
-        # A DataFrame with all the nodes:
-        # individual SNP -> interaction node
-        edge_df = pd.DataFrame(columns=['id', 'source', 'target', 'interaction', 'order'])
-
-        # If the order is greater than 1 then there exist interactions between nodes
-        if int_order >= 2:
-            for index, row in df.iterrows():
-                for i in range(int_order):
-                    # Get the cell value
-                    edge_value = df.iat[index, i + 1]
-
-                    # If order is greater than 1
-                    if int_order >= 2:
-                        node = ''
-                        new_order = ''
-                        # Create the node which is a concatenation of all the SNPs
-                        if int_order == 2:
-                            snp_a_cell_value = df.at[index, 'SNP_A']
-                            snp_b_cell_value = df.at[index, 'SNP_B']
-                            node = str(snp_a_cell_value) + str(snp_b_cell_value)
-                            new_order = '2'
-
-                        elif int_order == 3:
-                            snp_a_cell_value = df.at[index, 'SNP_A']
-                            snp_b_cell_value = df.at[index, 'SNP_B']
-                            snp_c_cell_value = df.at[index, 'SNP_C']
-                            node = str(snp_a_cell_value) + str(snp_b_cell_value) \
-                                   + str(snp_c_cell_value)
-                            new_order = '3'
-
-                        elif int_order == 4:
-                            snp_a_cell_value = df.at[index, 'SNP_A']
-                            snp_b_cell_value = df.at[index, 'SNP_B']
-                            snp_c_cell_value = df.at[index, 'SNP_C']
-                            snp_d_cell_value = df.at[index, 'SNP_D']
-                            node = str(snp_a_cell_value) + str(snp_b_cell_value) \
-                                   + str(snp_c_cell_value) + str(snp_d_cell_value)
-                            new_order = '4'
-
-                        # Add the new edge-node pair to the DataFrame
-                        edge_df = edge_df.append(pd.DataFrame([[node, node,
-                                                                edge_value,
-                                                                node, new_order]],
-                                                              columns=['id', 'source', 'target', 'interaction',
-                                                                       'order']),
-                                                 ignore_index=True)
-
-        # print(edge_df)
-        return edge_df
-
-    # Method to create the edge DataFrame when the network type is Edge
-    def create_edge_df(self, df, int_order):
-        # A DataFrame with all the nodes:
-        # individual SNP -> interaction node
-        edge_df = pd.DataFrame(
-            columns=['id', 'source', 'target', 'interaction', 'edge label', 'Alpha', 'Beta', 'order'])
-        # Determine the input type
-        new_alpha = ''
-        new_beta = ''
-        if annotation_type == 'Alpha':
-            new_alpha = 'Alpha'
-            new_beta = 'None'
+    # Merge annotation files
+    def ReadAnnotations(self):
+        df = pd.read_csv(self.annotation_files[0], header=0, index_col=False, sep='\t')
+        path = self.output_file
+        if 'Variation ID' in df.columns[0]:
+            pass
         else:
-            new_alpha = 'None'
-            new_beta = 'Beta'
+            print('The first annotation file must contain "Variant ID" column')
+            exit(1)
 
-        # If the order is greater than 1 then there exist interactions between nodes
-        if int_order >= 2:
-            for index, row in df.iterrows():
-                # If order is greater than 1
-                if int_order >= 2:
-                    node = ''
-                    new_order = ''
-                    # Create the node which is a concatenation of all the SNPs
-                    if int_order == 2:
-                        snp_a_cell_value = df.at[index, 'SNP_A']
-                        snp_b_cell_value = df.at[index, 'SNP_B']
-                        node = str(snp_a_cell_value) + str(snp_b_cell_value)
-                        new_order = '2'
-
-                        # Add the new edge-node pair to the DataFrame
-                        edge_df = edge_df.append(pd.DataFrame([[node, snp_a_cell_value,
-                                                                snp_b_cell_value,
-                                                                node, node, new_alpha, new_beta, new_order]],
-                                                              columns=['id', 'source', 'target', 'interaction',
-                                                                       'edge label', 'Alpha', 'Beta', 'order']),
-                                                 ignore_index=True)
-
-                    elif int_order == 3:
-                        snp_a_cell_value = df.at[index, 'SNP_A']
-                        snp_b_cell_value = df.at[index, 'SNP_B']
-                        snp_c_cell_value = df.at[index, 'SNP_C']
-                        node = str(snp_a_cell_value) + str(snp_b_cell_value) \
-                               + str(snp_c_cell_value)
-                        new_order = '3'
-
-                        # Add the new edge-node pair to the DataFrame
-                        edge_df = edge_df.append(pd.DataFrame([[node, snp_a_cell_value,
-                                                                snp_b_cell_value,
-                                                                node, node, new_alpha, new_beta, new_order]],
-                                                              columns=['id', 'source', 'target', 'interaction',
-                                                                       'edge label', 'Alpha', 'Beta', 'order']),
-                                                 ignore_index=True)
-
-                        # Add the new edge-node pair to the DataFrame
-                        edge_df = edge_df.append(pd.DataFrame([[node, snp_b_cell_value,
-                                                                snp_c_cell_value,
-                                                                node, node, new_alpha, new_beta, new_order]],
-                                                              columns=['id', 'source', 'target', 'interaction',
-                                                                       'edge label', 'Alpha', 'Beta', 'order']),
-                                                 ignore_index=True)
-
-                        # Add the new edge-node pair to the DataFrame
-                        edge_df = edge_df.append(pd.DataFrame([[node, snp_a_cell_value,
-                                                                snp_c_cell_value,
-                                                                node, node, new_alpha, new_beta, new_order]],
-                                                              columns=['id', 'source', 'target', 'interaction',
-                                                                       'edge label', 'Alpha', 'Beta', 'order']),
-                                                 ignore_index=True)
-
-                    elif int_order == 4:
-                        snp_a_cell_value = df.at[index, 'SNP_A']
-                        snp_b_cell_value = df.at[index, 'SNP_B']
-                        snp_c_cell_value = df.at[index, 'SNP_C']
-                        snp_d_cell_value = df.at[index, 'SNP_D']
-                        node = str(snp_a_cell_value) + str(snp_b_cell_value) \
-                               + str(snp_c_cell_value) + str(snp_d_cell_value)
-                        new_order = '4'
-
-                        # Add the new edge-node pair to the DataFrame
-                        edge_df = edge_df.append(pd.DataFrame([[node, snp_a_cell_value,
-                                                                snp_b_cell_value,
-                                                                node, node, new_alpha, new_beta, new_order]],
-                                                              columns=['id', 'source', 'target', 'interaction',
-                                                                       'edge label', 'Alpha', 'Beta', 'order']),
-                                                 ignore_index=True)
-                        # Add the new edge-node pair to the DataFrame
-                        edge_df = edge_df.append(pd.DataFrame([[node, snp_b_cell_value,
-                                                                snp_c_cell_value,
-                                                                node, node, new_alpha, new_beta, new_order]],
-                                                              columns=['id', 'source', 'target', 'interaction',
-                                                                       'edge label', 'Alpha', 'Beta', 'order']),
-                                                 ignore_index=True)
-                        # Add the new edge-node pair to the DataFrame
-                        edge_df = edge_df.append(pd.DataFrame([[node, snp_c_cell_value,
-                                                                snp_d_cell_value,
-                                                                node, node, new_alpha, new_beta, new_order]],
-                                                              columns=['id', 'source', 'target', 'interaction',
-                                                                       'edge label', 'Alpha', 'Beta', 'order']),
-                                                 ignore_index=True)
-                        # Add the new edge-node pair to the DataFrame
-                        edge_df = edge_df.append(pd.DataFrame([[node, snp_d_cell_value,
-                                                                snp_a_cell_value,
-                                                                node, node, new_alpha, new_beta, new_order]],
-                                                              columns=['id', 'source', 'target', 'interaction',
-                                                                       'edge label', 'Alpha', 'Beta', 'order']),
-                                                 ignore_index=True)
-
-        # print(edge_df)
-        return edge_df
-
-    # Merge node df with AnnotationFiles
-    def merge_df_with_annotations(self, new_node_df):
-        if self.annotation_files == '':
-            print('No annotation file given')
-            new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
-        else:
-            print('Annotation file/s given')
-            annotation_files = self.annotation_files.split()
-            for annotation_file in annotation_files:
-                annotation_df = pd.read_csv(annotation_file, sep="\t")
-                if 'Variation ID' in annotation_df.columns:
-                    annotation_df = annotation_df.rename(columns={'Variation ID': 'id'})
-                    # Remove the duplicate columns
-                    new_node_df = new_node_df.merge(annotation_df, on='id', how='left', suffixes=('', '_y'))
-                    new_node_df.drop(list(new_node_df.filter(regex='_y$')), axis=1, inplace=True)
-                    new_node_df = new_node_df.replace(np.nan, 'None', regex=True)
-                else:
-                    print('Annotation file does not have Variation ID.')
-                    new_node_df = new_node_df
-        return new_node_df
-
-    # Method to get the number of interaction nodes connected to a node
-    def create_connection_count_df(self, correct_edge_df):
-        connection_count_df = pd.DataFrame(columns=['id', 'count'])
-        for index, row in correct_edge_df.iterrows():
-            temp_node = correct_edge_df.at[index, 'target']
-            count = str(correct_edge_df.loc[correct_edge_df.target == temp_node, 'target'].count())
-            connection_count_df = connection_count_df.append(pd.DataFrame([[temp_node, count]]
-                                                                          , columns=['id', 'count'])
-                                                             , ignore_index=True)
-        connection_count_df = connection_count_df.drop_duplicates(subset=['id'], keep='first')
-        return connection_count_df
-
-    # Method to check for duplicate nodes in the existing file and new DataFrame
-    def check_node_duplicates(self, node_df, existing_df):
-        # Delete the count column of the existing DataFrame as it will be merged later
-        if 'count' in existing_df.columns:
-            existing_df = existing_df.drop('count', axis=1)
-        # Create a new node DataFrame with the non-duplicated nodes
-        new_node_df = pd.concat([node_df, existing_df], axis=0).reset_index(drop=True)
-
-        # deduplicate
-        def non_nan(series):
-            set_values = [v for v in series if v not in (np.nan, None)]
-            if not set_values:
-                return None
+        for i, file in enumerate(self.annotation_files):
+            if i == 0:
+                continue
             else:
-                return set_values[0]
+                suffix = '_' + os.path.splitext(os.path.basename(file))[0]
+                print(suffix)
+                t_df = pd.read_csv(file, header=0, index_col=False, sep='\t')
+                df = df.merge(t_df, on='Variation ID',
+                              how='outer', suffixes=('', suffix))
 
-        def max_string(series):
-            return series.loc[0]
+        df.rename(columns={'Variation ID': 'id'}, inplace=True)
+        df.to_csv(path + 'All.Annotations.csv', index=False)
 
-        main_func = {
-            'name': max_string,
-            'order': max_string,
-            'Alpha': max_string,
-            'Beta': max_string,
-            'reason_to_exist': (lambda s: 'Important' if 'Important' in set(s) else 'Presentation')
-        }
+        return df
 
-        main_func.update({
-            c: non_nan for c in new_node_df.columns if c not in set(main_func.keys()) | {'id'}
-        })
+    def AsNode(n_df, annot, path):
 
-        new_node_df = new_node_df.groupby('id', as_index=False).agg(main_func)
-        self.alpha_beta_df = new_node_df[['id', 'Alpha', 'Beta']]
-        print(new_node_df)
-        print(self.alpha_beta_df)
-        return new_node_df
+        e_df = pd.DataFrame(
+            columns=['source', 'target', 'Alpha', 'Beta', 'id', 'order'])
 
-    # Method to check edge duplicates
-    def check_edge_duplicates(self, edge_df, existing_df, interaction_or_edge):
-        # Create a new edge DataFrame with the non-duplicated nodes
-        temp_edge_df = pd.concat([edge_df, existing_df], axis=0)
-        # Remove duplicates and keep only the first occurrence of the node
-        if interaction_or_edge == 1:
-            new_edge_df = temp_edge_df.drop_duplicates(subset=['target', 'source', 'id'], keep='first')
-        elif interaction_or_edge == 2:
-            new_edge_df = temp_edge_df.drop_duplicates(subset=['target', 'source', 'id', 'edge label'], keep='first') \
-                .reset_index(drop=True)
+        for i, r in n_df.iterrows():
+            interaction = r['id']
+            snps = interaction.split('#')
+            order = r['order']
+            # check for snp ids with #
+            if (order != len(snps)):
+                print(
+                    'ERROR: Some SNP ids contain #. please change the SNP id in the interaction and annotation files and run the program again.')
+                exit(1)
 
-            i = len(new_edge_df) - 1
-            for index, row in new_edge_df.iterrows():
-                temp_node = new_edge_df.at[i, 'target']
-                filtered_df = new_edge_df.loc[((new_edge_df['target'] == temp_node)
-                                               & (new_edge_df['source'] == temp_node))] \
-                    .reset_index(drop=True)
+            if order > 1:
+                e = r
+                e['target'] = interaction
+                for s in snps:
+                    e['source'] = s
+                    # print(dict(e))
+                    e_df.loc[len(e_df)] = e
 
-                if not filtered_df.empty:
-                    # Remove duplicates
-                    new_edge_df = new_edge_df.loc[((new_edge_df['target'] != temp_node)
-                                                   & (new_edge_df['source'] != temp_node))].reset_index(drop=True)
-                    i = len(new_edge_df) - 1
-                else:
-                    i = i - 1
+        n_df = n_df.merge(annot, on='id', how='left')
 
-                # exit for loop once the correct new_node_df is made
-                if i == 0:
-                    break
-        # Delete the alpha/ beta columns so that they will be added later
-        if 'Alpha' in new_edge_df.columns and 'Beta' in new_edge_df.columns:
-            del new_edge_df['Alpha']
-            del new_edge_df['Beta']
-        # print(new_edge_df)
-        return new_edge_df.reset_index(drop=True)
+        e_df.to_csv(os.path.join(path, 'AsNode-Edge-DF.csv'), index=False)
+        n_df.to_csv(os.path.join(path, 'AsNode-Node-DF.csv'), index=False)
 
-    # Method to merge the connection count DataFrame and node_df
-    def get_merged_new_node_df(self, new_node_df, connection_count_df):
-        if order != '1':
-            new_node_df = new_node_df.merge(connection_count_df, how='left')
-            new_node_df['count'].fillna('None', inplace=True)
+        interaction_mode_dfs = [n_df, e_df]
 
-        return new_node_df
+        return interaction_mode_dfs
 
-    def merge_association_to_edge_df(self, correct_edge_df):
-        correct_edge_df = correct_edge_df.merge(self.alpha_beta_df, on='id', how='left', suffixes=('', '_y'))
-        correct_edge_df.drop(list(correct_edge_df.filter(regex='_y$')), axis=1, inplace=True)
-        correct_edge_df = correct_edge_df.replace(np.nan, 'None', regex=True)
-        return correct_edge_df
+    def AsEdge(n_df, annot, path):
+
+        e_df = pd.DataFrame(
+            columns=['source', 'target', 'Alpha', 'Beta', 'id', 'order'])
+
+        # list interaction nodes
+        i_df = n_df[n_df['order'] > 1]
+
+        for i, r in i_df.iterrows():
+            interaction = r['id']
+            snps = interaction.split('#')
+
+            e = r
+
+            pairs = [(snps[i], snps[j]) for i in range(len(snps))
+                     for j in range(i + 1, len(snps))]
+            for p in pairs:
+                e['source'] = p[0]
+                e['target'] = p[1]
+                e_df.loc[len(e_df)] = e
+
+        n_df = n_df[n_df['order'] == 1]
+
+        n_df = n_df.merge(annot, on='id', how='left')
+
+        e_df['interaction'] = e_df['id']
+        e_df.to_csv(os.path.join(path, 'AsEdge-Edge-DF.csv') , index=False)
+        n_df.to_csv(os.path.join(path, 'AsEdge-Node-DF.csv'), index=False)
+
+        edge_mode_dfs = [n_df, e_df]
+
+        return edge_mode_dfs
 
     # Method to write data in the correct format
     def get_correctly_formatted_dataframes(self, node_df, edge_df, int_order, interaction_or_edge):
@@ -589,53 +297,34 @@ class ReadWriteData:
     # Method to read in data and write data from and to a csv file
     def get_dataframes(self, interaction_or_edge):
         read_write_done = True
-        global order
-        global annotation_type
 
-        df = pd.read_csv(self.input_file)
+        alpha_beta_df = self.CreateIntList()
+        alpha_beta_df.to_csv(os.path.join(self.output_file, 'AB-DF.csv'), index=False)
 
-        # Get the number of columns in order to determine the input type and SNP_X columns
-        df_length = len(df.columns)
-        print('length of df: ', df_length)
-        order = df_length - 1
+        annotation_df = self.ReadAnnotations()
 
-        if order > 4:
-            print('EpiExplorer takes only up to four SNPs per interaction.')
-            order = 4
+        user_given_output_path = self.output_file
 
-        print('Order of the input file is: ', order)
-
-        if 'Alpha' in df.columns:
-            annotation_type = 'Alpha'
-        elif 'Beta' in df.columns:
-            annotation_type = 'Beta'
-
-        print('Annotation type of the input file is:', annotation_type)
-
-        if df.empty:
-            read_write_done = False
-        else:
-            # print(df)
-            # Get the node_df in order to write to csv
-            # Get the edge_df in order to write to csv
-            if interaction_or_edge == 1:
-                node_df = self.create_interaction_node_df(df, order)
-                edge_df = self.create_interaction_edge_df(df, order)
-            elif interaction_or_edge == 2:
-                node_df = self.create_node_df(df, order)
-                edge_df = self.create_edge_df(df, order)
-
-            if node_df.empty or (edge_df.empty and order != 1):
-                read_write_done = False
-                print('Error the newly created DataFrames are empty.')
+        if user_given_output_path == '':
+            # Check if directory exists
+            directory = False
+            if os.path.isdir('../SampleData/InteractionGraph/'):
+                directory = True
             else:
-                data_written = self.get_correctly_formatted_dataframes(node_df, edge_df, order, interaction_or_edge)
-                if not data_written[2]:
-                    read_write_done = False
-                    print('Error could not write data to the csv file/s!')
+                os.makedirs('../SampleData/InteractionGraph/')
+                directory = True
 
+            if directory:
+                return_dfs = ''
+                if interaction_or_edge == 1:
+                    return_dfs = self.AsNode(alpha_beta_df, annotation_df, self.output_file)
                 else:
-                    # Send the DataFrames as an array
-                    cytoscape_df = [data_written[0], data_written[1], read_write_done]
+                    return_dfs = self.AsEdge(alpha_beta_df, annotation_df, self.output_file)
+            else:
+                print('Error: Could not find output directory')
+        else:
+            print('User given output path exists')
+
+        cytoscape_df = [return_dfs[0], return_dfs[1], read_write_done]
 
         return cytoscape_df

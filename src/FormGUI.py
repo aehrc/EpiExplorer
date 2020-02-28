@@ -65,20 +65,8 @@ class FormGUI:
 
     # Load files upon clicking load on the GUI
     def load_files(self, input_file, annotation_file, interaction_or_edge):
-        # node_file_name = 'nodes.csv'
-        # edge_file_name = 'edges.csv'
-        # trans_edge_file_name = 'trans_edges.csv'
-        # trans_node_file_name = 'trans_nodes.csv'
-        #
-        # node_file_path = os.path.join(self.output_file_path, node_file_name)
-        # edge_file_path = os.path.join(self.output_file_path, edge_file_name)
-        # trans_node_path = os.path.join(self.output_file_path, trans_node_file_name)
-        # trans_edge_path = os.path.join(self.output_file_path, trans_edge_file_name)
-        #
-        # os.remove(node_file_path)
-        # os.remove(edge_file_path)
-        # os.remove(trans_node_path)
-        # os.remove(trans_edge_path)
+        if os.path.isdir(self.output_file_path):
+            os.rmdir(self.output_file_path)
 
         details_df = pd.DataFrame([[input_file, annotation_file, self.output_file_path, True]],
                                   columns=['input_file', 'annotation_file', 'output_file', 'reset'])
