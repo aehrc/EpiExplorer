@@ -78,6 +78,13 @@ def CreateIntList(files):
 
 def ReadAnnotations(files, path):
     df = pd.read_csv(files[0], header=0, index_col=False, sep='\t')
+
+    if 'Variation ID' in df.columns[0]:
+        pass
+    else:
+        print('The first annotation file must contain "Variant ID" column')
+        exit(1)
+
     for i, file in enumerate(files):
         if i == 0:
             continue
@@ -102,8 +109,11 @@ def AsNode(n_df, annot, path):
         interaction = r['id']
         snps = interaction.split('#')
         order = r['order']
+        # check for snp ids with #
+        if(order != len(snps)):
+            print('ERROR: Some SNP ids contain #. please change the SNP id in the interaction and annotation files and run the program again.')
+            exit(1)
 
-        n_df.at[i, 'order'] = order
         if order > 1:
             e = r
             e['t'] = interaction
@@ -122,19 +132,23 @@ def AsEdge(n_df, annot, path):
 
     e_df = pd.DataFrame(columns=['s', 't', 'Alpha', 'Beta', 'id', 'order'])
 
-    for i, r in n_df.iterrows():
+    # list interaction nodes
+    i_df = n_df[n_df['order'] > 1]
+
+    for i, r in i_df.iterrows():
         interaction = r['id']
         snps = interaction.split('#')
-        order = r['order']
 
-        n_df.at[i, 'order'] = order
-        if order > 1:
-            e = r
-            e['t'] = interaction
-            for s in snps:
-                e['s'] = s
-                # print(dict(e))
-                e_df.loc[len(e_df)] = e
+        e = r
+
+        pairs = [(snps[i], snps[j]) for i in range(len(snps))
+                 for j in range(i+1, len(snps))]
+        for p in pairs:
+            e['s'] = p[0]
+            e['t'] = p[1]
+            e_df.loc[len(e_df)] = e
+
+    n_df = n_df[n_df['order'] == 1]
 
     n_df = n_df.merge(annot, on='id', how='left')
 
