@@ -23,6 +23,8 @@ class CytoscapeIntegration:
     def dataframe_to_json(self):
 
         # Create new node and edge dictionaries
+        self.node_df['order'] = self.node_df['order'].astype(str)
+        self.edge_df['order'] = self.edge_df['order'].astype(str)
         node_dic = self.node_df.to_dict('records')
         edge_dic = self.edge_df.to_dict('records')
         complete_node_list = []

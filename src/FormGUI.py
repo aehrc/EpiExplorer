@@ -65,8 +65,6 @@ class FormGUI:
 
     # Load files upon clicking load on the GUI
     def load_files(self, input_file, annotation_file, interaction_or_edge):
-        if os.path.isdir(self.output_file_path):
-            os.rmdir(self.output_file_path)
 
         details_df = pd.DataFrame([[input_file, annotation_file, self.output_file_path, True]],
                                   columns=['input_file', 'annotation_file', 'output_file', 'reset'])

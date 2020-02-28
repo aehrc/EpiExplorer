@@ -93,6 +93,8 @@ class ReadWriteData:
             order = len(snps)
             ab_df.at[i, 'order'] = order
 
+        ab_df = ab_df.replace(np.nan, 'None', regex=True)
+
         return ab_df
 
     # Merge annotation files
@@ -116,11 +118,31 @@ class ReadWriteData:
                               how='outer', suffixes=('', suffix))
 
         df.rename(columns={'Variation ID': 'id'}, inplace=True)
-        df.to_csv(path + 'All.Annotations.csv', index=False)
+
+        user_given_output_path = self.output_file
+        annot_path = ''
+
+        if user_given_output_path == '':
+            # Check if directory exists
+            directory = False
+            if os.path.isdir('../SampleData/InteractionGraph/'):
+                directory = True
+            else:
+                os.makedirs('../SampleData/InteractionGraph/')
+                directory = True
+
+            if directory:
+                annot_path = os.path.join('../SampleData/InteractionGraph/', 'All.Annotations.csv')
+            else:
+                print('Error: Could not find output directory')
+        else:
+            annot_path = os.path.join('../SampleData/InteractionGraph/', 'All.Annotations.csv')
+        df = df.replace(np.nan, 'None', regex=True)
+        df.to_csv(annot_path, index=False)
 
         return df
 
-    def AsNode(n_df, annot, path):
+    def AsNode(self, n_df, annot):
 
         e_df = pd.DataFrame(
             columns=['source', 'target', 'Alpha', 'Beta', 'id', 'order'])
@@ -144,15 +166,41 @@ class ReadWriteData:
                     e_df.loc[len(e_df)] = e
 
         n_df = n_df.merge(annot, on='id', how='left')
+        e_df['interaction'] = e_df['id']
 
-        e_df.to_csv(os.path.join(path, 'AsNode-Edge-DF.csv'), index=False)
-        n_df.to_csv(os.path.join(path, 'AsNode-Node-DF.csv'), index=False)
+        user_given_output_path = self.output_file
+        node_file_path = ''
+        edge_file_path = ''
+
+        if user_given_output_path == '':
+            # Check if directory exists
+            directory = False
+            if os.path.isdir('../SampleData/InteractionGraph/'):
+                directory = True
+            else:
+                os.makedirs('../SampleData/InteractionGraph/')
+                directory = True
+
+            if directory:
+                node_file_path = os.path.join('../SampleData/InteractionGraph/', 'AsNode-Node-DF.csv')
+                edge_file_path = os.path.join('../SampleData/InteractionGraph/', 'AsNode-Edge-DF.csv')
+            else:
+                print('Error: Could not find output directory')
+        else:
+            node_file_path = os.path.join('../SampleData/InteractionGraph/', 'AsNode-Node-DF.csv')
+            edge_file_path = os.path.join('../SampleData/InteractionGraph/', 'AsNode-Edge-DF.csv')
+
+        e_df = e_df.replace(np.nan, 'None', regex=True)
+        n_df = n_df.replace(np.nan, 'None', regex=True)
+
+        e_df.to_csv(edge_file_path, index=False)
+        n_df.to_csv(node_file_path, index=False)
 
         interaction_mode_dfs = [n_df, e_df]
 
         return interaction_mode_dfs
 
-    def AsEdge(n_df, annot, path):
+    def AsEdge(self, n_df, annot):
 
         e_df = pd.DataFrame(
             columns=['source', 'target', 'Alpha', 'Beta', 'id', 'order'])
@@ -178,132 +226,48 @@ class ReadWriteData:
         n_df = n_df.merge(annot, on='id', how='left')
 
         e_df['interaction'] = e_df['id']
-        e_df.to_csv(os.path.join(path, 'AsEdge-Edge-DF.csv') , index=False)
-        n_df.to_csv(os.path.join(path, 'AsEdge-Node-DF.csv'), index=False)
+
+        user_given_output_path = self.output_file
+        node_file_path = ''
+        edge_file_path = ''
+
+        if user_given_output_path == '':
+            # Check if directory exists
+            directory = False
+            if os.path.isdir('../SampleData/InteractionGraph/'):
+                directory = True
+            else:
+                os.makedirs('../SampleData/InteractionGraph/')
+                directory = True
+
+            if directory:
+                node_file_path = os.path.join('../SampleData/InteractionGraph/', 'AsEdge-Node-DF.csv')
+                edge_file_path = os.path.join('../SampleData/InteractionGraph/', 'AsEdge-Edge-DF.csv')
+            else:
+                print('Error: Could not find output directory')
+        else:
+            node_file_path = os.path.join('../SampleData/InteractionGraph/', 'AsEdge-Node-DF.csv')
+            edge_file_path = os.path.join('../SampleData/InteractionGraph/', 'AsEdge-Edge-DF.csv')
+
+        e_df = e_df.replace(np.nan, 'None', regex=True)
+        n_df = n_df.replace(np.nan, 'None', regex=True)
+
+        e_df.to_csv(edge_file_path, index=False)
+        n_df.to_csv(node_file_path, index=False)
 
         edge_mode_dfs = [n_df, e_df]
 
         return edge_mode_dfs
 
-    # Method to write data in the correct format
-    def get_correctly_formatted_dataframes(self, node_df, edge_df, int_order, interaction_or_edge):
-        data_written_to_csv = True
-        node_file_name = 'nodes.csv'
-        edge_file_name = 'edges.csv'
-        trans_edge_file_name = 'trans_edges.csv'
-        trans_node_file_name = 'trans_nodes.csv'
-        node_file_path = ''
-        edge_file_path = ''
-
-        user_given_output_path = self.output_file
-
-        if user_given_output_path == '':
-            # Check if directory exists
-            directory = False
-            if os.path.isdir('../SampleData/InteractionGraph/'):
-                directory = True
-            else:
-                os.makedirs('../SampleData/InteractionGraph/')
-                directory = True
-
-            if directory:
-                if interaction_or_edge == 1:
-                    node_file_path = os.path.join('../SampleData/InteractionGraph/', node_file_name)
-                    edge_file_path = os.path.join('../SampleData/InteractionGraph/', edge_file_name)
-                elif interaction_or_edge == 2:
-                    node_file_path = os.path.join('../SampleData/InteractionGraph/', trans_node_file_name)
-                    edge_file_path = os.path.join('../SampleData/InteractionGraph/', trans_edge_file_name)
-            else:
-                print('Error: Could not find output directory')
-        else:
-            print('User given output path exists')
-            if interaction_or_edge == 1:
-                node_file_path = os.path.join(user_given_output_path, node_file_name)
-                edge_file_path = os.path.join(user_given_output_path, edge_file_name)
-            elif interaction_or_edge == 2:
-                node_file_path = os.path.join(user_given_output_path, trans_node_file_name)
-                edge_file_path = os.path.join(user_given_output_path, trans_edge_file_name)
-
-        # DataFrames to send to Cytoscape
-        correct_node_df = pd.DataFrame
-        correct_edge_df = pd.DataFrame
-        # TODO check the merging of the alpha, beta, count and annotation files
-        # Pre-check for appending alpha and beta values for edge df
-        if not os.path.isfile(node_file_path):
-            print('No existing node file found. Creating a new file nodes.csv')
-            new_node_df = self.check_node_duplicates(node_df, node_df)
-        else:
-            print('Existing node file found. Appending to node.csv')
-            # Read in the existing DataFrame and check for duplicates
-            existing_df = pd.read_csv(node_file_path)
-            # Get a new DataFrame without any duplicated nodes
-            new_node_df = self.check_node_duplicates(node_df, existing_df)
-
-        # Check if files exist
-        # Create a new file if there is no existing one
-        # If exists then append to the existing file
-        if not os.path.isfile(edge_file_path):
-            print('No existing edges file found. Creating a new file edges.csv')
-            new_edge_df = self.check_edge_duplicates(edge_df, edge_df, interaction_or_edge)
-            if not new_edge_df.empty:
-                new_edge_df = self.merge_association_to_edge_df(new_edge_df)
-            new_edge_df.to_csv(edge_file_path, encoding='utf-8', index=False)
-            correct_edge_df = new_edge_df
-        else:
-            print('Existing edges file found. Appending to edges.csv')
-            # Read in the existing DataFrame and check for duplicates
-            existing_df = pd.read_csv(edge_file_path)
-            if existing_df.empty:
-                print('The existing file is empty. Creating a new file edges.csv')
-                new_edge_df = self.check_edge_duplicates(edge_df, edge_df, interaction_or_edge)
-                new_edge_df = self.merge_association_to_edge_df(new_edge_df)
-                new_edge_df.to_csv(edge_file_path, encoding='utf-8', index=False)
-                correct_edge_df = new_edge_df
-            else:
-                # Get a new DataFrame without any duplicated edges
-                print('The existing file is NOT empty. Appending to file edges.csv')
-                new_edge_df = self.check_edge_duplicates(edge_df, existing_df, interaction_or_edge)
-                new_edge_df = self.merge_association_to_edge_df(new_edge_df)
-                os.remove(edge_file_path)
-                new_edge_df.to_csv(edge_file_path, encoding='utf-8', index=False)
-                correct_edge_df = new_edge_df
-
-        connection_count_df = self.create_connection_count_df(correct_edge_df)
-
-        if not os.path.isfile(node_file_path):
-            print('No existing node file found. Creating a new file nodes.csv')
-            new_node_df = self.check_node_duplicates(node_df, node_df)
-            new_node_df = self.get_merged_new_node_df(new_node_df, connection_count_df)
-            new_node_df = self.merge_df_with_annotations(new_node_df)
-            new_node_df.to_csv(node_file_path, encoding='utf-8', index=False)
-            correct_node_df = new_node_df
-        else:
-            print('Existing node file found. Appending to node.csv')
-            # Read in the existing DataFrame and check for duplicates
-            existing_df = pd.read_csv(node_file_path)
-            # Get a new DataFrame without any duplicated nodes
-            new_node_df = self.check_node_duplicates(node_df, existing_df)
-            new_node_df = self.get_merged_new_node_df(new_node_df, connection_count_df)
-            new_node_df = self.merge_df_with_annotations(new_node_df)
-            os.remove(node_file_path)
-            new_node_df.to_csv(node_file_path, encoding='utf-8', index=False)
-            correct_node_df = new_node_df
-
-        # Send the DataFrames (which were checked for duplication) to Cytoscape
-        data_written = [correct_node_df, correct_edge_df, data_written_to_csv]
-
-        return data_written
-
     # Method to read in data and write data from and to a csv file
     def get_dataframes(self, interaction_or_edge):
+
         read_write_done = True
 
         alpha_beta_df = self.CreateIntList()
-        alpha_beta_df.to_csv(os.path.join(self.output_file, 'AB-DF.csv'), index=False)
-
-        annotation_df = self.ReadAnnotations()
 
         user_given_output_path = self.output_file
+        main_df_path = ''
 
         if user_given_output_path == '':
             # Check if directory exists
@@ -315,15 +279,21 @@ class ReadWriteData:
                 directory = True
 
             if directory:
-                return_dfs = ''
-                if interaction_or_edge == 1:
-                    return_dfs = self.AsNode(alpha_beta_df, annotation_df, self.output_file)
-                else:
-                    return_dfs = self.AsEdge(alpha_beta_df, annotation_df, self.output_file)
+                main_df_path = os.path.join('../SampleData/InteractionGraph/', 'AB-DF.csv')
             else:
                 print('Error: Could not find output directory')
         else:
-            print('User given output path exists')
+            main_df_path = os.path.join('../SampleData/InteractionGraph/', 'AB-DF.csv')
+
+        alpha_beta_df.to_csv(main_df_path, index=False)
+
+        annotation_df = self.ReadAnnotations()
+
+        return_dfs = ''
+        if interaction_or_edge == 1:
+            return_dfs = self.AsNode(alpha_beta_df, annotation_df)
+        else:
+            return_dfs = self.AsEdge(alpha_beta_df, annotation_df)
 
         cytoscape_df = [return_dfs[0], return_dfs[1], read_write_done]
 

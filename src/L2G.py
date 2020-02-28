@@ -3,20 +3,20 @@ import numpy as np
 import itertools
 import os
 
-interactionFiles = ['/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.1.csv',
-                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.2.csv',
-                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.3.csv',
-                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.4.csv',
-                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.1.csv',
-                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.2.csv',
-                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.3.csv',
-                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.4.csv']
+interactionFiles = ['/home/ubuntu/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.1.csv',
+                    '/home/ubuntu/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.2.csv',
+                    '/home/ubuntu/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.3.csv',
+                    '/home/ubuntu/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.4.csv',
+                    '/home/ubuntu/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.1.csv',
+                    '/home/ubuntu/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.2.csv',
+                    '/home/ubuntu/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.3.csv',
+                    '/home/ubuntu/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.4.csv']
 
-annotationFiles = ['/home/arash/project/EpiExplorer/SampleData/AnnotationFiles/1KGen.txt',
-                   '/home/arash/project/EpiExplorer/SampleData/AnnotationFiles/cadd.txt'
+annotationFiles = ['/home/ubuntu/EpiExplorer/SampleData/AnnotationFiles/1KGen.txt',
+                   '/home/ubuntu/EpiExplorer/SampleData/AnnotationFiles/cadd.txt'
                    ]
 
-# files = ['/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.4.csv']
+# files = ['/home/ubuntu/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.4.csv']
 
 
 def CreateIntList(files):
@@ -171,4 +171,4 @@ def DoItAll(interactionFiles, annotationFiles, path):
 
 
 DoItAll(interactionFiles, annotationFiles,
-        '/home/arash/project/EpiExplorer/SampleData/InteractionGraph/')
+        '/home/ubuntu/EpiExplorer/SampleData/InteractionGraph/')
