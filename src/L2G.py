@@ -90,7 +90,6 @@ def ReadAnnotations(files, path):
             continue
         else:
             suffix = '_'+os.path.splitext(os.path.basename(file))[0]
-            print(suffix)
             t_df = pd.read_csv(file, header=0, index_col=False, sep='\t')
             df = df.merge(t_df, on='Variation ID',
                           how='outer', suffixes=('', suffix))
@@ -103,7 +102,8 @@ def ReadAnnotations(files, path):
 
 def AsNode(n_df, annot, path):
 
-    e_df = pd.DataFrame(columns=['s', 't', 'Alpha', 'Beta', 'id', 'order'])
+    e_df = pd.DataFrame(
+        columns=['source', 'target', 'Alpha', 'Beta', 'id', 'order'])
 
     for i, r in n_df.iterrows():
         interaction = r['id']
@@ -116,21 +116,23 @@ def AsNode(n_df, annot, path):
 
         if order > 1:
             e = r
-            e['t'] = interaction
+            e['target'] = interaction
             for s in snps:
-                e['s'] = s
+                e['source'] = s
                 # print(dict(e))
                 e_df.loc[len(e_df)] = e
 
     n_df = n_df.merge(annot, on='id', how='left')
 
+    n_df['interaction'] = n_df['id']
     e_df.to_csv(path+'AsNode-Edge-DF.csv', index=False)
     n_df.to_csv(path+'AsNode-Node-DF.csv', index=False)
 
 
 def AsEdge(n_df, annot, path):
 
-    e_df = pd.DataFrame(columns=['s', 't', 'Alpha', 'Beta', 'id', 'order'])
+    e_df = pd.DataFrame(
+        columns=['source', 'target', 'Alpha', 'Beta', 'id', 'order'])
 
     # list interaction nodes
     i_df = n_df[n_df['order'] > 1]
@@ -144,14 +146,15 @@ def AsEdge(n_df, annot, path):
         pairs = [(snps[i], snps[j]) for i in range(len(snps))
                  for j in range(i+1, len(snps))]
         for p in pairs:
-            e['s'] = p[0]
-            e['t'] = p[1]
+            e['source'] = p[0]
+            e['target'] = p[1]
             e_df.loc[len(e_df)] = e
 
     n_df = n_df[n_df['order'] == 1]
 
     n_df = n_df.merge(annot, on='id', how='left')
 
+    n_df['interaction'] = n_df['id']
     e_df.to_csv(path+'AsEdge-Edge-DF.csv', index=False)
     n_df.to_csv(path+'AsEdge-Node-DF.csv', index=False)
 
