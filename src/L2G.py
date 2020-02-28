@@ -124,7 +124,7 @@ def AsNode(n_df, annot, path):
 
     n_df = n_df.merge(annot, on='id', how='left')
 
-    n_df['interaction'] = n_df['id']
+    e_df['interaction'] = e_df['id']
     e_df.to_csv(path+'AsNode-Edge-DF.csv', index=False)
     n_df.to_csv(path+'AsNode-Node-DF.csv', index=False)
 
@@ -154,7 +154,7 @@ def AsEdge(n_df, annot, path):
 
     n_df = n_df.merge(annot, on='id', how='left')
 
-    n_df['interaction'] = n_df['id']
+    e_df['interaction'] = e_df['id']
     e_df.to_csv(path+'AsEdge-Edge-DF.csv', index=False)
     n_df.to_csv(path+'AsEdge-Node-DF.csv', index=False)
 
