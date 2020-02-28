@@ -1,17 +1,22 @@
 import pandas as pd
 import numpy as np
 import itertools
+import os
 
-files = ['/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.1.csv',
-         '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.2.csv',
-         '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.3.csv',
-         '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.4.csv',
-         '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.1.csv',
-         '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.2.csv',
-         '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.3.csv',
-         '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.4.csv']
+interactionFiles = ['/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.1.csv',
+                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.2.csv',
+                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.3.csv',
+                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Alpha.4.csv',
+                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.1.csv',
+                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.2.csv',
+                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.3.csv',
+                    '/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.4.csv']
 
-#files = ['/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.4.csv']
+annotationFiles = ['/home/arash/project/EpiExplorer/SampleData/AnnotationFiles/1KGen.txt',
+                   '/home/arash/project/EpiExplorer/SampleData/AnnotationFiles/cadd.txt'
+                   ]
+
+# files = ['/home/arash/project/EpiExplorer/SampleData/BitEpiOutputSmall/output.Beta.4.csv']
 
 
 def CreateIntList(files):
@@ -61,36 +66,92 @@ def CreateIntList(files):
     ab_df = ab_df.merge(s_df.drop_duplicates(), on='id',
                         how='outer').replace(np.nan, 0)
 
+    ab_df['order'] = 0
+    for i, r in ab_df.iterrows():
+        interaction = r['id']
+        snps = interaction.split('#')
+        order = len(snps)
+        ab_df.at[i, 'order'] = order
+
     return ab_df
 
 
-def AsNode(n_df, path):
-    n_df['order'] = 0
+def ReadAnnotations(files, path):
+    df = pd.read_csv(files[0], header=0, index_col=False, sep='\t')
+    for i, file in enumerate(files):
+        if i == 0:
+            continue
+        else:
+            suffix = '_'+os.path.splitext(os.path.basename(file))[0]
+            print(suffix)
+            t_df = pd.read_csv(file, header=0, index_col=False, sep='\t')
+            df = df.merge(t_df, on='Variation ID',
+                          how='outer', suffixes=('', suffix))
+
+    df.rename(columns={'Variation ID': 'id'}, inplace=True)
+    df.to_csv(path+'All.Annotations.csv', index=False)
+
+    return df
+
+
+def AsNode(n_df, annot, path):
+
     e_df = pd.DataFrame(columns=['s', 't', 'Alpha', 'Beta', 'id', 'order'])
 
     for i, r in n_df.iterrows():
         interaction = r['id']
         snps = interaction.split('#')
-        order = len(snps)
+        order = r['order']
 
         n_df.at[i, 'order'] = order
         if order > 1:
             e = r
             e['t'] = interaction
-            e['order'] = order
             for s in snps:
                 e['s'] = s
                 # print(dict(e))
                 e_df.loc[len(e_df)] = e
 
+    n_df = n_df.merge(annot, on='id', how='left')
+
     e_df.to_csv(path+'AsNode-Edge-DF.csv', index=False)
     n_df.to_csv(path+'AsNode-Node-DF.csv', index=False)
 
 
-def DoItAll(files, path):
+def AsEdge(n_df, annot, path):
 
-    ab_df = CreateIntList(files)
-    AsNode(ab_df, path)
+    e_df = pd.DataFrame(columns=['s', 't', 'Alpha', 'Beta', 'id', 'order'])
+
+    for i, r in n_df.iterrows():
+        interaction = r['id']
+        snps = interaction.split('#')
+        order = r['order']
+
+        n_df.at[i, 'order'] = order
+        if order > 1:
+            e = r
+            e['t'] = interaction
+            for s in snps:
+                e['s'] = s
+                # print(dict(e))
+                e_df.loc[len(e_df)] = e
+
+    n_df = n_df.merge(annot, on='id', how='left')
+
+    e_df.to_csv(path+'AsEdge-Edge-DF.csv', index=False)
+    n_df.to_csv(path+'AsEdge-Node-DF.csv', index=False)
 
 
-DoItAll(files, './')
+def DoItAll(interactionFiles, annotationFiles, path):
+
+    ab_df = CreateIntList(interactionFiles)
+    ab_df.to_csv(path+'AB-DF.csv', index=False)
+
+    annot = ReadAnnotations(annotationFiles, path)
+
+    AsNode(ab_df, annot, path)
+    AsEdge(ab_df, annot, path)
+
+
+DoItAll(interactionFiles, annotationFiles,
+        '/home/arash/project/EpiExplorer/SampleData/InteractionGraph/')
