@@ -1,4 +1,4 @@
-# EpiExplorer on AWS EC2 (Remote server with Ubuntu 18.0.4)
+# EpiExplorer on AWS EC2 (Remote server with Ubuntu 18.04)
 
 We have publishd an AWS AMI into AWS marketplace with the following tools installed and ready to use.
 
@@ -43,10 +43,10 @@ ssh -i YourKey.pem ubuntu@EC2_Public_DNS -L 5901:127.0.0.1:5901 -N
 - Leave your terminal. In your VNC client application (on your local machine) connect to 'localhost:5901'
 - We have set the password to "EpiVnc"
 
-# Setup Epiexplorer on a remote server (AWS EC2 with Ubuntu server 18.0.4)
+# Setup EpiExplorer on a remote server (AWS EC2 with Ubuntu server 18.04)
 
 - Install X and vnc on ubuntu server 18.0.4 (AWS EC2) using the instructions [here](https://medium.com/@Arafat./graphical-user-interface-using-vnc-with-amazon-ec2-instances-549d9c0969c5)
-- Connect to the instance using VNC and setup Epiexplorer on the server (**Cytoscape installation needs GUI interface and you cannot do it in the terminal**)
+- Connect to the instance using VNC and setup BitEpi, EpiExplorer and Cytoscape on the server (**Cytoscape installation needs GUI interface and you cannot do it in the terminal**). Note that the script clone BitEpi and EpiExplorer in your home directory.
 
 ```sh
 wget https://raw.githubusercontent.com/aehrc/EpiExplorer/master/install.sh
