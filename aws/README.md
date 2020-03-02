@@ -1,6 +1,6 @@
 # EpiExplorer on AWS EC2 (Remote server with Ubuntu 18.04)
 
-We have publishd an AWS AMI into AWS marketplace with the following tools installed and ready to use.
+We have publishd an AWS AMI into AWS marketplace (comming soon) with the following tools installed and ready to use.
 
 - EpiExplorer
 - Cytoscape
