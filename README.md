@@ -45,10 +45,8 @@ Then Python will automatically provide you with the Cytoscape visualisation of t
 ## Authors
 
 * **Milindi Kodikara**
+* **Arash Bayat**
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/aehrc/EpiExplorer/graphs/contributors) who participated in this project.
 
-## Acknowledgments
-
-* Arash Bayat
 
