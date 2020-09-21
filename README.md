@@ -61,18 +61,18 @@ python3 EpiExplorer.py
 
 ## EpiExplorer GUI
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "EpiExplorer GUI")
+![alt text](https://github.com/aehrc/EpiExplorer/blob/master/images/gui.png "EpiExplorer GUI")
 
 The GUI takes in two types of files in order to depict information in Cytoscape:
 
 1. Input File/s: A csv file/s consisting of lists of SNP interactions and their effect size. One or multiple input files could be loaded in simultaneously at the start of the program or at added later on at any point during the program.
 
-| Combined Association Power | SNP_A     | SNP_B      |
-| -------------------------- |:---------:| ----------:|
-| 0.1                        | rs8663549 | rs1252345  |
-| 0.4                        | rs2323523 | rs2343434  |
+  | Combined Association Power | SNP_A     | SNP_B      |
+  | -------------------------- |:---------:| ----------:|
+  | 0.1                        | rs8663549 | rs1252345  |
+  | 0.4                        | rs2323523 | rs2343434  |
 
-Please refer to *[these example input files for further clarification on the format of the input files](https://github.com/aehrc/EpiExplorer/tree/master/SampleData/BitEpiOutput)
+Please refer to [these example input files for further clarification on the format of the input files](https://github.com/aehrc/EpiExplorer/tree/master/SampleData/BitEpiOutput)
 
 2. Annotation file/s: A .txt file/s contatining the genomic annotations of the SNPs involved. Similar to input files, one or multiple annotation files could be loaded in simultaneously at the start of the program or added later on during the program. 
 
@@ -94,7 +94,7 @@ An annotation file consists of:
 * Micro RNA
 * Minor allele Frequency
 
-Please refer to *[these example annotation files for further clarification on the format of the annotation files](https://github.com/aehrc/EpiExplorer/tree/master/SampleData/AnnotationFiles)
+Please refer to [these example annotation files for further clarification on the format of the annotation files](https://github.com/aehrc/EpiExplorer/tree/master/SampleData/AnnotationFiles)
 
 The Output path is the path specified by the user to store the output files containing the Cytoscape networks.
 
@@ -112,7 +112,7 @@ EpiExplorer represents networks in two modes:
 
 1. EpiExplorer uses visual elements such as color, size and shape of nodes; color and thickness of edges to convey information about the SNPs. 
 
-2. EpiExplorer allows users the functionality to filter the networks (i.e. show/ hide nodes or edges, highlight/ gray out nodes or edges) by writing a python query. 
+2. EpiExplorer allows users the functionality to filter the networks (i.e. show/ hide nodes or edges, highlight/ gray out nodes or edges, invert the query) by writing a python query. 
 
 3. Various layout algorithms are available through Cytoscape.
 
