@@ -77,11 +77,6 @@ Please refer to [these example input files for further clarification on the form
 2. Annotation file/s: A .txt file/s contatining the genomic annotations of the SNPs involved. Similar to input files, one or multiple annotation files could be loaded in simultaneously at the start of the program or added later on during the program. 
 
 An annotation file consists of:
-* Bullet list
-  * Nested bullet
-  * Blloopp
-* Bullet list item 2
-
 * Chromosome
 * Position
 * Genomic location
