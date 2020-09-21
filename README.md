@@ -117,7 +117,3 @@ The program has the ability to retain the previous states of the networks which 
 
 See also the list of [contributors](https://github.com/aehrc/EpiExplorer/graphs/contributors) who participated in this project.
 
-
-
-
-
